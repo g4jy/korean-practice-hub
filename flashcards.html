@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Flashcards</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+  <div class="container builder-page">
+    <header class="page-header">
+      <a href="index.html" class="back-btn">&larr; Back</a>
+      <h1>Vocabulary Flashcards</h1>
+    </header>
+
+    <p class="instruction">Tap the card to flip. Swipe or use arrows to navigate.</p>
+
+    <div class="category-tabs" id="category-tabs"></div>
+
+    <div class="review-banner hidden" id="review-banner">
+      <span>Reviewing weak words</span>
+      <button class="review-exit-btn" id="review-exit-btn">Show All</button>
+    </div>
+
+    <div class="mastery-stats" id="mastery-stats"></div>
+
+    <div class="flashcard-area">
+      <div class="flashcard" id="flashcard">
+        <div class="flashcard-inner" id="flashcard-inner">
+          <div class="flashcard-front">
+            <span class="card-korean" id="card-korean"></span>
+            <button class="tts-btn" id="card-tts" title="Listen">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polygon points="11,5 6,9 2,9 2,15 6,15 11,19"/><path d="M15.54 8.46a5 5 0 010 7.07"/></svg>
+            </button>
+          </div>
+          <div class="flashcard-back">
+            <span class="card-english" id="card-english"></span>
+            <span class="card-romanization" id="card-romanization"></span>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="flashcard-controls">
+      <button class="fc-btn" id="prev-btn">&larr;</button>
+      <span class="fc-progress" id="progress">1 / 10</span>
+      <button class="fc-btn" id="next-btn">&rarr;</button>
+    </div>
+
+    <div class="response-buttons" id="response-buttons">
+      <button class="resp-btn resp-know" data-resp="know" title="Press 1">Know</button>
+      <button class="resp-btn resp-unsure" data-resp="unsure" title="Press 2">Unsure</button>
+      <button class="resp-btn resp-dont-know" data-resp="dont_know" title="Press 3">Don't Know</button>
+    </div>
+
+    <div class="flashcard-actions">
+      <button class="fc-action-btn" id="shuffle-btn">Shuffle</button>
+      <button class="fc-action-btn" id="direction-btn">EN &rarr; KR</button>
+      <button class="fc-action-btn" id="review-weak-btn">Review Weak (0)</button>
+      <button class="fc-action-btn" id="export-btn">Export</button>
+    </div>
+
+    <div class="rom-toggle">
+      <button class="btn-rom active" id="toggle-rom">Aa Hide Romanization</button>
+    </div>
+  </div>
+
+  <script src="js/common.js"></script>
+  <script src="js/flashcard.js"></script>
+</body>
+</html>
