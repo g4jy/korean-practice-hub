@@ -23,17 +23,17 @@
 
     <div class="sentence-area" id="sentence-area">
       <div class="block-row describe-row">
-        <div class="block" id="block-subject" data-slot="subject">
+        <div class="block" id="block-subject" data-slot="subject" data-type="subject">
           <span class="block-kr"></span>
           <span class="block-rom"></span>
           <span class="block-en"></span>
         </div>
-        <div class="block block-adverb" id="block-adverb" data-slot="adverb">
+        <div class="block block-adverb" id="block-adverb" data-slot="adverb" data-type="adverb">
           <span class="block-kr"></span>
           <span class="block-rom"></span>
           <span class="block-en"></span>
         </div>
-        <div class="block" id="block-adjective" data-slot="adjective">
+        <div class="block" id="block-adjective" data-slot="adjective" data-type="adjective">
           <span class="block-kr"></span>
           <span class="block-rom"></span>
           <span class="block-en"></span>
@@ -45,12 +45,12 @@
       <div class="full-sentence" id="full-sentence"></div>
       <div class="translation" id="translation"></div>
       <button class="tts-btn-large" id="speak-btn" title="Listen to sentence">
-        <svg class="tts-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polygon points="11,5 6,9 2,9 2,15 6,15 11,19"/><path d="M15.54 8.46a5 5 0 010 7.07"/><path d="M19.07 4.93a10 10 0 010 14.14"/></svg>
+        <svg class="tts-icon" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polygon points="11,5 6,9 2,9 2,15 6,15 11,19"/><path d="M15.54 8.46a5 5 0 010 7.07"/><path d="M19.07 4.93a10 10 0 010 14.14"/></svg>
         Listen
       </button>
     </div>
 
-    <div class="rom-toggle">
+    <div class="toggle-bar">
       <button class="btn-rom active" id="toggle-rom">Aa Hide Romanization</button>
       <button class="btn-rom active" id="toggle-en">EN Hide English</button>
     </div>
