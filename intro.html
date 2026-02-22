@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>이에요/예요 Builder — Hub</title>
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+  <div class="container builder-page">
+    <header class="page-header">
+      <a href="index.html" class="back-btn">&larr; Back</a>
+      <h1>이에요/예요 Builder</h1>
+    </header>
+
+    <p class="instruction">Tap each block to change the word. Build "A는 B이에요/예요" sentences!</p>
+
+    <div class="rom-toggle">
+      <button class="btn-rom active" id="toggle-rom">Aa Hide Romanization</button>
+      <button class="btn-rom active" id="toggle-en">EN Hide English</button>
+    </div>
+
+    <div class="sentence-area">
+      <div class="block-row">
+        <div class="block" data-slot="topic" id="block-topic">
+          <span class="block-kr"></span>
+          <span class="block-rom"></span>
+          <span class="block-en"></span>
+        </div>
+        <div class="block" data-slot="noun" id="block-noun">
+          <span class="block-kr"></span>
+          <span class="block-rom"></span>
+          <span class="block-en"></span>
+        </div>
+      </div>
+      <div class="slot-labels">
+        <span>TOPIC</span>
+        <span>NOUN + 이에요/예요</span>
+      </div>
+    </div>
+
+    <div class="result-area">
+      <p class="full-sentence" id="full-sentence"></p>
+      <p class="translation" id="translation"></p>
+      <button class="tts-btn-large" id="tts-btn">Listen 🔊</button>
+    </div>
+  </div>
+
+  <script src="js/common.js"></script>
+  <script src="js/intro-builder.js"></script>
+</body>
+</html>

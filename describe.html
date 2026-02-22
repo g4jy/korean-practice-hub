@@ -3,9 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Describe Sentences</title>
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <title>Describe Sentences — Hub</title>
   <link rel="stylesheet" href="css/styles.css">
 </head>
 <body>
@@ -23,17 +21,17 @@
 
     <div class="sentence-area" id="sentence-area">
       <div class="block-row describe-row">
-        <div class="block" id="block-subject" data-slot="subject" data-type="subject">
+        <div class="block" id="block-subject" data-slot="subject">
           <span class="block-kr"></span>
           <span class="block-rom"></span>
           <span class="block-en"></span>
         </div>
-        <div class="block block-adverb" id="block-adverb" data-slot="adverb" data-type="adverb">
+        <div class="block block-adverb hidden" id="block-adverb" data-slot="adverb">
           <span class="block-kr"></span>
           <span class="block-rom"></span>
           <span class="block-en"></span>
         </div>
-        <div class="block" id="block-adjective" data-slot="adjective" data-type="adjective">
+        <div class="block" id="block-adjective" data-slot="adjective">
           <span class="block-kr"></span>
           <span class="block-rom"></span>
           <span class="block-en"></span>
@@ -44,15 +42,18 @@
     <div class="result-area">
       <div class="full-sentence" id="full-sentence"></div>
       <div class="translation" id="translation"></div>
-      <button class="tts-btn-large" id="speak-btn" title="Listen to sentence">
-        <svg class="tts-icon" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polygon points="11,5 6,9 2,9 2,15 6,15 11,19"/><path d="M15.54 8.46a5 5 0 010 7.07"/><path d="M19.07 4.93a10 10 0 010 14.14"/></svg>
-        Listen
-      </button>
+      <button class="tts-btn-large" id="speak-btn" title="Listen to sentence">🔊 Listen</button>
     </div>
 
-    <div class="toggle-bar">
+    <div class="rom-toggle">
       <button class="btn-rom active" id="toggle-rom">Aa Hide Romanization</button>
       <button class="btn-rom active" id="toggle-en">EN Hide English</button>
+    </div>
+
+    <div class="slot-labels describe-labels">
+      <span>Subject</span>
+      <span class="adverb-label hidden" id="adverb-label">Adverb</span>
+      <span>Adjective</span>
     </div>
   </div>
 

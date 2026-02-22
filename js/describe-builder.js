@@ -57,10 +57,10 @@
     if (state.showAdverb && adverbs.length > 0) {
       const adv = adverbs[state.adverbIdx];
       renderBlock(blocks.adverb, adv.kr, adv.rom, adv.en);
-      blocks.adverb.classList.remove('slot-hidden');
+      blocks.adverb.classList.remove('hidden');
       document.getElementById('adverb-label').classList.remove('hidden');
     } else {
-      blocks.adverb.classList.add('slot-hidden');
+      blocks.adverb.classList.add('hidden');
       document.getElementById('adverb-label').classList.add('hidden');
     }
 
@@ -156,7 +156,5 @@
   });
 
   /* --- Initial render --- */
-  // Initialize optional adverb block as hidden
-  blocks.adverb.classList.add('slot-hidden');
   update();
 })();

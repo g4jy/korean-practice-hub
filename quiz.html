@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Situation Quiz — Hub</title>
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+  <div class="container builder-page">
+    <header class="page-header">
+      <a href="index.html" class="back-btn">&larr; Back</a>
+      <h1>Situation Quiz</h1>
+    </header>
+
+    <p class="instruction" id="quiz-desc">Choose the best Korean expression for each situation!</p>
+
+    <!-- Progress bar -->
+    <div class="quiz-progress-bar">
+      <div class="quiz-progress-fill" id="progress-fill"></div>
+    </div>
+    <p class="quiz-progress-text" id="progress-text">1 / 10</p>
+
+    <!-- Question card -->
+    <div class="quiz-card" id="quiz-card">
+      <div class="quiz-situation" id="situation-text"></div>
+      <div class="quiz-options" id="options-container"></div>
+      <div class="quiz-feedback hidden" id="feedback">
+        <div class="feedback-icon" id="feedback-icon"></div>
+        <div class="feedback-answer" id="feedback-answer"></div>
+        <div class="feedback-rom" id="feedback-rom"></div>
+        <div class="feedback-explain" id="feedback-explain"></div>
+      </div>
+      <button class="quiz-next-btn hidden" id="next-btn">Next &rarr;</button>
+    </div>
+
+    <!-- Results screen -->
+    <div class="quiz-results hidden" id="results-screen">
+      <div class="results-icon">🎉</div>
+      <h2 id="results-title">Quiz Complete!</h2>
+      <p class="results-score" id="results-score"></p>
+      <div class="results-breakdown" id="results-breakdown"></div>
+      <div class="results-actions">
+        <button class="quiz-restart-btn" id="retry-btn">Try Again</button>
+        <a href="index.html" class="quiz-home-btn">&larr; Home</a>
+      </div>
+    </div>
+
+    <div class="rom-toggle">
+      <button class="btn-rom active" id="toggle-rom">Aa Hide Romanization</button>
+    </div>
+  </div>
+
+  <script src="js/common.js"></script>
+  <script src="js/quiz.js"></script>
+</body>
+</html>

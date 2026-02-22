@@ -82,9 +82,9 @@
     if (state.showTime) {
       const time = times[state.timeIdx];
       renderBlock(blocks.time, time.kr, time.rom, time.en);
-      blocks.time.classList.remove('slot-hidden');
+      blocks.time.classList.remove('hidden');
     } else {
-      blocks.time.classList.add('slot-hidden');
+      blocks.time.classList.add('hidden');
     }
 
     // Place (optional)
@@ -92,9 +92,9 @@
       const place = places[state.placeIdx];
       const pForm = placeParticle(place);
       renderBlock(blocks.place, pForm.kr, pForm.rom, place.en);
-      blocks.place.classList.remove('slot-hidden');
+      blocks.place.classList.remove('hidden');
     } else {
-      blocks.place.classList.add('slot-hidden');
+      blocks.place.classList.add('hidden');
     }
 
     // Object (optional, and depends on verb compatibility)
@@ -104,9 +104,9 @@
       const obj = compat[state.objectIdx];
       const particle = App.particleEulReul(obj.kr);
       renderBlock(blocks.object, obj.kr + particle, obj.rom, obj.en);
-      blocks.object.classList.remove('slot-hidden');
+      blocks.object.classList.remove('hidden');
     } else {
-      blocks.object.classList.add('slot-hidden');
+      blocks.object.classList.add('hidden');
     }
 
     updateSentence();
@@ -241,9 +241,5 @@
   });
 
   /* --- Initial render --- */
-  // Initialize optional blocks as hidden
-  blocks.time.classList.add('slot-hidden');
-  blocks.place.classList.add('slot-hidden');
-  blocks.object.classList.add('slot-hidden');
   update();
 })();

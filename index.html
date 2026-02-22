@@ -4,54 +4,61 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Korean Practice Hub</title>
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="css/styles.css">
 </head>
 <body>
   <div class="container index-page">
     <header class="app-header">
-      <h1>Korean Practice</h1>
-      <p class="subtitle">Choose an activity</p>
+      <h1>Korean Practice <span class="student-name">Hub</span></h1>
+      <p class="subtitle">Choose an activity to practice</p>
     </header>
 
     <div class="pattern-cards">
       <a href="action.html" class="pattern-card card-action">
-        <div class="card-icon-wrap">
-          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M13 2L3 14h9l-1 8 10-12h-9l1-8z"/></svg>
-        </div>
-        <div class="card-body">
-          <h2>Action Sentences</h2>
-          <p class="card-desc">Build sentences with verbs</p>
-          <p class="card-example">&#xC800;&#xB294; &#xCE74;&#xD398;&#xC5D0;&#xC11C; &#xCEE4;&#xD53C;&#xB97C; &#xB9C8;&#xC168;&#xC694;</p>
-        </div>
+        <span class="card-icon">🏃</span>
+        <h2>Action Sentences</h2>
+        <p class="card-desc">Build sentences with verbs</p>
+        <p class="card-example">저는 어제 카페에서 피자를 먹었어요</p>
       </a>
 
       <a href="describe.html" class="pattern-card card-describe">
-        <div class="card-icon-wrap">
-          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><path d="M8 14s1.5 2 4 2 4-2 4-2"/><line x1="9" y1="9" x2="9.01" y2="9"/><line x1="15" y1="9" x2="15.01" y2="9"/></svg>
-        </div>
-        <div class="card-body">
-          <h2>Describe Sentences</h2>
-          <p class="card-desc">Build sentences with adjectives</p>
-          <p class="card-example">&#xCEE4;&#xD53C;&#xAC00; &#xB728;&#xAC70;&#xC6CC;&#xC694;</p>
-        </div>
+        <span class="card-icon">🎨</span>
+        <h2>Describe Sentences</h2>
+        <p class="card-desc">Build sentences with adjectives</p>
+        <p class="card-example">커피가 뜨거워요</p>
+      </a>
+
+      <a href="intro.html" class="pattern-card card-intro">
+        <span class="card-icon">👋</span>
+        <h2>이에요/예요 Builder</h2>
+        <p class="card-desc">Build copula sentences</p>
+        <p class="card-example">저는 학생이에요</p>
+      </a>
+
+      <a href="quiz.html" class="pattern-card card-quiz">
+        <span class="card-icon">🧠</span>
+        <h2>Situation Quiz</h2>
+        <p class="card-desc">Choose the best expression</p>
+        <p class="card-example">What would you say when...?</p>
+      </a>
+
+      <a href="sentences.html" class="pattern-card card-sentences">
+        <span class="card-icon">📖</span>
+        <h2>Sentence Practice</h2>
+        <p class="card-desc">Flashcards with full sentences</p>
+        <p class="card-example">Chapters, patterns, auto-play</p>
       </a>
 
       <a href="flashcards.html" class="pattern-card card-flashcard">
-        <div class="card-icon-wrap">
-          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="3" width="20" height="14" rx="2"/><path d="M8 21h8"/><path d="M12 17v4"/></svg>
-        </div>
-        <div class="card-body">
-          <h2>Flashcards</h2>
-          <p class="card-desc">Review vocabulary with flip cards</p>
-          <p class="card-example">Tap to flip &middot; Swipe to navigate</p>
-        </div>
+        <span class="card-icon">🃏</span>
+        <h2>Vocabulary Flashcards</h2>
+        <p class="card-desc">Review words with flip cards</p>
+        <p class="card-example">Tap to flip, swipe to navigate</p>
       </a>
     </div>
 
     <footer class="app-footer">
-      <p>Tap the blocks to change words and build sentences</p>
+      <p>Tap the blocks to change words and build Korean sentences!</p>
     </footer>
   </div>
   <script src="js/common.js"></script>
