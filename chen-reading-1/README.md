@@ -1,20 +1,24 @@
 ﻿# Chen Reading #1
 
-Static reading, audio, and vocabulary practice app for Chen.
+This previous hub copy redirects to Chen's dedicated repository.
 
 ## Student URL
 
-Use the GitHub Pages URL for this folder:
+Use the dedicated GitHub Pages URL:
+
+`https://g4jy.github.io/korean-practice-chen/`
+
+Previous hub URL:
 
 `https://g4jy.github.io/korean-practice-hub/chen-reading-1/`
 
 ## Local Progress
 
-The app ships with initial word statuses in `data/app_data.js`:
+The dedicated app ships with initial word statuses in `data/app_data.js`:
 
-- Known: 125
-- Unknown: 39
-- Unchecked: 466
+- Known: 163
+- Unknown: 51
+- Unchecked: 416
 - All: 630
 
 When Chen marks words as Known or Unknown, the app saves those changes in the student's browser localStorage. No server-side progress database is required.
