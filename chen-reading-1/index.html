@@ -1,0 +1,134 @@
+<!doctype html>
+<html lang="ko">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Chen Reading #1</title>
+    <link rel="icon" href="data:," />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <div id="app" class="app-shell">
+      <section id="topicView" class="view topic-view" aria-label="Choose reading topic">
+        <header class="app-header">
+          <div class="brand-block">
+            <div class="brand-mark">FK</div>
+            <div>
+              <h1>Chen Reading #1</h1>
+              <p>Flashcards + Audio</p>
+            </div>
+          </div>
+        </header>
+
+        <main class="topic-picker">
+          <div class="screen-intro">
+            <p id="homeSectionLabel" class="section-label">Reading Topics</p>
+            <h2 id="homeHeading">Choose a topic</h2>
+          </div>
+
+          <div class="home-tabs" aria-label="Choose practice area">
+            <button id="showTopicTab" class="home-tab" type="button" aria-pressed="true">Topics</button>
+            <button id="showWordTab" class="home-tab" type="button" aria-pressed="false">Words</button>
+          </div>
+
+          <div id="topicHomePanel" class="home-panel">
+            <div class="topic-actions">
+              <div class="search-wrap">
+                <input id="topicSearch" type="search" placeholder="Search topics" aria-label="Search reading topics" />
+              </div>
+              <button id="openVocab" class="primary-action" type="button" aria-label="Open vocabulary practice">Practice Words</button>
+            </div>
+
+            <div id="topicList" class="topic-grid"></div>
+          </div>
+
+          <div id="wordHomePanel" class="home-panel word-home-panel" hidden>
+            <div class="word-home-controls">
+              <label class="field-label" for="homeWordScope">Word set</label>
+              <select id="homeWordScope" aria-label="Choose word set">
+                <option value="unknown">Unknown only</option>
+                <option value="topic">Selected topic</option>
+                <option value="unchecked">Unchecked only</option>
+                <option value="all">All words</option>
+              </select>
+              <select id="homeTopicSelect" aria-label="Choose topic for words"></select>
+              <button id="homeOpenPractice" class="primary-action" type="button">Practice</button>
+            </div>
+            <p id="homeWordSummary" class="word-home-summary"></p>
+            <div id="homeWordCounts" class="word-count-strip" aria-label="Word status counts"></div>
+            <div id="homeWordPreview" class="word-preview-list"></div>
+          </div>
+        </main>
+      </section>
+
+      <section id="readingView" class="view reading-view" aria-label="Reading text" hidden>
+        <header class="screen-header">
+          <button id="backToTopics" class="back-action" type="button">Topics</button>
+          <div class="screen-title">
+            <p id="topicGroup" class="section-label"></p>
+            <h2 id="topicTitle"></h2>
+          </div>
+          <div class="reading-actions">
+            <button id="openTopicWords" class="ghost-action" type="button" aria-label="Open words for this topic">Words</button>
+            <button id="playTopic" class="primary-action" type="button" aria-label="Play full topic audio">&#9654; Full Audio</button>
+          </div>
+        </header>
+
+        <main class="reading-panel" aria-label="Reading text with sentence audio">
+          <div class="panel-heading">
+            <h3>Reading</h3>
+          </div>
+          <div id="sentenceList" class="sentence-list"></div>
+        </main>
+      </section>
+
+      <section id="vocabView" class="view vocab-view" aria-label="Vocabulary practice" hidden>
+        <header class="screen-header">
+          <button id="backFromVocab" class="back-action" type="button">Topics</button>
+          <div class="screen-title">
+            <p class="section-label">Word Practice</p>
+            <h2>Vocabulary</h2>
+            <p id="vocabSummary" class="compact-summary"></p>
+          </div>
+          <button id="resetProgress" class="ghost-action" type="button" aria-label="Reset flashcard progress">Reset</button>
+        </header>
+
+        <main class="card-panel" aria-label="Vocabulary cards">
+          <div class="card-toolbar">
+            <div>
+              <p class="section-label">Practice Mode</p>
+              <h3 id="vocabModeTitle">Word List</h3>
+            </div>
+            <div class="toolbar-controls">
+              <div class="mode-tabs vocab-mode-tabs" aria-label="Vocabulary mode">
+                <button id="showListMode" class="mode-tab" type="button" aria-pressed="true">List</button>
+                <button id="showCardMode" class="mode-tab" type="button" aria-pressed="false">Cards</button>
+                <button id="startQuiz" class="mode-tab" type="button" aria-label="Start word test" aria-pressed="false">Test</button>
+              </div>
+              <select id="cardFilter" aria-label="Vocabulary filter">
+                <option value="unknown">Unknown only</option>
+                <option value="unchecked">Unchecked only</option>
+                <option value="topic">Selected topic</option>
+                <option value="all">All words</option>
+              </select>
+            </div>
+          </div>
+          <section id="quizPanel" class="quiz-panel" aria-label="Unknown word test" hidden></section>
+          <input id="cardSearch" class="card-search" type="search" placeholder="Search Korean or English" aria-label="Search Korean or English vocabulary" />
+          <div id="cardList" class="card-list"></div>
+        </main>
+      </section>
+
+      <footer id="audioDock" class="audio-dock" aria-label="Audio player" hidden>
+        <div class="audio-meta">
+          <span id="audioState">Ready</span>
+          <strong id="audioLabel">Audio</strong>
+        </div>
+        <audio id="audioPlayer" class="audio-player" controls preload="metadata"></audio>
+      </footer>
+    </div>
+
+    <script src="data/app_data.js"></script>
+    <script src="app.js"></script>
+  </body>
+</html>

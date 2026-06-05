@@ -1,0 +1,9 @@
+{
+  "voice": "ko-KR-SunHiNeural",
+  "rate": "-5%",
+  "requested": 550,
+  "generated": 0,
+  "exists": 550,
+  "failures": [],
+  "missingAfterRun": []
+}

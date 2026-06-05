@@ -1,0 +1,4358 @@
+{
+  "voice": "ko-KR-SunHiNeural",
+  "rate": "-5%",
+  "createdAt": "2026-06-02T15:31:15",
+  "count": 550,
+  "items": [
+    {
+      "id": "topic_001",
+      "kind": "topic",
+      "topicId": 1,
+      "text": "우리 집. 우리 집은 작은 집이에요. 하지만 따뜻해요. 방이 두 개 있어요. 거실도 있고 부엌도 있어요. 화장실은 한 개예요.  저는 우리 집이 좋아요. 가족이 모두 같이 살아요. 저녁에 함께 밥을 먹어요. 이야기도 많이 해요. 우리 집은 행복한 집이에요. ",
+      "path": "audio/topics/topic_001.mp3"
+    },
+    {
+      "id": "t001_s01",
+      "kind": "sentence",
+      "topicId": 1,
+      "sentenceIndex": 1,
+      "text": "우리 집은 작은 집이에요.",
+      "path": "audio/sentences/topic_001_s01.mp3"
+    },
+    {
+      "id": "t001_s02",
+      "kind": "sentence",
+      "topicId": 1,
+      "sentenceIndex": 2,
+      "text": "하지만 따뜻해요.",
+      "path": "audio/sentences/topic_001_s02.mp3"
+    },
+    {
+      "id": "t001_s03",
+      "kind": "sentence",
+      "topicId": 1,
+      "sentenceIndex": 3,
+      "text": "방이 두 개 있어요.",
+      "path": "audio/sentences/topic_001_s03.mp3"
+    },
+    {
+      "id": "t001_s04",
+      "kind": "sentence",
+      "topicId": 1,
+      "sentenceIndex": 4,
+      "text": "거실도 있고 부엌도 있어요.",
+      "path": "audio/sentences/topic_001_s04.mp3"
+    },
+    {
+      "id": "t001_s05",
+      "kind": "sentence",
+      "topicId": 1,
+      "sentenceIndex": 5,
+      "text": "화장실은 한 개예요.",
+      "path": "audio/sentences/topic_001_s05.mp3"
+    },
+    {
+      "id": "t001_s06",
+      "kind": "sentence",
+      "topicId": 1,
+      "sentenceIndex": 6,
+      "text": "저는 우리 집이 좋아요.",
+      "path": "audio/sentences/topic_001_s06.mp3"
+    },
+    {
+      "id": "t001_s07",
+      "kind": "sentence",
+      "topicId": 1,
+      "sentenceIndex": 7,
+      "text": "가족이 모두 같이 살아요.",
+      "path": "audio/sentences/topic_001_s07.mp3"
+    },
+    {
+      "id": "t001_s08",
+      "kind": "sentence",
+      "topicId": 1,
+      "sentenceIndex": 8,
+      "text": "저녁에 함께 밥을 먹어요.",
+      "path": "audio/sentences/topic_001_s08.mp3"
+    },
+    {
+      "id": "t001_s09",
+      "kind": "sentence",
+      "topicId": 1,
+      "sentenceIndex": 9,
+      "text": "이야기도 많이 해요.",
+      "path": "audio/sentences/topic_001_s09.mp3"
+    },
+    {
+      "id": "t001_s10",
+      "kind": "sentence",
+      "topicId": 1,
+      "sentenceIndex": 10,
+      "text": "우리 집은 행복한 집이에요.",
+      "path": "audio/sentences/topic_001_s10.mp3"
+    },
+    {
+      "id": "topic_002",
+      "kind": "topic",
+      "topicId": 2,
+      "text": "거실. 거실은 우리 집에서 가장 넓어요. 가운데에 소파가 있어요. 소파 앞에는 텔레비전이 있어요. 옆에 작은 책장도 있어요. 벽에 가족 사진이 걸려 있어요.  저녁에 거실에 다 같이 모여요. 텔레비전을 같이 봐요. 동생은 바닥에 앉아서 그림을 그려요. 엄마는 책을 읽어요. 거실은 따뜻하고 편한 곳이에요. ",
+      "path": "audio/topics/topic_002.mp3"
+    },
+    {
+      "id": "t002_s01",
+      "kind": "sentence",
+      "topicId": 2,
+      "sentenceIndex": 1,
+      "text": "거실은 우리 집에서 가장 넓어요.",
+      "path": "audio/sentences/topic_002_s01.mp3"
+    },
+    {
+      "id": "t002_s02",
+      "kind": "sentence",
+      "topicId": 2,
+      "sentenceIndex": 2,
+      "text": "가운데에 소파가 있어요.",
+      "path": "audio/sentences/topic_002_s02.mp3"
+    },
+    {
+      "id": "t002_s03",
+      "kind": "sentence",
+      "topicId": 2,
+      "sentenceIndex": 3,
+      "text": "소파 앞에는 텔레비전이 있어요.",
+      "path": "audio/sentences/topic_002_s03.mp3"
+    },
+    {
+      "id": "t002_s04",
+      "kind": "sentence",
+      "topicId": 2,
+      "sentenceIndex": 4,
+      "text": "옆에 작은 책장도 있어요.",
+      "path": "audio/sentences/topic_002_s04.mp3"
+    },
+    {
+      "id": "t002_s05",
+      "kind": "sentence",
+      "topicId": 2,
+      "sentenceIndex": 5,
+      "text": "벽에 가족 사진이 걸려 있어요.",
+      "path": "audio/sentences/topic_002_s05.mp3"
+    },
+    {
+      "id": "t002_s06",
+      "kind": "sentence",
+      "topicId": 2,
+      "sentenceIndex": 6,
+      "text": "저녁에 거실에 다 같이 모여요.",
+      "path": "audio/sentences/topic_002_s06.mp3"
+    },
+    {
+      "id": "t002_s07",
+      "kind": "sentence",
+      "topicId": 2,
+      "sentenceIndex": 7,
+      "text": "텔레비전을 같이 봐요.",
+      "path": "audio/sentences/topic_002_s07.mp3"
+    },
+    {
+      "id": "t002_s08",
+      "kind": "sentence",
+      "topicId": 2,
+      "sentenceIndex": 8,
+      "text": "동생은 바닥에 앉아서 그림을 그려요.",
+      "path": "audio/sentences/topic_002_s08.mp3"
+    },
+    {
+      "id": "t002_s09",
+      "kind": "sentence",
+      "topicId": 2,
+      "sentenceIndex": 9,
+      "text": "엄마는 책을 읽어요.",
+      "path": "audio/sentences/topic_002_s09.mp3"
+    },
+    {
+      "id": "t002_s10",
+      "kind": "sentence",
+      "topicId": 2,
+      "sentenceIndex": 10,
+      "text": "거실은 따뜻하고 편한 곳이에요.",
+      "path": "audio/sentences/topic_002_s10.mp3"
+    },
+    {
+      "id": "topic_003",
+      "kind": "topic",
+      "topicId": 3,
+      "text": "화장실. 화장실에는 세면대가 있어요. 거울도 있어요. 변기랑 욕조도 있어요. 모두 흰색이에요. 깨끗하면 기분이 좋아요.  저는 아침에 화장실에서 세수를 해요. 이도 닦아요. 자기 전에도 또 가요. 손도 자주 씻어요. 화장실은 매일 가는 곳이에요. ",
+      "path": "audio/topics/topic_003.mp3"
+    },
+    {
+      "id": "t003_s01",
+      "kind": "sentence",
+      "topicId": 3,
+      "sentenceIndex": 1,
+      "text": "화장실에는 세면대가 있어요.",
+      "path": "audio/sentences/topic_003_s01.mp3"
+    },
+    {
+      "id": "t003_s02",
+      "kind": "sentence",
+      "topicId": 3,
+      "sentenceIndex": 2,
+      "text": "거울도 있어요.",
+      "path": "audio/sentences/topic_003_s02.mp3"
+    },
+    {
+      "id": "t003_s03",
+      "kind": "sentence",
+      "topicId": 3,
+      "sentenceIndex": 3,
+      "text": "변기랑 욕조도 있어요.",
+      "path": "audio/sentences/topic_003_s03.mp3"
+    },
+    {
+      "id": "t003_s04",
+      "kind": "sentence",
+      "topicId": 3,
+      "sentenceIndex": 4,
+      "text": "모두 흰색이에요.",
+      "path": "audio/sentences/topic_003_s04.mp3"
+    },
+    {
+      "id": "t003_s05",
+      "kind": "sentence",
+      "topicId": 3,
+      "sentenceIndex": 5,
+      "text": "깨끗하면 기분이 좋아요.",
+      "path": "audio/sentences/topic_003_s05.mp3"
+    },
+    {
+      "id": "t003_s06",
+      "kind": "sentence",
+      "topicId": 3,
+      "sentenceIndex": 6,
+      "text": "저는 아침에 화장실에서 세수를 해요.",
+      "path": "audio/sentences/topic_003_s06.mp3"
+    },
+    {
+      "id": "t003_s07",
+      "kind": "sentence",
+      "topicId": 3,
+      "sentenceIndex": 7,
+      "text": "이도 닦아요.",
+      "path": "audio/sentences/topic_003_s07.mp3"
+    },
+    {
+      "id": "t003_s08",
+      "kind": "sentence",
+      "topicId": 3,
+      "sentenceIndex": 8,
+      "text": "자기 전에도 또 가요.",
+      "path": "audio/sentences/topic_003_s08.mp3"
+    },
+    {
+      "id": "t003_s09",
+      "kind": "sentence",
+      "topicId": 3,
+      "sentenceIndex": 9,
+      "text": "손도 자주 씻어요.",
+      "path": "audio/sentences/topic_003_s09.mp3"
+    },
+    {
+      "id": "t003_s10",
+      "kind": "sentence",
+      "topicId": 3,
+      "sentenceIndex": 10,
+      "text": "화장실은 매일 가는 곳이에요.",
+      "path": "audio/sentences/topic_003_s10.mp3"
+    },
+    {
+      "id": "topic_004",
+      "kind": "topic",
+      "topicId": 4,
+      "text": "내 방. 이 방은 제 방이에요. 침대가 하나 있어요. 책상도 있고 옷장도 있어요. 창문이 커서 햇빛이 잘 들어와요. 벽은 하늘색이에요.  저는 제 방을 좋아해요. 여기서 책을 읽어요. 숙제도 해요. 친구가 오면 같이 놀아요. 잘 때는 불을 끄고 자요. ",
+      "path": "audio/topics/topic_004.mp3"
+    },
+    {
+      "id": "t004_s01",
+      "kind": "sentence",
+      "topicId": 4,
+      "sentenceIndex": 1,
+      "text": "이 방은 제 방이에요.",
+      "path": "audio/sentences/topic_004_s01.mp3"
+    },
+    {
+      "id": "t004_s02",
+      "kind": "sentence",
+      "topicId": 4,
+      "sentenceIndex": 2,
+      "text": "침대가 하나 있어요.",
+      "path": "audio/sentences/topic_004_s02.mp3"
+    },
+    {
+      "id": "t004_s03",
+      "kind": "sentence",
+      "topicId": 4,
+      "sentenceIndex": 3,
+      "text": "책상도 있고 옷장도 있어요.",
+      "path": "audio/sentences/topic_004_s03.mp3"
+    },
+    {
+      "id": "t004_s04",
+      "kind": "sentence",
+      "topicId": 4,
+      "sentenceIndex": 4,
+      "text": "창문이 커서 햇빛이 잘 들어와요.",
+      "path": "audio/sentences/topic_004_s04.mp3"
+    },
+    {
+      "id": "t004_s05",
+      "kind": "sentence",
+      "topicId": 4,
+      "sentenceIndex": 5,
+      "text": "벽은 하늘색이에요.",
+      "path": "audio/sentences/topic_004_s05.mp3"
+    },
+    {
+      "id": "t004_s06",
+      "kind": "sentence",
+      "topicId": 4,
+      "sentenceIndex": 6,
+      "text": "저는 제 방을 좋아해요.",
+      "path": "audio/sentences/topic_004_s06.mp3"
+    },
+    {
+      "id": "t004_s07",
+      "kind": "sentence",
+      "topicId": 4,
+      "sentenceIndex": 7,
+      "text": "여기서 책을 읽어요.",
+      "path": "audio/sentences/topic_004_s07.mp3"
+    },
+    {
+      "id": "t004_s08",
+      "kind": "sentence",
+      "topicId": 4,
+      "sentenceIndex": 8,
+      "text": "숙제도 해요.",
+      "path": "audio/sentences/topic_004_s08.mp3"
+    },
+    {
+      "id": "t004_s09",
+      "kind": "sentence",
+      "topicId": 4,
+      "sentenceIndex": 9,
+      "text": "친구가 오면 같이 놀아요.",
+      "path": "audio/sentences/topic_004_s09.mp3"
+    },
+    {
+      "id": "t004_s10",
+      "kind": "sentence",
+      "topicId": 4,
+      "sentenceIndex": 10,
+      "text": "잘 때는 불을 끄고 자요.",
+      "path": "audio/sentences/topic_004_s10.mp3"
+    },
+    {
+      "id": "topic_005",
+      "kind": "topic",
+      "topicId": 5,
+      "text": "문. 문은 집에 들어갈 때 열어요. 나갈 때도 열어요. 손잡이를 잡고 돌려요. 그러면 문이 열려요. 닫을 때는 조심해서 밀어요.  우리 집 문은 갈색이에요. 무겁지만 잘 열려요. 가끔 바람이 불면 문이 닫혀요. 그때 소리가 나요. 그러면 깜짝 놀라요. ",
+      "path": "audio/topics/topic_005.mp3"
+    },
+    {
+      "id": "t005_s01",
+      "kind": "sentence",
+      "topicId": 5,
+      "sentenceIndex": 1,
+      "text": "문은 집에 들어갈 때 열어요.",
+      "path": "audio/sentences/topic_005_s01.mp3"
+    },
+    {
+      "id": "t005_s02",
+      "kind": "sentence",
+      "topicId": 5,
+      "sentenceIndex": 2,
+      "text": "나갈 때도 열어요.",
+      "path": "audio/sentences/topic_005_s02.mp3"
+    },
+    {
+      "id": "t005_s03",
+      "kind": "sentence",
+      "topicId": 5,
+      "sentenceIndex": 3,
+      "text": "손잡이를 잡고 돌려요.",
+      "path": "audio/sentences/topic_005_s03.mp3"
+    },
+    {
+      "id": "t005_s04",
+      "kind": "sentence",
+      "topicId": 5,
+      "sentenceIndex": 4,
+      "text": "그러면 문이 열려요.",
+      "path": "audio/sentences/topic_005_s04.mp3"
+    },
+    {
+      "id": "t005_s05",
+      "kind": "sentence",
+      "topicId": 5,
+      "sentenceIndex": 5,
+      "text": "닫을 때는 조심해서 밀어요.",
+      "path": "audio/sentences/topic_005_s05.mp3"
+    },
+    {
+      "id": "t005_s06",
+      "kind": "sentence",
+      "topicId": 5,
+      "sentenceIndex": 6,
+      "text": "우리 집 문은 갈색이에요.",
+      "path": "audio/sentences/topic_005_s06.mp3"
+    },
+    {
+      "id": "t005_s07",
+      "kind": "sentence",
+      "topicId": 5,
+      "sentenceIndex": 7,
+      "text": "무겁지만 잘 열려요.",
+      "path": "audio/sentences/topic_005_s07.mp3"
+    },
+    {
+      "id": "t005_s08",
+      "kind": "sentence",
+      "topicId": 5,
+      "sentenceIndex": 8,
+      "text": "가끔 바람이 불면 문이 닫혀요.",
+      "path": "audio/sentences/topic_005_s08.mp3"
+    },
+    {
+      "id": "t005_s09",
+      "kind": "sentence",
+      "topicId": 5,
+      "sentenceIndex": 9,
+      "text": "그때 소리가 나요.",
+      "path": "audio/sentences/topic_005_s09.mp3"
+    },
+    {
+      "id": "t005_s10",
+      "kind": "sentence",
+      "topicId": 5,
+      "sentenceIndex": 10,
+      "text": "그러면 깜짝 놀라요.",
+      "path": "audio/sentences/topic_005_s10.mp3"
+    },
+    {
+      "id": "topic_006",
+      "kind": "topic",
+      "topicId": 6,
+      "text": "창문. 창문으로 밖을 봐요. 하늘이 보여요. 나무도 보여요. 가끔 새가 날아가요. 사람들이 지나가는 것도 보여요.  날씨가 좋으면 창문을 열어요. 시원한 바람이 들어와요. 비가 오는 날은 닫아요. 안 그러면 안이 다 젖어요. 창문은 정말 편리해요. ",
+      "path": "audio/topics/topic_006.mp3"
+    },
+    {
+      "id": "t006_s01",
+      "kind": "sentence",
+      "topicId": 6,
+      "sentenceIndex": 1,
+      "text": "창문으로 밖을 봐요.",
+      "path": "audio/sentences/topic_006_s01.mp3"
+    },
+    {
+      "id": "t006_s02",
+      "kind": "sentence",
+      "topicId": 6,
+      "sentenceIndex": 2,
+      "text": "하늘이 보여요.",
+      "path": "audio/sentences/topic_006_s02.mp3"
+    },
+    {
+      "id": "t006_s03",
+      "kind": "sentence",
+      "topicId": 6,
+      "sentenceIndex": 3,
+      "text": "나무도 보여요.",
+      "path": "audio/sentences/topic_006_s03.mp3"
+    },
+    {
+      "id": "t006_s04",
+      "kind": "sentence",
+      "topicId": 6,
+      "sentenceIndex": 4,
+      "text": "가끔 새가 날아가요.",
+      "path": "audio/sentences/topic_006_s04.mp3"
+    },
+    {
+      "id": "t006_s05",
+      "kind": "sentence",
+      "topicId": 6,
+      "sentenceIndex": 5,
+      "text": "사람들이 지나가는 것도 보여요.",
+      "path": "audio/sentences/topic_006_s05.mp3"
+    },
+    {
+      "id": "t006_s06",
+      "kind": "sentence",
+      "topicId": 6,
+      "sentenceIndex": 6,
+      "text": "날씨가 좋으면 창문을 열어요.",
+      "path": "audio/sentences/topic_006_s06.mp3"
+    },
+    {
+      "id": "t006_s07",
+      "kind": "sentence",
+      "topicId": 6,
+      "sentenceIndex": 7,
+      "text": "시원한 바람이 들어와요.",
+      "path": "audio/sentences/topic_006_s07.mp3"
+    },
+    {
+      "id": "t006_s08",
+      "kind": "sentence",
+      "topicId": 6,
+      "sentenceIndex": 8,
+      "text": "비가 오는 날은 닫아요.",
+      "path": "audio/sentences/topic_006_s08.mp3"
+    },
+    {
+      "id": "t006_s09",
+      "kind": "sentence",
+      "topicId": 6,
+      "sentenceIndex": 9,
+      "text": "안 그러면 안이 다 젖어요.",
+      "path": "audio/sentences/topic_006_s09.mp3"
+    },
+    {
+      "id": "t006_s10",
+      "kind": "sentence",
+      "topicId": 6,
+      "sentenceIndex": 10,
+      "text": "창문은 정말 편리해요.",
+      "path": "audio/sentences/topic_006_s10.mp3"
+    },
+    {
+      "id": "topic_007",
+      "kind": "topic",
+      "topicId": 7,
+      "text": "침대. 저는 침대에서 자요. 침대 위에 이불이 있어요. 베개도 두 개 있어요. 인형도 같이 자요. 침대는 정말 편해요.  밤이 되면 침대에 누워요. 책을 잠깐 읽어요. 그리고 불을 꺼요. 눈을 감으면 잠이 와요. 아침까지 잘 자요. ",
+      "path": "audio/topics/topic_007.mp3"
+    },
+    {
+      "id": "t007_s01",
+      "kind": "sentence",
+      "topicId": 7,
+      "sentenceIndex": 1,
+      "text": "저는 침대에서 자요.",
+      "path": "audio/sentences/topic_007_s01.mp3"
+    },
+    {
+      "id": "t007_s02",
+      "kind": "sentence",
+      "topicId": 7,
+      "sentenceIndex": 2,
+      "text": "침대 위에 이불이 있어요.",
+      "path": "audio/sentences/topic_007_s02.mp3"
+    },
+    {
+      "id": "t007_s03",
+      "kind": "sentence",
+      "topicId": 7,
+      "sentenceIndex": 3,
+      "text": "베개도 두 개 있어요.",
+      "path": "audio/sentences/topic_007_s03.mp3"
+    },
+    {
+      "id": "t007_s04",
+      "kind": "sentence",
+      "topicId": 7,
+      "sentenceIndex": 4,
+      "text": "인형도 같이 자요.",
+      "path": "audio/sentences/topic_007_s04.mp3"
+    },
+    {
+      "id": "t007_s05",
+      "kind": "sentence",
+      "topicId": 7,
+      "sentenceIndex": 5,
+      "text": "침대는 정말 편해요.",
+      "path": "audio/sentences/topic_007_s05.mp3"
+    },
+    {
+      "id": "t007_s06",
+      "kind": "sentence",
+      "topicId": 7,
+      "sentenceIndex": 6,
+      "text": "밤이 되면 침대에 누워요.",
+      "path": "audio/sentences/topic_007_s06.mp3"
+    },
+    {
+      "id": "t007_s07",
+      "kind": "sentence",
+      "topicId": 7,
+      "sentenceIndex": 7,
+      "text": "책을 잠깐 읽어요.",
+      "path": "audio/sentences/topic_007_s07.mp3"
+    },
+    {
+      "id": "t007_s08",
+      "kind": "sentence",
+      "topicId": 7,
+      "sentenceIndex": 8,
+      "text": "그리고 불을 꺼요.",
+      "path": "audio/sentences/topic_007_s08.mp3"
+    },
+    {
+      "id": "t007_s09",
+      "kind": "sentence",
+      "topicId": 7,
+      "sentenceIndex": 9,
+      "text": "눈을 감으면 잠이 와요.",
+      "path": "audio/sentences/topic_007_s09.mp3"
+    },
+    {
+      "id": "t007_s10",
+      "kind": "sentence",
+      "topicId": 7,
+      "sentenceIndex": 10,
+      "text": "아침까지 잘 자요.",
+      "path": "audio/sentences/topic_007_s10.mp3"
+    },
+    {
+      "id": "topic_008",
+      "kind": "topic",
+      "topicId": 8,
+      "text": "베개. 베개는 잘 때 머리를 두는 거예요. 아주 부드러워요. 제 베개는 작은 편이에요. 모양은 네모예요. 하얀색 베개를 좋아해요.  베개 안에는 솜이 들어 있어요. 그래서 가벼워요. 가끔 베개를 안고 잠을 자요. 베개가 없으면 잠이 잘 안 와요. 여행 갈 때도 작은 베개를 챙겨요. ",
+      "path": "audio/topics/topic_008.mp3"
+    },
+    {
+      "id": "t008_s01",
+      "kind": "sentence",
+      "topicId": 8,
+      "sentenceIndex": 1,
+      "text": "베개는 잘 때 머리를 두는 거예요.",
+      "path": "audio/sentences/topic_008_s01.mp3"
+    },
+    {
+      "id": "t008_s02",
+      "kind": "sentence",
+      "topicId": 8,
+      "sentenceIndex": 2,
+      "text": "아주 부드러워요.",
+      "path": "audio/sentences/topic_008_s02.mp3"
+    },
+    {
+      "id": "t008_s03",
+      "kind": "sentence",
+      "topicId": 8,
+      "sentenceIndex": 3,
+      "text": "제 베개는 작은 편이에요.",
+      "path": "audio/sentences/topic_008_s03.mp3"
+    },
+    {
+      "id": "t008_s04",
+      "kind": "sentence",
+      "topicId": 8,
+      "sentenceIndex": 4,
+      "text": "모양은 네모예요.",
+      "path": "audio/sentences/topic_008_s04.mp3"
+    },
+    {
+      "id": "t008_s05",
+      "kind": "sentence",
+      "topicId": 8,
+      "sentenceIndex": 5,
+      "text": "하얀색 베개를 좋아해요.",
+      "path": "audio/sentences/topic_008_s05.mp3"
+    },
+    {
+      "id": "t008_s06",
+      "kind": "sentence",
+      "topicId": 8,
+      "sentenceIndex": 6,
+      "text": "베개 안에는 솜이 들어 있어요.",
+      "path": "audio/sentences/topic_008_s06.mp3"
+    },
+    {
+      "id": "t008_s07",
+      "kind": "sentence",
+      "topicId": 8,
+      "sentenceIndex": 7,
+      "text": "그래서 가벼워요.",
+      "path": "audio/sentences/topic_008_s07.mp3"
+    },
+    {
+      "id": "t008_s08",
+      "kind": "sentence",
+      "topicId": 8,
+      "sentenceIndex": 8,
+      "text": "가끔 베개를 안고 잠을 자요.",
+      "path": "audio/sentences/topic_008_s08.mp3"
+    },
+    {
+      "id": "t008_s09",
+      "kind": "sentence",
+      "topicId": 8,
+      "sentenceIndex": 9,
+      "text": "베개가 없으면 잠이 잘 안 와요.",
+      "path": "audio/sentences/topic_008_s09.mp3"
+    },
+    {
+      "id": "t008_s10",
+      "kind": "sentence",
+      "topicId": 8,
+      "sentenceIndex": 10,
+      "text": "여행 갈 때도 작은 베개를 챙겨요.",
+      "path": "audio/sentences/topic_008_s10.mp3"
+    },
+    {
+      "id": "topic_009",
+      "kind": "topic",
+      "topicId": 9,
+      "text": "이불. 이불은 잘 때 덮어요. 여름 이불은 얇아요. 겨울 이불은 두꺼워요. 두꺼운 이불은 따뜻해요. 그 안에 들어가면 정말 좋아요.  저는 이불을 좋아해요. 추운 날에는 이불 속이 천국이에요. 동생이랑 같이 이불 속에 들어가기도 해요. 그러면 더 따뜻해요. 이불은 우리의 친구예요. ",
+      "path": "audio/topics/topic_009.mp3"
+    },
+    {
+      "id": "t009_s01",
+      "kind": "sentence",
+      "topicId": 9,
+      "sentenceIndex": 1,
+      "text": "이불은 잘 때 덮어요.",
+      "path": "audio/sentences/topic_009_s01.mp3"
+    },
+    {
+      "id": "t009_s02",
+      "kind": "sentence",
+      "topicId": 9,
+      "sentenceIndex": 2,
+      "text": "여름 이불은 얇아요.",
+      "path": "audio/sentences/topic_009_s02.mp3"
+    },
+    {
+      "id": "t009_s03",
+      "kind": "sentence",
+      "topicId": 9,
+      "sentenceIndex": 3,
+      "text": "겨울 이불은 두꺼워요.",
+      "path": "audio/sentences/topic_009_s03.mp3"
+    },
+    {
+      "id": "t009_s04",
+      "kind": "sentence",
+      "topicId": 9,
+      "sentenceIndex": 4,
+      "text": "두꺼운 이불은 따뜻해요.",
+      "path": "audio/sentences/topic_009_s04.mp3"
+    },
+    {
+      "id": "t009_s05",
+      "kind": "sentence",
+      "topicId": 9,
+      "sentenceIndex": 5,
+      "text": "그 안에 들어가면 정말 좋아요.",
+      "path": "audio/sentences/topic_009_s05.mp3"
+    },
+    {
+      "id": "t009_s06",
+      "kind": "sentence",
+      "topicId": 9,
+      "sentenceIndex": 6,
+      "text": "저는 이불을 좋아해요.",
+      "path": "audio/sentences/topic_009_s06.mp3"
+    },
+    {
+      "id": "t009_s07",
+      "kind": "sentence",
+      "topicId": 9,
+      "sentenceIndex": 7,
+      "text": "추운 날에는 이불 속이 천국이에요.",
+      "path": "audio/sentences/topic_009_s07.mp3"
+    },
+    {
+      "id": "t009_s08",
+      "kind": "sentence",
+      "topicId": 9,
+      "sentenceIndex": 8,
+      "text": "동생이랑 같이 이불 속에 들어가기도 해요.",
+      "path": "audio/sentences/topic_009_s08.mp3"
+    },
+    {
+      "id": "t009_s09",
+      "kind": "sentence",
+      "topicId": 9,
+      "sentenceIndex": 9,
+      "text": "그러면 더 따뜻해요.",
+      "path": "audio/sentences/topic_009_s09.mp3"
+    },
+    {
+      "id": "t009_s10",
+      "kind": "sentence",
+      "topicId": 9,
+      "sentenceIndex": 10,
+      "text": "이불은 우리의 친구예요.",
+      "path": "audio/sentences/topic_009_s10.mp3"
+    },
+    {
+      "id": "topic_010",
+      "kind": "topic",
+      "topicId": 10,
+      "text": "의자. 의자는 앉을 때 써요. 우리 집에 의자가 많아요. 식탁에 네 개 있어요. 책상 앞에도 하나 있어요. 의자가 없으면 불편해요.  의자에 앉으면 다리가 편해요. 오래 서 있을 때 의자가 필요해요. 어떤 의자는 부드러워요. 어떤 의자는 딱딱해요. 저는 부드러운 의자를 좋아해요. ",
+      "path": "audio/topics/topic_010.mp3"
+    },
+    {
+      "id": "t010_s01",
+      "kind": "sentence",
+      "topicId": 10,
+      "sentenceIndex": 1,
+      "text": "의자는 앉을 때 써요.",
+      "path": "audio/sentences/topic_010_s01.mp3"
+    },
+    {
+      "id": "t010_s02",
+      "kind": "sentence",
+      "topicId": 10,
+      "sentenceIndex": 2,
+      "text": "우리 집에 의자가 많아요.",
+      "path": "audio/sentences/topic_010_s02.mp3"
+    },
+    {
+      "id": "t010_s03",
+      "kind": "sentence",
+      "topicId": 10,
+      "sentenceIndex": 3,
+      "text": "식탁에 네 개 있어요.",
+      "path": "audio/sentences/topic_010_s03.mp3"
+    },
+    {
+      "id": "t010_s04",
+      "kind": "sentence",
+      "topicId": 10,
+      "sentenceIndex": 4,
+      "text": "책상 앞에도 하나 있어요.",
+      "path": "audio/sentences/topic_010_s04.mp3"
+    },
+    {
+      "id": "t010_s05",
+      "kind": "sentence",
+      "topicId": 10,
+      "sentenceIndex": 5,
+      "text": "의자가 없으면 불편해요.",
+      "path": "audio/sentences/topic_010_s05.mp3"
+    },
+    {
+      "id": "t010_s06",
+      "kind": "sentence",
+      "topicId": 10,
+      "sentenceIndex": 6,
+      "text": "의자에 앉으면 다리가 편해요.",
+      "path": "audio/sentences/topic_010_s06.mp3"
+    },
+    {
+      "id": "t010_s07",
+      "kind": "sentence",
+      "topicId": 10,
+      "sentenceIndex": 7,
+      "text": "오래 서 있을 때 의자가 필요해요.",
+      "path": "audio/sentences/topic_010_s07.mp3"
+    },
+    {
+      "id": "t010_s08",
+      "kind": "sentence",
+      "topicId": 10,
+      "sentenceIndex": 8,
+      "text": "어떤 의자는 부드러워요.",
+      "path": "audio/sentences/topic_010_s08.mp3"
+    },
+    {
+      "id": "t010_s09",
+      "kind": "sentence",
+      "topicId": 10,
+      "sentenceIndex": 9,
+      "text": "어떤 의자는 딱딱해요.",
+      "path": "audio/sentences/topic_010_s09.mp3"
+    },
+    {
+      "id": "t010_s10",
+      "kind": "sentence",
+      "topicId": 10,
+      "sentenceIndex": 10,
+      "text": "저는 부드러운 의자를 좋아해요.",
+      "path": "audio/sentences/topic_010_s10.mp3"
+    },
+    {
+      "id": "topic_011",
+      "kind": "topic",
+      "topicId": 11,
+      "text": "책상. 책상은 공부할 때 써요. 위에 책을 놓아요. 연필도 있어요. 공책도 있어요. 컴퓨터도 책상 위에 있어요.  제 책상은 갈색이에요. 서랍이 두 개 있어요. 서랍 안에 학용품을 넣어요. 책상이 깨끗하면 공부가 잘돼요. 그래서 자주 정리해요. ",
+      "path": "audio/topics/topic_011.mp3"
+    },
+    {
+      "id": "t011_s01",
+      "kind": "sentence",
+      "topicId": 11,
+      "sentenceIndex": 1,
+      "text": "책상은 공부할 때 써요.",
+      "path": "audio/sentences/topic_011_s01.mp3"
+    },
+    {
+      "id": "t011_s02",
+      "kind": "sentence",
+      "topicId": 11,
+      "sentenceIndex": 2,
+      "text": "위에 책을 놓아요.",
+      "path": "audio/sentences/topic_011_s02.mp3"
+    },
+    {
+      "id": "t011_s03",
+      "kind": "sentence",
+      "topicId": 11,
+      "sentenceIndex": 3,
+      "text": "연필도 있어요.",
+      "path": "audio/sentences/topic_011_s03.mp3"
+    },
+    {
+      "id": "t011_s04",
+      "kind": "sentence",
+      "topicId": 11,
+      "sentenceIndex": 4,
+      "text": "공책도 있어요.",
+      "path": "audio/sentences/topic_011_s04.mp3"
+    },
+    {
+      "id": "t011_s05",
+      "kind": "sentence",
+      "topicId": 11,
+      "sentenceIndex": 5,
+      "text": "컴퓨터도 책상 위에 있어요.",
+      "path": "audio/sentences/topic_011_s05.mp3"
+    },
+    {
+      "id": "t011_s06",
+      "kind": "sentence",
+      "topicId": 11,
+      "sentenceIndex": 6,
+      "text": "제 책상은 갈색이에요.",
+      "path": "audio/sentences/topic_011_s06.mp3"
+    },
+    {
+      "id": "t011_s07",
+      "kind": "sentence",
+      "topicId": 11,
+      "sentenceIndex": 7,
+      "text": "서랍이 두 개 있어요.",
+      "path": "audio/sentences/topic_011_s07.mp3"
+    },
+    {
+      "id": "t011_s08",
+      "kind": "sentence",
+      "topicId": 11,
+      "sentenceIndex": 8,
+      "text": "서랍 안에 학용품을 넣어요.",
+      "path": "audio/sentences/topic_011_s08.mp3"
+    },
+    {
+      "id": "t011_s09",
+      "kind": "sentence",
+      "topicId": 11,
+      "sentenceIndex": 9,
+      "text": "책상이 깨끗하면 공부가 잘돼요.",
+      "path": "audio/sentences/topic_011_s09.mp3"
+    },
+    {
+      "id": "t011_s10",
+      "kind": "sentence",
+      "topicId": 11,
+      "sentenceIndex": 10,
+      "text": "그래서 자주 정리해요.",
+      "path": "audio/sentences/topic_011_s10.mp3"
+    },
+    {
+      "id": "topic_012",
+      "kind": "topic",
+      "topicId": 12,
+      "text": "책. 책은 읽는 거예요. 책 안에는 글이 있어요. 그림도 있어요. 책을 읽으면 새로운 것을 알게 돼요. 그래서 책이 좋아요.  저는 동화책을 좋아해요. 재미있는 이야기가 많아요. 잠자기 전에 한 권씩 읽어요. 도서관에서 빌려 오기도 해요. 책은 정말 좋은 친구예요. ",
+      "path": "audio/topics/topic_012.mp3"
+    },
+    {
+      "id": "t012_s01",
+      "kind": "sentence",
+      "topicId": 12,
+      "sentenceIndex": 1,
+      "text": "책은 읽는 거예요.",
+      "path": "audio/sentences/topic_012_s01.mp3"
+    },
+    {
+      "id": "t012_s02",
+      "kind": "sentence",
+      "topicId": 12,
+      "sentenceIndex": 2,
+      "text": "책 안에는 글이 있어요.",
+      "path": "audio/sentences/topic_012_s02.mp3"
+    },
+    {
+      "id": "t012_s03",
+      "kind": "sentence",
+      "topicId": 12,
+      "sentenceIndex": 3,
+      "text": "그림도 있어요.",
+      "path": "audio/sentences/topic_012_s03.mp3"
+    },
+    {
+      "id": "t012_s04",
+      "kind": "sentence",
+      "topicId": 12,
+      "sentenceIndex": 4,
+      "text": "책을 읽으면 새로운 것을 알게 돼요.",
+      "path": "audio/sentences/topic_012_s04.mp3"
+    },
+    {
+      "id": "t012_s05",
+      "kind": "sentence",
+      "topicId": 12,
+      "sentenceIndex": 5,
+      "text": "그래서 책이 좋아요.",
+      "path": "audio/sentences/topic_012_s05.mp3"
+    },
+    {
+      "id": "t012_s06",
+      "kind": "sentence",
+      "topicId": 12,
+      "sentenceIndex": 6,
+      "text": "저는 동화책을 좋아해요.",
+      "path": "audio/sentences/topic_012_s06.mp3"
+    },
+    {
+      "id": "t012_s07",
+      "kind": "sentence",
+      "topicId": 12,
+      "sentenceIndex": 7,
+      "text": "재미있는 이야기가 많아요.",
+      "path": "audio/sentences/topic_012_s07.mp3"
+    },
+    {
+      "id": "t012_s08",
+      "kind": "sentence",
+      "topicId": 12,
+      "sentenceIndex": 8,
+      "text": "잠자기 전에 한 권씩 읽어요.",
+      "path": "audio/sentences/topic_012_s08.mp3"
+    },
+    {
+      "id": "t012_s09",
+      "kind": "sentence",
+      "topicId": 12,
+      "sentenceIndex": 9,
+      "text": "도서관에서 빌려 오기도 해요.",
+      "path": "audio/sentences/topic_012_s09.mp3"
+    },
+    {
+      "id": "t012_s10",
+      "kind": "sentence",
+      "topicId": 12,
+      "sentenceIndex": 10,
+      "text": "책은 정말 좋은 친구예요.",
+      "path": "audio/sentences/topic_012_s10.mp3"
+    },
+    {
+      "id": "topic_013",
+      "kind": "topic",
+      "topicId": 13,
+      "text": "공책. 공책은 글씨를 쓰는 곳이에요. 흰 종이가 여러 장 있어요. 줄이 있는 공책도 있어요. 줄이 없는 공책도 있어요. 학교에서 매일 써요.  저는 공책이 다섯 권 있어요. 과목마다 다른 공책을 써요. 표지에 이름을 적어요. 다 쓰면 새 공책을 사요. 깨끗하게 쓰려고 노력해요. ",
+      "path": "audio/topics/topic_013.mp3"
+    },
+    {
+      "id": "t013_s01",
+      "kind": "sentence",
+      "topicId": 13,
+      "sentenceIndex": 1,
+      "text": "공책은 글씨를 쓰는 곳이에요.",
+      "path": "audio/sentences/topic_013_s01.mp3"
+    },
+    {
+      "id": "t013_s02",
+      "kind": "sentence",
+      "topicId": 13,
+      "sentenceIndex": 2,
+      "text": "흰 종이가 여러 장 있어요.",
+      "path": "audio/sentences/topic_013_s02.mp3"
+    },
+    {
+      "id": "t013_s03",
+      "kind": "sentence",
+      "topicId": 13,
+      "sentenceIndex": 3,
+      "text": "줄이 있는 공책도 있어요.",
+      "path": "audio/sentences/topic_013_s03.mp3"
+    },
+    {
+      "id": "t013_s04",
+      "kind": "sentence",
+      "topicId": 13,
+      "sentenceIndex": 4,
+      "text": "줄이 없는 공책도 있어요.",
+      "path": "audio/sentences/topic_013_s04.mp3"
+    },
+    {
+      "id": "t013_s05",
+      "kind": "sentence",
+      "topicId": 13,
+      "sentenceIndex": 5,
+      "text": "학교에서 매일 써요.",
+      "path": "audio/sentences/topic_013_s05.mp3"
+    },
+    {
+      "id": "t013_s06",
+      "kind": "sentence",
+      "topicId": 13,
+      "sentenceIndex": 6,
+      "text": "저는 공책이 다섯 권 있어요.",
+      "path": "audio/sentences/topic_013_s06.mp3"
+    },
+    {
+      "id": "t013_s07",
+      "kind": "sentence",
+      "topicId": 13,
+      "sentenceIndex": 7,
+      "text": "과목마다 다른 공책을 써요.",
+      "path": "audio/sentences/topic_013_s07.mp3"
+    },
+    {
+      "id": "t013_s08",
+      "kind": "sentence",
+      "topicId": 13,
+      "sentenceIndex": 8,
+      "text": "표지에 이름을 적어요.",
+      "path": "audio/sentences/topic_013_s08.mp3"
+    },
+    {
+      "id": "t013_s09",
+      "kind": "sentence",
+      "topicId": 13,
+      "sentenceIndex": 9,
+      "text": "다 쓰면 새 공책을 사요.",
+      "path": "audio/sentences/topic_013_s09.mp3"
+    },
+    {
+      "id": "t013_s10",
+      "kind": "sentence",
+      "topicId": 13,
+      "sentenceIndex": 10,
+      "text": "깨끗하게 쓰려고 노력해요.",
+      "path": "audio/sentences/topic_013_s10.mp3"
+    },
+    {
+      "id": "topic_014",
+      "kind": "topic",
+      "topicId": 14,
+      "text": "필통. 필통은 학용품을 넣는 거예요. 안에 연필이 있어요. 지우개도 있어요. 자도 있어요. 가위도 들어 있어요.  제 필통은 분홍색이에요. 별 그림이 있어요. 친구들이 다들 예쁘다고 해요. 매일 학교에 가지고 가요. 필통이 없으면 학교에서 곤란해요. ",
+      "path": "audio/topics/topic_014.mp3"
+    },
+    {
+      "id": "t014_s01",
+      "kind": "sentence",
+      "topicId": 14,
+      "sentenceIndex": 1,
+      "text": "필통은 학용품을 넣는 거예요.",
+      "path": "audio/sentences/topic_014_s01.mp3"
+    },
+    {
+      "id": "t014_s02",
+      "kind": "sentence",
+      "topicId": 14,
+      "sentenceIndex": 2,
+      "text": "안에 연필이 있어요.",
+      "path": "audio/sentences/topic_014_s02.mp3"
+    },
+    {
+      "id": "t014_s03",
+      "kind": "sentence",
+      "topicId": 14,
+      "sentenceIndex": 3,
+      "text": "지우개도 있어요.",
+      "path": "audio/sentences/topic_014_s03.mp3"
+    },
+    {
+      "id": "t014_s04",
+      "kind": "sentence",
+      "topicId": 14,
+      "sentenceIndex": 4,
+      "text": "자도 있어요.",
+      "path": "audio/sentences/topic_014_s04.mp3"
+    },
+    {
+      "id": "t014_s05",
+      "kind": "sentence",
+      "topicId": 14,
+      "sentenceIndex": 5,
+      "text": "가위도 들어 있어요.",
+      "path": "audio/sentences/topic_014_s05.mp3"
+    },
+    {
+      "id": "t014_s06",
+      "kind": "sentence",
+      "topicId": 14,
+      "sentenceIndex": 6,
+      "text": "제 필통은 분홍색이에요.",
+      "path": "audio/sentences/topic_014_s06.mp3"
+    },
+    {
+      "id": "t014_s07",
+      "kind": "sentence",
+      "topicId": 14,
+      "sentenceIndex": 7,
+      "text": "별 그림이 있어요.",
+      "path": "audio/sentences/topic_014_s07.mp3"
+    },
+    {
+      "id": "t014_s08",
+      "kind": "sentence",
+      "topicId": 14,
+      "sentenceIndex": 8,
+      "text": "친구들이 다들 예쁘다고 해요.",
+      "path": "audio/sentences/topic_014_s08.mp3"
+    },
+    {
+      "id": "t014_s09",
+      "kind": "sentence",
+      "topicId": 14,
+      "sentenceIndex": 9,
+      "text": "매일 학교에 가지고 가요.",
+      "path": "audio/sentences/topic_014_s09.mp3"
+    },
+    {
+      "id": "t014_s10",
+      "kind": "sentence",
+      "topicId": 14,
+      "sentenceIndex": 10,
+      "text": "필통이 없으면 학교에서 곤란해요.",
+      "path": "audio/sentences/topic_014_s10.mp3"
+    },
+    {
+      "id": "topic_015",
+      "kind": "topic",
+      "topicId": 15,
+      "text": "가위. 가위는 종이를 자를 때 써요. 두 개의 날이 있어요. 손잡이를 잡고 움직여요. 그러면 종이가 잘려요. 정말 신기해요.  저는 가위로 색종이를 잘라요. 별 모양도 만들어요. 하트 모양도 만들어요. 가위는 조심해서 써야 해요. 손이 다칠 수 있어요. ",
+      "path": "audio/topics/topic_015.mp3"
+    },
+    {
+      "id": "t015_s01",
+      "kind": "sentence",
+      "topicId": 15,
+      "sentenceIndex": 1,
+      "text": "가위는 종이를 자를 때 써요.",
+      "path": "audio/sentences/topic_015_s01.mp3"
+    },
+    {
+      "id": "t015_s02",
+      "kind": "sentence",
+      "topicId": 15,
+      "sentenceIndex": 2,
+      "text": "두 개의 날이 있어요.",
+      "path": "audio/sentences/topic_015_s02.mp3"
+    },
+    {
+      "id": "t015_s03",
+      "kind": "sentence",
+      "topicId": 15,
+      "sentenceIndex": 3,
+      "text": "손잡이를 잡고 움직여요.",
+      "path": "audio/sentences/topic_015_s03.mp3"
+    },
+    {
+      "id": "t015_s04",
+      "kind": "sentence",
+      "topicId": 15,
+      "sentenceIndex": 4,
+      "text": "그러면 종이가 잘려요.",
+      "path": "audio/sentences/topic_015_s04.mp3"
+    },
+    {
+      "id": "t015_s05",
+      "kind": "sentence",
+      "topicId": 15,
+      "sentenceIndex": 5,
+      "text": "정말 신기해요.",
+      "path": "audio/sentences/topic_015_s05.mp3"
+    },
+    {
+      "id": "t015_s06",
+      "kind": "sentence",
+      "topicId": 15,
+      "sentenceIndex": 6,
+      "text": "저는 가위로 색종이를 잘라요.",
+      "path": "audio/sentences/topic_015_s06.mp3"
+    },
+    {
+      "id": "t015_s07",
+      "kind": "sentence",
+      "topicId": 15,
+      "sentenceIndex": 7,
+      "text": "별 모양도 만들어요.",
+      "path": "audio/sentences/topic_015_s07.mp3"
+    },
+    {
+      "id": "t015_s08",
+      "kind": "sentence",
+      "topicId": 15,
+      "sentenceIndex": 8,
+      "text": "하트 모양도 만들어요.",
+      "path": "audio/sentences/topic_015_s08.mp3"
+    },
+    {
+      "id": "t015_s09",
+      "kind": "sentence",
+      "topicId": 15,
+      "sentenceIndex": 9,
+      "text": "가위는 조심해서 써야 해요.",
+      "path": "audio/sentences/topic_015_s09.mp3"
+    },
+    {
+      "id": "t015_s10",
+      "kind": "sentence",
+      "topicId": 15,
+      "sentenceIndex": 10,
+      "text": "손이 다칠 수 있어요.",
+      "path": "audio/sentences/topic_015_s10.mp3"
+    },
+    {
+      "id": "topic_016",
+      "kind": "topic",
+      "topicId": 16,
+      "text": "종이. 종이는 흰색이에요. 가벼워요. 글씨를 쓸 수 있어요. 그림도 그릴 수 있어요. 접어서 모양을 만들 수도 있어요.  저는 종이로 비행기를 접어요. 배도 만들어요. 학도 접을 수 있어요. 친구한테 편지를 쓸 때도 종이가 필요해요. 종이는 정말 쓸모가 많아요. ",
+      "path": "audio/topics/topic_016.mp3"
+    },
+    {
+      "id": "t016_s01",
+      "kind": "sentence",
+      "topicId": 16,
+      "sentenceIndex": 1,
+      "text": "종이는 흰색이에요.",
+      "path": "audio/sentences/topic_016_s01.mp3"
+    },
+    {
+      "id": "t016_s02",
+      "kind": "sentence",
+      "topicId": 16,
+      "sentenceIndex": 2,
+      "text": "가벼워요.",
+      "path": "audio/sentences/topic_016_s02.mp3"
+    },
+    {
+      "id": "t016_s03",
+      "kind": "sentence",
+      "topicId": 16,
+      "sentenceIndex": 3,
+      "text": "글씨를 쓸 수 있어요.",
+      "path": "audio/sentences/topic_016_s03.mp3"
+    },
+    {
+      "id": "t016_s04",
+      "kind": "sentence",
+      "topicId": 16,
+      "sentenceIndex": 4,
+      "text": "그림도 그릴 수 있어요.",
+      "path": "audio/sentences/topic_016_s04.mp3"
+    },
+    {
+      "id": "t016_s05",
+      "kind": "sentence",
+      "topicId": 16,
+      "sentenceIndex": 5,
+      "text": "접어서 모양을 만들 수도 있어요.",
+      "path": "audio/sentences/topic_016_s05.mp3"
+    },
+    {
+      "id": "t016_s06",
+      "kind": "sentence",
+      "topicId": 16,
+      "sentenceIndex": 6,
+      "text": "저는 종이로 비행기를 접어요.",
+      "path": "audio/sentences/topic_016_s06.mp3"
+    },
+    {
+      "id": "t016_s07",
+      "kind": "sentence",
+      "topicId": 16,
+      "sentenceIndex": 7,
+      "text": "배도 만들어요.",
+      "path": "audio/sentences/topic_016_s07.mp3"
+    },
+    {
+      "id": "t016_s08",
+      "kind": "sentence",
+      "topicId": 16,
+      "sentenceIndex": 8,
+      "text": "학도 접을 수 있어요.",
+      "path": "audio/sentences/topic_016_s08.mp3"
+    },
+    {
+      "id": "t016_s09",
+      "kind": "sentence",
+      "topicId": 16,
+      "sentenceIndex": 9,
+      "text": "친구한테 편지를 쓸 때도 종이가 필요해요.",
+      "path": "audio/sentences/topic_016_s09.mp3"
+    },
+    {
+      "id": "t016_s10",
+      "kind": "sentence",
+      "topicId": 16,
+      "sentenceIndex": 10,
+      "text": "종이는 정말 쓸모가 많아요.",
+      "path": "audio/sentences/topic_016_s10.mp3"
+    },
+    {
+      "id": "topic_017",
+      "kind": "topic",
+      "topicId": 17,
+      "text": "칠판. 교실 앞에 칠판이 있어요. 색깔은 초록색이에요. 선생님이 칠판에 글씨를 써요. 분필로 써요. 다 쓰면 지우개로 지워요.  칠판은 아주 커요. 한 줄에 글씨를 많이 쓸 수 있어요. 가끔 친구들도 칠판에 나가요. 답을 쓰러 가요. 떨리지만 재미있어요. ",
+      "path": "audio/topics/topic_017.mp3"
+    },
+    {
+      "id": "t017_s01",
+      "kind": "sentence",
+      "topicId": 17,
+      "sentenceIndex": 1,
+      "text": "교실 앞에 칠판이 있어요.",
+      "path": "audio/sentences/topic_017_s01.mp3"
+    },
+    {
+      "id": "t017_s02",
+      "kind": "sentence",
+      "topicId": 17,
+      "sentenceIndex": 2,
+      "text": "색깔은 초록색이에요.",
+      "path": "audio/sentences/topic_017_s02.mp3"
+    },
+    {
+      "id": "t017_s03",
+      "kind": "sentence",
+      "topicId": 17,
+      "sentenceIndex": 3,
+      "text": "선생님이 칠판에 글씨를 써요.",
+      "path": "audio/sentences/topic_017_s03.mp3"
+    },
+    {
+      "id": "t017_s04",
+      "kind": "sentence",
+      "topicId": 17,
+      "sentenceIndex": 4,
+      "text": "분필로 써요.",
+      "path": "audio/sentences/topic_017_s04.mp3"
+    },
+    {
+      "id": "t017_s05",
+      "kind": "sentence",
+      "topicId": 17,
+      "sentenceIndex": 5,
+      "text": "다 쓰면 지우개로 지워요.",
+      "path": "audio/sentences/topic_017_s05.mp3"
+    },
+    {
+      "id": "t017_s06",
+      "kind": "sentence",
+      "topicId": 17,
+      "sentenceIndex": 6,
+      "text": "칠판은 아주 커요.",
+      "path": "audio/sentences/topic_017_s06.mp3"
+    },
+    {
+      "id": "t017_s07",
+      "kind": "sentence",
+      "topicId": 17,
+      "sentenceIndex": 7,
+      "text": "한 줄에 글씨를 많이 쓸 수 있어요.",
+      "path": "audio/sentences/topic_017_s07.mp3"
+    },
+    {
+      "id": "t017_s08",
+      "kind": "sentence",
+      "topicId": 17,
+      "sentenceIndex": 8,
+      "text": "가끔 친구들도 칠판에 나가요.",
+      "path": "audio/sentences/topic_017_s08.mp3"
+    },
+    {
+      "id": "t017_s09",
+      "kind": "sentence",
+      "topicId": 17,
+      "sentenceIndex": 9,
+      "text": "답을 쓰러 가요.",
+      "path": "audio/sentences/topic_017_s09.mp3"
+    },
+    {
+      "id": "t017_s10",
+      "kind": "sentence",
+      "topicId": 17,
+      "sentenceIndex": 10,
+      "text": "떨리지만 재미있어요.",
+      "path": "audio/sentences/topic_017_s10.mp3"
+    },
+    {
+      "id": "topic_018",
+      "kind": "topic",
+      "topicId": 18,
+      "text": "가방. 가방은 물건을 넣는 거예요. 어깨에 메요. 등에 메는 가방도 있어요. 손에 드는 가방도 있어요. 학교 갈 때는 책가방을 메요.  제 가방은 파란색이에요. 안에 공책이 있어요. 필통도 있어요. 물병도 넣어요. 가끔 너무 무거워서 어깨가 아파요. ",
+      "path": "audio/topics/topic_018.mp3"
+    },
+    {
+      "id": "t018_s01",
+      "kind": "sentence",
+      "topicId": 18,
+      "sentenceIndex": 1,
+      "text": "가방은 물건을 넣는 거예요.",
+      "path": "audio/sentences/topic_018_s01.mp3"
+    },
+    {
+      "id": "t018_s02",
+      "kind": "sentence",
+      "topicId": 18,
+      "sentenceIndex": 2,
+      "text": "어깨에 메요.",
+      "path": "audio/sentences/topic_018_s02.mp3"
+    },
+    {
+      "id": "t018_s03",
+      "kind": "sentence",
+      "topicId": 18,
+      "sentenceIndex": 3,
+      "text": "등에 메는 가방도 있어요.",
+      "path": "audio/sentences/topic_018_s03.mp3"
+    },
+    {
+      "id": "t018_s04",
+      "kind": "sentence",
+      "topicId": 18,
+      "sentenceIndex": 4,
+      "text": "손에 드는 가방도 있어요.",
+      "path": "audio/sentences/topic_018_s04.mp3"
+    },
+    {
+      "id": "t018_s05",
+      "kind": "sentence",
+      "topicId": 18,
+      "sentenceIndex": 5,
+      "text": "학교 갈 때는 책가방을 메요.",
+      "path": "audio/sentences/topic_018_s05.mp3"
+    },
+    {
+      "id": "t018_s06",
+      "kind": "sentence",
+      "topicId": 18,
+      "sentenceIndex": 6,
+      "text": "제 가방은 파란색이에요.",
+      "path": "audio/sentences/topic_018_s06.mp3"
+    },
+    {
+      "id": "t018_s07",
+      "kind": "sentence",
+      "topicId": 18,
+      "sentenceIndex": 7,
+      "text": "안에 공책이 있어요.",
+      "path": "audio/sentences/topic_018_s07.mp3"
+    },
+    {
+      "id": "t018_s08",
+      "kind": "sentence",
+      "topicId": 18,
+      "sentenceIndex": 8,
+      "text": "필통도 있어요.",
+      "path": "audio/sentences/topic_018_s08.mp3"
+    },
+    {
+      "id": "t018_s09",
+      "kind": "sentence",
+      "topicId": 18,
+      "sentenceIndex": 9,
+      "text": "물병도 넣어요.",
+      "path": "audio/sentences/topic_018_s09.mp3"
+    },
+    {
+      "id": "t018_s10",
+      "kind": "sentence",
+      "topicId": 18,
+      "sentenceIndex": 10,
+      "text": "가끔 너무 무거워서 어깨가 아파요.",
+      "path": "audio/sentences/topic_018_s10.mp3"
+    },
+    {
+      "id": "topic_019",
+      "kind": "topic",
+      "topicId": 19,
+      "text": "머리카락. 머리카락은 머리에 있어요. 길게 자라요. 짧게 자르기도 해요. 검은색 머리카락도 있어요. 노란색 머리카락도 있어요.  저는 머리카락이 길어요. 매일 빗어요. 가끔 묶어요. 머리를 감으면 깨끗해져요. 그러면 기분이 좋아요. ",
+      "path": "audio/topics/topic_019.mp3"
+    },
+    {
+      "id": "t019_s01",
+      "kind": "sentence",
+      "topicId": 19,
+      "sentenceIndex": 1,
+      "text": "머리카락은 머리에 있어요.",
+      "path": "audio/sentences/topic_019_s01.mp3"
+    },
+    {
+      "id": "t019_s02",
+      "kind": "sentence",
+      "topicId": 19,
+      "sentenceIndex": 2,
+      "text": "길게 자라요.",
+      "path": "audio/sentences/topic_019_s02.mp3"
+    },
+    {
+      "id": "t019_s03",
+      "kind": "sentence",
+      "topicId": 19,
+      "sentenceIndex": 3,
+      "text": "짧게 자르기도 해요.",
+      "path": "audio/sentences/topic_019_s03.mp3"
+    },
+    {
+      "id": "t019_s04",
+      "kind": "sentence",
+      "topicId": 19,
+      "sentenceIndex": 4,
+      "text": "검은색 머리카락도 있어요.",
+      "path": "audio/sentences/topic_019_s04.mp3"
+    },
+    {
+      "id": "t019_s05",
+      "kind": "sentence",
+      "topicId": 19,
+      "sentenceIndex": 5,
+      "text": "노란색 머리카락도 있어요.",
+      "path": "audio/sentences/topic_019_s05.mp3"
+    },
+    {
+      "id": "t019_s06",
+      "kind": "sentence",
+      "topicId": 19,
+      "sentenceIndex": 6,
+      "text": "저는 머리카락이 길어요.",
+      "path": "audio/sentences/topic_019_s06.mp3"
+    },
+    {
+      "id": "t019_s07",
+      "kind": "sentence",
+      "topicId": 19,
+      "sentenceIndex": 7,
+      "text": "매일 빗어요.",
+      "path": "audio/sentences/topic_019_s07.mp3"
+    },
+    {
+      "id": "t019_s08",
+      "kind": "sentence",
+      "topicId": 19,
+      "sentenceIndex": 8,
+      "text": "가끔 묶어요.",
+      "path": "audio/sentences/topic_019_s08.mp3"
+    },
+    {
+      "id": "t019_s09",
+      "kind": "sentence",
+      "topicId": 19,
+      "sentenceIndex": 9,
+      "text": "머리를 감으면 깨끗해져요.",
+      "path": "audio/sentences/topic_019_s09.mp3"
+    },
+    {
+      "id": "t019_s10",
+      "kind": "sentence",
+      "topicId": 19,
+      "sentenceIndex": 10,
+      "text": "그러면 기분이 좋아요.",
+      "path": "audio/sentences/topic_019_s10.mp3"
+    },
+    {
+      "id": "topic_020",
+      "kind": "topic",
+      "topicId": 20,
+      "text": "발. 발은 두 개 있어요. 발에는 발가락이 다섯 개 있어요. 발로 걸어요. 뛰기도 해요. 점프도 할 수 있어요.  발이 크면 큰 신발을 신어요. 작으면 작은 신발을 신어요. 여름에는 맨발도 시원해요. 겨울에는 양말을 꼭 신어요. 발이 따뜻해야 몸도 따뜻해요. ",
+      "path": "audio/topics/topic_020.mp3"
+    },
+    {
+      "id": "t020_s01",
+      "kind": "sentence",
+      "topicId": 20,
+      "sentenceIndex": 1,
+      "text": "발은 두 개 있어요.",
+      "path": "audio/sentences/topic_020_s01.mp3"
+    },
+    {
+      "id": "t020_s02",
+      "kind": "sentence",
+      "topicId": 20,
+      "sentenceIndex": 2,
+      "text": "발에는 발가락이 다섯 개 있어요.",
+      "path": "audio/sentences/topic_020_s02.mp3"
+    },
+    {
+      "id": "t020_s03",
+      "kind": "sentence",
+      "topicId": 20,
+      "sentenceIndex": 3,
+      "text": "발로 걸어요.",
+      "path": "audio/sentences/topic_020_s03.mp3"
+    },
+    {
+      "id": "t020_s04",
+      "kind": "sentence",
+      "topicId": 20,
+      "sentenceIndex": 4,
+      "text": "뛰기도 해요.",
+      "path": "audio/sentences/topic_020_s04.mp3"
+    },
+    {
+      "id": "t020_s05",
+      "kind": "sentence",
+      "topicId": 20,
+      "sentenceIndex": 5,
+      "text": "점프도 할 수 있어요.",
+      "path": "audio/sentences/topic_020_s05.mp3"
+    },
+    {
+      "id": "t020_s06",
+      "kind": "sentence",
+      "topicId": 20,
+      "sentenceIndex": 6,
+      "text": "발이 크면 큰 신발을 신어요.",
+      "path": "audio/sentences/topic_020_s06.mp3"
+    },
+    {
+      "id": "t020_s07",
+      "kind": "sentence",
+      "topicId": 20,
+      "sentenceIndex": 7,
+      "text": "작으면 작은 신발을 신어요.",
+      "path": "audio/sentences/topic_020_s07.mp3"
+    },
+    {
+      "id": "t020_s08",
+      "kind": "sentence",
+      "topicId": 20,
+      "sentenceIndex": 8,
+      "text": "여름에는 맨발도 시원해요.",
+      "path": "audio/sentences/topic_020_s08.mp3"
+    },
+    {
+      "id": "t020_s09",
+      "kind": "sentence",
+      "topicId": 20,
+      "sentenceIndex": 9,
+      "text": "겨울에는 양말을 꼭 신어요.",
+      "path": "audio/sentences/topic_020_s09.mp3"
+    },
+    {
+      "id": "t020_s10",
+      "kind": "sentence",
+      "topicId": 20,
+      "sentenceIndex": 10,
+      "text": "발이 따뜻해야 몸도 따뜻해요.",
+      "path": "audio/sentences/topic_020_s10.mp3"
+    },
+    {
+      "id": "topic_021",
+      "kind": "topic",
+      "topicId": 21,
+      "text": "입. 입으로 밥을 먹어요. 물도 마셔요. 말도 해요. 노래도 불러요. 웃을 때도 입을 써요.  입 안에 이가 있어요. 혀도 있어요. 음식을 먹을 때 잘 씹어야 해요. 그래야 배가 안 아파요. 먹은 후에는 이를 닦아요. ",
+      "path": "audio/topics/topic_021.mp3"
+    },
+    {
+      "id": "t021_s01",
+      "kind": "sentence",
+      "topicId": 21,
+      "sentenceIndex": 1,
+      "text": "입으로 밥을 먹어요.",
+      "path": "audio/sentences/topic_021_s01.mp3"
+    },
+    {
+      "id": "t021_s02",
+      "kind": "sentence",
+      "topicId": 21,
+      "sentenceIndex": 2,
+      "text": "물도 마셔요.",
+      "path": "audio/sentences/topic_021_s02.mp3"
+    },
+    {
+      "id": "t021_s03",
+      "kind": "sentence",
+      "topicId": 21,
+      "sentenceIndex": 3,
+      "text": "말도 해요.",
+      "path": "audio/sentences/topic_021_s03.mp3"
+    },
+    {
+      "id": "t021_s04",
+      "kind": "sentence",
+      "topicId": 21,
+      "sentenceIndex": 4,
+      "text": "노래도 불러요.",
+      "path": "audio/sentences/topic_021_s04.mp3"
+    },
+    {
+      "id": "t021_s05",
+      "kind": "sentence",
+      "topicId": 21,
+      "sentenceIndex": 5,
+      "text": "웃을 때도 입을 써요.",
+      "path": "audio/sentences/topic_021_s05.mp3"
+    },
+    {
+      "id": "t021_s06",
+      "kind": "sentence",
+      "topicId": 21,
+      "sentenceIndex": 6,
+      "text": "입 안에 이가 있어요.",
+      "path": "audio/sentences/topic_021_s06.mp3"
+    },
+    {
+      "id": "t021_s07",
+      "kind": "sentence",
+      "topicId": 21,
+      "sentenceIndex": 7,
+      "text": "혀도 있어요.",
+      "path": "audio/sentences/topic_021_s07.mp3"
+    },
+    {
+      "id": "t021_s08",
+      "kind": "sentence",
+      "topicId": 21,
+      "sentenceIndex": 8,
+      "text": "음식을 먹을 때 잘 씹어야 해요.",
+      "path": "audio/sentences/topic_021_s08.mp3"
+    },
+    {
+      "id": "t021_s09",
+      "kind": "sentence",
+      "topicId": 21,
+      "sentenceIndex": 9,
+      "text": "그래야 배가 안 아파요.",
+      "path": "audio/sentences/topic_021_s09.mp3"
+    },
+    {
+      "id": "t021_s10",
+      "kind": "sentence",
+      "topicId": 21,
+      "sentenceIndex": 10,
+      "text": "먹은 후에는 이를 닦아요.",
+      "path": "audio/sentences/topic_021_s10.mp3"
+    },
+    {
+      "id": "topic_022",
+      "kind": "topic",
+      "topicId": 22,
+      "text": "코. 코는 얼굴 가운데에 있어요. 두 개의 구멍이 있어요. 그곳으로 숨을 쉬어요. 냄새도 맡아요. 좋은 냄새는 기분을 좋게 해요.  감기에 걸리면 코가 막혀요. 그러면 숨쉬기가 힘들어요. 휴지로 코를 풀어요. 깨끗해지면 다시 잘 쉬어요. 코는 정말 중요한 거예요. ",
+      "path": "audio/topics/topic_022.mp3"
+    },
+    {
+      "id": "t022_s01",
+      "kind": "sentence",
+      "topicId": 22,
+      "sentenceIndex": 1,
+      "text": "코는 얼굴 가운데에 있어요.",
+      "path": "audio/sentences/topic_022_s01.mp3"
+    },
+    {
+      "id": "t022_s02",
+      "kind": "sentence",
+      "topicId": 22,
+      "sentenceIndex": 2,
+      "text": "두 개의 구멍이 있어요.",
+      "path": "audio/sentences/topic_022_s02.mp3"
+    },
+    {
+      "id": "t022_s03",
+      "kind": "sentence",
+      "topicId": 22,
+      "sentenceIndex": 3,
+      "text": "그곳으로 숨을 쉬어요.",
+      "path": "audio/sentences/topic_022_s03.mp3"
+    },
+    {
+      "id": "t022_s04",
+      "kind": "sentence",
+      "topicId": 22,
+      "sentenceIndex": 4,
+      "text": "냄새도 맡아요.",
+      "path": "audio/sentences/topic_022_s04.mp3"
+    },
+    {
+      "id": "t022_s05",
+      "kind": "sentence",
+      "topicId": 22,
+      "sentenceIndex": 5,
+      "text": "좋은 냄새는 기분을 좋게 해요.",
+      "path": "audio/sentences/topic_022_s05.mp3"
+    },
+    {
+      "id": "t022_s06",
+      "kind": "sentence",
+      "topicId": 22,
+      "sentenceIndex": 6,
+      "text": "감기에 걸리면 코가 막혀요.",
+      "path": "audio/sentences/topic_022_s06.mp3"
+    },
+    {
+      "id": "t022_s07",
+      "kind": "sentence",
+      "topicId": 22,
+      "sentenceIndex": 7,
+      "text": "그러면 숨쉬기가 힘들어요.",
+      "path": "audio/sentences/topic_022_s07.mp3"
+    },
+    {
+      "id": "t022_s08",
+      "kind": "sentence",
+      "topicId": 22,
+      "sentenceIndex": 8,
+      "text": "휴지로 코를 풀어요.",
+      "path": "audio/sentences/topic_022_s08.mp3"
+    },
+    {
+      "id": "t022_s09",
+      "kind": "sentence",
+      "topicId": 22,
+      "sentenceIndex": 9,
+      "text": "깨끗해지면 다시 잘 쉬어요.",
+      "path": "audio/sentences/topic_022_s09.mp3"
+    },
+    {
+      "id": "t022_s10",
+      "kind": "sentence",
+      "topicId": 22,
+      "sentenceIndex": 10,
+      "text": "코는 정말 중요한 거예요.",
+      "path": "audio/sentences/topic_022_s10.mp3"
+    },
+    {
+      "id": "topic_023",
+      "kind": "topic",
+      "topicId": 23,
+      "text": "귀. 귀는 양쪽에 하나씩 있어요. 귀로 소리를 들어요. 음악도 들어요. 친구의 말도 들어요. 새 노래도 들을 수 있어요.  귀에는 귓구멍이 있어요. 너무 시끄러우면 귀가 아파요. 가끔 귀가 막히기도 해요. 그때는 잘 안 들려요. 귀는 잘 챙겨야 해요. ",
+      "path": "audio/topics/topic_023.mp3"
+    },
+    {
+      "id": "t023_s01",
+      "kind": "sentence",
+      "topicId": 23,
+      "sentenceIndex": 1,
+      "text": "귀는 양쪽에 하나씩 있어요.",
+      "path": "audio/sentences/topic_023_s01.mp3"
+    },
+    {
+      "id": "t023_s02",
+      "kind": "sentence",
+      "topicId": 23,
+      "sentenceIndex": 2,
+      "text": "귀로 소리를 들어요.",
+      "path": "audio/sentences/topic_023_s02.mp3"
+    },
+    {
+      "id": "t023_s03",
+      "kind": "sentence",
+      "topicId": 23,
+      "sentenceIndex": 3,
+      "text": "음악도 들어요.",
+      "path": "audio/sentences/topic_023_s03.mp3"
+    },
+    {
+      "id": "t023_s04",
+      "kind": "sentence",
+      "topicId": 23,
+      "sentenceIndex": 4,
+      "text": "친구의 말도 들어요.",
+      "path": "audio/sentences/topic_023_s04.mp3"
+    },
+    {
+      "id": "t023_s05",
+      "kind": "sentence",
+      "topicId": 23,
+      "sentenceIndex": 5,
+      "text": "새 노래도 들을 수 있어요.",
+      "path": "audio/sentences/topic_023_s05.mp3"
+    },
+    {
+      "id": "t023_s06",
+      "kind": "sentence",
+      "topicId": 23,
+      "sentenceIndex": 6,
+      "text": "귀에는 귓구멍이 있어요.",
+      "path": "audio/sentences/topic_023_s06.mp3"
+    },
+    {
+      "id": "t023_s07",
+      "kind": "sentence",
+      "topicId": 23,
+      "sentenceIndex": 7,
+      "text": "너무 시끄러우면 귀가 아파요.",
+      "path": "audio/sentences/topic_023_s07.mp3"
+    },
+    {
+      "id": "t023_s08",
+      "kind": "sentence",
+      "topicId": 23,
+      "sentenceIndex": 8,
+      "text": "가끔 귀가 막히기도 해요.",
+      "path": "audio/sentences/topic_023_s08.mp3"
+    },
+    {
+      "id": "t023_s09",
+      "kind": "sentence",
+      "topicId": 23,
+      "sentenceIndex": 9,
+      "text": "그때는 잘 안 들려요.",
+      "path": "audio/sentences/topic_023_s09.mp3"
+    },
+    {
+      "id": "t023_s10",
+      "kind": "sentence",
+      "topicId": 23,
+      "sentenceIndex": 10,
+      "text": "귀는 잘 챙겨야 해요.",
+      "path": "audio/sentences/topic_023_s10.mp3"
+    },
+    {
+      "id": "topic_024",
+      "kind": "topic",
+      "topicId": 24,
+      "text": "김밥. 김밥은 한국 음식이에요. 밥에 여러 재료를 넣어요. 김으로 말아요. 그리고 칼로 잘라요. 동그란 모양이 돼요.  저는 김밥을 좋아해요. 안에 햄이랑 달걀이 있어요. 시금치도 있어요. 단무지도 들어가요. 소풍 갈 때 자주 먹어요. ",
+      "path": "audio/topics/topic_024.mp3"
+    },
+    {
+      "id": "t024_s01",
+      "kind": "sentence",
+      "topicId": 24,
+      "sentenceIndex": 1,
+      "text": "김밥은 한국 음식이에요.",
+      "path": "audio/sentences/topic_024_s01.mp3"
+    },
+    {
+      "id": "t024_s02",
+      "kind": "sentence",
+      "topicId": 24,
+      "sentenceIndex": 2,
+      "text": "밥에 여러 재료를 넣어요.",
+      "path": "audio/sentences/topic_024_s02.mp3"
+    },
+    {
+      "id": "t024_s03",
+      "kind": "sentence",
+      "topicId": 24,
+      "sentenceIndex": 3,
+      "text": "김으로 말아요.",
+      "path": "audio/sentences/topic_024_s03.mp3"
+    },
+    {
+      "id": "t024_s04",
+      "kind": "sentence",
+      "topicId": 24,
+      "sentenceIndex": 4,
+      "text": "그리고 칼로 잘라요.",
+      "path": "audio/sentences/topic_024_s04.mp3"
+    },
+    {
+      "id": "t024_s05",
+      "kind": "sentence",
+      "topicId": 24,
+      "sentenceIndex": 5,
+      "text": "동그란 모양이 돼요.",
+      "path": "audio/sentences/topic_024_s05.mp3"
+    },
+    {
+      "id": "t024_s06",
+      "kind": "sentence",
+      "topicId": 24,
+      "sentenceIndex": 6,
+      "text": "저는 김밥을 좋아해요.",
+      "path": "audio/sentences/topic_024_s06.mp3"
+    },
+    {
+      "id": "t024_s07",
+      "kind": "sentence",
+      "topicId": 24,
+      "sentenceIndex": 7,
+      "text": "안에 햄이랑 달걀이 있어요.",
+      "path": "audio/sentences/topic_024_s07.mp3"
+    },
+    {
+      "id": "t024_s08",
+      "kind": "sentence",
+      "topicId": 24,
+      "sentenceIndex": 8,
+      "text": "시금치도 있어요.",
+      "path": "audio/sentences/topic_024_s08.mp3"
+    },
+    {
+      "id": "t024_s09",
+      "kind": "sentence",
+      "topicId": 24,
+      "sentenceIndex": 9,
+      "text": "단무지도 들어가요.",
+      "path": "audio/sentences/topic_024_s09.mp3"
+    },
+    {
+      "id": "t024_s10",
+      "kind": "sentence",
+      "topicId": 24,
+      "sentenceIndex": 10,
+      "text": "소풍 갈 때 자주 먹어요.",
+      "path": "audio/sentences/topic_024_s10.mp3"
+    },
+    {
+      "id": "topic_025",
+      "kind": "topic",
+      "topicId": 25,
+      "text": "라면. 라면은 빠르게 만들 수 있어요. 물을 끓여요. 면을 넣어요. 수프도 같이 넣어요. 몇 분만 기다리면 돼요.  저는 라면을 좋아해요. 매운 맛이 있어요. 안 매운 라면도 있어요. 김치랑 같이 먹어요. 그러면 더 맛있어요. ",
+      "path": "audio/topics/topic_025.mp3"
+    },
+    {
+      "id": "t025_s01",
+      "kind": "sentence",
+      "topicId": 25,
+      "sentenceIndex": 1,
+      "text": "라면은 빠르게 만들 수 있어요.",
+      "path": "audio/sentences/topic_025_s01.mp3"
+    },
+    {
+      "id": "t025_s02",
+      "kind": "sentence",
+      "topicId": 25,
+      "sentenceIndex": 2,
+      "text": "물을 끓여요.",
+      "path": "audio/sentences/topic_025_s02.mp3"
+    },
+    {
+      "id": "t025_s03",
+      "kind": "sentence",
+      "topicId": 25,
+      "sentenceIndex": 3,
+      "text": "면을 넣어요.",
+      "path": "audio/sentences/topic_025_s03.mp3"
+    },
+    {
+      "id": "t025_s04",
+      "kind": "sentence",
+      "topicId": 25,
+      "sentenceIndex": 4,
+      "text": "수프도 같이 넣어요.",
+      "path": "audio/sentences/topic_025_s04.mp3"
+    },
+    {
+      "id": "t025_s05",
+      "kind": "sentence",
+      "topicId": 25,
+      "sentenceIndex": 5,
+      "text": "몇 분만 기다리면 돼요.",
+      "path": "audio/sentences/topic_025_s05.mp3"
+    },
+    {
+      "id": "t025_s06",
+      "kind": "sentence",
+      "topicId": 25,
+      "sentenceIndex": 6,
+      "text": "저는 라면을 좋아해요.",
+      "path": "audio/sentences/topic_025_s06.mp3"
+    },
+    {
+      "id": "t025_s07",
+      "kind": "sentence",
+      "topicId": 25,
+      "sentenceIndex": 7,
+      "text": "매운 맛이 있어요.",
+      "path": "audio/sentences/topic_025_s07.mp3"
+    },
+    {
+      "id": "t025_s08",
+      "kind": "sentence",
+      "topicId": 25,
+      "sentenceIndex": 8,
+      "text": "안 매운 라면도 있어요.",
+      "path": "audio/sentences/topic_025_s08.mp3"
+    },
+    {
+      "id": "t025_s09",
+      "kind": "sentence",
+      "topicId": 25,
+      "sentenceIndex": 9,
+      "text": "김치랑 같이 먹어요.",
+      "path": "audio/sentences/topic_025_s09.mp3"
+    },
+    {
+      "id": "t025_s10",
+      "kind": "sentence",
+      "topicId": 25,
+      "sentenceIndex": 10,
+      "text": "그러면 더 맛있어요.",
+      "path": "audio/sentences/topic_025_s10.mp3"
+    },
+    {
+      "id": "topic_026",
+      "kind": "topic",
+      "topicId": 26,
+      "text": "빵. 빵은 밀가루로 만들어요. 부드러운 빵도 있고 딱딱한 빵도 있어요. 단 빵도 있어요. 안 단 빵도 있어요. 여러 가지가 있어요.  저는 단팥빵을 좋아해요. 안에 팥이 들어 있어요. 우유랑 같이 먹어요. 아침에 빵을 먹으면 든든해요. 빵집에서 사 와요. ",
+      "path": "audio/topics/topic_026.mp3"
+    },
+    {
+      "id": "t026_s01",
+      "kind": "sentence",
+      "topicId": 26,
+      "sentenceIndex": 1,
+      "text": "빵은 밀가루로 만들어요.",
+      "path": "audio/sentences/topic_026_s01.mp3"
+    },
+    {
+      "id": "t026_s02",
+      "kind": "sentence",
+      "topicId": 26,
+      "sentenceIndex": 2,
+      "text": "부드러운 빵도 있고 딱딱한 빵도 있어요.",
+      "path": "audio/sentences/topic_026_s02.mp3"
+    },
+    {
+      "id": "t026_s03",
+      "kind": "sentence",
+      "topicId": 26,
+      "sentenceIndex": 3,
+      "text": "단 빵도 있어요.",
+      "path": "audio/sentences/topic_026_s03.mp3"
+    },
+    {
+      "id": "t026_s04",
+      "kind": "sentence",
+      "topicId": 26,
+      "sentenceIndex": 4,
+      "text": "안 단 빵도 있어요.",
+      "path": "audio/sentences/topic_026_s04.mp3"
+    },
+    {
+      "id": "t026_s05",
+      "kind": "sentence",
+      "topicId": 26,
+      "sentenceIndex": 5,
+      "text": "여러 가지가 있어요.",
+      "path": "audio/sentences/topic_026_s05.mp3"
+    },
+    {
+      "id": "t026_s06",
+      "kind": "sentence",
+      "topicId": 26,
+      "sentenceIndex": 6,
+      "text": "저는 단팥빵을 좋아해요.",
+      "path": "audio/sentences/topic_026_s06.mp3"
+    },
+    {
+      "id": "t026_s07",
+      "kind": "sentence",
+      "topicId": 26,
+      "sentenceIndex": 7,
+      "text": "안에 팥이 들어 있어요.",
+      "path": "audio/sentences/topic_026_s07.mp3"
+    },
+    {
+      "id": "t026_s08",
+      "kind": "sentence",
+      "topicId": 26,
+      "sentenceIndex": 8,
+      "text": "우유랑 같이 먹어요.",
+      "path": "audio/sentences/topic_026_s08.mp3"
+    },
+    {
+      "id": "t026_s09",
+      "kind": "sentence",
+      "topicId": 26,
+      "sentenceIndex": 9,
+      "text": "아침에 빵을 먹으면 든든해요.",
+      "path": "audio/sentences/topic_026_s09.mp3"
+    },
+    {
+      "id": "t026_s10",
+      "kind": "sentence",
+      "topicId": 26,
+      "sentenceIndex": 10,
+      "text": "빵집에서 사 와요.",
+      "path": "audio/sentences/topic_026_s10.mp3"
+    },
+    {
+      "id": "topic_027",
+      "kind": "topic",
+      "topicId": 27,
+      "text": "우유. 우유는 하얀색이에요. 시원해요. 달지 않지만 맛있어요. 컵에 따라서 마셔요. 빨대로 마실 수도 있어요.  저는 매일 아침에 우유를 마셔요. 키가 크고 싶어서 마셔요. 시리얼이랑 같이 먹기도 해요. 우유는 몸에 좋아요. 그래서 어른들이 좋아해요. ",
+      "path": "audio/topics/topic_027.mp3"
+    },
+    {
+      "id": "t027_s01",
+      "kind": "sentence",
+      "topicId": 27,
+      "sentenceIndex": 1,
+      "text": "우유는 하얀색이에요.",
+      "path": "audio/sentences/topic_027_s01.mp3"
+    },
+    {
+      "id": "t027_s02",
+      "kind": "sentence",
+      "topicId": 27,
+      "sentenceIndex": 2,
+      "text": "시원해요.",
+      "path": "audio/sentences/topic_027_s02.mp3"
+    },
+    {
+      "id": "t027_s03",
+      "kind": "sentence",
+      "topicId": 27,
+      "sentenceIndex": 3,
+      "text": "달지 않지만 맛있어요.",
+      "path": "audio/sentences/topic_027_s03.mp3"
+    },
+    {
+      "id": "t027_s04",
+      "kind": "sentence",
+      "topicId": 27,
+      "sentenceIndex": 4,
+      "text": "컵에 따라서 마셔요.",
+      "path": "audio/sentences/topic_027_s04.mp3"
+    },
+    {
+      "id": "t027_s05",
+      "kind": "sentence",
+      "topicId": 27,
+      "sentenceIndex": 5,
+      "text": "빨대로 마실 수도 있어요.",
+      "path": "audio/sentences/topic_027_s05.mp3"
+    },
+    {
+      "id": "t027_s06",
+      "kind": "sentence",
+      "topicId": 27,
+      "sentenceIndex": 6,
+      "text": "저는 매일 아침에 우유를 마셔요.",
+      "path": "audio/sentences/topic_027_s06.mp3"
+    },
+    {
+      "id": "t027_s07",
+      "kind": "sentence",
+      "topicId": 27,
+      "sentenceIndex": 7,
+      "text": "키가 크고 싶어서 마셔요.",
+      "path": "audio/sentences/topic_027_s07.mp3"
+    },
+    {
+      "id": "t027_s08",
+      "kind": "sentence",
+      "topicId": 27,
+      "sentenceIndex": 8,
+      "text": "시리얼이랑 같이 먹기도 해요.",
+      "path": "audio/sentences/topic_027_s08.mp3"
+    },
+    {
+      "id": "t027_s09",
+      "kind": "sentence",
+      "topicId": 27,
+      "sentenceIndex": 9,
+      "text": "우유는 몸에 좋아요.",
+      "path": "audio/sentences/topic_027_s09.mp3"
+    },
+    {
+      "id": "t027_s10",
+      "kind": "sentence",
+      "topicId": 27,
+      "sentenceIndex": 10,
+      "text": "그래서 어른들이 좋아해요.",
+      "path": "audio/sentences/topic_027_s10.mp3"
+    },
+    {
+      "id": "topic_028",
+      "kind": "topic",
+      "topicId": 28,
+      "text": "주스. 주스는 과일로 만들어요. 사과 주스가 있어요. 오렌지 주스도 있어요. 포도 주스도 있어요. 다 맛있어요.  저는 오렌지 주스를 제일 좋아해요. 노란색이에요. 시원하고 달아요. 아침에 마시면 기분이 좋아요. 컵에 한 잔 따라 마셔요. ",
+      "path": "audio/topics/topic_028.mp3"
+    },
+    {
+      "id": "t028_s01",
+      "kind": "sentence",
+      "topicId": 28,
+      "sentenceIndex": 1,
+      "text": "주스는 과일로 만들어요.",
+      "path": "audio/sentences/topic_028_s01.mp3"
+    },
+    {
+      "id": "t028_s02",
+      "kind": "sentence",
+      "topicId": 28,
+      "sentenceIndex": 2,
+      "text": "사과 주스가 있어요.",
+      "path": "audio/sentences/topic_028_s02.mp3"
+    },
+    {
+      "id": "t028_s03",
+      "kind": "sentence",
+      "topicId": 28,
+      "sentenceIndex": 3,
+      "text": "오렌지 주스도 있어요.",
+      "path": "audio/sentences/topic_028_s03.mp3"
+    },
+    {
+      "id": "t028_s04",
+      "kind": "sentence",
+      "topicId": 28,
+      "sentenceIndex": 4,
+      "text": "포도 주스도 있어요.",
+      "path": "audio/sentences/topic_028_s04.mp3"
+    },
+    {
+      "id": "t028_s05",
+      "kind": "sentence",
+      "topicId": 28,
+      "sentenceIndex": 5,
+      "text": "다 맛있어요.",
+      "path": "audio/sentences/topic_028_s05.mp3"
+    },
+    {
+      "id": "t028_s06",
+      "kind": "sentence",
+      "topicId": 28,
+      "sentenceIndex": 6,
+      "text": "저는 오렌지 주스를 제일 좋아해요.",
+      "path": "audio/sentences/topic_028_s06.mp3"
+    },
+    {
+      "id": "t028_s07",
+      "kind": "sentence",
+      "topicId": 28,
+      "sentenceIndex": 7,
+      "text": "노란색이에요.",
+      "path": "audio/sentences/topic_028_s07.mp3"
+    },
+    {
+      "id": "t028_s08",
+      "kind": "sentence",
+      "topicId": 28,
+      "sentenceIndex": 8,
+      "text": "시원하고 달아요.",
+      "path": "audio/sentences/topic_028_s08.mp3"
+    },
+    {
+      "id": "t028_s09",
+      "kind": "sentence",
+      "topicId": 28,
+      "sentenceIndex": 9,
+      "text": "아침에 마시면 기분이 좋아요.",
+      "path": "audio/sentences/topic_028_s09.mp3"
+    },
+    {
+      "id": "t028_s10",
+      "kind": "sentence",
+      "topicId": 28,
+      "sentenceIndex": 10,
+      "text": "컵에 한 잔 따라 마셔요.",
+      "path": "audio/sentences/topic_028_s10.mp3"
+    },
+    {
+      "id": "topic_029",
+      "kind": "topic",
+      "topicId": 29,
+      "text": "물. 물은 색이 없어요. 맛도 없어요. 하지만 우리한테 꼭 필요해요. 매일 물을 많이 마셔야 해요. 그래야 건강해요.  운동을 하고 나면 물이 더 맛있어요. 시원한 물은 정말 좋아요. 더운 날에는 얼음을 넣기도 해요. 잘 때도 옆에 물을 둬요. 목이 마르면 마셔요. ",
+      "path": "audio/topics/topic_029.mp3"
+    },
+    {
+      "id": "t029_s01",
+      "kind": "sentence",
+      "topicId": 29,
+      "sentenceIndex": 1,
+      "text": "물은 색이 없어요.",
+      "path": "audio/sentences/topic_029_s01.mp3"
+    },
+    {
+      "id": "t029_s02",
+      "kind": "sentence",
+      "topicId": 29,
+      "sentenceIndex": 2,
+      "text": "맛도 없어요.",
+      "path": "audio/sentences/topic_029_s02.mp3"
+    },
+    {
+      "id": "t029_s03",
+      "kind": "sentence",
+      "topicId": 29,
+      "sentenceIndex": 3,
+      "text": "하지만 우리한테 꼭 필요해요.",
+      "path": "audio/sentences/topic_029_s03.mp3"
+    },
+    {
+      "id": "t029_s04",
+      "kind": "sentence",
+      "topicId": 29,
+      "sentenceIndex": 4,
+      "text": "매일 물을 많이 마셔야 해요.",
+      "path": "audio/sentences/topic_029_s04.mp3"
+    },
+    {
+      "id": "t029_s05",
+      "kind": "sentence",
+      "topicId": 29,
+      "sentenceIndex": 5,
+      "text": "그래야 건강해요.",
+      "path": "audio/sentences/topic_029_s05.mp3"
+    },
+    {
+      "id": "t029_s06",
+      "kind": "sentence",
+      "topicId": 29,
+      "sentenceIndex": 6,
+      "text": "운동을 하고 나면 물이 더 맛있어요.",
+      "path": "audio/sentences/topic_029_s06.mp3"
+    },
+    {
+      "id": "t029_s07",
+      "kind": "sentence",
+      "topicId": 29,
+      "sentenceIndex": 7,
+      "text": "시원한 물은 정말 좋아요.",
+      "path": "audio/sentences/topic_029_s07.mp3"
+    },
+    {
+      "id": "t029_s08",
+      "kind": "sentence",
+      "topicId": 29,
+      "sentenceIndex": 8,
+      "text": "더운 날에는 얼음을 넣기도 해요.",
+      "path": "audio/sentences/topic_029_s08.mp3"
+    },
+    {
+      "id": "t029_s09",
+      "kind": "sentence",
+      "topicId": 29,
+      "sentenceIndex": 9,
+      "text": "잘 때도 옆에 물을 둬요.",
+      "path": "audio/sentences/topic_029_s09.mp3"
+    },
+    {
+      "id": "t029_s10",
+      "kind": "sentence",
+      "topicId": 29,
+      "sentenceIndex": 10,
+      "text": "목이 마르면 마셔요.",
+      "path": "audio/sentences/topic_029_s10.mp3"
+    },
+    {
+      "id": "topic_030",
+      "kind": "topic",
+      "topicId": 30,
+      "text": "사과. 사과는 빨간색 과일이에요. 초록색 사과도 있어요. 동그란 모양이에요. 안에 씨가 있어요. 껍질도 먹을 수 있어요.  저는 사과를 좋아해요. 한 입 먹으면 시원하고 달아요. 가끔 시기도 해요. 매일 사과를 먹으면 건강해진대요. 그래서 자주 먹어요. ",
+      "path": "audio/topics/topic_030.mp3"
+    },
+    {
+      "id": "t030_s01",
+      "kind": "sentence",
+      "topicId": 30,
+      "sentenceIndex": 1,
+      "text": "사과는 빨간색 과일이에요.",
+      "path": "audio/sentences/topic_030_s01.mp3"
+    },
+    {
+      "id": "t030_s02",
+      "kind": "sentence",
+      "topicId": 30,
+      "sentenceIndex": 2,
+      "text": "초록색 사과도 있어요.",
+      "path": "audio/sentences/topic_030_s02.mp3"
+    },
+    {
+      "id": "t030_s03",
+      "kind": "sentence",
+      "topicId": 30,
+      "sentenceIndex": 3,
+      "text": "동그란 모양이에요.",
+      "path": "audio/sentences/topic_030_s03.mp3"
+    },
+    {
+      "id": "t030_s04",
+      "kind": "sentence",
+      "topicId": 30,
+      "sentenceIndex": 4,
+      "text": "안에 씨가 있어요.",
+      "path": "audio/sentences/topic_030_s04.mp3"
+    },
+    {
+      "id": "t030_s05",
+      "kind": "sentence",
+      "topicId": 30,
+      "sentenceIndex": 5,
+      "text": "껍질도 먹을 수 있어요.",
+      "path": "audio/sentences/topic_030_s05.mp3"
+    },
+    {
+      "id": "t030_s06",
+      "kind": "sentence",
+      "topicId": 30,
+      "sentenceIndex": 6,
+      "text": "저는 사과를 좋아해요.",
+      "path": "audio/sentences/topic_030_s06.mp3"
+    },
+    {
+      "id": "t030_s07",
+      "kind": "sentence",
+      "topicId": 30,
+      "sentenceIndex": 7,
+      "text": "한 입 먹으면 시원하고 달아요.",
+      "path": "audio/sentences/topic_030_s07.mp3"
+    },
+    {
+      "id": "t030_s08",
+      "kind": "sentence",
+      "topicId": 30,
+      "sentenceIndex": 8,
+      "text": "가끔 시기도 해요.",
+      "path": "audio/sentences/topic_030_s08.mp3"
+    },
+    {
+      "id": "t030_s09",
+      "kind": "sentence",
+      "topicId": 30,
+      "sentenceIndex": 9,
+      "text": "매일 사과를 먹으면 건강해진대요.",
+      "path": "audio/sentences/topic_030_s09.mp3"
+    },
+    {
+      "id": "t030_s10",
+      "kind": "sentence",
+      "topicId": 30,
+      "sentenceIndex": 10,
+      "text": "그래서 자주 먹어요.",
+      "path": "audio/sentences/topic_030_s10.mp3"
+    },
+    {
+      "id": "topic_031",
+      "kind": "topic",
+      "topicId": 31,
+      "text": "사탕. 사탕은 작고 단 거예요. 여러 가지 색깔이 있어요. 딸기 맛도 있고 포도 맛도 있어요. 입에 넣으면 천천히 녹아요. 끝까지 단맛이 나요.  저는 사탕을 좋아해요. 가방에 늘 한두 개 있어요. 친구한테 나눠 주기도 해요. 너무 많이 먹으면 안 돼요. 이가 아파져요. ",
+      "path": "audio/topics/topic_031.mp3"
+    },
+    {
+      "id": "t031_s01",
+      "kind": "sentence",
+      "topicId": 31,
+      "sentenceIndex": 1,
+      "text": "사탕은 작고 단 거예요.",
+      "path": "audio/sentences/topic_031_s01.mp3"
+    },
+    {
+      "id": "t031_s02",
+      "kind": "sentence",
+      "topicId": 31,
+      "sentenceIndex": 2,
+      "text": "여러 가지 색깔이 있어요.",
+      "path": "audio/sentences/topic_031_s02.mp3"
+    },
+    {
+      "id": "t031_s03",
+      "kind": "sentence",
+      "topicId": 31,
+      "sentenceIndex": 3,
+      "text": "딸기 맛도 있고 포도 맛도 있어요.",
+      "path": "audio/sentences/topic_031_s03.mp3"
+    },
+    {
+      "id": "t031_s04",
+      "kind": "sentence",
+      "topicId": 31,
+      "sentenceIndex": 4,
+      "text": "입에 넣으면 천천히 녹아요.",
+      "path": "audio/sentences/topic_031_s04.mp3"
+    },
+    {
+      "id": "t031_s05",
+      "kind": "sentence",
+      "topicId": 31,
+      "sentenceIndex": 5,
+      "text": "끝까지 단맛이 나요.",
+      "path": "audio/sentences/topic_031_s05.mp3"
+    },
+    {
+      "id": "t031_s06",
+      "kind": "sentence",
+      "topicId": 31,
+      "sentenceIndex": 6,
+      "text": "저는 사탕을 좋아해요.",
+      "path": "audio/sentences/topic_031_s06.mp3"
+    },
+    {
+      "id": "t031_s07",
+      "kind": "sentence",
+      "topicId": 31,
+      "sentenceIndex": 7,
+      "text": "가방에 늘 한두 개 있어요.",
+      "path": "audio/sentences/topic_031_s07.mp3"
+    },
+    {
+      "id": "t031_s08",
+      "kind": "sentence",
+      "topicId": 31,
+      "sentenceIndex": 8,
+      "text": "친구한테 나눠 주기도 해요.",
+      "path": "audio/sentences/topic_031_s08.mp3"
+    },
+    {
+      "id": "t031_s09",
+      "kind": "sentence",
+      "topicId": 31,
+      "sentenceIndex": 9,
+      "text": "너무 많이 먹으면 안 돼요.",
+      "path": "audio/sentences/topic_031_s09.mp3"
+    },
+    {
+      "id": "t031_s10",
+      "kind": "sentence",
+      "topicId": 31,
+      "sentenceIndex": 10,
+      "text": "이가 아파져요.",
+      "path": "audio/sentences/topic_031_s10.mp3"
+    },
+    {
+      "id": "topic_032",
+      "kind": "topic",
+      "topicId": 32,
+      "text": "김치. 김치는 한국 음식이에요. 빨간색이고 매워요. 배추로 만들어요. 무로 만든 김치도 있어요. 종류가 정말 많아요.  저는 김치를 잘 먹어요. 처음에는 매웠지만 지금은 괜찮아요. 밥이랑 같이 먹어요. 라면이랑도 잘 어울려요. 김치 없이는 못 살아요. ",
+      "path": "audio/topics/topic_032.mp3"
+    },
+    {
+      "id": "t032_s01",
+      "kind": "sentence",
+      "topicId": 32,
+      "sentenceIndex": 1,
+      "text": "김치는 한국 음식이에요.",
+      "path": "audio/sentences/topic_032_s01.mp3"
+    },
+    {
+      "id": "t032_s02",
+      "kind": "sentence",
+      "topicId": 32,
+      "sentenceIndex": 2,
+      "text": "빨간색이고 매워요.",
+      "path": "audio/sentences/topic_032_s02.mp3"
+    },
+    {
+      "id": "t032_s03",
+      "kind": "sentence",
+      "topicId": 32,
+      "sentenceIndex": 3,
+      "text": "배추로 만들어요.",
+      "path": "audio/sentences/topic_032_s03.mp3"
+    },
+    {
+      "id": "t032_s04",
+      "kind": "sentence",
+      "topicId": 32,
+      "sentenceIndex": 4,
+      "text": "무로 만든 김치도 있어요.",
+      "path": "audio/sentences/topic_032_s04.mp3"
+    },
+    {
+      "id": "t032_s05",
+      "kind": "sentence",
+      "topicId": 32,
+      "sentenceIndex": 5,
+      "text": "종류가 정말 많아요.",
+      "path": "audio/sentences/topic_032_s05.mp3"
+    },
+    {
+      "id": "t032_s06",
+      "kind": "sentence",
+      "topicId": 32,
+      "sentenceIndex": 6,
+      "text": "저는 김치를 잘 먹어요.",
+      "path": "audio/sentences/topic_032_s06.mp3"
+    },
+    {
+      "id": "t032_s07",
+      "kind": "sentence",
+      "topicId": 32,
+      "sentenceIndex": 7,
+      "text": "처음에는 매웠지만 지금은 괜찮아요.",
+      "path": "audio/sentences/topic_032_s07.mp3"
+    },
+    {
+      "id": "t032_s08",
+      "kind": "sentence",
+      "topicId": 32,
+      "sentenceIndex": 8,
+      "text": "밥이랑 같이 먹어요.",
+      "path": "audio/sentences/topic_032_s08.mp3"
+    },
+    {
+      "id": "t032_s09",
+      "kind": "sentence",
+      "topicId": 32,
+      "sentenceIndex": 9,
+      "text": "라면이랑도 잘 어울려요.",
+      "path": "audio/sentences/topic_032_s09.mp3"
+    },
+    {
+      "id": "t032_s10",
+      "kind": "sentence",
+      "topicId": 32,
+      "sentenceIndex": 10,
+      "text": "김치 없이는 못 살아요.",
+      "path": "audio/sentences/topic_032_s10.mp3"
+    },
+    {
+      "id": "topic_033",
+      "kind": "topic",
+      "topicId": 33,
+      "text": "동생. 저는 동생이 한 명 있어요. 다섯 살이에요. 저보다 키가 작아요. 머리도 짧아요. 항상 저를 따라다녀요.  동생은 장난을 자주 쳐요. 가끔 짜증 나요. 하지만 귀여워요. 같이 놀면 즐거워요. 동생이 있어서 좋아요. ",
+      "path": "audio/topics/topic_033.mp3"
+    },
+    {
+      "id": "t033_s01",
+      "kind": "sentence",
+      "topicId": 33,
+      "sentenceIndex": 1,
+      "text": "저는 동생이 한 명 있어요.",
+      "path": "audio/sentences/topic_033_s01.mp3"
+    },
+    {
+      "id": "t033_s02",
+      "kind": "sentence",
+      "topicId": 33,
+      "sentenceIndex": 2,
+      "text": "다섯 살이에요.",
+      "path": "audio/sentences/topic_033_s02.mp3"
+    },
+    {
+      "id": "t033_s03",
+      "kind": "sentence",
+      "topicId": 33,
+      "sentenceIndex": 3,
+      "text": "저보다 키가 작아요.",
+      "path": "audio/sentences/topic_033_s03.mp3"
+    },
+    {
+      "id": "t033_s04",
+      "kind": "sentence",
+      "topicId": 33,
+      "sentenceIndex": 4,
+      "text": "머리도 짧아요.",
+      "path": "audio/sentences/topic_033_s04.mp3"
+    },
+    {
+      "id": "t033_s05",
+      "kind": "sentence",
+      "topicId": 33,
+      "sentenceIndex": 5,
+      "text": "항상 저를 따라다녀요.",
+      "path": "audio/sentences/topic_033_s05.mp3"
+    },
+    {
+      "id": "t033_s06",
+      "kind": "sentence",
+      "topicId": 33,
+      "sentenceIndex": 6,
+      "text": "동생은 장난을 자주 쳐요.",
+      "path": "audio/sentences/topic_033_s06.mp3"
+    },
+    {
+      "id": "t033_s07",
+      "kind": "sentence",
+      "topicId": 33,
+      "sentenceIndex": 7,
+      "text": "가끔 짜증 나요.",
+      "path": "audio/sentences/topic_033_s07.mp3"
+    },
+    {
+      "id": "t033_s08",
+      "kind": "sentence",
+      "topicId": 33,
+      "sentenceIndex": 8,
+      "text": "하지만 귀여워요.",
+      "path": "audio/sentences/topic_033_s08.mp3"
+    },
+    {
+      "id": "t033_s09",
+      "kind": "sentence",
+      "topicId": 33,
+      "sentenceIndex": 9,
+      "text": "같이 놀면 즐거워요.",
+      "path": "audio/sentences/topic_033_s09.mp3"
+    },
+    {
+      "id": "t033_s10",
+      "kind": "sentence",
+      "topicId": 33,
+      "sentenceIndex": 10,
+      "text": "동생이 있어서 좋아요.",
+      "path": "audio/sentences/topic_033_s10.mp3"
+    },
+    {
+      "id": "topic_034",
+      "kind": "topic",
+      "topicId": 34,
+      "text": "형. 저한테는 형이 있어요. 저보다 다섯 살 많아요. 형은 키가 커요. 공부도 잘해요. 운동도 잘해요.  형은 가끔 저를 도와줘요. 숙제를 가르쳐 주기도 해요. 같이 게임도 해요. 가끔 싸우기도 해요. 그래도 우리는 형제예요. ",
+      "path": "audio/topics/topic_034.mp3"
+    },
+    {
+      "id": "t034_s01",
+      "kind": "sentence",
+      "topicId": 34,
+      "sentenceIndex": 1,
+      "text": "저한테는 형이 있어요.",
+      "path": "audio/sentences/topic_034_s01.mp3"
+    },
+    {
+      "id": "t034_s02",
+      "kind": "sentence",
+      "topicId": 34,
+      "sentenceIndex": 2,
+      "text": "저보다 다섯 살 많아요.",
+      "path": "audio/sentences/topic_034_s02.mp3"
+    },
+    {
+      "id": "t034_s03",
+      "kind": "sentence",
+      "topicId": 34,
+      "sentenceIndex": 3,
+      "text": "형은 키가 커요.",
+      "path": "audio/sentences/topic_034_s03.mp3"
+    },
+    {
+      "id": "t034_s04",
+      "kind": "sentence",
+      "topicId": 34,
+      "sentenceIndex": 4,
+      "text": "공부도 잘해요.",
+      "path": "audio/sentences/topic_034_s04.mp3"
+    },
+    {
+      "id": "t034_s05",
+      "kind": "sentence",
+      "topicId": 34,
+      "sentenceIndex": 5,
+      "text": "운동도 잘해요.",
+      "path": "audio/sentences/topic_034_s05.mp3"
+    },
+    {
+      "id": "t034_s06",
+      "kind": "sentence",
+      "topicId": 34,
+      "sentenceIndex": 6,
+      "text": "형은 가끔 저를 도와줘요.",
+      "path": "audio/sentences/topic_034_s06.mp3"
+    },
+    {
+      "id": "t034_s07",
+      "kind": "sentence",
+      "topicId": 34,
+      "sentenceIndex": 7,
+      "text": "숙제를 가르쳐 주기도 해요.",
+      "path": "audio/sentences/topic_034_s07.mp3"
+    },
+    {
+      "id": "t034_s08",
+      "kind": "sentence",
+      "topicId": 34,
+      "sentenceIndex": 8,
+      "text": "같이 게임도 해요.",
+      "path": "audio/sentences/topic_034_s08.mp3"
+    },
+    {
+      "id": "t034_s09",
+      "kind": "sentence",
+      "topicId": 34,
+      "sentenceIndex": 9,
+      "text": "가끔 싸우기도 해요.",
+      "path": "audio/sentences/topic_034_s09.mp3"
+    },
+    {
+      "id": "t034_s10",
+      "kind": "sentence",
+      "topicId": 34,
+      "sentenceIndex": 10,
+      "text": "그래도 우리는 형제예요.",
+      "path": "audio/sentences/topic_034_s10.mp3"
+    },
+    {
+      "id": "topic_035",
+      "kind": "topic",
+      "topicId": 35,
+      "text": "할머니. 할머니는 시골에 사세요. 집에 마당이 있어요. 마당에 꽃이 많아요. 할머니는 꽃을 잘 키우세요. 음식도 정말 잘 만드세요.  저는 할머니를 좋아해요. 명절에 할머니 댁에 가요. 할머니가 항상 저를 안아 주세요. 맛있는 것도 많이 주세요. 자주 보고 싶어요. ",
+      "path": "audio/topics/topic_035.mp3"
+    },
+    {
+      "id": "t035_s01",
+      "kind": "sentence",
+      "topicId": 35,
+      "sentenceIndex": 1,
+      "text": "할머니는 시골에 사세요.",
+      "path": "audio/sentences/topic_035_s01.mp3"
+    },
+    {
+      "id": "t035_s02",
+      "kind": "sentence",
+      "topicId": 35,
+      "sentenceIndex": 2,
+      "text": "집에 마당이 있어요.",
+      "path": "audio/sentences/topic_035_s02.mp3"
+    },
+    {
+      "id": "t035_s03",
+      "kind": "sentence",
+      "topicId": 35,
+      "sentenceIndex": 3,
+      "text": "마당에 꽃이 많아요.",
+      "path": "audio/sentences/topic_035_s03.mp3"
+    },
+    {
+      "id": "t035_s04",
+      "kind": "sentence",
+      "topicId": 35,
+      "sentenceIndex": 4,
+      "text": "할머니는 꽃을 잘 키우세요.",
+      "path": "audio/sentences/topic_035_s04.mp3"
+    },
+    {
+      "id": "t035_s05",
+      "kind": "sentence",
+      "topicId": 35,
+      "sentenceIndex": 5,
+      "text": "음식도 정말 잘 만드세요.",
+      "path": "audio/sentences/topic_035_s05.mp3"
+    },
+    {
+      "id": "t035_s06",
+      "kind": "sentence",
+      "topicId": 35,
+      "sentenceIndex": 6,
+      "text": "저는 할머니를 좋아해요.",
+      "path": "audio/sentences/topic_035_s06.mp3"
+    },
+    {
+      "id": "t035_s07",
+      "kind": "sentence",
+      "topicId": 35,
+      "sentenceIndex": 7,
+      "text": "명절에 할머니 댁에 가요.",
+      "path": "audio/sentences/topic_035_s07.mp3"
+    },
+    {
+      "id": "t035_s08",
+      "kind": "sentence",
+      "topicId": 35,
+      "sentenceIndex": 8,
+      "text": "할머니가 항상 저를 안아 주세요.",
+      "path": "audio/sentences/topic_035_s08.mp3"
+    },
+    {
+      "id": "t035_s09",
+      "kind": "sentence",
+      "topicId": 35,
+      "sentenceIndex": 9,
+      "text": "맛있는 것도 많이 주세요.",
+      "path": "audio/sentences/topic_035_s09.mp3"
+    },
+    {
+      "id": "t035_s10",
+      "kind": "sentence",
+      "topicId": 35,
+      "sentenceIndex": 10,
+      "text": "자주 보고 싶어요.",
+      "path": "audio/sentences/topic_035_s10.mp3"
+    },
+    {
+      "id": "topic_036",
+      "kind": "topic",
+      "topicId": 36,
+      "text": "할아버지. 할아버지는 키가 크세요. 머리는 하얀색이에요. 안경을 쓰세요. 항상 웃으세요. 목소리는 굵으세요.  할아버지는 옛날 이야기를 잘하세요. 재미있는 이야기가 많아요. 같이 산책도 가요. 손을 꼭 잡아 주세요. 할아버지가 정말 좋아요. ",
+      "path": "audio/topics/topic_036.mp3"
+    },
+    {
+      "id": "t036_s01",
+      "kind": "sentence",
+      "topicId": 36,
+      "sentenceIndex": 1,
+      "text": "할아버지는 키가 크세요.",
+      "path": "audio/sentences/topic_036_s01.mp3"
+    },
+    {
+      "id": "t036_s02",
+      "kind": "sentence",
+      "topicId": 36,
+      "sentenceIndex": 2,
+      "text": "머리는 하얀색이에요.",
+      "path": "audio/sentences/topic_036_s02.mp3"
+    },
+    {
+      "id": "t036_s03",
+      "kind": "sentence",
+      "topicId": 36,
+      "sentenceIndex": 3,
+      "text": "안경을 쓰세요.",
+      "path": "audio/sentences/topic_036_s03.mp3"
+    },
+    {
+      "id": "t036_s04",
+      "kind": "sentence",
+      "topicId": 36,
+      "sentenceIndex": 4,
+      "text": "항상 웃으세요.",
+      "path": "audio/sentences/topic_036_s04.mp3"
+    },
+    {
+      "id": "t036_s05",
+      "kind": "sentence",
+      "topicId": 36,
+      "sentenceIndex": 5,
+      "text": "목소리는 굵으세요.",
+      "path": "audio/sentences/topic_036_s05.mp3"
+    },
+    {
+      "id": "t036_s06",
+      "kind": "sentence",
+      "topicId": 36,
+      "sentenceIndex": 6,
+      "text": "할아버지는 옛날 이야기를 잘하세요.",
+      "path": "audio/sentences/topic_036_s06.mp3"
+    },
+    {
+      "id": "t036_s07",
+      "kind": "sentence",
+      "topicId": 36,
+      "sentenceIndex": 7,
+      "text": "재미있는 이야기가 많아요.",
+      "path": "audio/sentences/topic_036_s07.mp3"
+    },
+    {
+      "id": "t036_s08",
+      "kind": "sentence",
+      "topicId": 36,
+      "sentenceIndex": 8,
+      "text": "같이 산책도 가요.",
+      "path": "audio/sentences/topic_036_s08.mp3"
+    },
+    {
+      "id": "t036_s09",
+      "kind": "sentence",
+      "topicId": 36,
+      "sentenceIndex": 9,
+      "text": "손을 꼭 잡아 주세요.",
+      "path": "audio/sentences/topic_036_s09.mp3"
+    },
+    {
+      "id": "t036_s10",
+      "kind": "sentence",
+      "topicId": 36,
+      "sentenceIndex": 10,
+      "text": "할아버지가 정말 좋아요.",
+      "path": "audio/sentences/topic_036_s10.mp3"
+    },
+    {
+      "id": "topic_037",
+      "kind": "topic",
+      "topicId": 37,
+      "text": "선생님. 선생님은 학교에서 만나요. 우리한테 공부를 가르쳐 주세요. 책을 읽어 주세요. 글씨도 가르쳐 주세요. 정말 친절하세요.  우리 선생님은 여자 선생님이세요. 항상 웃으세요. 우리가 잘하면 칭찬해 주세요. 가끔 야단도 치세요. 그래도 우리는 선생님을 좋아해요. ",
+      "path": "audio/topics/topic_037.mp3"
+    },
+    {
+      "id": "t037_s01",
+      "kind": "sentence",
+      "topicId": 37,
+      "sentenceIndex": 1,
+      "text": "선생님은 학교에서 만나요.",
+      "path": "audio/sentences/topic_037_s01.mp3"
+    },
+    {
+      "id": "t037_s02",
+      "kind": "sentence",
+      "topicId": 37,
+      "sentenceIndex": 2,
+      "text": "우리한테 공부를 가르쳐 주세요.",
+      "path": "audio/sentences/topic_037_s02.mp3"
+    },
+    {
+      "id": "t037_s03",
+      "kind": "sentence",
+      "topicId": 37,
+      "sentenceIndex": 3,
+      "text": "책을 읽어 주세요.",
+      "path": "audio/sentences/topic_037_s03.mp3"
+    },
+    {
+      "id": "t037_s04",
+      "kind": "sentence",
+      "topicId": 37,
+      "sentenceIndex": 4,
+      "text": "글씨도 가르쳐 주세요.",
+      "path": "audio/sentences/topic_037_s04.mp3"
+    },
+    {
+      "id": "t037_s05",
+      "kind": "sentence",
+      "topicId": 37,
+      "sentenceIndex": 5,
+      "text": "정말 친절하세요.",
+      "path": "audio/sentences/topic_037_s05.mp3"
+    },
+    {
+      "id": "t037_s06",
+      "kind": "sentence",
+      "topicId": 37,
+      "sentenceIndex": 6,
+      "text": "우리 선생님은 여자 선생님이세요.",
+      "path": "audio/sentences/topic_037_s06.mp3"
+    },
+    {
+      "id": "t037_s07",
+      "kind": "sentence",
+      "topicId": 37,
+      "sentenceIndex": 7,
+      "text": "항상 웃으세요.",
+      "path": "audio/sentences/topic_037_s07.mp3"
+    },
+    {
+      "id": "t037_s08",
+      "kind": "sentence",
+      "topicId": 37,
+      "sentenceIndex": 8,
+      "text": "우리가 잘하면 칭찬해 주세요.",
+      "path": "audio/sentences/topic_037_s08.mp3"
+    },
+    {
+      "id": "t037_s09",
+      "kind": "sentence",
+      "topicId": 37,
+      "sentenceIndex": 9,
+      "text": "가끔 야단도 치세요.",
+      "path": "audio/sentences/topic_037_s09.mp3"
+    },
+    {
+      "id": "t037_s10",
+      "kind": "sentence",
+      "topicId": 37,
+      "sentenceIndex": 10,
+      "text": "그래도 우리는 선생님을 좋아해요.",
+      "path": "audio/sentences/topic_037_s10.mp3"
+    },
+    {
+      "id": "topic_038",
+      "kind": "topic",
+      "topicId": 38,
+      "text": "바지. 바지는 다리에 입어요. 긴 바지가 있어요. 짧은 바지도 있어요. 여름에는 짧은 바지를 입어요. 겨울에는 긴 바지를 입어요.  저는 청바지를 자주 입어요. 색깔이 파란색이에요. 편하고 멋있어요. 학교에 갈 때도 입어요. 놀이터에 갈 때도 입어요. ",
+      "path": "audio/topics/topic_038.mp3"
+    },
+    {
+      "id": "t038_s01",
+      "kind": "sentence",
+      "topicId": 38,
+      "sentenceIndex": 1,
+      "text": "바지는 다리에 입어요.",
+      "path": "audio/sentences/topic_038_s01.mp3"
+    },
+    {
+      "id": "t038_s02",
+      "kind": "sentence",
+      "topicId": 38,
+      "sentenceIndex": 2,
+      "text": "긴 바지가 있어요.",
+      "path": "audio/sentences/topic_038_s02.mp3"
+    },
+    {
+      "id": "t038_s03",
+      "kind": "sentence",
+      "topicId": 38,
+      "sentenceIndex": 3,
+      "text": "짧은 바지도 있어요.",
+      "path": "audio/sentences/topic_038_s03.mp3"
+    },
+    {
+      "id": "t038_s04",
+      "kind": "sentence",
+      "topicId": 38,
+      "sentenceIndex": 4,
+      "text": "여름에는 짧은 바지를 입어요.",
+      "path": "audio/sentences/topic_038_s04.mp3"
+    },
+    {
+      "id": "t038_s05",
+      "kind": "sentence",
+      "topicId": 38,
+      "sentenceIndex": 5,
+      "text": "겨울에는 긴 바지를 입어요.",
+      "path": "audio/sentences/topic_038_s05.mp3"
+    },
+    {
+      "id": "t038_s06",
+      "kind": "sentence",
+      "topicId": 38,
+      "sentenceIndex": 6,
+      "text": "저는 청바지를 자주 입어요.",
+      "path": "audio/sentences/topic_038_s06.mp3"
+    },
+    {
+      "id": "t038_s07",
+      "kind": "sentence",
+      "topicId": 38,
+      "sentenceIndex": 7,
+      "text": "색깔이 파란색이에요.",
+      "path": "audio/sentences/topic_038_s07.mp3"
+    },
+    {
+      "id": "t038_s08",
+      "kind": "sentence",
+      "topicId": 38,
+      "sentenceIndex": 8,
+      "text": "편하고 멋있어요.",
+      "path": "audio/sentences/topic_038_s08.mp3"
+    },
+    {
+      "id": "t038_s09",
+      "kind": "sentence",
+      "topicId": 38,
+      "sentenceIndex": 9,
+      "text": "학교에 갈 때도 입어요.",
+      "path": "audio/sentences/topic_038_s09.mp3"
+    },
+    {
+      "id": "t038_s10",
+      "kind": "sentence",
+      "topicId": 38,
+      "sentenceIndex": 10,
+      "text": "놀이터에 갈 때도 입어요.",
+      "path": "audio/sentences/topic_038_s10.mp3"
+    },
+    {
+      "id": "topic_039",
+      "kind": "topic",
+      "topicId": 39,
+      "text": "잠옷. 잠옷은 잘 때 입는 옷이에요. 가볍고 편해요. 부드러운 천으로 만들어요. 여러 가지 모양이 있어요. 동물 그림이 있는 잠옷도 있어요.  제 잠옷은 분홍색이에요. 곰돌이 그림이 있어요. 자기 전에 잠옷으로 갈아입어요. 잠옷을 입으면 잠이 잘 와요. 정말 좋아요. ",
+      "path": "audio/topics/topic_039.mp3"
+    },
+    {
+      "id": "t039_s01",
+      "kind": "sentence",
+      "topicId": 39,
+      "sentenceIndex": 1,
+      "text": "잠옷은 잘 때 입는 옷이에요.",
+      "path": "audio/sentences/topic_039_s01.mp3"
+    },
+    {
+      "id": "t039_s02",
+      "kind": "sentence",
+      "topicId": 39,
+      "sentenceIndex": 2,
+      "text": "가볍고 편해요.",
+      "path": "audio/sentences/topic_039_s02.mp3"
+    },
+    {
+      "id": "t039_s03",
+      "kind": "sentence",
+      "topicId": 39,
+      "sentenceIndex": 3,
+      "text": "부드러운 천으로 만들어요.",
+      "path": "audio/sentences/topic_039_s03.mp3"
+    },
+    {
+      "id": "t039_s04",
+      "kind": "sentence",
+      "topicId": 39,
+      "sentenceIndex": 4,
+      "text": "여러 가지 모양이 있어요.",
+      "path": "audio/sentences/topic_039_s04.mp3"
+    },
+    {
+      "id": "t039_s05",
+      "kind": "sentence",
+      "topicId": 39,
+      "sentenceIndex": 5,
+      "text": "동물 그림이 있는 잠옷도 있어요.",
+      "path": "audio/sentences/topic_039_s05.mp3"
+    },
+    {
+      "id": "t039_s06",
+      "kind": "sentence",
+      "topicId": 39,
+      "sentenceIndex": 6,
+      "text": "제 잠옷은 분홍색이에요.",
+      "path": "audio/sentences/topic_039_s06.mp3"
+    },
+    {
+      "id": "t039_s07",
+      "kind": "sentence",
+      "topicId": 39,
+      "sentenceIndex": 7,
+      "text": "곰돌이 그림이 있어요.",
+      "path": "audio/sentences/topic_039_s07.mp3"
+    },
+    {
+      "id": "t039_s08",
+      "kind": "sentence",
+      "topicId": 39,
+      "sentenceIndex": 8,
+      "text": "자기 전에 잠옷으로 갈아입어요.",
+      "path": "audio/sentences/topic_039_s08.mp3"
+    },
+    {
+      "id": "t039_s09",
+      "kind": "sentence",
+      "topicId": 39,
+      "sentenceIndex": 9,
+      "text": "잠옷을 입으면 잠이 잘 와요.",
+      "path": "audio/sentences/topic_039_s09.mp3"
+    },
+    {
+      "id": "t039_s10",
+      "kind": "sentence",
+      "topicId": 39,
+      "sentenceIndex": 10,
+      "text": "정말 좋아요.",
+      "path": "audio/sentences/topic_039_s10.mp3"
+    },
+    {
+      "id": "topic_040",
+      "kind": "topic",
+      "topicId": 40,
+      "text": "닭. 닭은 농장에 살아요. 다리가 두 개 있어요. 날개도 있지만 잘 못 날아요. 부리로 곡식을 먹어요. 알을 낳아요.  엄마 닭은 병아리를 보호해요. 병아리는 작고 노래요. 닭은 우리에게 달걀을 줘요. 우리는 매일 달걀을 먹어요. 정말 고마운 동물이에요. ",
+      "path": "audio/topics/topic_040.mp3"
+    },
+    {
+      "id": "t040_s01",
+      "kind": "sentence",
+      "topicId": 40,
+      "sentenceIndex": 1,
+      "text": "닭은 농장에 살아요.",
+      "path": "audio/sentences/topic_040_s01.mp3"
+    },
+    {
+      "id": "t040_s02",
+      "kind": "sentence",
+      "topicId": 40,
+      "sentenceIndex": 2,
+      "text": "다리가 두 개 있어요.",
+      "path": "audio/sentences/topic_040_s02.mp3"
+    },
+    {
+      "id": "t040_s03",
+      "kind": "sentence",
+      "topicId": 40,
+      "sentenceIndex": 3,
+      "text": "날개도 있지만 잘 못 날아요.",
+      "path": "audio/sentences/topic_040_s03.mp3"
+    },
+    {
+      "id": "t040_s04",
+      "kind": "sentence",
+      "topicId": 40,
+      "sentenceIndex": 4,
+      "text": "부리로 곡식을 먹어요.",
+      "path": "audio/sentences/topic_040_s04.mp3"
+    },
+    {
+      "id": "t040_s05",
+      "kind": "sentence",
+      "topicId": 40,
+      "sentenceIndex": 5,
+      "text": "알을 낳아요.",
+      "path": "audio/sentences/topic_040_s05.mp3"
+    },
+    {
+      "id": "t040_s06",
+      "kind": "sentence",
+      "topicId": 40,
+      "sentenceIndex": 6,
+      "text": "엄마 닭은 병아리를 보호해요.",
+      "path": "audio/sentences/topic_040_s06.mp3"
+    },
+    {
+      "id": "t040_s07",
+      "kind": "sentence",
+      "topicId": 40,
+      "sentenceIndex": 7,
+      "text": "병아리는 작고 노래요.",
+      "path": "audio/sentences/topic_040_s07.mp3"
+    },
+    {
+      "id": "t040_s08",
+      "kind": "sentence",
+      "topicId": 40,
+      "sentenceIndex": 8,
+      "text": "닭은 우리에게 달걀을 줘요.",
+      "path": "audio/sentences/topic_040_s08.mp3"
+    },
+    {
+      "id": "t040_s09",
+      "kind": "sentence",
+      "topicId": 40,
+      "sentenceIndex": 9,
+      "text": "우리는 매일 달걀을 먹어요.",
+      "path": "audio/sentences/topic_040_s09.mp3"
+    },
+    {
+      "id": "t040_s10",
+      "kind": "sentence",
+      "topicId": 40,
+      "sentenceIndex": 10,
+      "text": "정말 고마운 동물이에요.",
+      "path": "audio/sentences/topic_040_s10.mp3"
+    },
+    {
+      "id": "topic_041",
+      "kind": "topic",
+      "topicId": 41,
+      "text": "오리. 오리는 물에서 잘 다녀요. 발이 넓어요. 그래서 헤엄을 잘 쳐요. 부리는 길어요. 색깔은 보통 흰색이나 갈색이에요.  오리는 물고기를 먹어요. 풀도 먹어요. 호수에서 가족이 같이 다녀요. 새끼 오리는 엄마를 잘 따라가요. 정말 귀여워요. ",
+      "path": "audio/topics/topic_041.mp3"
+    },
+    {
+      "id": "t041_s01",
+      "kind": "sentence",
+      "topicId": 41,
+      "sentenceIndex": 1,
+      "text": "오리는 물에서 잘 다녀요.",
+      "path": "audio/sentences/topic_041_s01.mp3"
+    },
+    {
+      "id": "t041_s02",
+      "kind": "sentence",
+      "topicId": 41,
+      "sentenceIndex": 2,
+      "text": "발이 넓어요.",
+      "path": "audio/sentences/topic_041_s02.mp3"
+    },
+    {
+      "id": "t041_s03",
+      "kind": "sentence",
+      "topicId": 41,
+      "sentenceIndex": 3,
+      "text": "그래서 헤엄을 잘 쳐요.",
+      "path": "audio/sentences/topic_041_s03.mp3"
+    },
+    {
+      "id": "t041_s04",
+      "kind": "sentence",
+      "topicId": 41,
+      "sentenceIndex": 4,
+      "text": "부리는 길어요.",
+      "path": "audio/sentences/topic_041_s04.mp3"
+    },
+    {
+      "id": "t041_s05",
+      "kind": "sentence",
+      "topicId": 41,
+      "sentenceIndex": 5,
+      "text": "색깔은 보통 흰색이나 갈색이에요.",
+      "path": "audio/sentences/topic_041_s05.mp3"
+    },
+    {
+      "id": "t041_s06",
+      "kind": "sentence",
+      "topicId": 41,
+      "sentenceIndex": 6,
+      "text": "오리는 물고기를 먹어요.",
+      "path": "audio/sentences/topic_041_s06.mp3"
+    },
+    {
+      "id": "t041_s07",
+      "kind": "sentence",
+      "topicId": 41,
+      "sentenceIndex": 7,
+      "text": "풀도 먹어요.",
+      "path": "audio/sentences/topic_041_s07.mp3"
+    },
+    {
+      "id": "t041_s08",
+      "kind": "sentence",
+      "topicId": 41,
+      "sentenceIndex": 8,
+      "text": "호수에서 가족이 같이 다녀요.",
+      "path": "audio/sentences/topic_041_s08.mp3"
+    },
+    {
+      "id": "t041_s09",
+      "kind": "sentence",
+      "topicId": 41,
+      "sentenceIndex": 9,
+      "text": "새끼 오리는 엄마를 잘 따라가요.",
+      "path": "audio/sentences/topic_041_s09.mp3"
+    },
+    {
+      "id": "t041_s10",
+      "kind": "sentence",
+      "topicId": 41,
+      "sentenceIndex": 10,
+      "text": "정말 귀여워요.",
+      "path": "audio/sentences/topic_041_s10.mp3"
+    },
+    {
+      "id": "topic_042",
+      "kind": "topic",
+      "topicId": 42,
+      "text": "돼지. 돼지는 농장에 사는 동물이에요. 몸이 크고 둥글어요. 코는 동그래요. 꼬리는 짧아요. 분홍색 돼지가 많아요.  돼지는 밥을 잘 먹어요. 음식을 가리지 않아요. 진흙도 좋아해요. 깨끗한 돼지도 있어요. 돼지는 똑똑한 동물이래요. ",
+      "path": "audio/topics/topic_042.mp3"
+    },
+    {
+      "id": "t042_s01",
+      "kind": "sentence",
+      "topicId": 42,
+      "sentenceIndex": 1,
+      "text": "돼지는 농장에 사는 동물이에요.",
+      "path": "audio/sentences/topic_042_s01.mp3"
+    },
+    {
+      "id": "t042_s02",
+      "kind": "sentence",
+      "topicId": 42,
+      "sentenceIndex": 2,
+      "text": "몸이 크고 둥글어요.",
+      "path": "audio/sentences/topic_042_s02.mp3"
+    },
+    {
+      "id": "t042_s03",
+      "kind": "sentence",
+      "topicId": 42,
+      "sentenceIndex": 3,
+      "text": "코는 동그래요.",
+      "path": "audio/sentences/topic_042_s03.mp3"
+    },
+    {
+      "id": "t042_s04",
+      "kind": "sentence",
+      "topicId": 42,
+      "sentenceIndex": 4,
+      "text": "꼬리는 짧아요.",
+      "path": "audio/sentences/topic_042_s04.mp3"
+    },
+    {
+      "id": "t042_s05",
+      "kind": "sentence",
+      "topicId": 42,
+      "sentenceIndex": 5,
+      "text": "분홍색 돼지가 많아요.",
+      "path": "audio/sentences/topic_042_s05.mp3"
+    },
+    {
+      "id": "t042_s06",
+      "kind": "sentence",
+      "topicId": 42,
+      "sentenceIndex": 6,
+      "text": "돼지는 밥을 잘 먹어요.",
+      "path": "audio/sentences/topic_042_s06.mp3"
+    },
+    {
+      "id": "t042_s07",
+      "kind": "sentence",
+      "topicId": 42,
+      "sentenceIndex": 7,
+      "text": "음식을 가리지 않아요.",
+      "path": "audio/sentences/topic_042_s07.mp3"
+    },
+    {
+      "id": "t042_s08",
+      "kind": "sentence",
+      "topicId": 42,
+      "sentenceIndex": 8,
+      "text": "진흙도 좋아해요.",
+      "path": "audio/sentences/topic_042_s08.mp3"
+    },
+    {
+      "id": "t042_s09",
+      "kind": "sentence",
+      "topicId": 42,
+      "sentenceIndex": 9,
+      "text": "깨끗한 돼지도 있어요.",
+      "path": "audio/sentences/topic_042_s09.mp3"
+    },
+    {
+      "id": "t042_s10",
+      "kind": "sentence",
+      "topicId": 42,
+      "sentenceIndex": 10,
+      "text": "돼지는 똑똑한 동물이래요.",
+      "path": "audio/sentences/topic_042_s10.mp3"
+    },
+    {
+      "id": "topic_043",
+      "kind": "topic",
+      "topicId": 43,
+      "text": "곰. 곰은 큰 동물이에요. 몸이 두껍고 무거워요. 갈색 곰이 많아요. 흰색 곰도 있어요. 발에는 큰 발톱이 있어요.  곰은 꿀을 좋아해요. 물고기도 잡아 먹어요. 겨울에는 동굴에서 잠을 자요. 봄이 되면 일어나요. 자연에서 사는 동물이에요. ",
+      "path": "audio/topics/topic_043.mp3"
+    },
+    {
+      "id": "t043_s01",
+      "kind": "sentence",
+      "topicId": 43,
+      "sentenceIndex": 1,
+      "text": "곰은 큰 동물이에요.",
+      "path": "audio/sentences/topic_043_s01.mp3"
+    },
+    {
+      "id": "t043_s02",
+      "kind": "sentence",
+      "topicId": 43,
+      "sentenceIndex": 2,
+      "text": "몸이 두껍고 무거워요.",
+      "path": "audio/sentences/topic_043_s02.mp3"
+    },
+    {
+      "id": "t043_s03",
+      "kind": "sentence",
+      "topicId": 43,
+      "sentenceIndex": 3,
+      "text": "갈색 곰이 많아요.",
+      "path": "audio/sentences/topic_043_s03.mp3"
+    },
+    {
+      "id": "t043_s04",
+      "kind": "sentence",
+      "topicId": 43,
+      "sentenceIndex": 4,
+      "text": "흰색 곰도 있어요.",
+      "path": "audio/sentences/topic_043_s04.mp3"
+    },
+    {
+      "id": "t043_s05",
+      "kind": "sentence",
+      "topicId": 43,
+      "sentenceIndex": 5,
+      "text": "발에는 큰 발톱이 있어요.",
+      "path": "audio/sentences/topic_043_s05.mp3"
+    },
+    {
+      "id": "t043_s06",
+      "kind": "sentence",
+      "topicId": 43,
+      "sentenceIndex": 6,
+      "text": "곰은 꿀을 좋아해요.",
+      "path": "audio/sentences/topic_043_s06.mp3"
+    },
+    {
+      "id": "t043_s07",
+      "kind": "sentence",
+      "topicId": 43,
+      "sentenceIndex": 7,
+      "text": "물고기도 잡아 먹어요.",
+      "path": "audio/sentences/topic_043_s07.mp3"
+    },
+    {
+      "id": "t043_s08",
+      "kind": "sentence",
+      "topicId": 43,
+      "sentenceIndex": 8,
+      "text": "겨울에는 동굴에서 잠을 자요.",
+      "path": "audio/sentences/topic_043_s08.mp3"
+    },
+    {
+      "id": "t043_s09",
+      "kind": "sentence",
+      "topicId": 43,
+      "sentenceIndex": 9,
+      "text": "봄이 되면 일어나요.",
+      "path": "audio/sentences/topic_043_s09.mp3"
+    },
+    {
+      "id": "t043_s10",
+      "kind": "sentence",
+      "topicId": 43,
+      "sentenceIndex": 10,
+      "text": "자연에서 사는 동물이에요.",
+      "path": "audio/sentences/topic_043_s10.mp3"
+    },
+    {
+      "id": "topic_044",
+      "kind": "topic",
+      "topicId": 44,
+      "text": "공. 공은 동그래요. 손으로 잡을 수 있어요. 발로 찰 수도 있어요. 던질 수도 있어요. 친구랑 같이 가지고 놀아요.  축구할 때 공이 필요해요. 농구할 때도 필요해요. 공이 없으면 게임을 못 해요. 저는 축구공을 좋아해요. 매일 가지고 놀아요. ",
+      "path": "audio/topics/topic_044.mp3"
+    },
+    {
+      "id": "t044_s01",
+      "kind": "sentence",
+      "topicId": 44,
+      "sentenceIndex": 1,
+      "text": "공은 동그래요.",
+      "path": "audio/sentences/topic_044_s01.mp3"
+    },
+    {
+      "id": "t044_s02",
+      "kind": "sentence",
+      "topicId": 44,
+      "sentenceIndex": 2,
+      "text": "손으로 잡을 수 있어요.",
+      "path": "audio/sentences/topic_044_s02.mp3"
+    },
+    {
+      "id": "t044_s03",
+      "kind": "sentence",
+      "topicId": 44,
+      "sentenceIndex": 3,
+      "text": "발로 찰 수도 있어요.",
+      "path": "audio/sentences/topic_044_s03.mp3"
+    },
+    {
+      "id": "t044_s04",
+      "kind": "sentence",
+      "topicId": 44,
+      "sentenceIndex": 4,
+      "text": "던질 수도 있어요.",
+      "path": "audio/sentences/topic_044_s04.mp3"
+    },
+    {
+      "id": "t044_s05",
+      "kind": "sentence",
+      "topicId": 44,
+      "sentenceIndex": 5,
+      "text": "친구랑 같이 가지고 놀아요.",
+      "path": "audio/sentences/topic_044_s05.mp3"
+    },
+    {
+      "id": "t044_s06",
+      "kind": "sentence",
+      "topicId": 44,
+      "sentenceIndex": 6,
+      "text": "축구할 때 공이 필요해요.",
+      "path": "audio/sentences/topic_044_s06.mp3"
+    },
+    {
+      "id": "t044_s07",
+      "kind": "sentence",
+      "topicId": 44,
+      "sentenceIndex": 7,
+      "text": "농구할 때도 필요해요.",
+      "path": "audio/sentences/topic_044_s07.mp3"
+    },
+    {
+      "id": "t044_s08",
+      "kind": "sentence",
+      "topicId": 44,
+      "sentenceIndex": 8,
+      "text": "공이 없으면 게임을 못 해요.",
+      "path": "audio/sentences/topic_044_s08.mp3"
+    },
+    {
+      "id": "t044_s09",
+      "kind": "sentence",
+      "topicId": 44,
+      "sentenceIndex": 9,
+      "text": "저는 축구공을 좋아해요.",
+      "path": "audio/sentences/topic_044_s09.mp3"
+    },
+    {
+      "id": "t044_s10",
+      "kind": "sentence",
+      "topicId": 44,
+      "sentenceIndex": 10,
+      "text": "매일 가지고 놀아요.",
+      "path": "audio/sentences/topic_044_s10.mp3"
+    },
+    {
+      "id": "topic_045",
+      "kind": "topic",
+      "topicId": 45,
+      "text": "컵. 컵은 물을 따르는 거예요. 안에 음료를 넣어요. 손잡이가 있는 컵도 있어요. 없는 컵도 있어요. 모양이 여러 가지예요.  제 컵은 노란색이에요. 별 그림이 있어요. 물을 마실 때 써요. 우유도 따라 마셔요. 깨지지 않게 조심해요. ",
+      "path": "audio/topics/topic_045.mp3"
+    },
+    {
+      "id": "t045_s01",
+      "kind": "sentence",
+      "topicId": 45,
+      "sentenceIndex": 1,
+      "text": "컵은 물을 따르는 거예요.",
+      "path": "audio/sentences/topic_045_s01.mp3"
+    },
+    {
+      "id": "t045_s02",
+      "kind": "sentence",
+      "topicId": 45,
+      "sentenceIndex": 2,
+      "text": "안에 음료를 넣어요.",
+      "path": "audio/sentences/topic_045_s02.mp3"
+    },
+    {
+      "id": "t045_s03",
+      "kind": "sentence",
+      "topicId": 45,
+      "sentenceIndex": 3,
+      "text": "손잡이가 있는 컵도 있어요.",
+      "path": "audio/sentences/topic_045_s03.mp3"
+    },
+    {
+      "id": "t045_s04",
+      "kind": "sentence",
+      "topicId": 45,
+      "sentenceIndex": 4,
+      "text": "없는 컵도 있어요.",
+      "path": "audio/sentences/topic_045_s04.mp3"
+    },
+    {
+      "id": "t045_s05",
+      "kind": "sentence",
+      "topicId": 45,
+      "sentenceIndex": 5,
+      "text": "모양이 여러 가지예요.",
+      "path": "audio/sentences/topic_045_s05.mp3"
+    },
+    {
+      "id": "t045_s06",
+      "kind": "sentence",
+      "topicId": 45,
+      "sentenceIndex": 6,
+      "text": "제 컵은 노란색이에요.",
+      "path": "audio/sentences/topic_045_s06.mp3"
+    },
+    {
+      "id": "t045_s07",
+      "kind": "sentence",
+      "topicId": 45,
+      "sentenceIndex": 7,
+      "text": "별 그림이 있어요.",
+      "path": "audio/sentences/topic_045_s07.mp3"
+    },
+    {
+      "id": "t045_s08",
+      "kind": "sentence",
+      "topicId": 45,
+      "sentenceIndex": 8,
+      "text": "물을 마실 때 써요.",
+      "path": "audio/sentences/topic_045_s08.mp3"
+    },
+    {
+      "id": "t045_s09",
+      "kind": "sentence",
+      "topicId": 45,
+      "sentenceIndex": 9,
+      "text": "우유도 따라 마셔요.",
+      "path": "audio/sentences/topic_045_s09.mp3"
+    },
+    {
+      "id": "t045_s10",
+      "kind": "sentence",
+      "topicId": 45,
+      "sentenceIndex": 10,
+      "text": "깨지지 않게 조심해요.",
+      "path": "audio/sentences/topic_045_s10.mp3"
+    },
+    {
+      "id": "topic_046",
+      "kind": "topic",
+      "topicId": 46,
+      "text": "수건. 수건은 닦는 거예요. 손을 씻고 닦아요. 세수하고도 닦아요. 목욕한 후에도 닦아요. 아주 부드러워요.  우리 집에는 수건이 많아요. 여러 가지 색깔이 있어요. 깨끗한 수건은 좋은 냄새가 나요. 매일 빨아요. 그래서 늘 깨끗해요. ",
+      "path": "audio/topics/topic_046.mp3"
+    },
+    {
+      "id": "t046_s01",
+      "kind": "sentence",
+      "topicId": 46,
+      "sentenceIndex": 1,
+      "text": "수건은 닦는 거예요.",
+      "path": "audio/sentences/topic_046_s01.mp3"
+    },
+    {
+      "id": "t046_s02",
+      "kind": "sentence",
+      "topicId": 46,
+      "sentenceIndex": 2,
+      "text": "손을 씻고 닦아요.",
+      "path": "audio/sentences/topic_046_s02.mp3"
+    },
+    {
+      "id": "t046_s03",
+      "kind": "sentence",
+      "topicId": 46,
+      "sentenceIndex": 3,
+      "text": "세수하고도 닦아요.",
+      "path": "audio/sentences/topic_046_s03.mp3"
+    },
+    {
+      "id": "t046_s04",
+      "kind": "sentence",
+      "topicId": 46,
+      "sentenceIndex": 4,
+      "text": "목욕한 후에도 닦아요.",
+      "path": "audio/sentences/topic_046_s04.mp3"
+    },
+    {
+      "id": "t046_s05",
+      "kind": "sentence",
+      "topicId": 46,
+      "sentenceIndex": 5,
+      "text": "아주 부드러워요.",
+      "path": "audio/sentences/topic_046_s05.mp3"
+    },
+    {
+      "id": "t046_s06",
+      "kind": "sentence",
+      "topicId": 46,
+      "sentenceIndex": 6,
+      "text": "우리 집에는 수건이 많아요.",
+      "path": "audio/sentences/topic_046_s06.mp3"
+    },
+    {
+      "id": "t046_s07",
+      "kind": "sentence",
+      "topicId": 46,
+      "sentenceIndex": 7,
+      "text": "여러 가지 색깔이 있어요.",
+      "path": "audio/sentences/topic_046_s07.mp3"
+    },
+    {
+      "id": "t046_s08",
+      "kind": "sentence",
+      "topicId": 46,
+      "sentenceIndex": 8,
+      "text": "깨끗한 수건은 좋은 냄새가 나요.",
+      "path": "audio/sentences/topic_046_s08.mp3"
+    },
+    {
+      "id": "t046_s09",
+      "kind": "sentence",
+      "topicId": 46,
+      "sentenceIndex": 9,
+      "text": "매일 빨아요.",
+      "path": "audio/sentences/topic_046_s09.mp3"
+    },
+    {
+      "id": "t046_s10",
+      "kind": "sentence",
+      "topicId": 46,
+      "sentenceIndex": 10,
+      "text": "그래서 늘 깨끗해요.",
+      "path": "audio/sentences/topic_046_s10.mp3"
+    },
+    {
+      "id": "topic_047",
+      "kind": "topic",
+      "topicId": 47,
+      "text": "비누. 비누는 손을 씻을 때 써요. 물에 묻히면 거품이 나요. 그 거품으로 손을 닦아요. 그러면 깨끗해져요. 좋은 냄새도 나요.  비누는 여러 가지 색깔이 있어요. 여러 가지 냄새도 있어요. 저는 딸기 향을 좋아해요. 비누가 작아지면 새것을 사요. 매일 비누를 써요. ",
+      "path": "audio/topics/topic_047.mp3"
+    },
+    {
+      "id": "t047_s01",
+      "kind": "sentence",
+      "topicId": 47,
+      "sentenceIndex": 1,
+      "text": "비누는 손을 씻을 때 써요.",
+      "path": "audio/sentences/topic_047_s01.mp3"
+    },
+    {
+      "id": "t047_s02",
+      "kind": "sentence",
+      "topicId": 47,
+      "sentenceIndex": 2,
+      "text": "물에 묻히면 거품이 나요.",
+      "path": "audio/sentences/topic_047_s02.mp3"
+    },
+    {
+      "id": "t047_s03",
+      "kind": "sentence",
+      "topicId": 47,
+      "sentenceIndex": 3,
+      "text": "그 거품으로 손을 닦아요.",
+      "path": "audio/sentences/topic_047_s03.mp3"
+    },
+    {
+      "id": "t047_s04",
+      "kind": "sentence",
+      "topicId": 47,
+      "sentenceIndex": 4,
+      "text": "그러면 깨끗해져요.",
+      "path": "audio/sentences/topic_047_s04.mp3"
+    },
+    {
+      "id": "t047_s05",
+      "kind": "sentence",
+      "topicId": 47,
+      "sentenceIndex": 5,
+      "text": "좋은 냄새도 나요.",
+      "path": "audio/sentences/topic_047_s05.mp3"
+    },
+    {
+      "id": "t047_s06",
+      "kind": "sentence",
+      "topicId": 47,
+      "sentenceIndex": 6,
+      "text": "비누는 여러 가지 색깔이 있어요.",
+      "path": "audio/sentences/topic_047_s06.mp3"
+    },
+    {
+      "id": "t047_s07",
+      "kind": "sentence",
+      "topicId": 47,
+      "sentenceIndex": 7,
+      "text": "여러 가지 냄새도 있어요.",
+      "path": "audio/sentences/topic_047_s07.mp3"
+    },
+    {
+      "id": "t047_s08",
+      "kind": "sentence",
+      "topicId": 47,
+      "sentenceIndex": 8,
+      "text": "저는 딸기 향을 좋아해요.",
+      "path": "audio/sentences/topic_047_s08.mp3"
+    },
+    {
+      "id": "t047_s09",
+      "kind": "sentence",
+      "topicId": 47,
+      "sentenceIndex": 9,
+      "text": "비누가 작아지면 새것을 사요.",
+      "path": "audio/sentences/topic_047_s09.mp3"
+    },
+    {
+      "id": "t047_s10",
+      "kind": "sentence",
+      "topicId": 47,
+      "sentenceIndex": 10,
+      "text": "매일 비누를 써요.",
+      "path": "audio/sentences/topic_047_s10.mp3"
+    },
+    {
+      "id": "topic_048",
+      "kind": "topic",
+      "topicId": 48,
+      "text": "칫솔. 칫솔은 이를 닦을 때 써요. 위에 솔이 있어요. 손잡이도 있어요. 아침에 한 번 써요. 자기 전에도 한 번 써요.  치약을 칫솔에 짜요. 그리고 입 안을 닦아요. 위아래로 닦아요. 깨끗해지면 입이 상쾌해요. 칫솔은 매일 친구예요. ",
+      "path": "audio/topics/topic_048.mp3"
+    },
+    {
+      "id": "t048_s01",
+      "kind": "sentence",
+      "topicId": 48,
+      "sentenceIndex": 1,
+      "text": "칫솔은 이를 닦을 때 써요.",
+      "path": "audio/sentences/topic_048_s01.mp3"
+    },
+    {
+      "id": "t048_s02",
+      "kind": "sentence",
+      "topicId": 48,
+      "sentenceIndex": 2,
+      "text": "위에 솔이 있어요.",
+      "path": "audio/sentences/topic_048_s02.mp3"
+    },
+    {
+      "id": "t048_s03",
+      "kind": "sentence",
+      "topicId": 48,
+      "sentenceIndex": 3,
+      "text": "손잡이도 있어요.",
+      "path": "audio/sentences/topic_048_s03.mp3"
+    },
+    {
+      "id": "t048_s04",
+      "kind": "sentence",
+      "topicId": 48,
+      "sentenceIndex": 4,
+      "text": "아침에 한 번 써요.",
+      "path": "audio/sentences/topic_048_s04.mp3"
+    },
+    {
+      "id": "t048_s05",
+      "kind": "sentence",
+      "topicId": 48,
+      "sentenceIndex": 5,
+      "text": "자기 전에도 한 번 써요.",
+      "path": "audio/sentences/topic_048_s05.mp3"
+    },
+    {
+      "id": "t048_s06",
+      "kind": "sentence",
+      "topicId": 48,
+      "sentenceIndex": 6,
+      "text": "치약을 칫솔에 짜요.",
+      "path": "audio/sentences/topic_048_s06.mp3"
+    },
+    {
+      "id": "t048_s07",
+      "kind": "sentence",
+      "topicId": 48,
+      "sentenceIndex": 7,
+      "text": "그리고 입 안을 닦아요.",
+      "path": "audio/sentences/topic_048_s07.mp3"
+    },
+    {
+      "id": "t048_s08",
+      "kind": "sentence",
+      "topicId": 48,
+      "sentenceIndex": 8,
+      "text": "위아래로 닦아요.",
+      "path": "audio/sentences/topic_048_s08.mp3"
+    },
+    {
+      "id": "t048_s09",
+      "kind": "sentence",
+      "topicId": 48,
+      "sentenceIndex": 9,
+      "text": "깨끗해지면 입이 상쾌해요.",
+      "path": "audio/sentences/topic_048_s09.mp3"
+    },
+    {
+      "id": "t048_s10",
+      "kind": "sentence",
+      "topicId": 48,
+      "sentenceIndex": 10,
+      "text": "칫솔은 매일 친구예요.",
+      "path": "audio/sentences/topic_048_s10.mp3"
+    },
+    {
+      "id": "topic_049",
+      "kind": "topic",
+      "topicId": 49,
+      "text": "나비. 나비는 작은 곤충이에요. 날개가 네 개 있어요. 날개에 예쁜 무늬가 있어요. 꽃 위를 날아다녀요. 정말 예뻐요.  나비는 꽃의 꿀을 먹어요. 봄에 많이 보여요. 잡고 싶지만 그러면 안 돼요. 나비가 다칠 수 있어요. 그냥 보기만 해요. ",
+      "path": "audio/topics/topic_049.mp3"
+    },
+    {
+      "id": "t049_s01",
+      "kind": "sentence",
+      "topicId": 49,
+      "sentenceIndex": 1,
+      "text": "나비는 작은 곤충이에요.",
+      "path": "audio/sentences/topic_049_s01.mp3"
+    },
+    {
+      "id": "t049_s02",
+      "kind": "sentence",
+      "topicId": 49,
+      "sentenceIndex": 2,
+      "text": "날개가 네 개 있어요.",
+      "path": "audio/sentences/topic_049_s02.mp3"
+    },
+    {
+      "id": "t049_s03",
+      "kind": "sentence",
+      "topicId": 49,
+      "sentenceIndex": 3,
+      "text": "날개에 예쁜 무늬가 있어요.",
+      "path": "audio/sentences/topic_049_s03.mp3"
+    },
+    {
+      "id": "t049_s04",
+      "kind": "sentence",
+      "topicId": 49,
+      "sentenceIndex": 4,
+      "text": "꽃 위를 날아다녀요.",
+      "path": "audio/sentences/topic_049_s04.mp3"
+    },
+    {
+      "id": "t049_s05",
+      "kind": "sentence",
+      "topicId": 49,
+      "sentenceIndex": 5,
+      "text": "정말 예뻐요.",
+      "path": "audio/sentences/topic_049_s05.mp3"
+    },
+    {
+      "id": "t049_s06",
+      "kind": "sentence",
+      "topicId": 49,
+      "sentenceIndex": 6,
+      "text": "나비는 꽃의 꿀을 먹어요.",
+      "path": "audio/sentences/topic_049_s06.mp3"
+    },
+    {
+      "id": "t049_s07",
+      "kind": "sentence",
+      "topicId": 49,
+      "sentenceIndex": 7,
+      "text": "봄에 많이 보여요.",
+      "path": "audio/sentences/topic_049_s07.mp3"
+    },
+    {
+      "id": "t049_s08",
+      "kind": "sentence",
+      "topicId": 49,
+      "sentenceIndex": 8,
+      "text": "잡고 싶지만 그러면 안 돼요.",
+      "path": "audio/sentences/topic_049_s08.mp3"
+    },
+    {
+      "id": "t049_s09",
+      "kind": "sentence",
+      "topicId": 49,
+      "sentenceIndex": 9,
+      "text": "나비가 다칠 수 있어요.",
+      "path": "audio/sentences/topic_049_s09.mp3"
+    },
+    {
+      "id": "t049_s10",
+      "kind": "sentence",
+      "topicId": 49,
+      "sentenceIndex": 10,
+      "text": "그냥 보기만 해요.",
+      "path": "audio/sentences/topic_049_s10.mp3"
+    },
+    {
+      "id": "topic_050",
+      "kind": "topic",
+      "topicId": 50,
+      "text": "개미. 개미는 아주 작아요. 몸이 까매요. 다리는 여섯 개예요. 땅 위를 빠르게 움직여요. 줄을 서서 다녀요.  개미는 정말 힘이 세요. 자기보다 큰 음식도 들 수 있어요. 친구들이랑 같이 일해요. 집은 땅속에 있어요. 작지만 똑똑한 곤충이에요.",
+      "path": "audio/topics/topic_050.mp3"
+    },
+    {
+      "id": "t050_s01",
+      "kind": "sentence",
+      "topicId": 50,
+      "sentenceIndex": 1,
+      "text": "개미는 아주 작아요.",
+      "path": "audio/sentences/topic_050_s01.mp3"
+    },
+    {
+      "id": "t050_s02",
+      "kind": "sentence",
+      "topicId": 50,
+      "sentenceIndex": 2,
+      "text": "몸이 까매요.",
+      "path": "audio/sentences/topic_050_s02.mp3"
+    },
+    {
+      "id": "t050_s03",
+      "kind": "sentence",
+      "topicId": 50,
+      "sentenceIndex": 3,
+      "text": "다리는 여섯 개예요.",
+      "path": "audio/sentences/topic_050_s03.mp3"
+    },
+    {
+      "id": "t050_s04",
+      "kind": "sentence",
+      "topicId": 50,
+      "sentenceIndex": 4,
+      "text": "땅 위를 빠르게 움직여요.",
+      "path": "audio/sentences/topic_050_s04.mp3"
+    },
+    {
+      "id": "t050_s05",
+      "kind": "sentence",
+      "topicId": 50,
+      "sentenceIndex": 5,
+      "text": "줄을 서서 다녀요.",
+      "path": "audio/sentences/topic_050_s05.mp3"
+    },
+    {
+      "id": "t050_s06",
+      "kind": "sentence",
+      "topicId": 50,
+      "sentenceIndex": 6,
+      "text": "개미는 정말 힘이 세요.",
+      "path": "audio/sentences/topic_050_s06.mp3"
+    },
+    {
+      "id": "t050_s07",
+      "kind": "sentence",
+      "topicId": 50,
+      "sentenceIndex": 7,
+      "text": "자기보다 큰 음식도 들 수 있어요.",
+      "path": "audio/sentences/topic_050_s07.mp3"
+    },
+    {
+      "id": "t050_s08",
+      "kind": "sentence",
+      "topicId": 50,
+      "sentenceIndex": 8,
+      "text": "친구들이랑 같이 일해요.",
+      "path": "audio/sentences/topic_050_s08.mp3"
+    },
+    {
+      "id": "t050_s09",
+      "kind": "sentence",
+      "topicId": 50,
+      "sentenceIndex": 9,
+      "text": "집은 땅속에 있어요.",
+      "path": "audio/sentences/topic_050_s09.mp3"
+    },
+    {
+      "id": "t050_s10",
+      "kind": "sentence",
+      "topicId": 50,
+      "sentenceIndex": 10,
+      "text": "작지만 똑똑한 곤충이에요.",
+      "path": "audio/sentences/topic_050_s10.mp3"
+    }
+  ]
+}
