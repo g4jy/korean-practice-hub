@@ -1,0 +1,1799 @@
+{
+  "student": "Jack",
+  "action": {
+    "subjects": [
+      {
+        "kr": "저는",
+        "rom": "JEO-NEUN",
+        "en": "I"
+      },
+      {
+        "kr": "나는",
+        "rom": "NA-NEUN",
+        "en": "I"
+      },
+      {
+        "kr": "우리는",
+        "rom": "U-RI-NEUN",
+        "en": "We"
+      }
+    ],
+    "times": [
+      {
+        "kr": "오늘",
+        "rom": "O-NEUL",
+        "en": "today",
+        "tense": "present"
+      }
+    ],
+    "places": [
+      {
+        "kr": "집",
+        "rom": "JIP",
+        "en": "home / house",
+        "formE": {
+          "kr": "집에",
+          "rom": "JIP-E"
+        },
+        "formEseo": {
+          "kr": "집에서",
+          "rom": "JIP-E-SEO"
+        }
+      },
+      {
+        "kr": "학교",
+        "rom": "HAK-GYO",
+        "en": "school",
+        "formE": {
+          "kr": "학교에",
+          "rom": "HAK-GYO-E"
+        },
+        "formEseo": {
+          "kr": "학교에서",
+          "rom": "HAK-GYO-E-SEO"
+        }
+      },
+      {
+        "kr": "회사",
+        "rom": "HOE-SA",
+        "en": "company / workplace",
+        "formE": {
+          "kr": "회사에",
+          "rom": "HOE-SA-E"
+        },
+        "formEseo": {
+          "kr": "회사에서",
+          "rom": "HOE-SA-E-SEO"
+        }
+      },
+      {
+        "kr": "방",
+        "rom": "BANG",
+        "en": "room",
+        "formE": {
+          "kr": "방에",
+          "rom": "BANG-E"
+        },
+        "formEseo": {
+          "kr": "방에서",
+          "rom": "BANG-E-SEO"
+        }
+      },
+      {
+        "kr": "교실",
+        "rom": "GYO-SIL",
+        "en": "classroom",
+        "formE": {
+          "kr": "교실에",
+          "rom": "GYO-SIL-E"
+        },
+        "formEseo": {
+          "kr": "교실에서",
+          "rom": "GYO-SIL-E-SEO"
+        }
+      },
+      {
+        "kr": "식당",
+        "rom": "SIK-DANG",
+        "en": "restaurant",
+        "formE": {
+          "kr": "식당에",
+          "rom": "SIK-DANG-E"
+        },
+        "formEseo": {
+          "kr": "식당에서",
+          "rom": "SIK-DANG-E-SEO"
+        }
+      },
+      {
+        "kr": "카페",
+        "rom": "KA-PE",
+        "en": "cafe",
+        "formE": {
+          "kr": "카페에",
+          "rom": "KA-PE-E"
+        },
+        "formEseo": {
+          "kr": "카페에서",
+          "rom": "KA-PE-E-SEO"
+        }
+      },
+      {
+        "kr": "가게",
+        "rom": "GA-GE",
+        "en": "store",
+        "formE": {
+          "kr": "가게에",
+          "rom": "GA-GE-E"
+        },
+        "formEseo": {
+          "kr": "가게에서",
+          "rom": "GA-GE-E-SEO"
+        }
+      },
+      {
+        "kr": "병원",
+        "rom": "BYEONG-WON",
+        "en": "hospital",
+        "formE": {
+          "kr": "병원에",
+          "rom": "BYEONG-WON-E"
+        },
+        "formEseo": {
+          "kr": "병원에서",
+          "rom": "BYEONG-WON-E-SEO"
+        }
+      },
+      {
+        "kr": "공원",
+        "rom": "GONG-WON",
+        "en": "park",
+        "formE": {
+          "kr": "공원에",
+          "rom": "GONG-WON-E"
+        },
+        "formEseo": {
+          "kr": "공원에서",
+          "rom": "GONG-WON-E-SEO"
+        }
+      },
+      {
+        "kr": "도서관",
+        "rom": "DO-SEO-GWAN",
+        "en": "library",
+        "formE": {
+          "kr": "도서관에",
+          "rom": "DO-SEO-GWAN-E"
+        },
+        "formEseo": {
+          "kr": "도서관에서",
+          "rom": "DO-SEO-GWAN-E-SEO"
+        }
+      },
+      {
+        "kr": "편의점",
+        "rom": "PYEON-UI-JEOM",
+        "en": "convenience store",
+        "formE": {
+          "kr": "편의점에",
+          "rom": "PYEON-UI-JEOM-E"
+        },
+        "formEseo": {
+          "kr": "편의점에서",
+          "rom": "PYEON-UI-JEOM-E-SEO"
+        }
+      },
+      {
+        "kr": "은행",
+        "rom": "EUN-HAENG",
+        "en": "bank",
+        "formE": {
+          "kr": "은행에",
+          "rom": "EUN-HAENG-E"
+        },
+        "formEseo": {
+          "kr": "은행에서",
+          "rom": "EUN-HAENG-E-SEO"
+        }
+      },
+      {
+        "kr": "약국",
+        "rom": "YAK-GUK",
+        "en": "pharmacy",
+        "formE": {
+          "kr": "약국에",
+          "rom": "YAK-GUK-E"
+        },
+        "formEseo": {
+          "kr": "약국에서",
+          "rom": "YAK-GUK-E-SEO"
+        }
+      },
+      {
+        "kr": "우체국",
+        "rom": "U-CHE-GUK",
+        "en": "post office",
+        "formE": {
+          "kr": "우체국에",
+          "rom": "U-CHE-GUK-E"
+        },
+        "formEseo": {
+          "kr": "우체국에서",
+          "rom": "U-CHE-GUK-E-SEO"
+        }
+      },
+      {
+        "kr": "역",
+        "rom": "YEOK",
+        "en": "station",
+        "formE": {
+          "kr": "역에",
+          "rom": "YEOK-E"
+        },
+        "formEseo": {
+          "kr": "역에서",
+          "rom": "YEOK-E-SEO"
+        }
+      },
+      {
+        "kr": "공항",
+        "rom": "GONG-HANG",
+        "en": "airport",
+        "formE": {
+          "kr": "공항에",
+          "rom": "GONG-HANG-E"
+        },
+        "formEseo": {
+          "kr": "공항에서",
+          "rom": "GONG-HANG-E-SEO"
+        }
+      },
+      {
+        "kr": "화장실",
+        "rom": "HWA-JANG-SIL",
+        "en": "restroom",
+        "formE": {
+          "kr": "화장실에",
+          "rom": "HWA-JANG-SIL-E"
+        },
+        "formEseo": {
+          "kr": "화장실에서",
+          "rom": "HWA-JANG-SIL-E-SEO"
+        }
+      },
+      {
+        "kr": "시장",
+        "rom": "SI-JANG",
+        "en": "market",
+        "formE": {
+          "kr": "시장에",
+          "rom": "SI-JANG-E"
+        },
+        "formEseo": {
+          "kr": "시장에서",
+          "rom": "SI-JANG-E-SEO"
+        }
+      },
+      {
+        "kr": "미용실",
+        "rom": "MI-YONG-SIL",
+        "en": "hair salon",
+        "formE": {
+          "kr": "미용실에",
+          "rom": "MI-YONG-SIL-E"
+        },
+        "formEseo": {
+          "kr": "미용실에서",
+          "rom": "MI-YONG-SIL-E-SEO"
+        }
+      },
+      {
+        "kr": "서점",
+        "rom": "SEO-JEOM",
+        "en": "bookstore",
+        "formE": {
+          "kr": "서점에",
+          "rom": "SEO-JEOM-E"
+        },
+        "formEseo": {
+          "kr": "서점에서",
+          "rom": "SEO-JEOM-E-SEO"
+        }
+      },
+      {
+        "kr": "영화관",
+        "rom": "YEONG-HWA-GWAN",
+        "en": "movie theater",
+        "formE": {
+          "kr": "영화관에",
+          "rom": "YEONG-HWA-GWAN-E"
+        },
+        "formEseo": {
+          "kr": "영화관에서",
+          "rom": "YEONG-HWA-GWAN-E-SEO"
+        }
+      },
+      {
+        "kr": "부엌",
+        "rom": "BU-EOK",
+        "en": "kitchen",
+        "formE": {
+          "kr": "부엌에",
+          "rom": "BU-EOK-E"
+        },
+        "formEseo": {
+          "kr": "부엌에서",
+          "rom": "BU-EOK-E-SEO"
+        }
+      },
+      {
+        "kr": "거실",
+        "rom": "GEO-SIL",
+        "en": "living room",
+        "formE": {
+          "kr": "거실에",
+          "rom": "GEO-SIL-E"
+        },
+        "formEseo": {
+          "kr": "거실에서",
+          "rom": "GEO-SIL-E-SEO"
+        }
+      },
+      {
+        "kr": "침실",
+        "rom": "CHIM-SIL",
+        "en": "bedroom",
+        "formE": {
+          "kr": "침실에",
+          "rom": "CHIM-SIL-E"
+        },
+        "formEseo": {
+          "kr": "침실에서",
+          "rom": "CHIM-SIL-E-SEO"
+        }
+      },
+      {
+        "kr": "사무실",
+        "rom": "SA-MU-SIL",
+        "en": "office",
+        "formE": {
+          "kr": "사무실에",
+          "rom": "SA-MU-SIL-E"
+        },
+        "formEseo": {
+          "kr": "사무실에서",
+          "rom": "SA-MU-SIL-E-SEO"
+        }
+      },
+      {
+        "kr": "회의실",
+        "rom": "HOE-UI-SIL",
+        "en": "meeting room",
+        "formE": {
+          "kr": "회의실에",
+          "rom": "HOE-UI-SIL-E"
+        },
+        "formEseo": {
+          "kr": "회의실에서",
+          "rom": "HOE-UI-SIL-E-SEO"
+        }
+      }
+    ],
+    "objects": [
+      {
+        "kr": "책",
+        "rom": "CHAEK",
+        "en": "book",
+        "category": "thing"
+      },
+      {
+        "kr": "공책",
+        "rom": "GONG-CHAEK",
+        "en": "notebook",
+        "category": "thing"
+      },
+      {
+        "kr": "이름",
+        "rom": "I-REUM",
+        "en": "name",
+        "category": "thing"
+      },
+      {
+        "kr": "사진",
+        "rom": "SA-JIN",
+        "en": "photo",
+        "category": "thing"
+      },
+      {
+        "kr": "숙제",
+        "rom": "SUK-JE",
+        "en": "homework",
+        "category": "activity"
+      },
+      {
+        "kr": "한국어",
+        "rom": "HAN-GU-GEO",
+        "en": "Korean language",
+        "category": "activity"
+      },
+      {
+        "kr": "물",
+        "rom": "MUL",
+        "en": "water",
+        "category": "drink"
+      },
+      {
+        "kr": "커피",
+        "rom": "KEO-PI",
+        "en": "coffee",
+        "category": "drink"
+      },
+      {
+        "kr": "밥",
+        "rom": "BAP",
+        "en": "cooked rice / meal",
+        "category": "food"
+      },
+      {
+        "kr": "약",
+        "rom": "YAK",
+        "en": "medicine",
+        "category": "thing"
+      },
+      {
+        "kr": "친구",
+        "rom": "CHIN-GU",
+        "en": "friend",
+        "category": "person"
+      },
+      {
+        "kr": "가방",
+        "rom": "GA-BANG",
+        "en": "bag",
+        "category": "thing"
+      },
+      {
+        "kr": "연필",
+        "rom": "YEON-PIL",
+        "en": "pencil",
+        "category": "thing"
+      }
+    ],
+    "verbs": [
+      {
+        "id": "읽다",
+        "present": "읽어요",
+        "presentRom": "IL-GEO-YO",
+        "en": "read",
+        "presentEn": "read",
+        "placeParticle": "eseo",
+        "compatibleObjects": [
+          "책을"
+        ],
+        "objectTypes": []
+      },
+      {
+        "id": "쓰다",
+        "present": "써요",
+        "presentRom": "SSEO-YO",
+        "en": "write",
+        "presentEn": "write",
+        "placeParticle": "eseo",
+        "compatibleObjects": [
+          "이름을"
+        ],
+        "objectTypes": []
+      },
+      {
+        "id": "보다",
+        "present": "봐요",
+        "presentRom": "BWA-YO",
+        "en": "look at",
+        "presentEn": "look at",
+        "placeParticle": "eseo",
+        "compatibleObjects": [
+          "책을",
+          "공책을",
+          "사진을"
+        ],
+        "objectTypes": []
+      },
+      {
+        "id": "하다",
+        "present": "해요",
+        "presentRom": "HAE-YO",
+        "en": "do",
+        "presentEn": "do",
+        "placeParticle": "eseo",
+        "compatibleObjects": [
+          "숙제를"
+        ],
+        "objectTypes": []
+      },
+      {
+        "id": "공부하다",
+        "present": "공부해요",
+        "presentRom": "GONG-BU-HAE-YO",
+        "en": "study",
+        "presentEn": "study",
+        "placeParticle": "eseo",
+        "compatibleObjects": [
+          "한국어를"
+        ],
+        "objectTypes": []
+      },
+      {
+        "id": "먹다",
+        "present": "먹어요",
+        "presentRom": "MEO-GEO-YO",
+        "en": "eat",
+        "presentEn": "eat",
+        "placeParticle": "eseo",
+        "compatibleObjects": [
+          "밥을"
+        ],
+        "objectTypes": []
+      },
+      {
+        "id": "마시다",
+        "present": "마셔요",
+        "presentRom": "MA-SYEO-YO",
+        "en": "drink",
+        "presentEn": "drink",
+        "placeParticle": "eseo",
+        "compatibleObjects": [
+          "물을",
+          "커피를"
+        ],
+        "objectTypes": []
+      },
+      {
+        "id": "사다",
+        "present": "사요",
+        "presentRom": "SA-YO",
+        "en": "buy",
+        "presentEn": "buy",
+        "placeParticle": "eseo",
+        "compatibleObjects": [
+          "책을",
+          "공책을",
+          "연필을",
+          "가방을",
+          "커피를",
+          "약을"
+        ],
+        "objectTypes": []
+      },
+      {
+        "id": "만나다",
+        "present": "만나요",
+        "presentRom": "MAN-NA-YO",
+        "en": "meet",
+        "presentEn": "meet",
+        "placeParticle": "eseo",
+        "compatibleObjects": [
+          "친구를"
+        ],
+        "objectTypes": []
+      },
+      {
+        "id": "기다리다",
+        "present": "기다려요",
+        "presentRom": "GI-DA-RYEO-YO",
+        "en": "wait for",
+        "presentEn": "wait for",
+        "placeParticle": "eseo",
+        "compatibleObjects": [
+          "친구를"
+        ],
+        "objectTypes": []
+      },
+      {
+        "id": "가다",
+        "present": "가요",
+        "presentRom": "GA-YO",
+        "en": "go",
+        "presentEn": "go",
+        "placeParticle": "e",
+        "compatibleObjects": [],
+        "objectTypes": []
+      },
+      {
+        "id": "오다",
+        "present": "와요",
+        "presentRom": "WA-YO",
+        "en": "come",
+        "presentEn": "come",
+        "placeParticle": "e",
+        "compatibleObjects": [],
+        "objectTypes": []
+      },
+      {
+        "id": "도착하다",
+        "present": "도착해요",
+        "presentRom": "DO-CHA-KAE-YO",
+        "en": "arrive",
+        "presentEn": "arrive",
+        "placeParticle": "e",
+        "compatibleObjects": [],
+        "objectTypes": []
+      },
+      {
+        "id": "살다",
+        "present": "살아요",
+        "presentRom": "SA-RA-YO",
+        "en": "live",
+        "presentEn": "live",
+        "placeParticle": "eseo",
+        "compatibleObjects": [],
+        "objectTypes": []
+      },
+      {
+        "id": "일하다",
+        "present": "일해요",
+        "presentRom": "IL-HAE-YO",
+        "en": "work",
+        "presentEn": "work",
+        "placeParticle": "eseo",
+        "compatibleObjects": [],
+        "objectTypes": []
+      },
+      {
+        "id": "쉬다",
+        "present": "쉬어요",
+        "presentRom": "SWI-EO-YO",
+        "en": "rest",
+        "presentEn": "rest",
+        "placeParticle": "eseo",
+        "compatibleObjects": [],
+        "objectTypes": []
+      },
+      {
+        "id": "운동하다",
+        "present": "운동해요",
+        "presentRom": "UN-DONG-HAE-YO",
+        "en": "exercise",
+        "presentEn": "exercise",
+        "placeParticle": "eseo",
+        "compatibleObjects": [],
+        "objectTypes": []
+      },
+      {
+        "id": "놀다",
+        "present": "놀아요",
+        "presentRom": "NO-RA-YO",
+        "en": "play",
+        "presentEn": "play",
+        "placeParticle": "eseo",
+        "compatibleObjects": [],
+        "objectTypes": []
+      }
+    ]
+  },
+  "describe": {
+    "subjects": [
+      {
+        "kr": "문제",
+        "rom": "MUN-JE",
+        "en": "problem; question",
+        "category": "task"
+      },
+      {
+        "kr": "숙제",
+        "rom": "SUK-JE",
+        "en": "homework",
+        "category": "task"
+      },
+      {
+        "kr": "한국어",
+        "rom": "HAN-GU-GEO",
+        "en": "Korean language",
+        "category": "task"
+      },
+      {
+        "kr": "책",
+        "rom": "CHAEK",
+        "en": "book",
+        "category": "thing"
+      },
+      {
+        "kr": "가방",
+        "rom": "GA-BANG",
+        "en": "bag",
+        "category": "thing"
+      },
+      {
+        "kr": "방",
+        "rom": "BANG",
+        "en": "room",
+        "category": "place"
+      },
+      {
+        "kr": "학교",
+        "rom": "HAK-GYO",
+        "en": "school",
+        "category": "place"
+      },
+      {
+        "kr": "공원",
+        "rom": "GONG-WON",
+        "en": "park",
+        "category": "place"
+      },
+      {
+        "kr": "문장",
+        "rom": "MUN-JANG",
+        "en": "sentence",
+        "category": "sentence"
+      },
+      {
+        "kr": "친구",
+        "rom": "CHIN-GU",
+        "en": "friend",
+        "category": "person"
+      },
+      {
+        "kr": "날씨",
+        "rom": "NAL-SSI",
+        "en": "weather",
+        "category": "weather"
+      }
+    ],
+    "adjectives": [
+      {
+        "kr": "쉬워요",
+        "rom": "SWI-WO-YO",
+        "en": "easy",
+        "sentenceEn": "easy",
+        "compatibleSubjects": [
+          "task"
+        ]
+      },
+      {
+        "kr": "어려워요",
+        "rom": "EO-RYEO-WO-YO",
+        "en": "difficult",
+        "sentenceEn": "difficult",
+        "compatibleSubjects": [
+          "task"
+        ]
+      },
+      {
+        "kr": "재미있어요",
+        "rom": "JAE-MI-I-SSEO-YO",
+        "en": "interesting",
+        "sentenceEn": "interesting",
+        "compatibleSubjects": [
+          "task"
+        ]
+      },
+      {
+        "kr": "좋아요",
+        "rom": "JO-A-YO",
+        "en": "good",
+        "sentenceEn": "good",
+        "compatibleSubjects": [
+          "task",
+          "thing",
+          "weather"
+        ]
+      },
+      {
+        "kr": "커요",
+        "rom": "KEO-YO",
+        "en": "big",
+        "sentenceEn": "big",
+        "compatibleSubjects": [
+          "thing",
+          "place"
+        ]
+      },
+      {
+        "kr": "작아요",
+        "rom": "JA-GA-YO",
+        "en": "small",
+        "sentenceEn": "small",
+        "compatibleSubjects": [
+          "thing",
+          "place"
+        ]
+      },
+      {
+        "kr": "짧아요",
+        "rom": "JJAL-BA-YO",
+        "en": "short",
+        "sentenceEn": "short",
+        "compatibleSubjects": [
+          "sentence"
+        ]
+      },
+      {
+        "kr": "가까워요",
+        "rom": "GA-KKA-WO-YO",
+        "en": "near",
+        "sentenceEn": "near",
+        "compatibleSubjects": [
+          "place"
+        ]
+      },
+      {
+        "kr": "멀어요",
+        "rom": "MEO-REO-YO",
+        "en": "far",
+        "sentenceEn": "far",
+        "compatibleSubjects": [
+          "place"
+        ]
+      },
+      {
+        "kr": "아파요",
+        "rom": "A-PA-YO",
+        "en": "sick",
+        "sentenceEn": "sick",
+        "compatibleSubjects": [
+          "person"
+        ]
+      }
+    ],
+    "adverbs": []
+  },
+  "flashcards": {
+    "exclusive": true,
+    "categories": [
+      {
+        "name": "Chapter 3 · Core",
+        "cards": [
+          {
+            "kr": "저",
+            "rom": "JEO",
+            "en": "I; me, humble",
+            "polite": null,
+            "exampleKr": "저는 책을 읽어요.",
+            "exampleEn": "I read a book."
+          },
+          {
+            "kr": "나",
+            "rom": "NA",
+            "en": "I; me, casual",
+            "polite": null,
+            "exampleKr": "나는 숙제를 해요.",
+            "exampleEn": "I do homework."
+          },
+          {
+            "kr": "가족",
+            "rom": "GA-JOK",
+            "en": "family",
+            "polite": null,
+            "exampleKr": "가족은 사진을 봐요.",
+            "exampleEn": "The family looks at photos."
+          },
+          {
+            "kr": "아이",
+            "rom": "A-I",
+            "en": "child",
+            "polite": null,
+            "exampleKr": "아이가 공책을 봐요.",
+            "exampleEn": "The child looks at the notebook."
+          },
+          {
+            "kr": "부모님",
+            "rom": "BU-MO-NIM",
+            "en": "parents",
+            "polite": null,
+            "exampleKr": "부모님은 사진을 봐요.",
+            "exampleEn": "My parents look at photos."
+          },
+          {
+            "kr": "동생",
+            "rom": "DONG-SAENG",
+            "en": "younger sibling",
+            "polite": null,
+            "exampleKr": "동생이 이름을 써요.",
+            "exampleEn": "My younger sibling writes a name."
+          },
+          {
+            "kr": "이름",
+            "rom": "I-REUM",
+            "en": "name",
+            "polite": null,
+            "exampleKr": "이름을 써요.",
+            "exampleEn": "I write my name."
+          },
+          {
+            "kr": "책",
+            "rom": "CHAEK",
+            "en": "book",
+            "polite": null,
+            "exampleKr": "책을 읽어요.",
+            "exampleEn": "I read a book."
+          },
+          {
+            "kr": "공책",
+            "rom": "GONG-CHAEK",
+            "en": "notebook",
+            "polite": null,
+            "exampleKr": "공책이 있어요.",
+            "exampleEn": "There is a notebook. / I have a notebook."
+          },
+          {
+            "kr": "연필",
+            "rom": "YEON-PIL",
+            "en": "pencil",
+            "polite": null,
+            "exampleKr": "연필을 써요.",
+            "exampleEn": "I use a pencil."
+          },
+          {
+            "kr": "가방",
+            "rom": "GA-BANG",
+            "en": "bag",
+            "polite": null,
+            "exampleKr": "가방이 있어요.",
+            "exampleEn": "There is a bag. / I have a bag."
+          },
+          {
+            "kr": "사진",
+            "rom": "SA-JIN",
+            "en": "photo",
+            "polite": null,
+            "exampleKr": "사진을 봐요.",
+            "exampleEn": "I look at photos."
+          },
+          {
+            "kr": "숙제",
+            "rom": "SUK-JE",
+            "en": "homework",
+            "polite": null,
+            "exampleKr": "숙제를 해요.",
+            "exampleEn": "I do homework."
+          },
+          {
+            "kr": "한국",
+            "rom": "HAN-GUK",
+            "en": "Korea",
+            "polite": null,
+            "exampleKr": "한국은 재미있어요.",
+            "exampleEn": "Korea is interesting."
+          },
+          {
+            "kr": "한국어",
+            "rom": "HAN-GU-GEO",
+            "en": "Korean language",
+            "polite": null,
+            "exampleKr": "한국어를 공부해요.",
+            "exampleEn": "I study Korean."
+          },
+          {
+            "kr": "문제",
+            "rom": "MUN-JE",
+            "en": "problem; question",
+            "polite": null,
+            "exampleKr": "문제가 어려워요.",
+            "exampleEn": "The question is difficult."
+          },
+          {
+            "kr": "답",
+            "rom": "DAP",
+            "en": "answer",
+            "polite": null,
+            "exampleKr": "답을 써요.",
+            "exampleEn": "I write the answer."
+          },
+          {
+            "kr": "있다",
+            "rom": "IT-DA",
+            "en": "to exist; to have",
+            "polite": "있어요",
+            "exampleKr": "가방이 있어요.",
+            "exampleEn": "There is a bag. / I have a bag."
+          },
+          {
+            "kr": "보다",
+            "rom": "BO-DA",
+            "en": "to see; to look at; to watch",
+            "polite": "봐요",
+            "exampleKr": "사진을 봐요.",
+            "exampleEn": "I look at photos."
+          },
+          {
+            "kr": "읽다",
+            "rom": "IK-DA",
+            "en": "to read",
+            "polite": "읽어요",
+            "exampleKr": "책을 읽어요.",
+            "exampleEn": "I read a book."
+          },
+          {
+            "kr": "쓰다",
+            "rom": "SSEU-DA",
+            "en": "to write; to use",
+            "polite": "써요",
+            "exampleKr": "이름을 써요.",
+            "exampleEn": "I write my name."
+          },
+          {
+            "kr": "하다",
+            "rom": "HA-DA",
+            "en": "to do",
+            "polite": "해요",
+            "exampleKr": "숙제를 해요.",
+            "exampleEn": "I do homework."
+          },
+          {
+            "kr": "좋아하다",
+            "rom": "JO-A-HA-DA",
+            "en": "to like",
+            "polite": "좋아해요",
+            "exampleKr": "한국어를 좋아해요.",
+            "exampleEn": "I like Korean."
+          },
+          {
+            "kr": "공부하다",
+            "rom": "GONG-BU-HA-DA",
+            "en": "to study",
+            "polite": "공부해요",
+            "exampleKr": "한국어를 공부해요.",
+            "exampleEn": "I study Korean."
+          },
+          {
+            "kr": "없다",
+            "rom": "EOP-DA",
+            "en": "to not exist; to not have",
+            "polite": "없어요",
+            "exampleKr": "공책이 없어요.",
+            "exampleEn": "There is no notebook. / I do not have a notebook."
+          },
+          {
+            "kr": "쉽다",
+            "rom": "SWIP-DA",
+            "en": "to be easy",
+            "polite": "쉬워요",
+            "exampleKr": "답이 쉬워요.",
+            "exampleEn": "The answer is easy."
+          },
+          {
+            "kr": "어렵다",
+            "rom": "EO-RYEOP-DA",
+            "en": "to be difficult",
+            "polite": "어려워요",
+            "exampleKr": "문제가 어려워요.",
+            "exampleEn": "The question is difficult."
+          },
+          {
+            "kr": "재미있다",
+            "rom": "JAE-MI-IT-DA",
+            "en": "to be fun; to be interesting",
+            "polite": "재미있어요",
+            "exampleKr": "한국어가 재미있어요.",
+            "exampleEn": "Korean is interesting."
+          }
+        ]
+      },
+      {
+        "name": "Chapter 4 · Core",
+        "cards": [
+          {
+            "kr": "여기",
+            "rom": "YEO-GI",
+            "en": "here",
+            "polite": null,
+            "exampleKr": "여기에 있어요.",
+            "exampleEn": "It is here."
+          },
+          {
+            "kr": "거기",
+            "rom": "GEO-GI",
+            "en": "there",
+            "polite": null,
+            "exampleKr": "거기에서 만나요.",
+            "exampleEn": "We meet there."
+          },
+          {
+            "kr": "저기",
+            "rom": "JEO-GI",
+            "en": "over there",
+            "polite": null,
+            "exampleKr": "저기에 가요.",
+            "exampleEn": "I go over there."
+          },
+          {
+            "kr": "어디",
+            "rom": "EO-DI",
+            "en": "where",
+            "polite": null,
+            "exampleKr": "어디에 가요?",
+            "exampleEn": "Where are you going?"
+          },
+          {
+            "kr": "방",
+            "rom": "BANG",
+            "en": "room",
+            "polite": null,
+            "exampleKr": "방에 있어요.",
+            "exampleEn": "I am in the room."
+          },
+          {
+            "kr": "교실",
+            "rom": "GYO-SIL",
+            "en": "classroom",
+            "polite": null,
+            "exampleKr": "교실에서 공부해요.",
+            "exampleEn": "I study in the classroom."
+          },
+          {
+            "kr": "식당",
+            "rom": "SIK-DANG",
+            "en": "restaurant",
+            "polite": null,
+            "exampleKr": "식당에서 먹어요.",
+            "exampleEn": "I eat at the restaurant."
+          },
+          {
+            "kr": "카페",
+            "rom": "KA-PE",
+            "en": "cafe",
+            "polite": null,
+            "exampleKr": "카페에서 만나요.",
+            "exampleEn": "We meet at a cafe."
+          },
+          {
+            "kr": "가게",
+            "rom": "GA-GE",
+            "en": "store",
+            "polite": null,
+            "exampleKr": "가게에서 물을 사요.",
+            "exampleEn": "I buy water at a store."
+          },
+          {
+            "kr": "병원",
+            "rom": "BYEONG-WON",
+            "en": "hospital",
+            "polite": null,
+            "exampleKr": "병원에 가요.",
+            "exampleEn": "I go to a hospital."
+          },
+          {
+            "kr": "공원",
+            "rom": "GONG-WON",
+            "en": "park",
+            "polite": null,
+            "exampleKr": "공원에서 쉬어요.",
+            "exampleEn": "I rest in the park."
+          },
+          {
+            "kr": "도서관",
+            "rom": "DO-SEO-GWAN",
+            "en": "library",
+            "polite": null,
+            "exampleKr": "도서관에서 책을 읽어요.",
+            "exampleEn": "I read books at the library."
+          },
+          {
+            "kr": "편의점",
+            "rom": "PYEON-UI-JEOM",
+            "en": "convenience store",
+            "polite": null,
+            "exampleKr": "편의점에서 물을 사요.",
+            "exampleEn": "I buy water at a convenience store."
+          },
+          {
+            "kr": "은행",
+            "rom": "EUN-HAENG",
+            "en": "bank",
+            "polite": null,
+            "exampleKr": "은행에 가요.",
+            "exampleEn": "I go to the bank."
+          },
+          {
+            "kr": "약국",
+            "rom": "YAK-GUK",
+            "en": "pharmacy",
+            "polite": null,
+            "exampleKr": "약국에서 약을 사요.",
+            "exampleEn": "I buy medicine at a pharmacy."
+          },
+          {
+            "kr": "우체국",
+            "rom": "U-CHE-GUK",
+            "en": "post office",
+            "polite": null,
+            "exampleKr": "우체국에 가요.",
+            "exampleEn": "I go to the post office."
+          },
+          {
+            "kr": "역",
+            "rom": "YEOK",
+            "en": "station",
+            "polite": null,
+            "exampleKr": "역에서 기다려요.",
+            "exampleEn": "I wait at the station."
+          },
+          {
+            "kr": "공항",
+            "rom": "GONG-HANG",
+            "en": "airport",
+            "polite": null,
+            "exampleKr": "공항에 도착해요.",
+            "exampleEn": "I arrive at the airport."
+          },
+          {
+            "kr": "화장실",
+            "rom": "HWA-JANG-SIL",
+            "en": "restroom",
+            "polite": null,
+            "exampleKr": "화장실에 가요.",
+            "exampleEn": "I go to the restroom."
+          },
+          {
+            "kr": "시장",
+            "rom": "SI-JANG",
+            "en": "market",
+            "polite": null,
+            "exampleKr": "시장에서 사요.",
+            "exampleEn": "I buy it at the market."
+          },
+          {
+            "kr": "미용실",
+            "rom": "MI-YONG-SIL",
+            "en": "hair salon",
+            "polite": null,
+            "exampleKr": "미용실에 가요.",
+            "exampleEn": "I go to the hair salon."
+          },
+          {
+            "kr": "서점",
+            "rom": "SEO-JEOM",
+            "en": "bookstore",
+            "polite": null,
+            "exampleKr": "서점에서 책을 사요.",
+            "exampleEn": "I buy books at a bookstore."
+          },
+          {
+            "kr": "영화관",
+            "rom": "YEONG-HWA-GWAN",
+            "en": "movie theater",
+            "polite": null,
+            "exampleKr": "영화관에서 봐요.",
+            "exampleEn": "I watch it at the movie theater."
+          },
+          {
+            "kr": "부엌",
+            "rom": "BU-EOK",
+            "en": "kitchen",
+            "polite": null,
+            "exampleKr": "부엌에서 물을 마셔요.",
+            "exampleEn": "I drink water in the kitchen."
+          },
+          {
+            "kr": "거실",
+            "rom": "GEO-SIL",
+            "en": "living room",
+            "polite": null,
+            "exampleKr": "거실에서 쉬어요.",
+            "exampleEn": "I rest in the living room."
+          },
+          {
+            "kr": "침실",
+            "rom": "CHIM-SIL",
+            "en": "bedroom",
+            "polite": null,
+            "exampleKr": "침실에 있어요.",
+            "exampleEn": "I am in the bedroom."
+          },
+          {
+            "kr": "사무실",
+            "rom": "SA-MU-SIL",
+            "en": "office",
+            "polite": null,
+            "exampleKr": "사무실에서 일해요.",
+            "exampleEn": "I work in an office."
+          },
+          {
+            "kr": "회의실",
+            "rom": "HOE-UI-SIL",
+            "en": "meeting room",
+            "polite": null,
+            "exampleKr": "회의실에서 만나요.",
+            "exampleEn": "We meet in the meeting room."
+          },
+          {
+            "kr": "엘리베이터",
+            "rom": "EL-LI-BE-I-TEO",
+            "en": "elevator",
+            "polite": null,
+            "exampleKr": "엘리베이터에 사람이 있어요.",
+            "exampleEn": "Someone is in the elevator."
+          },
+          {
+            "kr": "계단",
+            "rom": "GYE-DAN",
+            "en": "stairs",
+            "polite": null,
+            "exampleKr": "계단에서 기다려요.",
+            "exampleEn": "I wait on the stairs."
+          },
+          {
+            "kr": "앞",
+            "rom": "AP",
+            "en": "front",
+            "polite": null,
+            "exampleKr": "학교 앞에서 만나요.",
+            "exampleEn": "We meet in front of the school."
+          },
+          {
+            "kr": "뒤",
+            "rom": "DWI",
+            "en": "behind",
+            "polite": null,
+            "exampleKr": "학교 뒤에 있어요.",
+            "exampleEn": "It is behind the school."
+          },
+          {
+            "kr": "안",
+            "rom": "AN",
+            "en": "inside",
+            "polite": null,
+            "exampleKr": "방 안에 있어요.",
+            "exampleEn": "It is inside the room."
+          },
+          {
+            "kr": "밖",
+            "rom": "BAK",
+            "en": "outside",
+            "polite": null,
+            "exampleKr": "집 밖에 있어요.",
+            "exampleEn": "It is outside the house."
+          },
+          {
+            "kr": "위",
+            "rom": "WI",
+            "en": "above",
+            "polite": null,
+            "exampleKr": "책상 위에 있어요.",
+            "exampleEn": "It is on the desk."
+          },
+          {
+            "kr": "아래",
+            "rom": "A-RAE",
+            "en": "below",
+            "polite": null,
+            "exampleKr": "책상 아래에 있어요.",
+            "exampleEn": "It is under the desk."
+          },
+          {
+            "kr": "살다",
+            "rom": "SAL-DA",
+            "en": "live",
+            "polite": "살아요",
+            "exampleKr": "한국에 살아요.",
+            "exampleEn": "I live in Korea."
+          },
+          {
+            "kr": "일하다",
+            "rom": "IL-HA-DA",
+            "en": "work",
+            "polite": "일해요",
+            "exampleKr": "사무실에서 일해요.",
+            "exampleEn": "I work in an office."
+          },
+          {
+            "kr": "기다리다",
+            "rom": "GI-DA-RI-DA",
+            "en": "wait",
+            "polite": "기다려요",
+            "exampleKr": "역에서 기다려요.",
+            "exampleEn": "I wait at the station."
+          },
+          {
+            "kr": "쉬다",
+            "rom": "SWI-DA",
+            "en": "rest",
+            "polite": "쉬어요",
+            "exampleKr": "집에서 쉬어요.",
+            "exampleEn": "I rest at home."
+          },
+          {
+            "kr": "사다",
+            "rom": "SA-DA",
+            "en": "buy",
+            "polite": "사요",
+            "exampleKr": "편의점에서 물을 사요.",
+            "exampleEn": "I buy water at a convenience store."
+          },
+          {
+            "kr": "만나다",
+            "rom": "MAN-NA-DA",
+            "en": "meet",
+            "polite": "만나요",
+            "exampleKr": "카페에서 친구를 만나요.",
+            "exampleEn": "I meet a friend at a cafe."
+          },
+          {
+            "kr": "운동하다",
+            "rom": "UN-DONG-HA-DA",
+            "en": "exercise",
+            "polite": "운동해요",
+            "exampleKr": "공원에서 운동해요.",
+            "exampleEn": "I exercise in the park."
+          },
+          {
+            "kr": "도착하다",
+            "rom": "DO-CHA-KA-DA",
+            "en": "arrive",
+            "polite": "도착해요",
+            "exampleKr": "공항에 도착해요.",
+            "exampleEn": "I arrive at the airport."
+          },
+          {
+            "kr": "가깝다",
+            "rom": "GA-KKAP-DA",
+            "en": "near",
+            "polite": "가까워요",
+            "exampleKr": "집이 역에 가까워요.",
+            "exampleEn": "My home is near the station."
+          },
+          {
+            "kr": "멀다",
+            "rom": "MEOL-DA",
+            "en": "far",
+            "polite": "멀어요",
+            "exampleKr": "회사가 집에서 멀어요.",
+            "exampleEn": "My workplace is far from home."
+          },
+          {
+            "kr": "자주",
+            "rom": "JA-JU",
+            "en": "often",
+            "polite": null,
+            "exampleKr": "카페에서 자주 만나요.",
+            "exampleEn": "We often meet at a cafe."
+          },
+          {
+            "kr": "같이",
+            "rom": "GA-CHI",
+            "en": "together",
+            "polite": null,
+            "exampleKr": "공원에서 같이 쉬어요.",
+            "exampleEn": "We rest together in the park."
+          },
+          {
+            "kr": "혼자",
+            "rom": "HON-JA",
+            "en": "alone",
+            "polite": null,
+            "exampleKr": "방에 혼자 있어요.",
+            "exampleEn": "I am alone in the room."
+          },
+          {
+            "kr": "먼저",
+            "rom": "MEON-JEO",
+            "en": "first",
+            "polite": null,
+            "exampleKr": "교실에 먼저 가요.",
+            "exampleEn": "I go to the classroom first."
+          }
+        ]
+      },
+      {
+        "name": "Supporting Words",
+        "cards": [
+          {
+            "kr": "친구",
+            "rom": "CHIN-GU",
+            "en": "friend",
+            "polite": null,
+            "exampleKr": "친구가 책을 읽어요.",
+            "exampleEn": "My friend reads a book."
+          },
+          {
+            "kr": "학생",
+            "rom": "HAK-SAENG",
+            "en": "student",
+            "polite": null,
+            "exampleKr": "학생은 이름을 써요.",
+            "exampleEn": "The student writes a name."
+          },
+          {
+            "kr": "선생님",
+            "rom": "SEON-SAENG-NIM",
+            "en": "teacher",
+            "polite": null,
+            "exampleKr": "선생님은 답을 써요.",
+            "exampleEn": "The teacher writes the answer."
+          },
+          {
+            "kr": "사람",
+            "rom": "SA-RAM",
+            "en": "person",
+            "polite": null,
+            "exampleKr": "사람이 많아요.",
+            "exampleEn": "There are many people."
+          },
+          {
+            "kr": "물",
+            "rom": "MUL",
+            "en": "water",
+            "polite": null,
+            "exampleKr": "저는 물을 마셔요.",
+            "exampleEn": "I drink water."
+          },
+          {
+            "kr": "밥",
+            "rom": "BAP",
+            "en": "cooked rice / meal",
+            "polite": null,
+            "exampleKr": "아이가 밥을 먹어요.",
+            "exampleEn": "The child eats a meal."
+          },
+          {
+            "kr": "커피",
+            "rom": "KEO-PI",
+            "en": "coffee",
+            "polite": null,
+            "exampleKr": "친구가 커피를 마셔요.",
+            "exampleEn": "My friend drinks coffee."
+          },
+          {
+            "kr": "학교",
+            "rom": "HAK-GYO",
+            "en": "school",
+            "polite": null,
+            "exampleKr": "학교는 커요.",
+            "exampleEn": "The school is big."
+          },
+          {
+            "kr": "회사",
+            "rom": "HOE-SA",
+            "en": "company / workplace",
+            "polite": null,
+            "exampleKr": "회사는 커요.",
+            "exampleEn": "The company is big."
+          },
+          {
+            "kr": "시간",
+            "rom": "SI-GAN",
+            "en": "time",
+            "polite": null,
+            "exampleKr": "시간이 많아요.",
+            "exampleEn": "There is a lot of time."
+          },
+          {
+            "kr": "날씨",
+            "rom": "NAL-SSI",
+            "en": "weather",
+            "polite": null,
+            "exampleKr": "날씨가 좋아요.",
+            "exampleEn": "The weather is good."
+          },
+          {
+            "kr": "오다",
+            "rom": "O-DA",
+            "en": "come",
+            "polite": "와요",
+            "exampleKr": "선생님이 와요.",
+            "exampleEn": "The teacher comes."
+          },
+          {
+            "kr": "먹다",
+            "rom": "MEOK-DA",
+            "en": "eat",
+            "polite": "먹어요",
+            "exampleKr": "저는 밥을 먹어요.",
+            "exampleEn": "I eat a meal."
+          },
+          {
+            "kr": "마시다",
+            "rom": "MA-SI-DA",
+            "en": "drink",
+            "polite": "마셔요",
+            "exampleKr": "친구가 커피를 마셔요.",
+            "exampleEn": "My friend drinks coffee."
+          },
+          {
+            "kr": "좋다",
+            "rom": "JO-TA",
+            "en": "be good",
+            "polite": "좋아요",
+            "exampleKr": "날씨가 좋아요.",
+            "exampleEn": "The weather is good."
+          },
+          {
+            "kr": "크다",
+            "rom": "KEU-DA",
+            "en": "be big",
+            "polite": "커요",
+            "exampleKr": "가방은 커요.",
+            "exampleEn": "The bag is big."
+          },
+          {
+            "kr": "작다",
+            "rom": "JAK-DA",
+            "en": "be small",
+            "polite": "작아요",
+            "exampleKr": "공책은 작아요.",
+            "exampleEn": "The notebook is small."
+          },
+          {
+            "kr": "많다",
+            "rom": "MAN-TA",
+            "en": "be many / much",
+            "polite": "많아요",
+            "exampleKr": "시간이 많아요.",
+            "exampleEn": "There is a lot of time."
+          },
+          {
+            "kr": "아프다",
+            "rom": "A-PEU-DA",
+            "en": "be sick / hurt",
+            "polite": "아파요",
+            "exampleKr": "아이가 아파요.",
+            "exampleEn": "The child is sick."
+          },
+          {
+            "kr": "오늘",
+            "rom": "O-NEUL",
+            "en": "today",
+            "polite": null,
+            "exampleKr": "오늘은 시간이 많아요.",
+            "exampleEn": "Today, I have a lot of time."
+          },
+          {
+            "kr": "누구",
+            "rom": "NU-GU",
+            "en": "who",
+            "polite": null,
+            "exampleKr": "누가 책을 읽어요?",
+            "exampleEn": "Who reads a book?"
+          },
+          {
+            "kr": "무엇",
+            "rom": "MU-EOT",
+            "en": "what (full form)",
+            "polite": null,
+            "exampleKr": "선생님은 무엇을 써요?",
+            "exampleEn": "What does the teacher write?"
+          },
+          {
+            "kr": "문장",
+            "rom": "MUN-JANG",
+            "en": "sentence",
+            "polite": null,
+            "exampleKr": "저는 문장을 써요.",
+            "exampleEn": "I write a sentence."
+          },
+          {
+            "kr": "짧다",
+            "rom": "JJAL-DA",
+            "en": "be short",
+            "polite": "짧아요",
+            "exampleKr": "답이 짧아요.",
+            "exampleEn": "The answer is short."
+          },
+          {
+            "kr": "어떻다",
+            "rom": "EO-TTEO-TA",
+            "en": "be how / be like what",
+            "polite": "어때요",
+            "exampleKr": "한국어가 어때요?",
+            "exampleEn": "What is Korean like?"
+          },
+          {
+            "kr": "집",
+            "rom": "JIP",
+            "en": "home / house",
+            "polite": null,
+            "exampleKr": "부모님은 집에서 커피를 마셔요.",
+            "exampleEn": "My parents drink coffee at home."
+          },
+          {
+            "kr": "가다",
+            "rom": "GA-DA",
+            "en": "go",
+            "polite": "가요",
+            "exampleKr": "저는 약국에 가요.",
+            "exampleEn": "I go to the pharmacy."
+          },
+          {
+            "kr": "책상",
+            "rom": "CHAEK-SANG",
+            "en": "desk",
+            "polite": null,
+            "exampleKr": "물은 책상 위에 있어요.",
+            "exampleEn": "The water is on the desk."
+          },
+          {
+            "kr": "탁자",
+            "rom": "TAK-JA",
+            "en": "table",
+            "polite": null,
+            "exampleKr": "책은 탁자 위에 있어요.",
+            "exampleEn": "The book is on the table."
+          },
+          {
+            "kr": "의자",
+            "rom": "UI-JA",
+            "en": "chair",
+            "polite": null,
+            "exampleKr": "가방은 의자 뒤에 있어요.",
+            "exampleEn": "The bag is behind the chair."
+          },
+          {
+            "kr": "옆",
+            "rom": "YEOP",
+            "en": "side / next to",
+            "polite": null,
+            "exampleKr": "병원은 약국 옆에 있어요.",
+            "exampleEn": "The hospital is next to the pharmacy."
+          },
+          {
+            "kr": "말하다",
+            "rom": "MAL-HA-DA",
+            "en": "speak / say",
+            "polite": "말해요",
+            "exampleKr": "선생님은 교실에서 말해요.",
+            "exampleEn": "The teacher speaks in the classroom."
+          },
+          {
+            "kr": "우리",
+            "rom": "U-RI",
+            "en": "we / us / our",
+            "polite": null,
+            "exampleKr": "우리는 영화관에서 만나요.",
+            "exampleEn": "We meet at the movie theater."
+          },
+          {
+            "kr": "놀다",
+            "rom": "NOL-DA",
+            "en": "play",
+            "polite": "놀아요",
+            "exampleKr": "아이는 어디에서 놀아요?",
+            "exampleEn": "Where does the child play?"
+          },
+          {
+            "kr": "약",
+            "rom": "YAK",
+            "en": "medicine",
+            "polite": null,
+            "exampleKr": "약국에서 약을 사요.",
+            "exampleEn": "I buy medicine at the pharmacy."
+          }
+        ]
+      },
+      {
+        "name": "Sentence Patterns",
+        "cards": [
+          {
+            "kr": "이/가",
+            "rom": "I / GA",
+            "en": "Subject particle · 가방이 있어요. There is a bag. / I have a bag.",
+            "explanation": "Marks the subject: the person or thing that exists or is being described."
+          },
+          {
+            "kr": "은/는",
+            "rom": "EUN / NEUN",
+            "en": "Topic particle · 저는 책을 읽어요. I read a book.",
+            "explanation": "Sets the topic: “as for this person or thing.” It can also show a contrast."
+          },
+          {
+            "kr": "을/를",
+            "rom": "EUL / REUL",
+            "en": "Object particle · 동생이 이름을 써요. My younger sibling writes a name.",
+            "explanation": "Marks the object: the thing that receives the action."
+          },
+          {
+            "kr": "에",
+            "rom": "E",
+            "en": "Location or destination · 친구는 학교에 가요. My friend goes to school.",
+            "explanation": "Marks where something is or where someone goes."
+          },
+          {
+            "kr": "에서",
+            "rom": "E-SEO",
+            "en": "Place of an action · 저는 도서관에서 공부해요. I study at the library.",
+            "explanation": "Marks the place where an action happens."
+          }
+        ]
+      }
+    ]
+  }
+}

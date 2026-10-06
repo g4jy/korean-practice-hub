@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Quiz — Jack</title>
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+  <div class="container builder-page">
+    <header class="page-header">
+      <a href="index.html" class="back-btn">&larr; Back</a>
+      <h1>Word Quiz</h1>
+    </header>
+
+    <!-- Home Screen -->
+    <div id="quiz-home">
+      <div class="srs-ctrl">
+        <span class="srs-label">Category</span>
+        <div class="pill-row" id="cat-pills"></div>
+      </div>
+      <div class="srs-ctrl">
+        <span class="srs-label">Words</span>
+        <div class="pill-row" id="size-pills">
+          <button class="pill" data-n="10">10</button>
+          <button class="pill active" data-n="25">25</button>
+          <button class="pill" data-n="50">50</button>
+          <button class="pill" data-n="0">All</button>
+        </div>
+      </div>
+
+      <div class="srs-progress-bar">
+        <div class="srs-bar"><div class="srs-fill quiz-fill" id="quiz-bar"></div></div>
+        <span class="srs-pct" id="quiz-pct">0%</span>
+      </div>
+
+      <button class="go-btn go-quiz" id="go-quiz">Start Quiz</button>
+    </div>
+
+    <!-- Quiz Screen -->
+    <div class="study-overlay hidden" id="quiz-screen">
+      <div class="study-header">
+        <button class="study-back" id="quiz-back">&larr;</button>
+        <span class="study-pg"><b id="rc">1</b> / <span id="rtt">25</span></span>
+      </div>
+      <div class="quiz-prompt">
+        <div class="quiz-label">What is</div>
+        <div class="quiz-word" id="quiz-word"></div>
+      </div>
+      <div class="quiz-grid" id="quiz-grid"></div>
+      <div class="quiz-score">Score: <b id="quiz-sc">0</b> / <b id="quiz-tot">0</b></div>
+    </div>
+
+    <!-- Done Screen -->
+    <div class="done-screen hidden" id="done-screen">
+      <div class="done-icon" id="done-icon"></div>
+      <h2 class="done-title" id="done-title"></h2>
+      <p class="done-desc" id="done-desc"></p>
+      <button class="go-btn go-quiz" id="done-again">Again</button>
+      <button class="go-btn go-secondary" id="done-home">Back</button>
+    </div>
+  </div>
+
+  <script src="js/storage.js"></script>
+  <script src="js/common.js"></script>
+  <script src="js/quiz.js"></script>
+</body>
+</html>
+
