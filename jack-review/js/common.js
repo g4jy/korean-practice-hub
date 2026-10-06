@@ -109,6 +109,7 @@ const App = (() => {
 
   /* --- Romanization Toggle --- */
   function initRomToggle() {
+    if (document.getElementById('vocab-tabs')) return; // Vocabulary owns this toggle.
     const btn = document.getElementById('toggle-rom');
     if (!btn) return;
     const stored = localStorage.getItem('jack-review:showRom');
