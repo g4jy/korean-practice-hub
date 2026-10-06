@@ -1793,6 +1793,43 @@
             "explanation": "Marks the place where an action happens."
           }
         ]
+      },
+      {
+        "name": "Activities",
+        "cards": [
+          {
+            "kr": "쇼핑",
+            "en": "shopping",
+            "rom": "SYO-PING",
+            "polite": null,
+            "exampleKr": "쇼핑을 해요.",
+            "exampleEn": "I go shopping."
+          },
+          {
+            "kr": "쇼핑하다",
+            "en": "to shop; to go shopping",
+            "rom": "SYO-PING-HA-DA",
+            "polite": "쇼핑해요",
+            "exampleKr": "시장에서 쇼핑해요.",
+            "exampleEn": "I shop at the market."
+          },
+          {
+            "kr": "산책",
+            "en": "a walk; a stroll",
+            "rom": "SAN-CHAEK",
+            "polite": null,
+            "exampleKr": "산책을 해요.",
+            "exampleEn": "I take a walk."
+          },
+          {
+            "kr": "산책하다",
+            "en": "to take a walk; to stroll",
+            "rom": "SAN-CHAEK-HA-DA",
+            "polite": "산책해요",
+            "exampleKr": "공원에서 산책해요.",
+            "exampleEn": "I take a walk in the park."
+          }
+        ]
       }
     ]
   }
