@@ -72,6 +72,15 @@
     };
   }
 
+  // English agreement follows the selected subject; Korean polite forms stay unchanged.
+  function englishVerb(phrase, subject) {
+    if (currentTense() !== 'present' || subject.person !== 3 || subject.plural) return phrase;
+    const parts = phrase.split(' '), base = parts[0];
+    const irregular = {be: 'is', have: 'has', do: 'does', go: 'goes'};
+    parts[0] = irregular[base] || (/[^aeiou]y$/.test(base) ? base.slice(0, -1) + 'ies' : /(?:s|x|z|ch|sh)$/.test(base) ? base + 'es' : base + 's');
+    return parts.join(' ');
+  }
+
   /* --- Render a block --- */
   function renderBlock(blockEl, kr, rom, en) {
     blockEl.querySelector('.block-kr').textContent = kr;
@@ -166,7 +175,7 @@
     }
 
     krParts.push(conj.kr);
-    enParts.push(conj.en);
+    enParts.push(englishVerb(conj.en, subj));
 
     document.getElementById('full-sentence').textContent = krParts.join(' ');
     document.getElementById('translation').textContent = enParts.join(' ');
