@@ -126,7 +126,7 @@
       if (!header || document.getElementById('teacher-submission')) return;
       const panel = document.createElement('section'); panel.id = 'teacher-submission'; panel.className = 'teacher-submission';
       panel.setAttribute('aria-label', 'Submit review results');
-      panel.innerHTML = '<div class="teacher-submit-actions"><button type="button" id="teacher-submit">Submit</button><button type="button" id="teacher-retry" hidden>Retry pending</button><button type="button" id="teacher-download">Download results CSV</button></div><p id="teacher-submit-status" role="status" aria-live="polite"></p><p class="teacher-submit-privacy">Sends only your reviewed words, answers and review times to your teacher. Lesson notes and backups are excluded.</p><details id="teacher-submission-records" hidden><summary>Submission records</summary><ul></ul></details>';
+      panel.innerHTML = '<div class="teacher-submit-actions"><button type="button" id="teacher-submit">Submit</button><button type="button" id="teacher-retry" hidden>Retry pending</button><button type="button" id="teacher-download">Download results CSV</button></div><p id="teacher-submit-status" role="status" aria-live="polite"></p><p class="teacher-submit-privacy">When connected, sends only your reviewed words, answers and review times to your teacher. Lesson notes and backups are excluded.</p><details id="teacher-submission-records" hidden><summary>Submission records</summary><ul></ul></details>';
       header.insertAdjacentElement('afterend', panel);
       const controller = createController({storage: Storage, getCards: async () => (await App.buildCardPool()).allCards,
         config: root.JACK_SUBMISSION_CONFIG || {enabled: false}});
