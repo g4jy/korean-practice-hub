@@ -1,69 +1,13 @@
 /* === Vocabulary Flashcard === */
 
 (async () => {
-  const data = await App.loadVocab();
-
-  /* --- Build card list from all vocab data --- */
-  const allCards = [];
-  const categories = new Map();
-  const seen = new Set();
-
-  function catLabel(cat) {
-    const map = {
-      food: 'Food', drink: 'Drinks', weather: 'Weather',
-      activity: 'Activities', person: 'People', thing: 'Things'
-    };
-    return map[cat] || 'Other';
-  }
-
-  function addCard(kr, rom, en, category) {
-    if (!kr || seen.has(kr)) return;
-    seen.add(kr);
-    const card = { kr, rom: rom || '', en: en || '', category };
-    allCards.push(card);
-    if (!categories.has(category)) categories.set(category, []);
-    categories.get(category).push(card);
-  }
-
-  /* --- Extract from action data --- */
-  if (!data.flashcards?.exclusive) {
-  const action = data.action || {};
-
-  (action.times || []).forEach(t => addCard(t.kr, t.rom, t.en, 'Time'));
-
-  (action.places || []).forEach(p => addCard(p.kr, p.rom, p.en, 'Places'));
-
-  (action.objects || []).forEach(o => {
-    addCard(o.kr, o.rom, o.en, catLabel(o.category));
-  });
-
-  (action.verbs || []).forEach(v => {
-    addCard(v.present, v.presentRom, v.en + ' (present)', 'Verbs');
-    addCard(v.past, v.pastRom, v.pastEn + ' (past)', 'Verbs');
-    addCard(v.future, v.futureRom, v.futureEn + ' (future)', 'Verbs');
-  });
-
-  /* --- Extract from describe data --- */
-  const desc = data.describe || {};
-
-  (desc.subjects || []).forEach(s => addCard(s.kr, s.rom, s.en, catLabel(s.category)));
-
-  (desc.adjectives || []).forEach(a => addCard(a.kr, a.rom, a.en, 'Adjectives'));
-
-  (desc.adverbs || []).forEach(a => addCard(a.kr, a.rom, a.en, 'Adverbs'));
-
-  }
-
-  /* --- Extra flashcard data from vocab.json --- */
-  const fc = data.flashcards || {};
-  (fc.categories || []).forEach(cat => {
-    (cat.cards || []).forEach(c => addCard(c.kr, c.rom, c.en, cat.name));
-  });
+  await Storage.init();
+  const { allCards, categories } = await App.buildCardPool();
 
   /* --- Sort cards by mastery (weak first) --- */
   function masteryOrder(card) {
     const mastery = App.getWordMastery();
-    const m = mastery[card.kr];
+    const m = mastery[card.id];
     if (!m) return 2; // unrated in middle
     if (m.status === 'dont_know') return 0;
     if (m.status === 'unsure') return 1;
@@ -78,6 +22,7 @@
   let isFlipped = false;
   let cardDirection = localStorage.getItem('jack-review:flashcardDirection') || 'kr-en';
   let reviewMode = false;
+  let rating = false;
 
   /* --- DOM --- */
   const flashcardEl = document.getElementById('flashcard');
@@ -102,6 +47,7 @@
     const count = cat === 'All' ? allCards.length : (categories.get(cat) || []).length;
     btn.textContent = cat + ' (' + count + ')';
     btn.addEventListener('click', () => {
+      if (rating) return;
       exitReviewMode();
       currentCards = cat === 'All' ? [...allCards] : [...(categories.get(cat) || [])];
       currentIdx = 0;
@@ -129,7 +75,7 @@
     const mastery = App.getWordMastery();
     let know = 0, unsure = 0, dontKnow = 0;
     for (const card of currentCards) {
-      const m = mastery[card.kr];
+      const m = mastery[card.id];
       if (!m) continue;
       if (m.status === 'know') know++;
       else if (m.status === 'unsure') unsure++;
@@ -143,7 +89,7 @@
     }
     // Update review weak button count
     const weakCount = allCards.filter(c => {
-      const m = mastery[c.kr];
+      const m = mastery[c.id];
       return m && (m.status === 'dont_know' || m.status === 'unsure');
     }).length;
     if (reviewWeakBtn) {
@@ -160,7 +106,7 @@
     if (currentCards.length === 0) return;
     const card = currentCards[currentIdx];
     const mastery = App.getWordMastery();
-    const m = mastery[card.kr];
+    const m = mastery[card.id];
     if (!m) return;
 
     const badge = document.createElement('div');
@@ -196,9 +142,10 @@
 
   /* --- Review Weak Mode --- */
   function enterReviewMode() {
+    if (rating) return;
     const mastery = App.getWordMastery();
     const weakCards = allCards.filter(c => {
-      const m = mastery[c.kr];
+      const m = mastery[c.id];
       return m && (m.status === 'dont_know' || m.status === 'unsure');
     });
     if (weakCards.length === 0) {
@@ -226,6 +173,7 @@
   }
   if (reviewExitBtn) {
     reviewExitBtn.addEventListener('click', () => {
+      if (rating) return;
       exitReviewMode();
       currentCards = [...allCards];
       currentIdx = 0;
@@ -260,6 +208,7 @@
   updateDirBtn();
   if (dirBtn) {
     dirBtn.addEventListener('click', () => {
+      if (rating) return;
       cardDirection = cardDirection === 'kr-en' ? 'en-kr' : 'kr-en';
       localStorage.setItem('jack-review:flashcardDirection', cardDirection);
       resetFlipInstant();
@@ -270,6 +219,7 @@
 
   /* --- Navigation (BUG FIX: instant reset, no flip animation on nav) --- */
   document.getElementById('prev-btn').addEventListener('click', () => {
+    if (rating) return;
     if (currentCards.length === 0) return;
     currentIdx = (currentIdx - 1 + currentCards.length) % currentCards.length;
     resetFlipInstant();
@@ -277,6 +227,7 @@
   });
 
   document.getElementById('next-btn').addEventListener('click', () => {
+    if (rating) return;
     if (currentCards.length === 0) return;
     currentIdx = (currentIdx + 1) % currentCards.length;
     resetFlipInstant();
@@ -285,6 +236,7 @@
 
   /* --- Shuffle --- */
   document.getElementById('shuffle-btn').addEventListener('click', () => {
+    if (rating) return;
     for (let i = currentCards.length - 1; i > 0; i--) {
       const j = Math.floor(Math.random() * (i + 1));
       [currentCards[i], currentCards[j]] = [currentCards[j], currentCards[i]];
@@ -297,10 +249,13 @@
   /* --- Response Tracking Buttons --- */
   const respContainer = document.getElementById('response-buttons');
   if (respContainer) {
-    function handleResponse(status) {
+    async function handleResponse(status) {
+      if (rating) return;
       if (currentCards.length === 0) return;
       const card = currentCards[currentIdx];
-      App.trackResponse(card.kr, card.en, status, card.category, 'flashcard');
+      rating = true;
+      try { await App.trackResponse(card, status, 'flashcard'); }
+      catch (error) { rating = false; App.showToast('Could not save: ' + error.message); return; }
 
       // Re-queue dont_know cards 5 positions later
       if (status === 'dont_know') {
@@ -317,6 +272,7 @@
         currentIdx = (currentIdx + 1) % currentCards.length;
         resetFlipInstant();
         render();
+        rating = false;
       }, 400);
     }
 
@@ -333,6 +289,7 @@
 
   /* --- Keyboard --- */
   document.addEventListener('keydown', (e) => {
+    if (/^(INPUT|TEXTAREA|SELECT)$/.test(e.target.tagName)) return;
     if (e.key === 'ArrowLeft') document.getElementById('prev-btn').click();
     if (e.key === 'ArrowRight') document.getElementById('next-btn').click();
     if (e.key === ' ' || e.key === 'Enter') {

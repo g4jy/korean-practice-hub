@@ -6,7 +6,7 @@
 
   let selectedCat = 'all';
   let batchSize = 25;
-  let RQ = [], RI = 0, RSC = 0, RANS = false;
+  let RQ = [], RI = 0, RSC = 0, RANS = false, quizGeneration = 0;
   const $ = id => document.getElementById(id);
 
   // Build category pills
@@ -37,7 +37,7 @@
 
   function renderHome() {
     const pool = getPool();
-    const tested = pool.filter(w => M[w.kr] && M[w.kr].rv).length;
+    const tested = pool.filter(w => M[w.id] && M[w.id].rv).length;
     const pct = pool.length ? Math.round(tested / pool.length * 100) : 0;
     $('quiz-pct').textContent = pct + '%';
     $('quiz-bar').style.width = pct + '%';
@@ -51,7 +51,7 @@
     if (p.length < 4) return;
     for (let i = p.length-1; i > 0; i--) { const j = Math.random()*i|0; [p[i],p[j]]=[p[j],p[i]]; }
     RQ = batchSize > 0 ? p.slice(0, batchSize) : p;
-    RI = 0; RSC = 0;
+    RI = 0; RSC = 0; quizGeneration++;
     $('quiz-screen').classList.remove('hidden');
     $('quiz-home').style.display = 'none';
     showQ();
@@ -87,29 +87,30 @@
       btn.textContent = o.kr;
       btn.onclick = async () => {
         if (RANS) return;
-        RANS = true;
+        RANS = true; const generation = quizGeneration;
         grid.querySelectorAll('.quiz-opt').forEach(x => x.classList.add('off'));
-        if (o.kr === w.kr) {
+        const correct = o.id === w.id;
+        if (correct) {
           btn.classList.add('ok'); RSC++;
-          if (!M[w.kr]) M[w.kr] = {};
-          M[w.kr].rv = true; M[w.kr].rok = (M[w.kr].rok||0)+1;
+
         } else {
           btn.classList.add('bad');
           grid.querySelectorAll('.quiz-opt').forEach(x => { if (x.textContent === w.kr) x.classList.add('show'); });
-          if (!M[w.kr]) M[w.kr] = {};
-          M[w.kr].rv = true; M[w.kr].rfail = (M[w.kr].rfail||0)+1;
+
         }
-        await Storage.saveMastery(M);
+        try { M = await Storage.rateWord(w, correct ? 'know' : 'dont_know', 'quiz', {quiz: true}); }
+        catch (error) { App.showToast('Answer was not saved: ' + error.message); }
+        if (generation !== quizGeneration) return;
         $('quiz-sc').textContent = RSC;
         $('quiz-tot').textContent = RI+1;
         App.speak(w.kr);
-        setTimeout(() => { RI++; showQ(); }, 1000);
+        setTimeout(() => { if (generation !== quizGeneration) return; RI++; showQ(); }, 1000);
       };
       grid.appendChild(btn);
     });
   }
 
-  $('quiz-back').onclick = () => { $('quiz-screen').classList.add('hidden'); $('quiz-home').style.display=''; renderHome(); };
+  $('quiz-back').onclick = () => { quizGeneration++; $('quiz-screen').classList.add('hidden'); $('quiz-home').style.display=''; renderHome(); };
 
   function showDone() {
     $('quiz-screen').classList.add('hidden');

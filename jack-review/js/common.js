@@ -8,7 +8,8 @@ const App = (() => {
   /* --- Data Loading --- */
   async function loadVocab() {
     if (vocabData) return vocabData;
-    const resp = await fetch('data/vocab.json');
+    const resp = await fetch('data/vocab.json', {cache: 'no-cache'});
+    if (!resp.ok) throw new Error('Vocabulary could not be loaded');
     vocabData = await resp.json();
     return vocabData;
   }
@@ -148,114 +149,19 @@ const App = (() => {
     });
   }
 
-  /* --- Response Tracking (Batch Mode) --- */
-  const WEBHOOK_URL = ''; // Teacher sync is disabled until its destination is verified.
-  const STORAGE_KEY = 'jack-review:koreanPracticeResponses';
-  const PENDING_KEY = 'jack-review:koreanPracticePending';
-  const MASTERY_KEY = 'jack-review:koreanPracticeMastery';
-  let studentName = '';
-  let sessionId = Date.now().toString(36);
-
-  function trackResponse(kr, en, status, category, source) {
-    if (!studentName && vocabData) studentName = vocabData.student || '';
-    const entry = {
-      timestamp: new Date().toISOString(),
-      student: studentName,
-      word_kr: kr,
-      word_en: en,
-      status: status,
-      category: category || '',
-      source: source || 'flashcard',
-      session_id: sessionId
-    };
-
-    // Save to full history
-    const stored = JSON.parse(localStorage.getItem(STORAGE_KEY) || '[]');
-    stored.push(entry);
-    localStorage.setItem(STORAGE_KEY, JSON.stringify(stored));
-
-    // Add to pending batch queue
-    const pending = JSON.parse(localStorage.getItem(PENDING_KEY) || '[]');
-    pending.push(entry);
-    localStorage.setItem(PENDING_KEY, JSON.stringify(pending));
-
-    // Update mastery
-    updateMastery(kr, status);
-
-    // Flush if pending > 20
-    if (pending.length >= 20) flushBatch();
+  /* --- Local-only response history shared across every study mode --- */
+  const WEBHOOK_URL = ''; // No collector is enabled or contacted.
+  async function trackResponse(card, status, source) {
+    return Storage.rateWord(card, status, source || 'flashcard');
   }
-
-  function flushBatch() {
-    if (!WEBHOOK_URL) return;
-    const pending = JSON.parse(localStorage.getItem(PENDING_KEY) || '[]');
-    if (pending.length === 0) return;
-
-    // Try sendBeacon first (works during page unload)
-    if (navigator.sendBeacon) {
-      const sent = navigator.sendBeacon(WEBHOOK_URL, JSON.stringify(pending));
-      if (sent) {
-        localStorage.setItem(PENDING_KEY, '[]');
-        return;
-      }
-    }
-
-    // Fallback to fetch
-    fetch(WEBHOOK_URL, {
-      method: 'POST',
-      mode: 'no-cors',
-      headers: { 'Content-Type': 'text/plain' },
-      body: JSON.stringify(pending)
-    }).then(() => {
-      localStorage.setItem(PENDING_KEY, '[]');
-    }).catch(() => { /* keep pending for retry */ });
-  }
-
-  // Auto-flush triggers
-  document.addEventListener('visibilitychange', () => {
-    if (document.visibilityState === 'hidden') flushBatch();
-  });
-  window.addEventListener('beforeunload', () => flushBatch());
-  setInterval(flushBatch, 5 * 60 * 1000); // every 5 minutes
-
-  /* --- Mastery API --- */
-  function updateMastery(kr, status) {
-    const mastery = JSON.parse(localStorage.getItem(MASTERY_KEY) || '{}');
-    const prev = mastery[kr] || { status: null, count: 0, lastSeen: null };
-    mastery[kr] = {
-      status: status,
-      count: prev.count + 1,
-      lastSeen: new Date().toISOString()
-    };
-    localStorage.setItem(MASTERY_KEY, JSON.stringify(mastery));
-  }
-
-  function getWordMastery() {
-    return JSON.parse(localStorage.getItem(MASTERY_KEY) || '{}');
-  }
-
+  function flushBatch() { /* Private learner data stays on this device. */ }
+  function getWordMastery() { return typeof Storage !== 'undefined' ? Storage.cachedMastery() : {}; }
   function getWeakWords() {
-    const mastery = getWordMastery();
-    return Object.keys(mastery).filter(kr =>
-      mastery[kr].status === 'dont_know' || mastery[kr].status === 'unsure'
-    );
+    return Object.entries(getWordMastery()).filter(([,m]) => m.status === 'dont_know' || m.status === 'unsure').map(([id]) => id);
   }
-
-  function getResponses() {
-    return JSON.parse(localStorage.getItem(STORAGE_KEY) || '[]');
-  }
-
-  function exportResponses() {
-    const data = getResponses();
-    if (data.length === 0) return;
-    const blob = new Blob([JSON.stringify(data, null, 2)], { type: 'application/json' });
-    const url = URL.createObjectURL(blob);
-    const a = document.createElement('a');
-    a.href = url;
-    a.download = (studentName || 'student') + '_responses_' + new Date().toISOString().slice(0,10) + '.json';
-    a.click();
-    URL.revokeObjectURL(url);
-  }
+  async function getResponses() { return (await Storage.snapshot()).history; }
+  async function exportResponses() { return Storage.exportJSON(); }
+  const escapeHTML = value => String(value ?? '').replace(/[&<>"']/g, c => ({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));
 
   /* --- Init --- */
   async function init() {
@@ -268,7 +174,7 @@ const App = (() => {
     // Pre-load student name
     try {
       const d = await loadVocab();
-      studentName = d.student || '';
+      // Dataset loaded for this page.
     } catch (e) {}
   }
 
@@ -281,44 +187,28 @@ const App = (() => {
   /* --- Build Card Pool (for Learn/Quiz pages) --- */
   async function buildCardPool() {
     const data = await loadVocab();
-    const pool = [];
-    const cats = new Map();
-    const seen = new Set();
-    function catMap(c) {
-      return { food: 'Food & Drink', drink: 'Food & Drink', weather: 'Weather',
-        activity: 'Activities', person: 'People', thing: 'Objects' }[c] || 'Other';
-    }
-    function add(kr, rom, en, cat) {
-      if (!kr || seen.has(kr)) return;
-      seen.add(kr);
-      const card = { kr, rom: rom || '', en: en || '', category: cat };
-      pool.push(card);
-      if (!cats.has(cat)) cats.set(cat, []);
-      cats.get(cat).push(card);
+    if (typeof Storage !== 'undefined') await Storage.init();
+    const byId = new Map();
+    function add(word, category) {
+      if (!word.kr) return;
+      const id = word.id || 'ko:' + encodeURIComponent(word.kr.normalize('NFC').trim());
+      byId.set(id, {...(byId.get(id) || {}), ...word, id, rom: word.rom || '', en: word.en || '', category: category || word.category || 'Other'});
     }
     if (!data.flashcards?.exclusive) {
-    const a = data.action || {};
-    (a.times || []).forEach(t => add(t.kr, t.rom, t.en, 'Time'));
-    (a.places || []).forEach(p => add(p.kr, p.rom, p.en, 'Places'));
-    (a.objects || []).forEach(o => add(o.kr, o.rom, o.en, catMap(o.category)));
-    (a.verbs || []).forEach(v => {
-      add(v.present, v.presentRom, v.en + ' (present)', 'Verbs');
-      add(v.past, v.pastRom, v.pastEn + ' (past)', 'Verbs');
-      add(v.future, v.futureRom, v.futureEn + ' (future)', 'Verbs');
-    });
-    const d = data.describe || {};
-    (d.subjects || []).forEach(s => add(s.kr, s.rom, s.en, catMap(s.category)));
-    (d.adjectives || []).forEach(x => add(x.kr, x.rom, x.en, 'Adjectives'));
-    (d.adverbs || []).forEach(x => add(x.kr, x.rom, x.en, 'Adverbs'));
+      const a = data.action || {}, d = data.describe || {};
+      (a.times || []).forEach(w => add(w, 'Time'));
+      (a.places || []).forEach(w => add(w, 'Places'));
+      (a.objects || []).forEach(w => add(w, w.category));
+      (a.verbs || []).forEach(v => ['present','past','future'].forEach(t => add({kr:v[t],rom:v[t+'Rom'],en:v.en}, 'Verbs')));
+      (d.subjects || []).forEach(w => add(w, w.category));
+      (d.adjectives || []).forEach(w => add(w, 'Adjectives'));
+      (d.adverbs || []).forEach(w => add(w, 'Adverbs'));
     }
-    const fc = data.flashcards || {};
-    (fc.categories || []).forEach(cat => {
-      (cat.cards || []).forEach(c => add(c.kr, c.rom, c.en, cat.name));
-    });
-    if (typeof Storage !== 'undefined' && Storage.getUserWords) {
-      try { (await Storage.getUserWords()).forEach(w => add(w.kr, w.rom, w.en, w.category || 'My Words')); } catch(e) {}
-    }
-    return { allCards: pool, categories: cats };
+    (data.flashcards?.categories || []).forEach(cat => (cat.cards || []).forEach(w => add(w, cat.name)));
+    if (typeof Storage !== 'undefined') (await Storage.getUserWords()).forEach(w => add(w, w.category || 'My Words'));
+    const allCards = [...byId.values()], categories = new Map();
+    for (const c of allCards) { if (!categories.has(c.category)) categories.set(c.category, []); categories.get(c.category).push(c); }
+    return {allCards, categories};
   }
 
   /* --- Toast --- */
@@ -330,6 +220,7 @@ const App = (() => {
   }
 
   return {
+    escapeHTML,
     loadVocab,
     speak,
     hasJongseong,

@@ -5,17 +5,87 @@
       {
         "kr": "저는",
         "rom": "JEO-NEUN",
-        "en": "I"
+        "en": "I",
+        "plural": false,
+        "person": 1
       },
       {
         "kr": "나는",
         "rom": "NA-NEUN",
-        "en": "I"
+        "en": "I",
+        "plural": false,
+        "person": 1
       },
       {
         "kr": "우리는",
         "rom": "U-RI-NEUN",
-        "en": "We"
+        "en": "We",
+        "plural": true,
+        "person": 1
+      },
+      {
+        "kr": "가족은",
+        "baseKr": "가족",
+        "rom": "GA-JOK-EUN",
+        "en": "The family",
+        "plural": false,
+        "person": 3
+      },
+      {
+        "kr": "아이는",
+        "baseKr": "아이",
+        "rom": "A-I-NEUN",
+        "en": "The child",
+        "plural": false,
+        "person": 3
+      },
+      {
+        "kr": "부모님은",
+        "baseKr": "부모님",
+        "rom": "BU-MO-NIM-EUN",
+        "en": "My parents",
+        "plural": true,
+        "person": 3
+      },
+      {
+        "kr": "동생은",
+        "baseKr": "동생",
+        "rom": "DONG-SAENG-EUN",
+        "en": "My younger sibling",
+        "plural": false,
+        "person": 3
+      },
+      {
+        "kr": "친구는",
+        "baseKr": "친구",
+        "rom": "CHIN-GU-NEUN",
+        "en": "My friend",
+        "plural": false,
+        "person": 3
+      },
+      {
+        "kr": "학생은",
+        "baseKr": "학생",
+        "rom": "HAK-SAENG-EUN",
+        "en": "The student",
+        "plural": false,
+        "person": 3
+      },
+      {
+        "kr": "선생님은",
+        "baseKr": "선생님",
+        "rom": "SEON-SAENG-NIM-EUN",
+        "en": "The teacher",
+        "plural": false,
+        "person": 3
+      },
+      {
+        "kr": "사람은",
+        "baseKr": "사람",
+        "rom": "SA-RAM-EUN",
+        "en": "The person",
+        "plural": false,
+        "person": 3
       }
     ],
     "times": [
@@ -737,6 +807,55 @@
         "rom": "NAL-SSI",
         "en": "weather",
         "category": "weather"
+      },
+      {
+        "kr": "가족",
+        "rom": "GA-JOK",
+        "en": "The family",
+        "category": "person",
+        "plural": false
+      },
+      {
+        "kr": "아이",
+        "rom": "A-I",
+        "en": "The child",
+        "category": "person",
+        "plural": false
+      },
+      {
+        "kr": "부모님",
+        "rom": "BU-MO-NIM",
+        "en": "My parents",
+        "category": "person",
+        "plural": true
+      },
+      {
+        "kr": "동생",
+        "rom": "DONG-SAENG",
+        "en": "My younger sibling",
+        "category": "person",
+        "plural": false
+      },
+      {
+        "kr": "학생",
+        "rom": "HAK-SAENG",
+        "en": "The student",
+        "category": "person",
+        "plural": false
+      },
+      {
+        "kr": "선생님",
+        "rom": "SEON-SAENG-NIM",
+        "en": "The teacher",
+        "category": "person",
+        "plural": false
+      },
+      {
+        "kr": "사람",
+        "rom": "SA-RAM",
+        "en": "The person",
+        "category": "person",
+        "plural": false
       }
     ],
     "adjectives": [
@@ -849,7 +968,8 @@
             "en": "I; me, humble",
             "polite": null,
             "exampleKr": "저는 책을 읽어요.",
-            "exampleEn": "I read a book."
+            "exampleEn": "I read a book.",
+            "id": "ko:%EC%A0%80"
           },
           {
             "kr": "나",
@@ -857,7 +977,8 @@
             "en": "I; me, casual",
             "polite": null,
             "exampleKr": "나는 숙제를 해요.",
-            "exampleEn": "I do homework."
+            "exampleEn": "I do homework.",
+            "id": "ko:%EB%82%98"
           },
           {
             "kr": "가족",
@@ -865,7 +986,8 @@
             "en": "family",
             "polite": null,
             "exampleKr": "가족은 사진을 봐요.",
-            "exampleEn": "The family looks at photos."
+            "exampleEn": "The family looks at photos.",
+            "id": "ko:%EA%B0%80%EC%A1%B1"
           },
           {
             "kr": "아이",
@@ -873,7 +995,8 @@
             "en": "child",
             "polite": null,
             "exampleKr": "아이가 공책을 봐요.",
-            "exampleEn": "The child looks at the notebook."
+            "exampleEn": "The child looks at the notebook.",
+            "id": "ko:%EC%95%84%EC%9D%B4"
           },
           {
             "kr": "부모님",
@@ -881,7 +1004,8 @@
             "en": "parents",
             "polite": null,
             "exampleKr": "부모님은 사진을 봐요.",
-            "exampleEn": "My parents look at photos."
+            "exampleEn": "My parents look at photos.",
+            "id": "ko:%EB%B6%80%EB%AA%A8%EB%8B%98"
           },
           {
             "kr": "동생",
@@ -889,7 +1013,8 @@
             "en": "younger sibling",
             "polite": null,
             "exampleKr": "동생이 이름을 써요.",
-            "exampleEn": "My younger sibling writes a name."
+            "exampleEn": "My younger sibling writes a name.",
+            "id": "ko:%EB%8F%99%EC%83%9D"
           },
           {
             "kr": "이름",
@@ -897,7 +1022,8 @@
             "en": "name",
             "polite": null,
             "exampleKr": "이름을 써요.",
-            "exampleEn": "I write my name."
+            "exampleEn": "I write my name.",
+            "id": "ko:%EC%9D%B4%EB%A6%84"
           },
           {
             "kr": "책",
@@ -905,7 +1031,8 @@
             "en": "book",
             "polite": null,
             "exampleKr": "책을 읽어요.",
-            "exampleEn": "I read a book."
+            "exampleEn": "I read a book.",
+            "id": "ko:%EC%B1%85"
           },
           {
             "kr": "공책",
@@ -913,7 +1040,8 @@
             "en": "notebook",
             "polite": null,
             "exampleKr": "공책이 있어요.",
-            "exampleEn": "There is a notebook. / I have a notebook."
+            "exampleEn": "There is a notebook. / I have a notebook.",
+            "id": "ko:%EA%B3%B5%EC%B1%85"
           },
           {
             "kr": "연필",
@@ -921,7 +1049,8 @@
             "en": "pencil",
             "polite": null,
             "exampleKr": "연필을 써요.",
-            "exampleEn": "I use a pencil."
+            "exampleEn": "I use a pencil.",
+            "id": "ko:%EC%97%B0%ED%95%84"
           },
           {
             "kr": "가방",
@@ -929,7 +1058,8 @@
             "en": "bag",
             "polite": null,
             "exampleKr": "가방이 있어요.",
-            "exampleEn": "There is a bag. / I have a bag."
+            "exampleEn": "There is a bag. / I have a bag.",
+            "id": "ko:%EA%B0%80%EB%B0%A9"
           },
           {
             "kr": "사진",
@@ -937,7 +1067,8 @@
             "en": "photo",
             "polite": null,
             "exampleKr": "사진을 봐요.",
-            "exampleEn": "I look at photos."
+            "exampleEn": "I look at photos.",
+            "id": "ko:%EC%82%AC%EC%A7%84"
           },
           {
             "kr": "숙제",
@@ -945,7 +1076,8 @@
             "en": "homework",
             "polite": null,
             "exampleKr": "숙제를 해요.",
-            "exampleEn": "I do homework."
+            "exampleEn": "I do homework.",
+            "id": "ko:%EC%88%99%EC%A0%9C"
           },
           {
             "kr": "한국",
@@ -953,7 +1085,8 @@
             "en": "Korea",
             "polite": null,
             "exampleKr": "한국은 재미있어요.",
-            "exampleEn": "Korea is interesting."
+            "exampleEn": "Korea is interesting.",
+            "id": "ko:%ED%95%9C%EA%B5%AD"
           },
           {
             "kr": "한국어",
@@ -961,7 +1094,8 @@
             "en": "Korean language",
             "polite": null,
             "exampleKr": "한국어를 공부해요.",
-            "exampleEn": "I study Korean."
+            "exampleEn": "I study Korean.",
+            "id": "ko:%ED%95%9C%EA%B5%AD%EC%96%B4"
           },
           {
             "kr": "문제",
@@ -969,7 +1103,8 @@
             "en": "problem; question",
             "polite": null,
             "exampleKr": "문제가 어려워요.",
-            "exampleEn": "The question is difficult."
+            "exampleEn": "The question is difficult.",
+            "id": "ko:%EB%AC%B8%EC%A0%9C"
           },
           {
             "kr": "답",
@@ -977,7 +1112,8 @@
             "en": "answer",
             "polite": null,
             "exampleKr": "답을 써요.",
-            "exampleEn": "I write the answer."
+            "exampleEn": "I write the answer.",
+            "id": "ko:%EB%8B%B5"
           },
           {
             "kr": "있다",
@@ -985,7 +1121,8 @@
             "en": "to exist; to have",
             "polite": "있어요",
             "exampleKr": "가방이 있어요.",
-            "exampleEn": "There is a bag. / I have a bag."
+            "exampleEn": "There is a bag. / I have a bag.",
+            "id": "ko:%EC%9E%88%EB%8B%A4"
           },
           {
             "kr": "보다",
@@ -993,7 +1130,8 @@
             "en": "to see; to look at; to watch",
             "polite": "봐요",
             "exampleKr": "사진을 봐요.",
-            "exampleEn": "I look at photos."
+            "exampleEn": "I look at photos.",
+            "id": "ko:%EB%B3%B4%EB%8B%A4"
           },
           {
             "kr": "읽다",
@@ -1001,7 +1139,8 @@
             "en": "to read",
             "polite": "읽어요",
             "exampleKr": "책을 읽어요.",
-            "exampleEn": "I read a book."
+            "exampleEn": "I read a book.",
+            "id": "ko:%EC%9D%BD%EB%8B%A4"
           },
           {
             "kr": "쓰다",
@@ -1009,7 +1148,8 @@
             "en": "to write; to use",
             "polite": "써요",
             "exampleKr": "이름을 써요.",
-            "exampleEn": "I write my name."
+            "exampleEn": "I write my name.",
+            "id": "ko:%EC%93%B0%EB%8B%A4"
           },
           {
             "kr": "하다",
@@ -1017,7 +1157,8 @@
             "en": "to do",
             "polite": "해요",
             "exampleKr": "숙제를 해요.",
-            "exampleEn": "I do homework."
+            "exampleEn": "I do homework.",
+            "id": "ko:%ED%95%98%EB%8B%A4"
           },
           {
             "kr": "좋아하다",
@@ -1025,7 +1166,8 @@
             "en": "to like",
             "polite": "좋아해요",
             "exampleKr": "한국어를 좋아해요.",
-            "exampleEn": "I like Korean."
+            "exampleEn": "I like Korean.",
+            "id": "ko:%EC%A2%8B%EC%95%84%ED%95%98%EB%8B%A4"
           },
           {
             "kr": "공부하다",
@@ -1033,7 +1175,8 @@
             "en": "to study",
             "polite": "공부해요",
             "exampleKr": "한국어를 공부해요.",
-            "exampleEn": "I study Korean."
+            "exampleEn": "I study Korean.",
+            "id": "ko:%EA%B3%B5%EB%B6%80%ED%95%98%EB%8B%A4"
           },
           {
             "kr": "없다",
@@ -1041,7 +1184,8 @@
             "en": "to not exist; to not have",
             "polite": "없어요",
             "exampleKr": "공책이 없어요.",
-            "exampleEn": "There is no notebook. / I do not have a notebook."
+            "exampleEn": "There is no notebook. / I do not have a notebook.",
+            "id": "ko:%EC%97%86%EB%8B%A4"
           },
           {
             "kr": "쉽다",
@@ -1049,7 +1193,8 @@
             "en": "to be easy",
             "polite": "쉬워요",
             "exampleKr": "답이 쉬워요.",
-            "exampleEn": "The answer is easy."
+            "exampleEn": "The answer is easy.",
+            "id": "ko:%EC%89%BD%EB%8B%A4"
           },
           {
             "kr": "어렵다",
@@ -1057,7 +1202,8 @@
             "en": "to be difficult",
             "polite": "어려워요",
             "exampleKr": "문제가 어려워요.",
-            "exampleEn": "The question is difficult."
+            "exampleEn": "The question is difficult.",
+            "id": "ko:%EC%96%B4%EB%A0%B5%EB%8B%A4"
           },
           {
             "kr": "재미있다",
@@ -1065,7 +1211,8 @@
             "en": "to be fun; to be interesting",
             "polite": "재미있어요",
             "exampleKr": "한국어가 재미있어요.",
-            "exampleEn": "Korean is interesting."
+            "exampleEn": "Korean is interesting.",
+            "id": "ko:%EC%9E%AC%EB%AF%B8%EC%9E%88%EB%8B%A4"
           }
         ]
       },
@@ -1078,7 +1225,8 @@
             "en": "here",
             "polite": null,
             "exampleKr": "여기에 있어요.",
-            "exampleEn": "It is here."
+            "exampleEn": "It is here.",
+            "id": "ko:%EC%97%AC%EA%B8%B0"
           },
           {
             "kr": "거기",
@@ -1086,7 +1234,8 @@
             "en": "there",
             "polite": null,
             "exampleKr": "거기에서 만나요.",
-            "exampleEn": "We meet there."
+            "exampleEn": "We meet there.",
+            "id": "ko:%EA%B1%B0%EA%B8%B0"
           },
           {
             "kr": "저기",
@@ -1094,7 +1243,8 @@
             "en": "over there",
             "polite": null,
             "exampleKr": "저기에 가요.",
-            "exampleEn": "I go over there."
+            "exampleEn": "I go over there.",
+            "id": "ko:%EC%A0%80%EA%B8%B0"
           },
           {
             "kr": "어디",
@@ -1102,7 +1252,8 @@
             "en": "where",
             "polite": null,
             "exampleKr": "어디에 가요?",
-            "exampleEn": "Where are you going?"
+            "exampleEn": "Where are you going?",
+            "id": "ko:%EC%96%B4%EB%94%94"
           },
           {
             "kr": "방",
@@ -1110,7 +1261,8 @@
             "en": "room",
             "polite": null,
             "exampleKr": "방에 있어요.",
-            "exampleEn": "I am in the room."
+            "exampleEn": "I am in the room.",
+            "id": "ko:%EB%B0%A9"
           },
           {
             "kr": "교실",
@@ -1118,7 +1270,8 @@
             "en": "classroom",
             "polite": null,
             "exampleKr": "교실에서 공부해요.",
-            "exampleEn": "I study in the classroom."
+            "exampleEn": "I study in the classroom.",
+            "id": "ko:%EA%B5%90%EC%8B%A4"
           },
           {
             "kr": "식당",
@@ -1126,7 +1279,8 @@
             "en": "restaurant",
             "polite": null,
             "exampleKr": "식당에서 먹어요.",
-            "exampleEn": "I eat at the restaurant."
+            "exampleEn": "I eat at the restaurant.",
+            "id": "ko:%EC%8B%9D%EB%8B%B9"
           },
           {
             "kr": "카페",
@@ -1134,7 +1288,8 @@
             "en": "cafe",
             "polite": null,
             "exampleKr": "카페에서 만나요.",
-            "exampleEn": "We meet at a cafe."
+            "exampleEn": "We meet at a cafe.",
+            "id": "ko:%EC%B9%B4%ED%8E%98"
           },
           {
             "kr": "가게",
@@ -1142,7 +1297,8 @@
             "en": "store",
             "polite": null,
             "exampleKr": "가게에서 물을 사요.",
-            "exampleEn": "I buy water at a store."
+            "exampleEn": "I buy water at a store.",
+            "id": "ko:%EA%B0%80%EA%B2%8C"
           },
           {
             "kr": "병원",
@@ -1150,7 +1306,8 @@
             "en": "hospital",
             "polite": null,
             "exampleKr": "병원에 가요.",
-            "exampleEn": "I go to a hospital."
+            "exampleEn": "I go to a hospital.",
+            "id": "ko:%EB%B3%91%EC%9B%90"
           },
           {
             "kr": "공원",
@@ -1158,7 +1315,8 @@
             "en": "park",
             "polite": null,
             "exampleKr": "공원에서 쉬어요.",
-            "exampleEn": "I rest in the park."
+            "exampleEn": "I rest in the park.",
+            "id": "ko:%EA%B3%B5%EC%9B%90"
           },
           {
             "kr": "도서관",
@@ -1166,7 +1324,8 @@
             "en": "library",
             "polite": null,
             "exampleKr": "도서관에서 책을 읽어요.",
-            "exampleEn": "I read books at the library."
+            "exampleEn": "I read books at the library.",
+            "id": "ko:%EB%8F%84%EC%84%9C%EA%B4%80"
           },
           {
             "kr": "편의점",
@@ -1174,7 +1333,8 @@
             "en": "convenience store",
             "polite": null,
             "exampleKr": "편의점에서 물을 사요.",
-            "exampleEn": "I buy water at a convenience store."
+            "exampleEn": "I buy water at a convenience store.",
+            "id": "ko:%ED%8E%B8%EC%9D%98%EC%A0%90"
           },
           {
             "kr": "은행",
@@ -1182,7 +1342,8 @@
             "en": "bank",
             "polite": null,
             "exampleKr": "은행에 가요.",
-            "exampleEn": "I go to the bank."
+            "exampleEn": "I go to the bank.",
+            "id": "ko:%EC%9D%80%ED%96%89"
           },
           {
             "kr": "약국",
@@ -1190,7 +1351,8 @@
             "en": "pharmacy",
             "polite": null,
             "exampleKr": "약국에서 약을 사요.",
-            "exampleEn": "I buy medicine at a pharmacy."
+            "exampleEn": "I buy medicine at a pharmacy.",
+            "id": "ko:%EC%95%BD%EA%B5%AD"
           },
           {
             "kr": "우체국",
@@ -1198,7 +1360,8 @@
             "en": "post office",
             "polite": null,
             "exampleKr": "우체국에 가요.",
-            "exampleEn": "I go to the post office."
+            "exampleEn": "I go to the post office.",
+            "id": "ko:%EC%9A%B0%EC%B2%B4%EA%B5%AD"
           },
           {
             "kr": "역",
@@ -1206,7 +1369,8 @@
             "en": "station",
             "polite": null,
             "exampleKr": "역에서 기다려요.",
-            "exampleEn": "I wait at the station."
+            "exampleEn": "I wait at the station.",
+            "id": "ko:%EC%97%AD"
           },
           {
             "kr": "공항",
@@ -1214,7 +1378,8 @@
             "en": "airport",
             "polite": null,
             "exampleKr": "공항에 도착해요.",
-            "exampleEn": "I arrive at the airport."
+            "exampleEn": "I arrive at the airport.",
+            "id": "ko:%EA%B3%B5%ED%95%AD"
           },
           {
             "kr": "화장실",
@@ -1222,7 +1387,8 @@
             "en": "restroom",
             "polite": null,
             "exampleKr": "화장실에 가요.",
-            "exampleEn": "I go to the restroom."
+            "exampleEn": "I go to the restroom.",
+            "id": "ko:%ED%99%94%EC%9E%A5%EC%8B%A4"
           },
           {
             "kr": "시장",
@@ -1230,7 +1396,8 @@
             "en": "market",
             "polite": null,
             "exampleKr": "시장에서 사요.",
-            "exampleEn": "I buy it at the market."
+            "exampleEn": "I buy it at the market.",
+            "id": "ko:%EC%8B%9C%EC%9E%A5"
           },
           {
             "kr": "미용실",
@@ -1238,7 +1405,8 @@
             "en": "hair salon",
             "polite": null,
             "exampleKr": "미용실에 가요.",
-            "exampleEn": "I go to the hair salon."
+            "exampleEn": "I go to the hair salon.",
+            "id": "ko:%EB%AF%B8%EC%9A%A9%EC%8B%A4"
           },
           {
             "kr": "서점",
@@ -1246,7 +1414,8 @@
             "en": "bookstore",
             "polite": null,
             "exampleKr": "서점에서 책을 사요.",
-            "exampleEn": "I buy books at a bookstore."
+            "exampleEn": "I buy books at a bookstore.",
+            "id": "ko:%EC%84%9C%EC%A0%90"
           },
           {
             "kr": "영화관",
@@ -1254,7 +1423,8 @@
             "en": "movie theater",
             "polite": null,
             "exampleKr": "영화관에서 봐요.",
-            "exampleEn": "I watch it at the movie theater."
+            "exampleEn": "I watch it at the movie theater.",
+            "id": "ko:%EC%98%81%ED%99%94%EA%B4%80"
           },
           {
             "kr": "부엌",
@@ -1262,7 +1432,8 @@
             "en": "kitchen",
             "polite": null,
             "exampleKr": "부엌에서 물을 마셔요.",
-            "exampleEn": "I drink water in the kitchen."
+            "exampleEn": "I drink water in the kitchen.",
+            "id": "ko:%EB%B6%80%EC%97%8C"
           },
           {
             "kr": "거실",
@@ -1270,7 +1441,8 @@
             "en": "living room",
             "polite": null,
             "exampleKr": "거실에서 쉬어요.",
-            "exampleEn": "I rest in the living room."
+            "exampleEn": "I rest in the living room.",
+            "id": "ko:%EA%B1%B0%EC%8B%A4"
           },
           {
             "kr": "침실",
@@ -1278,7 +1450,8 @@
             "en": "bedroom",
             "polite": null,
             "exampleKr": "침실에 있어요.",
-            "exampleEn": "I am in the bedroom."
+            "exampleEn": "I am in the bedroom.",
+            "id": "ko:%EC%B9%A8%EC%8B%A4"
           },
           {
             "kr": "사무실",
@@ -1286,7 +1459,8 @@
             "en": "office",
             "polite": null,
             "exampleKr": "사무실에서 일해요.",
-            "exampleEn": "I work in an office."
+            "exampleEn": "I work in an office.",
+            "id": "ko:%EC%82%AC%EB%AC%B4%EC%8B%A4"
           },
           {
             "kr": "회의실",
@@ -1294,7 +1468,8 @@
             "en": "meeting room",
             "polite": null,
             "exampleKr": "회의실에서 만나요.",
-            "exampleEn": "We meet in the meeting room."
+            "exampleEn": "We meet in the meeting room.",
+            "id": "ko:%ED%9A%8C%EC%9D%98%EC%8B%A4"
           },
           {
             "kr": "엘리베이터",
@@ -1302,7 +1477,8 @@
             "en": "elevator",
             "polite": null,
             "exampleKr": "엘리베이터에 사람이 있어요.",
-            "exampleEn": "Someone is in the elevator."
+            "exampleEn": "Someone is in the elevator.",
+            "id": "ko:%EC%97%98%EB%A6%AC%EB%B2%A0%EC%9D%B4%ED%84%B0"
           },
           {
             "kr": "계단",
@@ -1310,7 +1486,8 @@
             "en": "stairs",
             "polite": null,
             "exampleKr": "계단에서 기다려요.",
-            "exampleEn": "I wait on the stairs."
+            "exampleEn": "I wait on the stairs.",
+            "id": "ko:%EA%B3%84%EB%8B%A8"
           },
           {
             "kr": "앞",
@@ -1318,7 +1495,8 @@
             "en": "front",
             "polite": null,
             "exampleKr": "학교 앞에서 만나요.",
-            "exampleEn": "We meet in front of the school."
+            "exampleEn": "We meet in front of the school.",
+            "id": "ko:%EC%95%9E"
           },
           {
             "kr": "뒤",
@@ -1326,7 +1504,8 @@
             "en": "behind",
             "polite": null,
             "exampleKr": "학교 뒤에 있어요.",
-            "exampleEn": "It is behind the school."
+            "exampleEn": "It is behind the school.",
+            "id": "ko:%EB%92%A4"
           },
           {
             "kr": "안",
@@ -1334,7 +1513,8 @@
             "en": "inside",
             "polite": null,
             "exampleKr": "방 안에 있어요.",
-            "exampleEn": "It is inside the room."
+            "exampleEn": "It is inside the room.",
+            "id": "ko:%EC%95%88"
           },
           {
             "kr": "밖",
@@ -1342,7 +1522,8 @@
             "en": "outside",
             "polite": null,
             "exampleKr": "집 밖에 있어요.",
-            "exampleEn": "It is outside the house."
+            "exampleEn": "It is outside the house.",
+            "id": "ko:%EB%B0%96"
           },
           {
             "kr": "위",
@@ -1350,7 +1531,8 @@
             "en": "above",
             "polite": null,
             "exampleKr": "책상 위에 있어요.",
-            "exampleEn": "It is on the desk."
+            "exampleEn": "It is on the desk.",
+            "id": "ko:%EC%9C%84"
           },
           {
             "kr": "아래",
@@ -1358,7 +1540,8 @@
             "en": "below",
             "polite": null,
             "exampleKr": "책상 아래에 있어요.",
-            "exampleEn": "It is under the desk."
+            "exampleEn": "It is under the desk.",
+            "id": "ko:%EC%95%84%EB%9E%98"
           },
           {
             "kr": "살다",
@@ -1366,7 +1549,8 @@
             "en": "live",
             "polite": "살아요",
             "exampleKr": "한국에 살아요.",
-            "exampleEn": "I live in Korea."
+            "exampleEn": "I live in Korea.",
+            "id": "ko:%EC%82%B4%EB%8B%A4"
           },
           {
             "kr": "일하다",
@@ -1374,7 +1558,8 @@
             "en": "work",
             "polite": "일해요",
             "exampleKr": "사무실에서 일해요.",
-            "exampleEn": "I work in an office."
+            "exampleEn": "I work in an office.",
+            "id": "ko:%EC%9D%BC%ED%95%98%EB%8B%A4"
           },
           {
             "kr": "기다리다",
@@ -1382,7 +1567,8 @@
             "en": "wait",
             "polite": "기다려요",
             "exampleKr": "역에서 기다려요.",
-            "exampleEn": "I wait at the station."
+            "exampleEn": "I wait at the station.",
+            "id": "ko:%EA%B8%B0%EB%8B%A4%EB%A6%AC%EB%8B%A4"
           },
           {
             "kr": "쉬다",
@@ -1390,7 +1576,8 @@
             "en": "rest",
             "polite": "쉬어요",
             "exampleKr": "집에서 쉬어요.",
-            "exampleEn": "I rest at home."
+            "exampleEn": "I rest at home.",
+            "id": "ko:%EC%89%AC%EB%8B%A4"
           },
           {
             "kr": "사다",
@@ -1398,7 +1585,8 @@
             "en": "buy",
             "polite": "사요",
             "exampleKr": "편의점에서 물을 사요.",
-            "exampleEn": "I buy water at a convenience store."
+            "exampleEn": "I buy water at a convenience store.",
+            "id": "ko:%EC%82%AC%EB%8B%A4"
           },
           {
             "kr": "만나다",
@@ -1406,7 +1594,8 @@
             "en": "meet",
             "polite": "만나요",
             "exampleKr": "카페에서 친구를 만나요.",
-            "exampleEn": "I meet a friend at a cafe."
+            "exampleEn": "I meet a friend at a cafe.",
+            "id": "ko:%EB%A7%8C%EB%82%98%EB%8B%A4"
           },
           {
             "kr": "운동하다",
@@ -1414,7 +1603,8 @@
             "en": "exercise",
             "polite": "운동해요",
             "exampleKr": "공원에서 운동해요.",
-            "exampleEn": "I exercise in the park."
+            "exampleEn": "I exercise in the park.",
+            "id": "ko:%EC%9A%B4%EB%8F%99%ED%95%98%EB%8B%A4"
           },
           {
             "kr": "도착하다",
@@ -1422,7 +1612,8 @@
             "en": "arrive",
             "polite": "도착해요",
             "exampleKr": "공항에 도착해요.",
-            "exampleEn": "I arrive at the airport."
+            "exampleEn": "I arrive at the airport.",
+            "id": "ko:%EB%8F%84%EC%B0%A9%ED%95%98%EB%8B%A4"
           },
           {
             "kr": "가깝다",
@@ -1430,7 +1621,8 @@
             "en": "near",
             "polite": "가까워요",
             "exampleKr": "집이 역에 가까워요.",
-            "exampleEn": "My home is near the station."
+            "exampleEn": "My home is near the station.",
+            "id": "ko:%EA%B0%80%EA%B9%9D%EB%8B%A4"
           },
           {
             "kr": "멀다",
@@ -1438,7 +1630,8 @@
             "en": "far",
             "polite": "멀어요",
             "exampleKr": "회사가 집에서 멀어요.",
-            "exampleEn": "My workplace is far from home."
+            "exampleEn": "My workplace is far from home.",
+            "id": "ko:%EB%A9%80%EB%8B%A4"
           },
           {
             "kr": "자주",
@@ -1446,7 +1639,8 @@
             "en": "often",
             "polite": null,
             "exampleKr": "카페에서 자주 만나요.",
-            "exampleEn": "We often meet at a cafe."
+            "exampleEn": "We often meet at a cafe.",
+            "id": "ko:%EC%9E%90%EC%A3%BC"
           },
           {
             "kr": "같이",
@@ -1454,7 +1648,8 @@
             "en": "together",
             "polite": null,
             "exampleKr": "공원에서 같이 쉬어요.",
-            "exampleEn": "We rest together in the park."
+            "exampleEn": "We rest together in the park.",
+            "id": "ko:%EA%B0%99%EC%9D%B4"
           },
           {
             "kr": "혼자",
@@ -1462,7 +1657,8 @@
             "en": "alone",
             "polite": null,
             "exampleKr": "방에 혼자 있어요.",
-            "exampleEn": "I am alone in the room."
+            "exampleEn": "I am alone in the room.",
+            "id": "ko:%ED%98%BC%EC%9E%90"
           },
           {
             "kr": "먼저",
@@ -1470,7 +1666,8 @@
             "en": "first",
             "polite": null,
             "exampleKr": "교실에 먼저 가요.",
-            "exampleEn": "I go to the classroom first."
+            "exampleEn": "I go to the classroom first.",
+            "id": "ko:%EB%A8%BC%EC%A0%80"
           }
         ]
       },
@@ -1483,7 +1680,8 @@
             "en": "friend",
             "polite": null,
             "exampleKr": "친구가 책을 읽어요.",
-            "exampleEn": "My friend reads a book."
+            "exampleEn": "My friend reads a book.",
+            "id": "ko:%EC%B9%9C%EA%B5%AC"
           },
           {
             "kr": "학생",
@@ -1491,7 +1689,8 @@
             "en": "student",
             "polite": null,
             "exampleKr": "학생은 이름을 써요.",
-            "exampleEn": "The student writes a name."
+            "exampleEn": "The student writes a name.",
+            "id": "ko:%ED%95%99%EC%83%9D"
           },
           {
             "kr": "선생님",
@@ -1499,7 +1698,8 @@
             "en": "teacher",
             "polite": null,
             "exampleKr": "선생님은 답을 써요.",
-            "exampleEn": "The teacher writes the answer."
+            "exampleEn": "The teacher writes the answer.",
+            "id": "ko:%EC%84%A0%EC%83%9D%EB%8B%98"
           },
           {
             "kr": "사람",
@@ -1507,7 +1707,8 @@
             "en": "person",
             "polite": null,
             "exampleKr": "사람이 많아요.",
-            "exampleEn": "There are many people."
+            "exampleEn": "There are many people.",
+            "id": "ko:%EC%82%AC%EB%9E%8C"
           },
           {
             "kr": "물",
@@ -1515,7 +1716,8 @@
             "en": "water",
             "polite": null,
             "exampleKr": "저는 물을 마셔요.",
-            "exampleEn": "I drink water."
+            "exampleEn": "I drink water.",
+            "id": "ko:%EB%AC%BC"
           },
           {
             "kr": "밥",
@@ -1523,7 +1725,8 @@
             "en": "cooked rice / meal",
             "polite": null,
             "exampleKr": "아이가 밥을 먹어요.",
-            "exampleEn": "The child eats a meal."
+            "exampleEn": "The child eats a meal.",
+            "id": "ko:%EB%B0%A5"
           },
           {
             "kr": "커피",
@@ -1531,7 +1734,8 @@
             "en": "coffee",
             "polite": null,
             "exampleKr": "친구가 커피를 마셔요.",
-            "exampleEn": "My friend drinks coffee."
+            "exampleEn": "My friend drinks coffee.",
+            "id": "ko:%EC%BB%A4%ED%94%BC"
           },
           {
             "kr": "학교",
@@ -1539,7 +1743,8 @@
             "en": "school",
             "polite": null,
             "exampleKr": "학교는 커요.",
-            "exampleEn": "The school is big."
+            "exampleEn": "The school is big.",
+            "id": "ko:%ED%95%99%EA%B5%90"
           },
           {
             "kr": "회사",
@@ -1547,7 +1752,8 @@
             "en": "company / workplace",
             "polite": null,
             "exampleKr": "회사는 커요.",
-            "exampleEn": "The company is big."
+            "exampleEn": "The company is big.",
+            "id": "ko:%ED%9A%8C%EC%82%AC"
           },
           {
             "kr": "시간",
@@ -1555,7 +1761,8 @@
             "en": "time",
             "polite": null,
             "exampleKr": "시간이 많아요.",
-            "exampleEn": "There is a lot of time."
+            "exampleEn": "There is a lot of time.",
+            "id": "ko:%EC%8B%9C%EA%B0%84"
           },
           {
             "kr": "날씨",
@@ -1563,7 +1770,8 @@
             "en": "weather",
             "polite": null,
             "exampleKr": "날씨가 좋아요.",
-            "exampleEn": "The weather is good."
+            "exampleEn": "The weather is good.",
+            "id": "ko:%EB%82%A0%EC%94%A8"
           },
           {
             "kr": "오다",
@@ -1571,7 +1779,8 @@
             "en": "come",
             "polite": "와요",
             "exampleKr": "선생님이 와요.",
-            "exampleEn": "The teacher comes."
+            "exampleEn": "The teacher comes.",
+            "id": "ko:%EC%98%A4%EB%8B%A4"
           },
           {
             "kr": "먹다",
@@ -1579,7 +1788,8 @@
             "en": "eat",
             "polite": "먹어요",
             "exampleKr": "저는 밥을 먹어요.",
-            "exampleEn": "I eat a meal."
+            "exampleEn": "I eat a meal.",
+            "id": "ko:%EB%A8%B9%EB%8B%A4"
           },
           {
             "kr": "마시다",
@@ -1587,7 +1797,8 @@
             "en": "drink",
             "polite": "마셔요",
             "exampleKr": "친구가 커피를 마셔요.",
-            "exampleEn": "My friend drinks coffee."
+            "exampleEn": "My friend drinks coffee.",
+            "id": "ko:%EB%A7%88%EC%8B%9C%EB%8B%A4"
           },
           {
             "kr": "좋다",
@@ -1595,7 +1806,8 @@
             "en": "be good",
             "polite": "좋아요",
             "exampleKr": "날씨가 좋아요.",
-            "exampleEn": "The weather is good."
+            "exampleEn": "The weather is good.",
+            "id": "ko:%EC%A2%8B%EB%8B%A4"
           },
           {
             "kr": "크다",
@@ -1603,7 +1815,8 @@
             "en": "be big",
             "polite": "커요",
             "exampleKr": "가방은 커요.",
-            "exampleEn": "The bag is big."
+            "exampleEn": "The bag is big.",
+            "id": "ko:%ED%81%AC%EB%8B%A4"
           },
           {
             "kr": "작다",
@@ -1611,7 +1824,8 @@
             "en": "be small",
             "polite": "작아요",
             "exampleKr": "공책은 작아요.",
-            "exampleEn": "The notebook is small."
+            "exampleEn": "The notebook is small.",
+            "id": "ko:%EC%9E%91%EB%8B%A4"
           },
           {
             "kr": "많다",
@@ -1619,7 +1833,8 @@
             "en": "be many / much",
             "polite": "많아요",
             "exampleKr": "시간이 많아요.",
-            "exampleEn": "There is a lot of time."
+            "exampleEn": "There is a lot of time.",
+            "id": "ko:%EB%A7%8E%EB%8B%A4"
           },
           {
             "kr": "아프다",
@@ -1627,7 +1842,8 @@
             "en": "be sick / hurt",
             "polite": "아파요",
             "exampleKr": "아이가 아파요.",
-            "exampleEn": "The child is sick."
+            "exampleEn": "The child is sick.",
+            "id": "ko:%EC%95%84%ED%94%84%EB%8B%A4"
           },
           {
             "kr": "오늘",
@@ -1635,7 +1851,8 @@
             "en": "today",
             "polite": null,
             "exampleKr": "오늘은 시간이 많아요.",
-            "exampleEn": "Today, I have a lot of time."
+            "exampleEn": "Today, I have a lot of time.",
+            "id": "ko:%EC%98%A4%EB%8A%98"
           },
           {
             "kr": "누구",
@@ -1643,7 +1860,8 @@
             "en": "who",
             "polite": null,
             "exampleKr": "누가 책을 읽어요?",
-            "exampleEn": "Who reads a book?"
+            "exampleEn": "Who reads a book?",
+            "id": "ko:%EB%88%84%EA%B5%AC"
           },
           {
             "kr": "무엇",
@@ -1651,7 +1869,8 @@
             "en": "what (full form)",
             "polite": null,
             "exampleKr": "선생님은 무엇을 써요?",
-            "exampleEn": "What does the teacher write?"
+            "exampleEn": "What does the teacher write?",
+            "id": "ko:%EB%AC%B4%EC%97%87"
           },
           {
             "kr": "문장",
@@ -1659,7 +1878,8 @@
             "en": "sentence",
             "polite": null,
             "exampleKr": "저는 문장을 써요.",
-            "exampleEn": "I write a sentence."
+            "exampleEn": "I write a sentence.",
+            "id": "ko:%EB%AC%B8%EC%9E%A5"
           },
           {
             "kr": "짧다",
@@ -1667,7 +1887,8 @@
             "en": "be short",
             "polite": "짧아요",
             "exampleKr": "답이 짧아요.",
-            "exampleEn": "The answer is short."
+            "exampleEn": "The answer is short.",
+            "id": "ko:%EC%A7%A7%EB%8B%A4"
           },
           {
             "kr": "어떻다",
@@ -1675,7 +1896,8 @@
             "en": "be how / be like what",
             "polite": "어때요",
             "exampleKr": "한국어가 어때요?",
-            "exampleEn": "What is Korean like?"
+            "exampleEn": "What is Korean like?",
+            "id": "ko:%EC%96%B4%EB%96%BB%EB%8B%A4"
           },
           {
             "kr": "집",
@@ -1683,7 +1905,8 @@
             "en": "home / house",
             "polite": null,
             "exampleKr": "부모님은 집에서 커피를 마셔요.",
-            "exampleEn": "My parents drink coffee at home."
+            "exampleEn": "My parents drink coffee at home.",
+            "id": "ko:%EC%A7%91"
           },
           {
             "kr": "가다",
@@ -1691,7 +1914,8 @@
             "en": "go",
             "polite": "가요",
             "exampleKr": "저는 약국에 가요.",
-            "exampleEn": "I go to the pharmacy."
+            "exampleEn": "I go to the pharmacy.",
+            "id": "ko:%EA%B0%80%EB%8B%A4"
           },
           {
             "kr": "책상",
@@ -1699,7 +1923,8 @@
             "en": "desk",
             "polite": null,
             "exampleKr": "물은 책상 위에 있어요.",
-            "exampleEn": "The water is on the desk."
+            "exampleEn": "The water is on the desk.",
+            "id": "ko:%EC%B1%85%EC%83%81"
           },
           {
             "kr": "탁자",
@@ -1707,7 +1932,8 @@
             "en": "table",
             "polite": null,
             "exampleKr": "책은 탁자 위에 있어요.",
-            "exampleEn": "The book is on the table."
+            "exampleEn": "The book is on the table.",
+            "id": "ko:%ED%83%81%EC%9E%90"
           },
           {
             "kr": "의자",
@@ -1715,7 +1941,8 @@
             "en": "chair",
             "polite": null,
             "exampleKr": "가방은 의자 뒤에 있어요.",
-            "exampleEn": "The bag is behind the chair."
+            "exampleEn": "The bag is behind the chair.",
+            "id": "ko:%EC%9D%98%EC%9E%90"
           },
           {
             "kr": "옆",
@@ -1723,7 +1950,8 @@
             "en": "side / next to",
             "polite": null,
             "exampleKr": "병원은 약국 옆에 있어요.",
-            "exampleEn": "The hospital is next to the pharmacy."
+            "exampleEn": "The hospital is next to the pharmacy.",
+            "id": "ko:%EC%98%86"
           },
           {
             "kr": "말하다",
@@ -1731,7 +1959,8 @@
             "en": "speak / say",
             "polite": "말해요",
             "exampleKr": "선생님은 교실에서 말해요.",
-            "exampleEn": "The teacher speaks in the classroom."
+            "exampleEn": "The teacher speaks in the classroom.",
+            "id": "ko:%EB%A7%90%ED%95%98%EB%8B%A4"
           },
           {
             "kr": "우리",
@@ -1739,7 +1968,8 @@
             "en": "we / us / our",
             "polite": null,
             "exampleKr": "우리는 영화관에서 만나요.",
-            "exampleEn": "We meet at the movie theater."
+            "exampleEn": "We meet at the movie theater.",
+            "id": "ko:%EC%9A%B0%EB%A6%AC"
           },
           {
             "kr": "놀다",
@@ -1747,7 +1977,8 @@
             "en": "play",
             "polite": "놀아요",
             "exampleKr": "아이는 어디에서 놀아요?",
-            "exampleEn": "Where does the child play?"
+            "exampleEn": "Where does the child play?",
+            "id": "ko:%EB%86%80%EB%8B%A4"
           },
           {
             "kr": "약",
@@ -1755,7 +1986,8 @@
             "en": "medicine",
             "polite": null,
             "exampleKr": "약국에서 약을 사요.",
-            "exampleEn": "I buy medicine at the pharmacy."
+            "exampleEn": "I buy medicine at the pharmacy.",
+            "id": "ko:%EC%95%BD"
           }
         ]
       },
@@ -1766,31 +1998,36 @@
             "kr": "이/가",
             "rom": "I / GA",
             "en": "Subject particle · 가방이 있어요. There is a bag. / I have a bag.",
-            "explanation": "Marks the subject: the person or thing that exists or is being described."
+            "explanation": "Marks the subject: the person or thing that exists or is being described.",
+            "id": "ko:%EC%9D%B4%2F%EA%B0%80"
           },
           {
             "kr": "은/는",
             "rom": "EUN / NEUN",
             "en": "Topic particle · 저는 책을 읽어요. I read a book.",
-            "explanation": "Sets the topic: “as for this person or thing.” It can also show a contrast."
+            "explanation": "Sets the topic: “as for this person or thing.” It can also show a contrast.",
+            "id": "ko:%EC%9D%80%2F%EB%8A%94"
           },
           {
             "kr": "을/를",
             "rom": "EUL / REUL",
             "en": "Object particle · 동생이 이름을 써요. My younger sibling writes a name.",
-            "explanation": "Marks the object: the thing that receives the action."
+            "explanation": "Marks the object: the thing that receives the action.",
+            "id": "ko:%EC%9D%84%2F%EB%A5%BC"
           },
           {
             "kr": "에",
             "rom": "E",
             "en": "Location or destination · 친구는 학교에 가요. My friend goes to school.",
-            "explanation": "Marks where something is or where someone goes."
+            "explanation": "Marks where something is or where someone goes.",
+            "id": "ko:%EC%97%90"
           },
           {
             "kr": "에서",
             "rom": "E-SEO",
             "en": "Place of an action · 저는 도서관에서 공부해요. I study at the library.",
-            "explanation": "Marks the place where an action happens."
+            "explanation": "Marks the place where an action happens.",
+            "id": "ko:%EC%97%90%EC%84%9C"
           }
         ]
       },
@@ -1803,7 +2040,8 @@
             "rom": "SYO-PING",
             "polite": null,
             "exampleKr": "쇼핑을 해요.",
-            "exampleEn": "I go shopping."
+            "exampleEn": "I go shopping.",
+            "id": "ko:%EC%87%BC%ED%95%91"
           },
           {
             "kr": "쇼핑하다",
@@ -1811,7 +2049,8 @@
             "rom": "SYO-PING-HA-DA",
             "polite": "쇼핑해요",
             "exampleKr": "시장에서 쇼핑해요.",
-            "exampleEn": "I shop at the market."
+            "exampleEn": "I shop at the market.",
+            "id": "ko:%EC%87%BC%ED%95%91%ED%95%98%EB%8B%A4"
           },
           {
             "kr": "산책",
@@ -1819,7 +2058,8 @@
             "rom": "SAN-CHAEK",
             "polite": null,
             "exampleKr": "산책을 해요.",
-            "exampleEn": "I take a walk."
+            "exampleEn": "I take a walk.",
+            "id": "ko:%EC%82%B0%EC%B1%85"
           },
           {
             "kr": "산책하다",
@@ -1827,7 +2067,8 @@
             "rom": "SAN-CHAEK-HA-DA",
             "polite": "산책해요",
             "exampleKr": "공원에서 산책해요.",
-            "exampleEn": "I take a walk in the park."
+            "exampleEn": "I take a walk in the park.",
+            "id": "ko:%EC%82%B0%EC%B1%85%ED%95%98%EB%8B%A4"
           }
         ]
       }

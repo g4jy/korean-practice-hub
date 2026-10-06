@@ -93,7 +93,7 @@
 
   // ========== STATS ==========
   function updateStats() {
-    const knowCount = allCards.filter(c => isKnown(c.kr)).length;
+    const knowCount = allCards.filter(c => isKnown(c.id)).length;
     const dontKnow = allCards.length - knowCount;
     $('vocab-stats').innerHTML =
       '<span class="stat-pill stat-dk">' + dontKnow + ' Don\'t Know</span>' +
@@ -140,8 +140,8 @@
   function renderWords() {
     let words = [...allCards];
     if (currentCatFilter !== 'all') words = words.filter(c => c.category === currentCatFilter);
-    if (currentFilter === 'know') words = words.filter(c => isKnown(c.kr));
-    else if (currentFilter === 'dont-know') words = words.filter(c => !isKnown(c.kr));
+    if (currentFilter === 'know') words = words.filter(c => isKnown(c.id));
+    else if (currentFilter === 'dont-know') words = words.filter(c => !isKnown(c.id));
     if (searchQuery) words = words.filter(c =>
       c.kr.includes(searchQuery) || c.en.toLowerCase().includes(searchQuery) ||
       (c.polite && c.polite.includes(searchQuery)) || c.rom.toLowerCase().includes(searchQuery)
@@ -151,15 +151,15 @@
     if (!words.length) { list.innerHTML = '<p class="word-empty">No words found</p>'; return; }
 
     list.innerHTML = words.map(w => {
-      const known = isKnown(w.kr);
+      const known = isKnown(w.id);
       const krDisplay = w.polite ? w.kr + ' / ' + w.polite : w.kr;
       return '<div class="word-row">' +
         '<div class="word-info">' +
-          '<div class="word-top"><span class="word-kr">' + krDisplay + '</span><span class="word-cat-badge">' + (w.category || '') + '</span></div>' +
-          '<span class="word-en">' + w.en + '</span>' +
-          (w.rom ? '<span class="word-rom rom-text">' + w.rom + '</span>' : '') +
+          '<div class="word-top"><span class="word-kr">' + App.escapeHTML(krDisplay) + '</span><span class="word-cat-badge">' + App.escapeHTML(w.category || '') + '</span></div>' +
+          '<span class="word-en">' + App.escapeHTML(w.en) + '</span>' +
+          (w.rom ? '<span class="word-rom rom-text">' + App.escapeHTML(w.rom) + '</span>' : '') +
         '</div>' +
-        '<button class="word-toggle ' + (known ? 'known' : '') + '" data-kr="' + w.kr.replace(/"/g, '&quot;') + '">' +
+        '<button class="word-toggle ' + (known ? 'known' : '') + '" data-id="' + App.escapeHTML(w.id) + '">' +
           (known ? '✓' : '✗') +
         '</button>' +
       '</div>';
@@ -167,28 +167,29 @@
 
     list.querySelectorAll('.word-toggle').forEach(btn => {
       btn.addEventListener('click', async () => {
-        const kr = btn.dataset.kr;
-        M[kr] = { ...(M[kr] || {}), known: !isKnown(kr) };
-        await Storage.saveMastery(M);
-        updateStats(); renderWords();
+        const word = allCards.find(w => w.id === btn.dataset.id);
+        if (btn.disabled) return;
+        btn.disabled = true;
+        try { M = await Storage.rateWord(word, isKnown(word.id) ? 'dont_know' : 'know', 'words'); updateStats(); renderWords(); }
+        catch (error) { App.showToast('Could not save: ' + error.message); btn.disabled = false; }
       });
     });
   }
 
   // ========== STUDY (only Don't Know words) ==========
-  let PQ = [], PI = 0, POPEN = false, pKnow = 0;
+  let PQ = [], PI = 0, POPEN = false, pKnow = 0, practiceGeneration = 0;
 
   function updatePracticeInfo() {
-    const dk = allCards.filter(c => !isKnown(c.kr)).length;
+    const dk = allCards.filter(c => !isKnown(c.id)).length;
     $('practice-info').innerHTML = 'Study your unknown words. Mark ones you now know.<br><b>' + dk + '</b> words to study';
     $('go-practice').textContent = 'Study Don\'t Know (' + dk + ')';
     $('go-practice').disabled = dk === 0;
   }
 
   $('go-practice').addEventListener('click', () => {
-    PQ = allCards.filter(c => !isKnown(c.kr));
+    PQ = allCards.filter(c => !isKnown(c.id));
     for (let i = PQ.length - 1; i > 0; i--) { const j = Math.random()*i|0; [PQ[i],PQ[j]]=[PQ[j],PQ[i]]; }
-    PI = 0; POPEN = false; pKnow = 0;
+    PI = 0; POPEN = false; pKnow = 0; practiceGeneration++;
     $('practice-screen').classList.remove('hidden');
     showPracticeCard();
   });
@@ -226,16 +227,25 @@
   });
 
   // "Still don't know" → keep as-is, move to next
-  $('btn-dont').addEventListener('click', () => { PI++; showPracticeCard(); });
+  let practiceSaving = false;
+  $('btn-dont').addEventListener('click', async () => {
+    if (!POPEN || practiceSaving || !PQ[PI]) return;
+    practiceSaving = true; const generation = practiceGeneration;
+    try { M = await Storage.rateWord(PQ[PI], 'dont_know', 'practice'); if (generation !== practiceGeneration) return; PI++; showPracticeCard(); }
+    catch (error) { App.showToast('Could not save: ' + error.message); }
+    finally { practiceSaving = false; }
+  });
   // "Know now" → promote to Know
   $('btn-know').addEventListener('click', async () => {
-    const w = PQ[PI];
-    M[w.kr] = { ...(M[w.kr] || {}), known: true };
-    await Storage.saveMastery(M);
-    pKnow++; PI++; showPracticeCard();
+    if (!POPEN || practiceSaving || !PQ[PI]) return;
+    practiceSaving = true; const generation = practiceGeneration;
+    try { M = await Storage.rateWord(PQ[PI], 'know', 'practice'); if (generation !== practiceGeneration) return; pKnow++; PI++; showPracticeCard(); }
+    catch (error) { App.showToast('Could not save: ' + error.message); }
+    finally { practiceSaving = false; }
   });
 
   $('practice-back').addEventListener('click', () => {
+    practiceGeneration++;
     $('practice-screen').classList.add('hidden');
     updateStats(); updatePracticeInfo(); renderWords();
   });
@@ -254,7 +264,7 @@
   let quizSize = 25;
   let quizFilter = 'all'; // all, dont-know, know
   let quizCat = 'all';
-  let RQ = [], RI = 0, RSC = 0, RANS = false, qFlipped = 0;
+  let RQ = [], RI = 0, RSC = 0, RANS = false, qFlipped = 0, quizGeneration = 0;
 
   // Build quiz category pills
   const qCatEl = $('quiz-cat');
@@ -286,8 +296,8 @@
 
   function getQuizPool() {
     let pool = quizCat === 'all' ? [...allCards] : allCards.filter(c => c.category === quizCat);
-    if (quizFilter === 'dont-know') pool = pool.filter(c => !isKnown(c.kr));
-    else if (quizFilter === 'know') pool = pool.filter(c => isKnown(c.kr));
+    if (quizFilter === 'dont-know') pool = pool.filter(c => !isKnown(c.id));
+    else if (quizFilter === 'know') pool = pool.filter(c => isKnown(c.id));
     return pool;
   }
 
@@ -302,7 +312,7 @@
     if (p.length < 4) return;
     for (let i = p.length-1; i > 0; i--) { const j = Math.random()*i|0; [p[i],p[j]]=[p[j],p[i]]; }
     RQ = quizSize > 0 ? p.slice(0, quizSize) : p;
-    RI = 0; RSC = 0; qFlipped = 0;
+    RI = 0; RSC = 0; qFlipped = 0; quizGeneration++;
     $('quiz-screen').classList.remove('hidden');
     showQuiz();
   });
@@ -345,31 +355,34 @@
       btn.textContent = o.polite ? o.kr + ' / ' + o.polite : o.kr;
       btn.addEventListener('click', async () => {
         if (RANS) return;
-        RANS = true;
+        RANS = true; const generation = quizGeneration;
         grid.querySelectorAll('.quiz-opt').forEach(x => x.classList.add('off'));
-        const wasKnown = isKnown(w.kr);
-        const correct = o.kr === w.kr;
+        const wasKnown = isKnown(w.id);
+        const correct = o.id === w.id;
         if (correct) {
           btn.classList.add('ok'); RSC++;
-          if (!wasKnown) { M[w.kr] = { ...(M[w.kr]||{}), known: true }; qFlipped++; }
+          if (!wasKnown) qFlipped++;
         } else {
           btn.classList.add('bad');
           grid.querySelectorAll('.quiz-opt').forEach(x => {
             if (x.textContent.startsWith(w.kr)) x.classList.add('show');
           });
-          if (wasKnown) { M[w.kr] = { ...(M[w.kr]||{}), known: false }; qFlipped++; }
+          if (wasKnown) qFlipped++;
         }
-        await Storage.saveMastery(M);
+        try { M = await Storage.rateWord(w, correct ? 'know' : 'dont_know', 'quiz', {quiz: true}); }
+        catch (error) { App.showToast('Answer was not saved: ' + error.message); }
+        if (generation !== quizGeneration) return;
         $('quiz-sc').textContent = RSC;
         $('quiz-tot').textContent = RI + 1;
         App.speak(w.kr);
-        setTimeout(() => { RI++; showQuiz(); }, 1000);
+        setTimeout(() => { if (generation !== quizGeneration) return; RI++; showQuiz(); }, 1000);
       });
       grid.appendChild(btn);
     });
   }
 
   $('quiz-back').addEventListener('click', () => {
+    quizGeneration++;
     $('quiz-screen').classList.add('hidden');
     updateStats(); renderWords(); updateQuizInfo();
   });
@@ -399,15 +412,13 @@
     if (!word.kr || !word.en) return;
     if (allCards.find(c => c.kr === word.kr)) { App.showToast('Word already exists!'); return; }
 
-    const existing = await Storage.getUserWords();
-    existing.push(word);
-    await Storage.saveUserWords(existing);
+    word.id = Storage.wordId(word.kr);
+    await Storage.addWord(word);
 
     allCards.push(word);
     if (!categories.has('My Words')) categories.set('My Words', []);
     categories.get('My Words').push(word);
-    M[word.kr] = { known: false };
-    await Storage.saveMastery(M);
+    M = await Storage.getMastery();
 
     $('add-word-form').reset();
     modal.classList.add('hidden');

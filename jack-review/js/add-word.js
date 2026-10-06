@@ -21,13 +21,11 @@
       source: 'user'
     };
     if (!word.kr || !word.en) return;
-    const existing = await Storage.getUserWords();
+    const {allCards: existing} = await App.buildCardPool();
     if (existing.find(w => w.kr === word.kr)) { App.showToast('Word already exists!'); return; }
-    existing.push(word);
-    await Storage.saveUserWords(existing);
+    await Storage.addWord(word);
     form.reset();
-    App.showToast('Added: ' + word.kr);
-    renderList();
+    location.reload();
   });
 
   async function renderList() {
@@ -35,7 +33,7 @@
     const words = await Storage.getUserWords();
     if (!words.length) { list.innerHTML = '<p style="font-size:0.8rem;color:#aaa;text-align:center;padding:12px 0">No custom words yet</p>'; return; }
     list.innerHTML = words.map((w, i) =>
-      '<div class="user-word-item"><span class="uw-kr">' + w.kr + '</span><span class="uw-en">' + w.en + '</span><button class="uw-del" data-idx="' + i + '">&times;</button></div>'
+      '<div class="user-word-item"><span class="uw-kr">' + App.escapeHTML(w.kr) + '</span><span class="uw-en">' + App.escapeHTML(w.en) + '</span><button class="uw-del" data-idx="' + i + '">&times;</button></div>'
     ).join('');
     list.querySelectorAll('.uw-del').forEach(btn => {
       btn.addEventListener('click', async () => {

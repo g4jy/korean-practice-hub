@@ -7,7 +7,7 @@
   const GAPS = [0, 0, 1, 3, 7, 30];
   let selectedCat = 'all';
   let batchSize = 25;
-  let LQ = [], LI = 0, LOPEN = false;
+  let LQ = [], LI = 0, LOPEN = false, learnGeneration = 0;
 
   const box = kr => Number.isInteger(M[kr]?.b) ? Math.max(0, Math.min(5, M[kr].b)) : 0;
   const due = kr => { const m = M[kr]; if (!m || !Number.isFinite(m.t)) return true; return Math.floor((Date.now() - m.t) / 864e5) >= GAPS[m.b] || m.b <= 1; };
@@ -43,12 +43,12 @@
   function renderHome() {
     const pool = getPool();
     const bx = [0,0,0,0,0,0];
-    pool.forEach(w => bx[Math.min(box(w.kr), 5)]++);
+    pool.forEach(w => bx[Math.min(box(w.id), 5)]++);
     for (let i = 0; i < 6; i++) $('b'+i).textContent = bx[i];
     const pct = pool.length ? Math.round(bx[5] / pool.length * 100) : 0;
     $('learn-pct').textContent = pct + '%';
     $('learn-bar').style.width = pct + '%';
-    const avail = pool.filter(w => box(w.kr) < 5).length;
+    const avail = pool.filter(w => box(w.id) < 5).length;
     $('go-learn').textContent = 'Start Learning (' + avail + ' words)';
     $('go-learn').disabled = !avail;
   }
@@ -56,14 +56,14 @@
   // Start learning
   $('go-learn').onclick = startLearn;
   function startLearn() {
-    const pool = getPool().filter(w => box(w.kr) < 5);
-    const d = pool.filter(w => box(w.kr) > 0 && due(w.kr));
-    const f = pool.filter(w => box(w.kr) === 0);
+    const pool = getPool().filter(w => box(w.id) < 5);
+    const d = pool.filter(w => box(w.id) > 0 && due(w.id));
+    const f = pool.filter(w => box(w.id) === 0);
     let q = [...d, ...f];
     if (batchSize > 0) q = q.slice(0, batchSize);
     if (!q.length) return;
     for (let i = q.length - 1; i > 0; i--) { const j = Math.random()*i|0; [q[i],q[j]]=[q[j],q[i]]; }
-    LQ = q; LI = 0; LOPEN = false;
+    LQ = q; LI = 0; LOPEN = false; learnGeneration++;
     $('study-screen').classList.remove('hidden');
     $('learn-home').style.display = 'none';
     showCard();
@@ -96,23 +96,29 @@
     $('learn-actions').classList.remove('hidden');
   };
 
+  let saving = false;
   async function rate(ok) {
-    const w = LQ[LI], b = box(w.kr);
-    if (ok) { M[w.kr] = {...(M[w.kr]||{}), b: Math.min(b+1,5), t: Date.now()}; }
-    else { M[w.kr] = {...(M[w.kr]||{}), b: 1, t: Date.now()}; LQ.splice(Math.min(LI+3,LQ.length),0,{...w}); $('lt').textContent=LQ.length; }
-    await Storage.saveMastery(M);
-    LI++; showCard();
+    if (saving || !LOPEN || !LQ[LI]) return;
+    saving = true; const generation = learnGeneration;
+    try {
+      const w = LQ[LI];
+      M = await Storage.rateWord(w, ok ? 'know' : 'dont_know', 'learn', {leitner: true});
+      if (generation !== learnGeneration) return;
+      if (!ok) { LQ.splice(Math.min(LI+3,LQ.length),0,{...w}); $('lt').textContent=LQ.length; }
+      LI++; showCard();
+    } catch (error) { App.showToast('Could not save: ' + error.message); }
+    finally { saving = false; }
   }
 
   $('btn-again').onclick = () => rate(false);
   $('btn-got-it').onclick = () => rate(true);
-  $('learn-back').onclick = () => { $('study-screen').classList.add('hidden'); $('learn-home').style.display=''; renderHome(); };
+  $('learn-back').onclick = () => { learnGeneration++; $('study-screen').classList.add('hidden'); $('learn-home').style.display=''; renderHome(); };
 
   // Swipe
   let sx=0,dr=false,dx=0;
   function s1(x){sx=x;dr=true;dx=0;}
   function s2(x){if(!dr||!LOPEN)return;dx=x-sx;card.style.transform=`translateX(${dx}px) rotate(${dx*.05}deg)`;$('sw-got').style.opacity=dx>20?Math.min(Math.abs(dx)/80,1):0;$('sw-again').style.opacity=dx<-20?Math.min(Math.abs(dx)/80,1):0;}
-  function s3(){if(!dr)return;dr=false;if(LOPEN&&Math.abs(dx)>80){const d=dx>0?1:-1;card.style.transition='transform .18s';card.style.transform=`translateX(${d*300}px) rotate(${d*12}deg)`;setTimeout(()=>{card.style.transition='';rate(d>0);},180);}else{card.style.transform='';$('sw-got').style.opacity=0;$('sw-again').style.opacity=0;}}
+  function s3(){if(!dr)return;dr=false;if(LOPEN&&Math.abs(dx)>80){const d=dx>0?1:-1,generation=learnGeneration,index=LI,id=LQ[LI]?.id;card.style.transition='transform .18s';card.style.transform=`translateX(${d*300}px) rotate(${d*12}deg)`;setTimeout(()=>{if(generation!==learnGeneration||index!==LI||id!==LQ[LI]?.id)return;card.style.transition='';rate(d>0);},180);}else{card.style.transform='';$('sw-got').style.opacity=0;$('sw-again').style.opacity=0;}}
   card.addEventListener('touchstart',e=>s1(e.touches[0].clientX),{passive:true});
   card.addEventListener('touchmove',e=>s2(e.touches[0].clientX),{passive:true});
   card.addEventListener('touchend',s3);
@@ -145,7 +151,7 @@
   $('srs-import').onclick = () => $('srs-file-input').click();
   $('srs-file-input').onchange = async e => {
     const f = e.target.files[0]; if (!f) return;
-    try { const n = await Storage.importJSON(f); M = await Storage.getMastery(); renderHome(); App.showToast('Imported '+n+' words'); }
+    try { await Storage.importJSON(f); location.reload(); }
     catch(err) { App.showToast('Import failed: '+err.message); }
     e.target.value = '';
   };

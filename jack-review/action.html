@@ -13,17 +13,22 @@
       <h1>Action Sentences</h1>
     </header>
 
-    <p class="instruction">Start with Subject + Verb, then add elements!</p>
+    <p class="instruction">Choose a subject and verb, or tap either block to change it.</p>
 
+    <div class="builder-selectors" style="display:flex;gap:12px;flex-wrap:wrap;margin:16px 0">
+      <label style="flex:1">Subject<br><select id="subject-select" style="width:100%;padding:10px;border-radius:8px;font:inherit" aria-label="Choose subject"></select></label>
+      <label style="flex:1">Verb<br><select id="verb-select" style="width:100%;padding:10px;border-radius:8px;font:inherit" aria-label="Choose verb"></select></label>
+    </div>
     <div class="element-toggles">
       <button class="element-toggle" data-element="time">+ Time</button>
       <button class="element-toggle" data-element="place">+ Place</button>
       <button class="element-toggle" data-element="object">+ Object</button>
+      <button class="element-toggle" data-element="question">+ What question</button>
     </div>
 
     <div class="sentence-area" id="sentence-area">
       <div class="block-row">
-        <div class="block" id="block-subject" data-slot="subject">
+        <div class="block" id="block-subject" data-slot="subject" role="button" tabindex="0" aria-label="Change subject">
           <span class="block-kr"></span>
           <span class="block-rom"></span>
           <span class="block-en"></span>

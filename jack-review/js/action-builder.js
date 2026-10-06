@@ -12,7 +12,8 @@
     verbIdx: 0,
     showTime: false,
     showPlace: false,
-    showObject: false
+    showObject: false,
+    showQuestion: false
   };
 
   const blocks = {
@@ -22,6 +23,14 @@
     object: document.getElementById('block-object'),
     verb: document.getElementById('block-verb')
   };
+
+  const subjectSelect = document.getElementById('subject-select');
+  const verbSelect = document.getElementById('verb-select');
+  subjects.forEach((s, i) => { const option = document.createElement('option'); option.value = i; option.textContent = s.kr + ' · ' + s.en; subjectSelect.appendChild(option); });
+  verbs.forEach((v, i) => { const option = document.createElement('option'); option.value = i; option.textContent = v.present + ' · ' + v.en; verbSelect.appendChild(option); });
+  subjectSelect.addEventListener('change', () => { state.subjectIdx = Number(subjectSelect.value); update(); });
+  verbSelect.addEventListener('change', () => { state.verbIdx = Number(verbSelect.value); update(); });
+  blocks.subject.addEventListener('keydown', event => { if (event.target !== blocks.subject) return; if (event.key === 'Enter' || event.key === ' ') { event.preventDefault(); blocks.subject.click(); } });
 
   /* --- Get current tense from time selection (default present) --- */
   function currentTense() {
@@ -74,12 +83,14 @@
   function update() {
     const subj = subjects[state.subjectIdx];
     const conj = conjugatedVerb();
+    if (compatibleObjects().length === 0) state.showQuestion = false;
+    subjectSelect.value = state.subjectIdx; verbSelect.value = state.verbIdx;
 
     renderBlock(blocks.subject, subj.kr, subj.rom, subj.en);
     renderBlock(blocks.verb, conj.kr, conj.rom, conj.en);
 
     // Time (optional)
-    if (state.showTime) {
+    if (state.showTime && !state.showQuestion) {
       const time = times[state.timeIdx];
       renderBlock(blocks.time, time.kr, time.rom, time.en);
       blocks.time.classList.remove('hidden');
@@ -88,7 +99,7 @@
     }
 
     // Place (optional)
-    if (state.showPlace) {
+    if (state.showPlace && !state.showQuestion) {
       const place = places[state.placeIdx];
       const pForm = placeParticle(place);
       renderBlock(blocks.place, pForm.kr, pForm.rom, place.en);
@@ -99,7 +110,10 @@
 
     // Object (optional, and depends on verb compatibility)
     const compat = compatibleObjects();
-    if (state.showObject && compat.length > 0) {
+    if (state.showQuestion) {
+      renderBlock(blocks.object, '무엇을', 'MU-EO-SEUL', 'what');
+      blocks.object.classList.remove('hidden');
+    } else if (state.showObject && compat.length > 0) {
       if (state.objectIdx >= compat.length) state.objectIdx = 0;
       const obj = compat[state.objectIdx];
       const particle = App.particleEulReul(obj.kr);
@@ -120,16 +134,23 @@
     const verb = currentVerb();
     const compat = compatibleObjects();
 
+    if (state.showQuestion) {
+      document.getElementById('full-sentence').textContent = subj.kr + ' 무엇을 ' + conj.kr + '?';
+      const auxiliary = subj.person === 3 && !subj.plural ? 'does' : 'do';
+      document.getElementById('translation').textContent = 'What ' + auxiliary + ' ' + (subj.en === 'I' ? 'I' : subj.en.toLowerCase()) + ' ' + conj.en + '?';
+      return;
+    }
+
     let krParts = [subj.kr];
     let enParts = [subj.en];
 
-    if (state.showTime) {
+    if (state.showTime && !state.showQuestion) {
       const time = times[state.timeIdx];
       krParts.push(time.kr);
       enParts.push(time.en + ',');
     }
 
-    if (state.showPlace) {
+    if (state.showPlace && !state.showQuestion) {
       const place = places[state.placeIdx];
       const pForm = placeParticle(place);
       krParts.push(pForm.kr);
@@ -160,6 +181,13 @@
       btn.classList.toggle('active', active);
       const label = el.charAt(0).toUpperCase() + el.slice(1);
 
+      if (el === 'question') {
+        btn.disabled = compatibleObjects().length === 0;
+        btn.textContent = state.showQuestion ? '− What question' : '+ What question';
+        return;
+      }
+      if (state.showQuestion) { btn.disabled = true; btn.classList.remove('active'); btn.textContent = '+ ' + label; return; }
+      btn.disabled = false;
       // Disable object toggle if verb has no compatible objects
       if (el === 'object') {
         const compat = compatibleObjects();
@@ -196,6 +224,7 @@
   });
 
   blocks.object.addEventListener('click', () => {
+    if (state.showQuestion) return;
     const compat = compatibleObjects();
     if (compat.length === 0) return;
     state.objectIdx = (state.objectIdx + 1) % compat.length;
@@ -237,7 +266,9 @@
   /* --- Speak full sentence --- */
   document.getElementById('speak-btn').addEventListener('click', () => {
     const sentence = document.getElementById('full-sentence').textContent;
-    App.speak(sentence);
+    const subject = subjects[state.subjectIdx].kr;
+    const predicate = sentence.slice(subject.length).trim();
+    if (App.speakSentence) App.speakSentence([subject, predicate]); else App.speak(sentence);
   });
 
   /* --- Initial render --- */

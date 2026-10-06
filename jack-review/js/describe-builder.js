@@ -17,6 +17,9 @@
     adjective: document.getElementById('block-adjective')
   };
 
+  const subjectSelect = document.getElementById('subject-select');
+  subjectSelect.addEventListener('change', () => { state.subjectIdx = Number(subjectSelect.value); update(); });
+
   /* --- Filter subjects compatible with current adjective --- */
   function compatibleSubjects() {
     const adj = adjectives[state.adjectiveIdx];
@@ -47,6 +50,9 @@
 
     // Clamp subject index
     if (state.subjectIdx >= compat.length) state.subjectIdx = 0;
+    subjectSelect.replaceChildren();
+    compat.forEach((s, i) => { const option = document.createElement('option'); option.value = i; option.textContent = s.kr + App.particleIGa(s.kr) + ' · ' + s.en; subjectSelect.appendChild(option); });
+    subjectSelect.value = state.subjectIdx;
     const subj = compat[state.subjectIdx];
     const sp = subjectWithParticle(subj);
 
@@ -75,12 +81,12 @@
     const sp = subjectWithParticle(subj);
 
     let krParts = [sp.kr];
-    let enParts = [subj.en, 'is'];
+    let enParts = [subj.en, subj.plural ? 'are' : 'is'];
 
     if (state.showAdverb && adverbs.length > 0) {
       const adv = adverbs[state.adverbIdx];
       krParts.push(adv.kr);
-      enParts = [subj.en, 'is', adv.en];
+      enParts = [subj.en, subj.plural ? 'are' : 'is', adv.en];
     }
 
     krParts.push(adj.kr);
@@ -152,7 +158,9 @@
   /* --- Speak full sentence --- */
   document.getElementById('speak-btn').addEventListener('click', () => {
     const sentence = document.getElementById('full-sentence').textContent;
-    App.speak(sentence);
+    const subject = subjectWithParticle(compatibleSubjects()[state.subjectIdx]).kr;
+    const predicate = sentence.slice(subject.length).trim();
+    if (App.speakSentence) App.speakSentence([subject, predicate]); else App.speak(sentence);
   });
 
   /* --- Initial render --- */
