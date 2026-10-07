@@ -1,0 +1,47 @@
+const assert=require('assert/strict'),fs=require('fs'),vm=require('vm'),path=require('path');
+const root=path.resolve(__dirname,'..'), L=require(root+'/js/lesson-updates.js');
+const wordId=kr=>'ko:'+encodeURIComponent(kr.normalize('NFC').trim());
+const word={id:wordId('테스트'),kr:'테스트',en:'test',category:'Test'},other={id:wordId('연습'),kr:'연습',en:'practice',category:'Test'};
+const cards=[word,other], at='2026-01-01T10:00:00.000Z', ts=Date.parse(at);
+const pkg=(extra={})=>({schema:'korean-lesson-update/v1',app:'alice-review-korean',learnerId:'alice-b',lessonId:'synthetic:lesson',revision:1,documentedAt:at,vocabulary:[],observations:[{id:'observation:1',wordId:word.id,observedForm:word.kr,status:'unsure',observedAt:at}],...extra});
+const state=()=>({version:2,mastery:{[word.id]:{known:true,b:5,rok:7,rfail:2,lastLearningAt:ts-1000}},words:[],lessons:{},observations:{},history:[]});
+let checks=0;const check=(name,fn)=>{fn();checks++;console.log('PASS',name)};
+check('explicit weakness overrides prior known and retains quiz counters/history',()=>{const s=state(),r=L.plan(s,pkg(),cards);assert.equal(r.applied.length,1);assert.equal(s.mastery[word.id].known,false);assert.equal(s.mastery[word.id].b,1);assert.equal(s.mastery[word.id].rok,7);assert.equal(s.history[0].previous.b,5)});
+check('dont_know resets all shared rating fields',()=>{const s=state(),p=pkg();p.observations[0].status='dont_know';L.plan(s,p,cards);assert.equal(s.mastery[word.id].status,'dont_know');assert.equal(s.mastery[word.id].b,0)});
+check('identical replay does nothing after later relearning',()=>{const s=state(),p=pkg();L.plan(s,p,cards);s.mastery[word.id].known=true;s.mastery[word.id].b=5;s.mastery[word.id].lastLearningAt=ts+1000;assert.ok(L.plan(s,p,cards).duplicate);assert.equal(s.mastery[word.id].b,5);assert.equal(s.history.length,1)});
+check('new revision unchanged observation never replays weakness',()=>{const s=state(),p=pkg();L.plan(s,p,cards);s.mastery[word.id].known=true;p.revision=2;assert.equal(L.plan(s,p,cards).applied.length,0);assert.equal(s.mastery[word.id].known,true)});
+check('stale revision skipped',()=>{const s=state();L.plan(s,pkg({revision:3}),cards);assert.ok(L.plan(s,pkg({revision:2}),cards).stale)});
+check('same revision different contents rejected',()=>{const s=state();L.plan(s,pkg(),cards);const p=pkg();p.observations[0].status='dont_know';assert.throws(()=>L.plan(s,p,cards),/different content/)});
+check('newer learning beats older lesson',()=>{const s=state();s.mastery[word.id].lastLearningAt=ts+1000;assert.equal(L.plan(s,pkg(),cards).preserved.length,1);assert.equal(s.mastery[word.id].b,5)});
+check('newer lesson beats out-of-order observation',()=>{const s=state();s.mastery[word.id].lastLessonObservedAt=ts+1000;assert.equal(L.plan(s,pkg(),cards).preserved.length,1)});
+check('ambiguous observation retained without guessed target',()=>{const s=state(),p=pkg();delete p.observations[0].wordId;assert.equal(L.plan(s,p,cards).unresolved.length,1);assert.equal(s.mastery[word.id].known,true)});
+check('same ID ambiguity resolution uses original time',()=>{const s=state(),p=pkg();delete p.observations[0].wordId;L.plan(s,p,cards);p.revision++;p.observations[0].wordId=word.id;L.plan(s,p,cards);assert.equal(s.mastery[word.id].known,false)});
+check('later study survives ambiguity resolution',()=>{const s=state(),p=pkg();delete p.observations[0].wordId;L.plan(s,p,cards);s.mastery[word.id].lastLearningAt=ts+1000;p.revision++;p.observations[0].wordId=word.id;assert.equal(L.plan(s,p,cards).preserved.length,1);assert.equal(s.mastery[word.id].known,true)});
+check('homograph senses never collide',()=>{const s=state(),p=pkg({vocabulary:[{id:'sense:a',kr:'같은말',en:'sense A'},{id:'sense:b',kr:'같은말',en:'sense B'}],observations:[]});L.plan(s,p,cards);assert.equal(s.words.length,2)});
+check('unknown/unassessed status rejected',()=>{const p=pkg();p.observations[0].status='unknown';assert.throws(()=>L.validate(p))});
+check('other learner rejected',()=>assert.throws(()=>L.validate(pkg({learnerId:'someone-else'}))));
+check('raw transcript/source fields rejected',()=>assert.throws(()=>L.validate(pkg({transcript:'private'}))));
+check('unknown exact target rejected',()=>{const p=pkg();p.observations[0].wordId='does-not-exist';assert.throws(()=>L.plan(state(),p,cards),/Unknown word ID/)});
+check('prototype keys rejected',()=>assert.throws(()=>L.validate(pkg({lessonId:'__proto__'}))));
+check('duplicate observation IDs rejected',()=>{const p=pkg();p.observations.push({...p.observations[0]});assert.throws(()=>L.validate(p))});
+check('invalid timestamps rejected',()=>assert.throws(()=>L.validate(pkg({documentedAt:'tomorrow'}))));
+check('observations cannot invent future source time',()=>{const p=pkg();p.observations[0].observedAt='2030-01-01T00:00:00Z';assert.throws(()=>L.validate(p))});
+check('revision change cannot retarget resolved observation',()=>{const s=state(),p=pkg();L.plan(s,p,cards);p.revision=2;p.observations[0].wordId=other.id;assert.throws(()=>L.plan(s,p,cards),/retargeted/)});
+check('stable observation time cannot be altered',()=>{const s=state(),p=pkg();L.plan(s,p,cards);p.revision=2;p.observations[0].observedAt='2026-01-01T09:00:00Z';assert.throws(()=>L.plan(s,p,cards),/stable/)});
+check('new word and explicit target applied atomically',()=>{const s=state(),p=pkg({vocabulary:[{id:'new:word',kr:'추가',en:'addition'}]});p.observations[0].wordId='new:word';L.plan(s,p,cards);assert.equal(s.words.length,1);assert.equal(s.mastery['new:word'].known,false)});
+check('history IDs cannot collide across colon-containing IDs',()=>{const s=state(),a=pkg({lessonId:'A:1'}),b=pkg({lessonId:'A'});a.observations[0].id='x';b.observations[0].id='1:x';L.plan(s,a,cards);L.plan(s,b,cards);assert.equal(new Set(s.history.map(e=>e.id)).size,2)});
+check('reset chronology barrier protects against old revisions',()=>{const s=state();s.mastery={};s.lastResetAt=ts+1000;assert.equal(L.plan(s,pkg(),cards).preserved.length,1);assert.equal(Object.keys(s.mastery).length,0)});
+check('public cards have unique stable IDs and nonempty meanings',()=>{const d=JSON.parse(fs.readFileSync(root+'/data/vocab.json'));const c=d.flashcards.categories.flatMap(x=>x.cards);assert.ok(c.length>0);assert.equal(new Set(c.map(x=>x.id)).size,c.length);for(const w of c){assert.ok(w.id&&w.kr&&w.en)}});
+async function storageContext(initial={}){const ls=new Map(Object.entries(initial).map(([k,v])=>[k,JSON.stringify(v)]));const ctx={console,Date,Map,Set,JSON,Math,Promise,encodeURIComponent,setTimeout,localStorage:{getItem:k=>ls.get(k)||null,setItem:(k,v)=>ls.set(k,v)},indexedDB:{open(){throw Error('disabled')}},navigator:{locks:{request:async(name,f)=>f()}}};vm.createContext(ctx);vm.runInContext(fs.readFileSync(root+'/js/storage.js','utf8'),ctx);await vm.runInContext('Storage.init()',ctx);return{ctx,ls,call:code=>vm.runInContext(code,ctx)}}
+(async()=>{
+let c=await storageContext({'alice-review_srs':{'테스트':{known:true,b:5,t:ts-1000,rok:4}},'alice-review:koreanPracticeMastery':{'테스트':{status:'dont_know',lastSeen:at}},'alice-review:koreanPracticeResponses':[{status:'know',timestamp:at}]});
+assert.equal((await c.call('Storage.getMastery()'))[word.id].known,false);checks++;console.log('PASS legacy newer flashcard weakness wins');
+let m=await c.call(`Storage.rateWord(${JSON.stringify(word)},'know','words')`);assert.equal(m[word.id].known,true);assert.equal((await c.call('Storage.snapshot()')).history.length,2);checks++;console.log('PASS new shared rating preserves migrated history');
+const old=JSON.stringify({app:'alice-review-korean',version:1,progress:{'테스트':{known:false,b:0,t:ts-10000}}});await c.call(`Storage.importJSON({text:async()=>${JSON.stringify(old)}})`);assert.equal((await c.call('Storage.getMastery()'))[word.id].known,true);checks++;console.log('PASS older backup cannot undo newer answer');
+await c.call(`Storage.addWord(${JSON.stringify(other)})`);await c.call('Storage.clearAll()');let st=await c.call('Storage.snapshot()');assert.equal(st.words.length,1);assert.equal(st.history.length,3);assert.deepEqual(Object.keys(st.mastery),[]);checks++;console.log('PASS reset keeps words and full history');
+const resetBackup=JSON.stringify({app:'alice-review-korean',version:2,state:st}); const fresh=await storageContext();await fresh.call(`Storage.importJSON({text:async()=>${JSON.stringify(resetBackup)}})`);assert.equal((await fresh.call('Storage.snapshot()')).lastResetAt,st.lastResetAt);checks++;console.log('PASS reset watermark survives backup restore');
+const legacyNew=await storageContext({'alice-review_srs':{'테스트':{known:false,b:0,t:ts+1000}},'alice-review:koreanPracticeMastery':{'테스트':{status:'unsure',lastSeen:at}}});assert.equal((await legacyNew.call('Storage.getMastery()'))[word.id].status,'dont_know');checks++;console.log('PASS older unsure cannot override newer explicit unknown');
+m=await c.call(`Storage.rateWord(${JSON.stringify(word)},'know','learn',{leitner:true})`);assert.equal(m[word.id].status,'unsure');assert.equal(m[word.id].known,false);checks++;console.log('PASS early SRS success remains consistently unsure across modes');
+console.log(JSON.stringify({result:'pass',checks},null,2));
+})().catch(e=>{console.error(e);process.exit(1)});
+

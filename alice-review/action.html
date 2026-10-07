@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Action Sentences — Alice</title>
+  <link rel="stylesheet" href="css/styles.css?v=20261007.alice1">
+</head>
+<body>
+  <div class="container builder-page">
+    <header class="page-header">
+      <a href="index.html" class="back-btn">&larr; Back</a>
+      <h1>Action Sentences</h1>
+    </header>
+
+    <p class="instruction">Choose a subject, verb, place and object. You can also tap the blocks to change words.</p>
+
+    <div class="builder-selectors" style="display:flex;gap:12px;flex-wrap:wrap;margin:16px 0">
+      <label style="flex:1">Subject<br><select id="subject-select" style="width:100%;padding:10px;border-radius:8px;font:inherit" aria-label="Choose subject"></select></label>
+      <label style="flex:1">Verb<br><select id="verb-select" style="width:100%;padding:10px;border-radius:8px;font:inherit" aria-label="Choose verb"></select></label>
+    </div>
+    <div class="builder-selectors" style="display:flex;gap:12px;flex-wrap:wrap;margin:16px 0">
+      <label style="flex:1;min-width:120px">Place (optional)<br><select id="place-select" style="width:100%;padding:10px;border-radius:8px;font:inherit" aria-label="Choose place"></select></label>
+      <label style="flex:1;min-width:120px">Object (optional)<br><select id="object-select" style="width:100%;padding:10px;border-radius:8px;font:inherit" aria-label="Choose object"></select></label>
+    </div>
+    <div class="element-toggles">
+      <button class="element-toggle" data-element="time">+ Time</button>
+      <button class="element-toggle" data-element="place">+ Place</button>
+      <button class="element-toggle" data-element="object">+ Object</button>
+      <button class="element-toggle" data-element="question">+ What question</button>
+    </div>
+
+    <div class="sentence-area" id="sentence-area">
+      <div class="block-row">
+        <div class="block" id="block-subject" data-slot="subject" role="button" tabindex="0" aria-label="Change subject">
+          <span class="block-kr"></span>
+          <span class="block-rom"></span>
+          <span class="block-en"></span>
+        </div>
+        <div class="block hidden" id="block-time" data-slot="time">
+          <span class="block-kr"></span>
+          <span class="block-rom"></span>
+          <span class="block-en"></span>
+        </div>
+        <div class="block hidden" id="block-place" data-slot="place">
+          <span class="block-kr"></span>
+          <span class="block-rom"></span>
+          <span class="block-en"></span>
+        </div>
+        <div class="block hidden" id="block-object" data-slot="object">
+          <span class="block-kr"></span>
+          <span class="block-rom"></span>
+          <span class="block-en"></span>
+        </div>
+        <div class="block" id="block-verb" data-slot="verb">
+          <span class="block-kr"></span>
+          <span class="block-rom"></span>
+          <span class="block-en"></span>
+        </div>
+      </div>
+    </div>
+
+    <div class="result-area">
+      <div class="full-sentence" id="full-sentence"></div>
+      <div class="translation" id="translation"></div>
+      <button class="tts-btn-large" id="speak-btn" title="Listen to sentence">🔊 Listen</button>
+    </div>
+
+    <p class="instruction">Listen plays one exact Edge recording of the whole sentence.</p>
+    <div class="rom-toggle">
+      <button class="btn-rom active" id="toggle-rom">Aa Hide Romanization</button>
+      <button class="btn-rom active" id="toggle-en">EN Hide English</button>
+    </div>
+  </div>
+
+  <script src="js/common.js?v=20261007.alice1"></script>
+  <script src="js/action-builder.js?v=20261007.alice1"></script>
+</body>
+</html>
+
+

@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Lesson Updates — Alice</title>
+  <link rel="stylesheet" href="css/styles.css?v=20261007.alice1">
+  <style>
+    .update-panel{background:#fff;border:1px solid #e5e7eb;border-radius:18px;padding:22px;margin:20px 0;line-height:1.6}
+    .update-panel h2{font-size:1.1rem;margin-bottom:10px}.update-panel p{margin:10px 0}.update-panel input{max-width:100%}
+    .update-panel button,.update-link{display:inline-block;background:#edf1f9;color:#24304a;border:0;border-radius:10px;padding:11px 15px;margin:8px 8px 8px 0;font:inherit;cursor:pointer;text-decoration:none}
+    .update-panel button:disabled{opacity:.45;cursor:default}.update-note{color:#606b7d;font-size:.9rem}.update-panel ul{padding-left:22px}#update-result{white-space:pre-wrap} .update-error{color:#a02c37}
+  </style>
+</head>
+<body>
+  <main class="container builder-page">
+    <header class="page-header"><a href="vocabulary.html" class="back-btn">&larr; Vocabulary</a><h1>Lesson Updates</h1></header>
+    <section class="update-panel">
+      <h2>Bring reviewed lesson words into every mode</h2>
+      <p>New words appear in Words, Study and Quiz, and in the standalone flashcards. Explicit “unsure” or “don’t know” observations return a word to review, even if it was marked known earlier.</p>
+      <p class="update-note">Automatic delivery is not connected. Open the reviewed lesson JSON file on the device used for study. The file and learner progress stay in this browser; nothing is uploaded. Later study answers and response history are preserved.</p>
+      <label for="lesson-file">Choose a private lesson update file</label><br>
+      <input id="lesson-file" type="file" accept="application/json,.json">
+      <div id="update-preview" hidden><h2>Review changes</h2><p id="update-description"></p><ul id="update-list"></ul><button id="apply-update" disabled>Apply on this device</button><button id="cancel-update">Cancel</button></div>
+      <p id="update-result" role="status" aria-live="polite"></p>
+      <a class="update-link" href="vocabulary.html">Continue to Vocabulary &rarr;</a>
+    </section>
+    <section class="update-panel"><h2>Saved on this device</h2><p id="lesson-status">Loading…</p><p class="update-note">Repeated files are safe to import. An older lesson will not undo a newer study answer. Forms with an unclear meaning are kept for teacher review and do not change a guessed word.</p>
+      <button id="backup-export">Export private backup</button><button id="backup-import">Import private backup</button><input id="backup-file" type="file" accept="application/json,.json" hidden>
+    </section>
+  </main>
+  <script src="js/storage.js?v=20261007.alice1"></script><script src="js/common.js?v=20261007.alice1"></script><script src="js/lesson-updates.js?v=20261007.alice1"></script><script src="js/lesson-updates-ui.js?v=20261007.alice1"></script>
+</body>
+</html>
+

@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Review Questions — Alice</title>
+  <link rel="stylesheet" href="css/styles.css?v=20261007.alice1">
+  <style>
+    .question-set-select{display:block;width:100%;padding:12px;border:1px solid #c8c2d5;border-radius:12px;font:inherit;background:white;margin:8px 0 16px}
+    .review-question{background:white;border:1px solid #e4e1ea;border-radius:12px;padding:18px;margin:14px 0;line-height:1.65}
+    .review-question h2{font-size:1.2rem;overflow-wrap:anywhere}
+    .question-en,.answer-en{color:#636e72;font-size:.9rem;margin:7px 0}
+    .review-question button{margin:8px 4px 8px 0}
+    .review-question details{border-top:1px solid #e9e5ef;margin-top:8px;padding-top:10px}
+    .review-question summary{cursor:pointer;color:#6350b8;font-size:.9rem}
+    .answer-ko{margin-top:10px;font-size:1.1rem;overflow-wrap:anywhere}
+    #question-set-note{line-height:1.65;color:#636e72;margin-bottom:16px}
+  </style>
+</head>
+<body>
+  <main class="container builder-page">
+    <header class="page-header"><a href="index.html" class="back-btn">&larr; Back</a><h1>Review Questions</h1></header>
+    <p class="instruction">Listen to each question, then answer aloud in Korean. Choose a set to begin.</p>
+    <label for="question-set-select">Choose a question set</label>
+    <select id="question-set-select" class="question-set-select"></select>
+    <p><a href="data/review-questions.txt" download="Alice-review-questions.txt">Download all 60 questions</a></p>
+    <p id="question-set-note"></p>
+    <div id="review-questions" aria-live="polite"></div>
+    <p class="instruction">Your spoken answers are not recorded or uploaded.</p>
+  </main>
+  <script src="js/common.js?v=20261007.alice1"></script>
+  <script src="js/questions.js?v=20261007.alice1"></script>
+</body>
+</html>

@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Vocabulary — Alice</title>
+  <link rel="stylesheet" href="css/styles.css?v=20261007.alice1">
+  <link rel="stylesheet" href="css/submissions.css?v=20261007.alice1">
+  <style>
+    .vocab-filter { flex-wrap: wrap; }
+    .stat-unassessed { background: #edf0f2; color: #46515a; }
+    .word-toggle.unassessed { color: #46515a; background: #edf0f2; }
+    .word-toggle { flex: 0 0 44px; width: 44px; height: 44px; padding: 0; margin-left: 8px; }
+    .word-top { flex-wrap: wrap; }
+    .word-kr, .word-rom { overflow-wrap: anywhere; }
+  </style>
+</head>
+<body>
+  <div class="container builder-page">
+    <header class="page-header">
+      <a href="index.html" class="back-btn">&larr; Back</a>
+      <h1>My Vocabulary</h1>
+    </header>
+    <p style="text-align:right;margin:0 0 12px;font-size:.85rem"><a href="lesson-updates.html">Lesson updates &amp; backup</a></p>
+
+    <div class="vocab-stats" id="vocab-stats" aria-live="polite"></div>
+
+    <div class="vocab-tabs" id="vocab-tabs">
+      <button class="vocab-tab active" data-tab="words">Words</button>
+      <button class="vocab-tab" data-tab="practice">Study</button>
+      <button class="vocab-tab" data-tab="quiz">Quiz</button>
+    </div>
+
+    <!-- ===== WORDS TAB ===== -->
+    <div class="vocab-pane active" id="pane-words">
+      <div class="vocab-filter">
+        <button class="filter-btn active" data-f="all">All</button>
+        <button class="filter-btn" data-f="unassessed">Unassessed</button>
+        <button class="filter-btn" data-f="review">Review</button>
+        <button class="filter-btn" data-f="known">Known</button>
+      </div>
+      <div class="cat-filter-row" id="cat-filter"></div>
+      <div class="vocab-search">
+        <input type="text" id="search-input" placeholder="Search words...">
+      </div>
+      <div class="word-list" id="word-list"></div>
+      <div class="rom-toggle">
+        <button class="btn-rom active" id="toggle-rom">Aa Hide Romanization</button>
+      </div>
+    </div>
+
+    <!-- ===== STUDY TAB ===== -->
+    <div class="vocab-pane" id="pane-practice">
+      <p class="practice-info" id="practice-info"></p>
+      <button class="go-btn" id="go-practice">Study</button>
+    </div>
+
+    <!-- ===== QUIZ TAB ===== -->
+    <div class="vocab-pane" id="pane-quiz">
+      <div class="srs-ctrl">
+        <span class="srs-label">Status</span>
+        <div class="pill-row" id="quiz-filter">
+          <button class="pill active" data-f="all">All</button>
+          <button class="pill" data-f="unassessed">Unassessed</button>
+          <button class="pill" data-f="review">Review</button>
+          <button class="pill" data-f="known">Known</button>
+        </div>
+      </div>
+      <div class="srs-ctrl">
+        <span class="srs-label">Category</span>
+        <div class="pill-row" id="quiz-cat"></div>
+      </div>
+      <div class="srs-ctrl">
+        <span class="srs-label">Questions</span>
+        <div class="pill-row" id="quiz-size">
+          <button class="pill" data-n="10">10</button>
+          <button class="pill active" data-n="25">25</button>
+          <button class="pill" data-n="50">50</button>
+          <button class="pill" data-n="0">All</button>
+        </div>
+      </div>
+      <button class="go-btn go-quiz" id="go-quiz">Start Quiz</button>
+    </div>
+
+    <!-- ===== PRACTICE OVERLAY ===== -->
+    <div class="study-overlay hidden" id="practice-screen">
+      <div class="study-header">
+        <button class="study-back" id="practice-back">&larr;</button>
+        <span class="study-pg"><b id="pc">1</b> / <span id="pt">10</span></span>
+      </div>
+      <div class="study-card-area">
+        <div class="study-card" id="practice-card">
+          <div class="study-cat" id="p-cat"></div>
+          <div class="study-kr" id="p-kr"></div>
+          <div class="study-reveal">
+            <div class="study-line"></div>
+            <div class="study-en" id="p-en"></div>
+            <div class="study-rom rom-text" id="p-rom"></div>
+          </div>
+          <div class="study-hint">tap to reveal</div>
+        </div>
+      </div>
+      <div class="study-actions hidden" id="practice-actions">
+        <button class="study-btn btn-again" id="btn-dont">Don't Know Yet</button>
+        <button class="study-btn btn-got-it" id="btn-know">I Know This ✓</button>
+      </div>
+    </div>
+
+    <!-- ===== QUIZ OVERLAY ===== -->
+    <div class="study-overlay hidden" id="quiz-screen">
+      <div class="study-header">
+        <button class="study-back" id="quiz-back">&larr;</button>
+        <span class="study-pg"><b id="qc">1</b> / <span id="qt">25</span></span>
+      </div>
+      <div class="quiz-prompt">
+        <div class="quiz-label">What is</div>
+        <div class="quiz-word" id="quiz-word"></div>
+      </div>
+      <div class="quiz-grid" id="quiz-grid"></div>
+      <div class="quiz-score">Score: <b id="quiz-sc">0</b> / <b id="quiz-tot">0</b></div>
+    </div>
+
+    <!-- ===== DONE SCREEN ===== -->
+    <div class="done-screen hidden" id="done-screen">
+      <div class="done-icon" id="done-icon"></div>
+      <h2 class="done-title" id="done-title"></h2>
+      <p class="done-desc" id="done-desc"></p>
+      <button class="go-btn" id="done-back">Back to Words</button>
+    </div>
+
+    <!-- Add Word FAB + Modal -->
+    <button class="add-word-fab" id="add-word-fab" title="Add New Word">+</button>
+    <div class="modal-overlay hidden" id="add-word-modal">
+      <div class="modal-card">
+        <div class="modal-header">
+          <h2>Add New Word</h2>
+          <button class="modal-close" id="modal-close">&times;</button>
+        </div>
+        <p class="instruction">Added words stay on this device. New words need an exact Edge recording before Listen can play them.</p>
+        <form id="add-word-form">
+          <div class="form-group">
+            <label for="new-kr">Korean *</label>
+            <input type="text" id="new-kr" placeholder="Enter Korean word" required>
+          </div>
+          <div class="form-group">
+            <label for="new-en">English *</label>
+            <input type="text" id="new-en" placeholder="English meaning" required>
+          </div>
+          <div class="form-group">
+            <label for="new-rom">Romanization</label>
+            <input type="text" id="new-rom" placeholder="e.g. HAN-GUG-EO (optional)">
+          </div>
+          <button type="submit" class="add-word-submit">Add Word</button>
+        </form>
+      </div>
+    </div>
+  </div>
+
+  <script src="js/storage.js?v=20261007.alice1"></script>
+  <script src="js/common.js?v=20261007.alice1"></script>
+  <script src="js/vocabulary.js?v=20261007.alice1"></script>
+  <script src="js/submission-config.js?v=20261007.alice1"></script>
+  <script src="js/submissions.js?v=20261007.alice1"></script>
+</body>
+</html>
+
+

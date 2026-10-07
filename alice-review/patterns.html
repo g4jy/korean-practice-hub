@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Sentence Patterns — Alice</title>
+  <link rel="stylesheet" href="css/styles.css?v=20261007.alice1">
+  <style>
+    .pattern-select{display:block;width:100%;padding:12px;border:1px solid #c8c2d5;border-radius:12px;font:inherit;background:white;margin:8px 0 20px}
+    .pattern-note{line-height:1.7;text-align:left;margin:12px 0;white-space:pre-line}
+    .pattern-example{border-top:1px solid #e5e1ed;padding:18px 0;text-align:left}
+    .pattern-example .kr{font-size:1.3rem;line-height:1.6;overflow-wrap:anywhere}
+    .pattern-example .en{color:#625b72;margin:6px 0;line-height:1.5}
+    .pattern-example button{margin-top:6px}
+    .pattern-level{font-size:.85rem;color:#6d617c;margin-bottom:12px}
+    .pattern-nav{display:flex;gap:10px;justify-content:space-between;margin:18px 0}
+    .pattern-nav button{padding:10px 20px;border-radius:12px;border:1px solid #c8c2d5;font:inherit;background:white}
+  </style>
+</head>
+<body>
+  <div class="container builder-page">
+    <header class="page-header"><a href="index.html" class="back-btn">&larr; Back</a><h1>Sentence Patterns</h1></header>
+    <p class="instruction">Review a pattern, then say the example in Korean.</p>
+    <label for="pattern-select">Choose a pattern</label>
+    <select id="pattern-select" class="pattern-select"></select>
+    <section class="result-area" aria-live="polite">
+      <div id="pattern-count" class="pattern-level"></div>
+      <h2 id="pattern-title"></h2>
+      <p id="pattern-meaning"></p>
+      <p id="pattern-note" class="pattern-note"></p>
+      <div id="pattern-examples"></div>
+    </section>
+    <div class="pattern-nav"><button id="pattern-prev">&larr; Previous</button><button id="pattern-next">Next &rarr;</button></div>
+    <p class="instruction">Examples are reviewed practice sentences. Personal lesson details are not included.</p>
+    <p class="instruction">Listen plays reviewed Edge TTS recordings.</p>
+    <p style="text-align:center"><a href="flashcards.html">Practice with flashcards</a> · <a href="vocabulary.html">My Vocabulary</a></p>
+  </div>
+  <script src="js/common.js?v=20261007.alice1"></script>
+  <script src="js/patterns.js?v=20261007.alice1"></script>
+</body>
+</html>

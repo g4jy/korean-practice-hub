@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Learn — Alice</title>
+  <link rel="stylesheet" href="css/styles.css?v=20261007.alice1">
+  <link rel="stylesheet" href="css/submissions.css?v=20261007.alice1">
+</head>
+<body>
+  <div class="container builder-page">
+    <header class="page-header">
+      <a href="index.html" class="back-btn">&larr; Back</a>
+      <h1>Word Memorizer</h1>
+    </header>
+    <p style="text-align:right;margin:0 0 12px;font-size:.85rem"><a href="lesson-updates.html">Lesson updates &amp; backup</a></p>
+
+    <!-- Home Screen -->
+    <div id="learn-home">
+      <div class="srs-ctrl">
+        <span class="srs-label">Category</span>
+        <div class="pill-row" id="cat-pills"></div>
+      </div>
+      <div class="srs-ctrl">
+        <span class="srs-label">Words</span>
+        <div class="pill-row" id="size-pills">
+          <button class="pill" data-n="10">10</button>
+          <button class="pill active" data-n="25">25</button>
+          <button class="pill" data-n="50">50</button>
+          <button class="pill" data-n="0">All</button>
+        </div>
+      </div>
+
+      <div class="srs-boxes">
+        <div class="srs-box"><b id="b0">0</b><span>New</span></div>
+        <div class="srs-box"><b id="b1">0</b><span>Again</span></div>
+        <div class="srs-box"><b id="b2">0</b><span>1d</span></div>
+        <div class="srs-box"><b id="b3">0</b><span>3d</span></div>
+        <div class="srs-box"><b id="b4">0</b><span>7d</span></div>
+        <div class="srs-box done"><b id="b5">0</b><span>Done</span></div>
+      </div>
+
+      <div class="srs-progress-bar">
+        <div class="srs-bar"><div class="srs-fill" id="learn-bar"></div></div>
+        <span class="srs-pct" id="learn-pct">0%</span>
+      </div>
+
+      <button class="go-btn" id="go-learn">Start Learning</button>
+
+      <div class="srs-data-row">
+        <button class="srs-data-btn" id="srs-export">Export</button>
+        <button class="srs-data-btn" id="srs-import">Import</button>
+        <button class="srs-data-btn" id="srs-reset">Reset</button>
+      </div>
+      <input type="file" id="srs-file-input" accept=".json" style="display:none">
+    </div>
+
+    <!-- Study Screen -->
+    <div class="study-overlay hidden" id="study-screen">
+      <div class="study-header">
+        <button class="study-back" id="learn-back">&larr;</button>
+        <span class="study-pg"><b id="lc">1</b> / <span id="lt">25</span></span>
+      </div>
+      <div class="study-card-area">
+        <div class="study-card" id="learn-card">
+          <div class="study-cat" id="learn-cat"></div>
+          <div class="study-kr" id="learn-kr"></div>
+          <div class="study-reveal" id="learn-reveal">
+            <div class="study-line"></div>
+            <div class="study-en" id="learn-en"></div>
+            <div class="study-rom" id="learn-rom"></div>
+          </div>
+          <div class="study-hint" id="learn-hint">tap to reveal</div>
+          <div class="swipe-overlay sw-got" id="sw-got">Got it</div>
+          <div class="swipe-overlay sw-again" id="sw-again">Again</div>
+        </div>
+      </div>
+      <div class="study-actions hidden" id="learn-actions">
+        <button class="study-btn btn-again" id="btn-again">&larr; Again</button>
+        <button class="study-btn btn-got-it" id="btn-got-it">Got it &rarr;</button>
+      </div>
+    </div>
+
+    <!-- Done Screen -->
+    <div class="done-screen hidden" id="done-screen">
+      <div class="done-icon" id="done-icon"></div>
+      <h2 class="done-title" id="done-title"></h2>
+      <p class="done-desc" id="done-desc"></p>
+      <button class="go-btn" id="done-again">Again</button>
+      <button class="go-btn go-secondary" id="done-home">Back</button>
+    </div>
+  </div>
+
+  <script src="js/storage.js?v=20261007.alice1"></script>
+  <script src="js/common.js?v=20261007.alice1"></script>
+  <script src="js/learn.js?v=20261007.alice1"></script>
+  <script src="js/submission-config.js?v=20261007.alice1"></script>
+  <script src="js/submissions.js?v=20261007.alice1"></script>
+</body>
+</html>
+
+
