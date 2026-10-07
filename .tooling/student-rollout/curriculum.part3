@@ -1,0 +1,215 @@
+P={}
+def pattern(key,title,form,meaning,ko,en,tip=''):
+ P[key]=dict(id=key,ch=1,title=title,form=form,en=meaning,examples=[dict(ko=ko,en=en)],tip=tip)
+pattern('X01','Give a reason','A/V-아/어서 + result','Link a reason to a result.','피곤해서 집에서 쉬어요.','I rest at home because I am tired.','For this practice, describe a result rather than giving a command.')
+pattern('X02','Contrast two ideas','A/V-지만 + contrast','Present a contrast.','문법은 어렵지만 재미있어요.','Grammar is difficult but interesting.')
+pattern('X03','Add background','A/V-(으)ㄴ/는데 + next idea','Provide background for the following idea.','시간이 없는데 숙제가 많아요.','I do not have time, and I have a lot of homework.')
+pattern('X04','Two actions at once','V-(으)면서 + action','Describe simultaneous actions by the same person.','음악을 들으면서 공부해요.','I study while listening to music.','Compare background -는데 with simultaneous-action -(으)면서.')
+pattern('X05','Before doing something','V-기 전에 + action','Describe what happens first.','수업을 시작하기 전에 책을 읽어요.','I read a book before starting class.')
+pattern('X06','After finishing','V-고 나서 + action','Describe a sequence.','숙제를 끝내고 나서 쉬어요.','I rest after finishing my homework.')
+pattern('X07','A condition','A/V-(으)면 + result','Describe a condition and result.','시간이 있으면 책을 읽어요.','I read books when I have time.')
+pattern('X08','A necessary action','V-아/어야 해요','Say what needs to be done.','주소를 확인해야 해요.','I need to check the address.')
+pattern('X09','A prohibition','V-(으)면 안 돼요','Say what must not happen.','여권을 잊으면 안 돼요.','You must not forget your passport.')
+pattern('X10','A plan or prediction','V-(으)ㄹ 거예요','Talk about a plan or prediction.','주말에 한국어를 연습할 거예요.','I am going to practise Korean at the weekend.')
+pattern('X11','Experience','V-(으)ㄴ 적이 있어요','Say that you have done something before.','한국에 간 적이 있어요.','I have been to Korea.')
+pattern('X12','Try an action','V-아/어 봐요','Try doing an action.','한국어로 말해 봐요.','Try speaking in Korean.')
+pattern('X13','State an opinion','제 생각에는 ...','Introduce your opinion.','제 생각에는 연습이 중요해요.','In my opinion, practice is important.')
+pattern('X14','Give supporting reasons','첫째, ... 둘째, ...','Organise two reasons.','첫째, 시간이 필요해요. 둘째, 연습이 필요해요.','First, time is needed. Second, practice is needed.')
+pattern('X15','Explain a cause','N 때문에 / V-기 때문에','Give a cause.','시간이 없기 때문에 방법을 바꿔요.','I change the method because I do not have time.')
+pattern('X16','A benefit','V-(으)면 ...','Connect an action to a benefit.','매일 연습하면 말하기가 쉬워져요.','Speaking becomes easier if you practise every day.')
+pattern('X17','Change of state','A-아/어지다','Describe a change in a quality.','한국어가 쉬워져요.','Korean becomes easier.')
+pattern('X18','Compare alternatives','A보다 B가 더 ...','Compare two options.','이 가방보다 저 가방이 더 가벼워요.','That bag is lighter than this bag.')
+pattern('X19','A polite request','V-아/어 주시겠어요?','Ask politely for an action.','자료를 보내 주시겠어요?','Could you send the materials?')
+pattern('X20','Politely raise a topic','다름이 아니라 ...','Introduce the reason for contacting someone.','다름이 아니라 일정을 확인하고 싶어요.','I am contacting you because I would like to confirm the schedule.','This is a topic-opening expression, not a literal translation exercise.')
+pattern('X21','A humble offer','V-아/어 드릴게요','Offer to do something respectfully.','자료를 보내 드릴게요.','I will send you the materials.')
+pattern('X22','Ask for clarification','N을/를 다시 설명해 주세요','Ask for an explanation again.','사용법을 다시 설명해 주세요.','Please explain the instructions for use again.')
+pattern('X23','Describe a product','N이/가 + adjective','Describe texture, scent or performance.','크림은 가벼워요. 향도 은은해요.','The cream is light. Its scent is subtle too.')
+pattern('X24','Action and result','N을/를 + V / N이/가 + V','Distinguish what you do from what the product does.','크림을 발라요. 크림이 빨리 흡수돼요.','I apply cream. The cream absorbs quickly.')
+pattern('X25','Wear or carry','옷을 입어요 / 신발을 신어요 / 가방을 메요','Choose the action that matches the object.','모자를 써요. 운동화를 신어요.','I put on a hat. I put on sneakers.')
+pattern('X26','Counting objects','N + 한/두/세/네 + counter','Use the counter that matches the noun.','책 두 권과 물 한 병을 사요.','I buy two books and one bottle of water.')
+pattern('X27','Name and identity','저는 N이에요/예요','Say who or what you are.','저는 학생이에요.','I am a student.')
+pattern('X28','Say hello','안녕하세요 / 만나서 반가워요','Use a short polite greeting.','안녕하세요. 만나서 반가워요.','Hello. Nice to meet you.')
+pattern('X29','What did you do?','V-았/었어요','Describe a completed action.','어제 커피를 마셨어요.','I drank coffee yesterday.')
+pattern('X30','Present vs past','먹어요 / 먹었어요; 마셔요 / 마셨어요','Compare an action now with an action yesterday.','오늘은 물을 마셔요. 어제는 커피를 마셨어요.','I drink water today. Yesterday I drank coffee.')
+pattern('X31','Basic writing style','V-ㄴ/는다 / A-다','Use a consistent written style for a short opinion paragraph.','연습이 중요하다. 매일 한국어를 공부한다.','Practice is important. I study Korean every day.','This is a short writing workshop, not an official TOPIK past paper or a score prediction.')
+pattern('X32','Purpose','V-기 위해(서)','State a purpose.','한국어를 연습하기 위해 매일 말해요.','I speak every day to practise Korean.')
+# Subject-specific chapter filters use base P01-P26 and X extensions.
+MODULES={}
+def module(key,title,focus,patterns,questions,translation,workshop=None):
+ MODULES[key]=dict(title=title,focus=focus.split(),patterns=patterns.split(),questions=questions.strip().splitlines(),translation=[dict(ko=a,en=b) for a,b in (ln.split('|') for ln in translation.strip().splitlines())],workshop=workshop)
+module('locations','Places, actions and sentence building','집 방 교실 식당 카페 가게 도서관 공원 편의점 학교 회사 사무실 화장실 앞 뒤 안 밖 위 아래 옆 근처 여기 거기 저기 어디 책상 가방 책 휴대폰 연필 있다 없다 가다 오다 살다 기다리다 쉬다 공부하다 일하다 읽다 먹다 마시다 가까이 자주 혼자 같이 먼저 가깝다 멀다','P01 P02 P03 P04 P05 P06 P07 P08 P09 P10 P11 P12','''지금 어디에 있어요?
+가방이 어디에 있어요?
+책이 책상 위에 있어요?
+휴대폰이 가방 안에 있어요?
+집 근처에 뭐가 있어요?
+학교 앞에 뭐가 있어요?
+어디에서 한국어를 공부해요?
+카페에서 뭐를 해요?
+도서관에서 누구를 만나요?
+집에서 혼자 공부해요?
+공원에서 뭐를 해요?
+어디에서 친구를 기다려요?
+오늘 어디에 가요?
+거기에 어떻게 가요?
+친구는 어디에서 와요?
+집이 역에 가까워요?
+카페가 집에서 멀어요?
+집에서 뭘 자주 해요?''','''가방이 책상 아래에 있어요.|The bag is under the desk.
+저는 도서관에서 책을 읽어요.|I read a book at the library.
+카페 앞에서 친구를 기다려요.|I wait for a friend in front of the cafe.
+학교에 먼저 가요.|I go to school first.
+공원에서 같이 쉬어요.|We rest together at the park.
+편의점에서 물을 사요.|I buy water at the convenience store.
+저는 방에 있어요.|I am in the room.
+서점에 가요. 서점에서 책을 사요.|I go to the bookstore. I buy a book there.
+친구는 교실에 있어요.|My friend is in the classroom.
+식당에서 밥을 먹어요.|I eat a meal at the restaurant.
+집 근처에 카페가 있어요.|There is a cafe near my home.
+휴대폰이 가방 안에 있어요.|The phone is inside the bag.''')
+module('intro','Greetings and short introductions','저 나 학생 선생님 친구 가족 이름 한국 한국어 영어 집 학교 회사 책 공책 펜 가방 물 밥 커피 주스 음식 있다 없다 좋다 좋아하다 크다 작다 읽다 먹다 마시다 공부하다 어디 여기 뭐 누구 안녕하세요 반갑다 감사하다 죄송하다','X27 X28 P02 P03 P04 P05 P06 P07','''이름이 뭐예요?
+학생이에요? 직장인이에요?
+한국어를 공부해요?
+어디에 살아요?
+친구의 이름이 뭐예요?
+오늘 날씨가 어때요?
+가방이 있어요?
+가방 안에 뭐가 있어요?
+책이 있어요?
+책이 커요? 작아요?
+한국어가 재미있어요?
+한국어가 쉬워요? 어려워요?
+뭐를 좋아해요?
+커피를 마셔요?
+우유도 마셔요?
+어디에서 밥을 먹어요?
+누구를 자주 만나요?
+오늘 시간이 있어요?''','''저는 학생이에요.|I am a student.
+저는 한국어를 공부해요.|I study Korean.
+만나서 반가워요.|Nice to meet you.
+저는 물을 마셔요.|I drink water.
+가방 안에 책이 있어요.|There is a book in the bag.
+집에서 책을 읽어요.|I read a book at home.
+친구도 학생이에요.|My friend is a student too.
+이름을 써요.|I write my name.
+가방이 작아요.|The bag is small.
+한국어가 재미있어요.|Korean is interesting.
+커피를 좋아해요.|I like coffee.
+오늘은 시간이 없어요.|I do not have time today.''')
+module('kids','Animals, actions and little sentences','강아지 고양이 새 거북이 코끼리 사자 곰 호랑이 펭귄 원숭이 물 빵 밥 주스 사과 머리 눈 코 입 귀 손 팔 다리 크다 작다 길다 짧다 빠르다 느리다 먹다 마시다 뛰다 날다 놀다 걷다 읽다 색 빨간색 파란색 노란색 초록색 보라색 하나 둘 셋 넷 다섯 여섯 일곱 여덟 아홉 열','P01 P02 P05 P07 X25 X27','''강아지가 커요? 작아요?
+고양이가 어디에 있어요?
+코끼리의 코가 길어요?
+거북이가 빨라요? 느려요?
+새가 날아요?
+펭귄이 뭐를 먹어요?
+뭐를 먹어요?
+뭐를 마셔요?
+빵이 맛있어요?
+공원에서 뭐를 해요?
+친구도 같이 놀아요?
+무슨 색을 좋아해요?
+가방이 커요? 작아요?
+오늘 모자를 써요?
+신발이 어디에 있어요?
+학교에 어떻게 가요?
+누구한테 인사해요?
+한국어가 재미있어요?''','''고양이가 작아요.|The cat is small.
+코끼리의 코가 길어요.|The elephant's trunk is long.
+새가 날아요.|The bird flies.
+물을 마셔요.|I drink water.
+빵을 먹어요.|I eat bread.
+공원에서 놀아요.|I play at the park.
+보라색을 좋아해요.|I like purple.
+학교에 가요.|I go to school.
+친구도 와요.|My friend comes too.
+손이 작아요.|The hands are small.
+파란색 모자예요.|It is a blue hat.
+책을 읽어요.|I read a book.''')
+module('connectors','Reasons, conditions and contrasting ideas','이유 생각하다 설명하다 비교하다 연습하다 준비하다 계획하다 이해하다 시작하다 끝나다 끝내다 예약하다 주문하다 계획 경험 방법 선택 차이 내용 표현 문법 피곤하다 바쁘다 시간 여권 여행 책 읽다 마시다 듣다 일하다 공부하다','X01 X02 X03 X04 X05 X06 X07 X08 X09 X10 X11 X12','''오늘 바빠요? 왜 바빠요?
+피곤하면 어디에서 쉬어요?
+수업 전에 뭐를 해요?
+숙제를 끝내고 나서 뭐를 해요?
+음악을 들으면서 공부해요?
+한국어는 어렵지만 재미있어요?
+여행 전에 뭐를 준비해야 해요?
+여권을 잊으면 안 돼요. 또 뭐를 확인해야 해요?
+주말에 뭐를 할 거예요?
+한국 음식을 먹어 본 적이 있어요?
+한국어로 주문해 봤어요?
+시간이 있으면 누구를 만나요?
+집에서 공부해요? 카페에서 공부해요? 왜요?
+두 문장의 차이를 설명해요: 음악을 듣는데 공부해요. 음악을 들으면서 공부해요.
+한국어를 공부하기 전에 뭐를 준비해요?
+어제 뭐를 했어요? 그다음에는요?
+친구가 늦으면 뭐를 해요?
+요즘 무엇을 더 연습하고 싶어요?''','''피곤해서 집에서 쉬어요.|I rest at home because I am tired.
+문법은 어렵지만 재미있어요.|Grammar is difficult but interesting.
+음악을 들으면서 공부해요.|I study while listening to music.
+수업 전에 책을 읽어요.|I read a book before class.
+숙제를 끝내고 나서 쉬어요.|I rest after finishing my homework.
+시간이 있으면 친구를 만나요.|I meet a friend when I have time.
+주소를 확인해야 해요.|I need to check the address.
+여권을 잊으면 안 돼요.|You must not forget your passport.
+주말에 한국어를 연습할 거예요.|I am going to practise Korean at the weekend.
+한국에 간 적이 있어요.|I have been to Korea.
+한국어로 말해 봐요.|Try speaking in Korean.
+시간이 없는데 숙제가 많아요.|I have no time, and I have a lot of homework.''')
+module('music','Conversation through music and routines','공연 연습 피아노 오케스트라 지휘자 음악 노래 친구 시간 장소 일정 연주하다 부르다 춤추다 연습하다 시작하다 끝나다 기다리다 늦다 설명하다 비교하다 준비하다 계획하다 표현 문법 이유','X01 X02 X03 X04 X05 X06 X07 X10 X12 X13','''요즘 어떤 음악을 들어요?
+공연을 자주 봐요?
+어디에서 연습해요?
+연습 전에 뭐를 준비해요?
+연습이 끝나면 뭐를 해요?
+누구와 함께 연습해요?
+지휘자에게 무엇을 물어봐요?
+음악을 들으면서 공부해요?
+연습은 어렵지만 재미있어요?
+오늘 일정이 어때요?
+친구가 늦으면 어디에서 기다려요?
+한국어로 경험을 설명해요.
+말하기와 읽기는 어떤 차이가 있어요?
+어떤 표현이 익숙해요?
+한국어를 매일 연습해요?
+어디에서 공부하는 것을 좋아해요?
+주말에 어떤 계획이 있어요?
+공연이 끝나고 나서 누구한테 연락해요?''','''연습실에서 친구를 만나요.|I meet a friend in the practice room.
+연습을 시작하기 전에 물을 마셔요.|I drink water before starting practice.
+연습이 끝나고 나서 집에 가요.|I go home after practice ends.
+지휘자에게 질문해요.|I ask the conductor a question.
+음악을 들으면서 쉬어요.|I rest while listening to music.
+연습은 어렵지만 재미있어요.|Practice is difficult but interesting.
+주말에 공연을 볼 거예요.|I am going to see a performance at the weekend.
+친구가 늦어서 기다려요.|I wait because my friend is late.
+피아노를 연주해요.|I play the piano.
+한국어 표현을 다시 연습해요.|I practise the Korean expression again.
+공연 전에 친구한테 연락해요.|I contact my friend before the performance.
+이유를 설명해요.|I explain the reason.''')
+module('writing','Four sentences: opinion, reason, example, solution','의견 이유 원인 결과 영향 변화 장점 단점 근거 대책 환경 기술 교육 비용 효과 자료 조사 비율 필요성 노력 생각하다 설명하다 비교하다 증가하다 감소하다 해결하다 줄이다 늘리다 제안하다 요약하다 수정하다 존중하다 방법 선택 내용 표현 문법 연습하다','X13 X14 X15 X16 X17 X18 X31 X32','''요즘 어떤 문제에 관심이 있어요?
+그 문제의 원인은 무엇이에요?
+그 문제는 사람들에게 어떤 영향을 줘요?
+해결 방법은 무엇이에요?
+그 방법의 장점은 무엇이에요?
+단점도 있어요?
+의견의 근거를 설명해요.
+예를 하나 들어요.
+온라인 수업의 장점은 무엇이에요?
+혼자 공부하는 방법과 같이 공부하는 방법을 비교해요.
+공부 시간을 늘리려면 어떻게 해야 해요?
+교육에서 기술은 어떤 역할을 해요?
+환경을 위해 무엇을 줄일 수 있어요?
+자료의 내용을 짧게 요약해요.
+같은 내용을 더 정중하게 말해요.
+의견과 이유를 두 문장으로 말해요.
+예와 대책을 두 문장으로 말해요.
+네 문장을 읽고 한 문장을 수정해요.''','''제 생각에는 교육이 중요해요.|In my opinion, education is important.
+그 문제의 원인을 찾아요.|I look for the cause of that problem.
+첫째, 시간이 필요해요.|First, time is needed.
+둘째, 연습이 필요해요.|Second, practice is needed.
+비용을 줄이는 방법을 제안해요.|I propose a way to reduce costs.
+공부 시간을 늘려요.|I increase my study time.
+온라인 수업의 장점과 단점을 비교해요.|I compare the advantages and disadvantages of online classes.
+조사 결과를 요약해요.|I summarise the survey results.
+의견의 근거를 설명해요.|I explain the supporting reason for my opinion.
+문장을 수정해요.|I revise the sentence.
+연습이 중요하다. 매일 한국어를 공부한다.|Practice is important. I study Korean every day.
+기술이 사회에 영향을 줘요.|Technology affects society.''',workshop=dict(title='Build a four-sentence paragraph',prompt='Choose one: studying alone / studying with others / online classes. These are original practice tasks, not official TOPIK questions.',steps=['Write 3 keywords (not full sentences).','State your opinion.','Add one clear reason.','Give one concrete example.','Suggest one action or solution.','Read aloud. Check particles, tense and a consistent ending style.']))
+module('culture','Culture, relationships and explaining your view','문화 전통 명절 추석 설날 모임 관계 관점 존중하다 오해 신뢰 공통점 차이 개인 사회 의견 이유 경험 표현 말 설명하다 비교하다 생각하다 모이다 지내다 이해하다 준비하다 함께 서로','X01 X02 X03 X07 X11 X13 X14 X18 X19','''요즘 어떻게 지내요?
+한국 문화에서 무엇에 관심이 있어요?
