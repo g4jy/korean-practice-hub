@@ -1,0 +1,180 @@
+"""Original practice content; no private lesson transcript or student identifiers."""
+import json, hashlib
+from pathlib import Path
+EXTRA=[]
+def rows(group,text):
+ for ln in text.strip().splitlines():
+  if not ln.strip():continue
+  ko,yo,en,ex,tr=ln.split('|')
+  pos='Verb' if yo!='-' else 'Noun'
+  EXTRA.append(dict(id='x'+hashlib.sha256(ko.encode()).hexdigest()[:10],ko=ko,yo='' if yo=='-' else yo,en=en,example=ex,exampleEn=tr,pos=pos,group=group,ch=0,source='Teacher-authored practice extension',aliases=[],note=''))
+rows('Everyday connections','''생각하다|생각해요|think|저는 가족을 생각해요.|I think about my family.
+설명하다|설명해요|explain|선생님이 문법을 설명해요.|The teacher explains the grammar.
+비교하다|비교해요|compare|두 문장을 비교해요.|I compare two sentences.
+연습하다|연습해요|practise|한국어를 자주 연습해요.|I often practise Korean.
+준비하다|준비해요|prepare|수업을 준비해요.|I prepare for class.
+계획하다|계획해요|plan|여행을 계획해요.|I plan a trip.
+이해하다|이해해요|understand|질문을 이해해요.|I understand the question.
+시작하다|시작해요|start|수업을 시작해요.|I start the class.
+끝나다|끝나요|end; finish (intransitive)|수업이 끝나요.|The class ends.
+끝내다|끝내요|finish something|숙제를 끝내요.|I finish my homework.
+돌아오다|돌아와요|come back|집에 돌아와요.|I come back home.
+지내다|지내요|get along; spend time|잘 지내요.|I am doing well.
+모이다|모여요|gather|가족이 집에 모여요.|The family gathers at home.
+예약하다|예약해요|make a reservation|식당을 예약해요.|I reserve a restaurant.
+주문하다|주문해요|order (food or goods)|음식을 주문해요.|I order food.
+부르다|불러요|sing; call out|노래를 불러요.|I sing a song.
+춤추다|춤춰요|dance|친구가 춤춰요.|My friend dances.
+연주하다|연주해요|play music (an instrument)|피아노를 연주해요.|I play the piano.
+듣기|-|listening|듣기가 어려워요.|Listening is difficult.
+읽기|-|reading|읽기를 연습해요.|I practise reading.
+쓰기|-|writing|쓰기를 연습해요.|I practise writing.
+말하기|-|speaking|말하기가 재미있어요.|Speaking is fun.
+문법|-|grammar|문법을 공부해요.|I study grammar.
+표현|-|expression|이 표현을 자주 써요.|I often use this expression.
+뜻|-|meaning|단어의 뜻을 물어봐요.|I ask about the meaning of a word.
+이유|-|reason|이유를 설명해요.|I explain the reason.
+계획|-|plan|여행 계획이 있어요.|I have travel plans.
+경험|-|experience|경험을 이야기해요.|I talk about an experience.
+방법|-|method; way|방법을 알려줘요.|I explain the method.
+선택|-|choice|선택이 어려워요.|The choice is difficult.
+차이|-|difference|차이를 설명해요.|I explain the difference.
+문화|-|culture|한국 문화를 공부해요.|I study Korean culture.
+전통|-|tradition|전통을 배워요.|I learn about traditions.
+명절|-|traditional holiday|명절에 가족을 만나요.|I meet my family on traditional holidays.
+추석|-|Chuseok (Korean harvest holiday)|추석에 가족이 모여요.|The family gathers at Chuseok.
+설날|-|Seollal (Korean Lunar New Year)|설날에 부모님을 만나요.|I meet my parents at Seollal.
+요즘|-|these days|요즘 한국어를 공부해요.|I study Korean these days.
+보통|-|usually|보통 집에서 쉬어요.|I usually rest at home.
+왜|-|why|왜 한국어를 공부해요?|Why do you study Korean?
+어때요|-|how is it? (from 어떻다)|날씨가 어때요?|How is the weather?
+가장|-|most; -est|무엇을 가장 좋아해요?|What do you like the most?
+더|-|more|물을 더 마셔요.|I drink more water.
+조금|-|a little|조금 어려워요.|It is a little difficult.
+잘|-|well|한국어를 잘 읽어요.|I read Korean well.
+매일|-|every day|매일 연습해요.|I practise every day.
+항상|-|always|항상 물을 마셔요.|I always drink water.
+다시|-|again|다시 읽어요.|I read it again.
+서로|-|each other|서로 도와요.|We help each other.
+그리고|-|and; and then|밥을 먹어요. 그리고 쉬어요.|I eat. Then I rest.
+하지만|-|but; however|이 가방은 커요. 하지만 비싸요.|This bag is big. But it is expensive.
+그래서|-|so; therefore|아파요. 그래서 쉬어요.|I am sick. So I rest.
+도와주다|도와줘요|help someone|친구를 도와줘요.|I help my friend.
+돕다|도와요|help|친구를 도와요.|I help my friend.
+두|-|two (before a counter)|두 문장을 읽어요.|I read two sentences.
+문제점|-|problematic point; issue|문제점을 찾아요.|I look for issues.
+내용|-|content|내용을 설명해요.|I explain the content.
+예|-|example|예를 들어요.|I give an example.
+들다|들어요|hold; give (an example)|가방을 들어요.|I hold the bag.
+때|-|time; when|시간이 있을 때 공부해요.|I study when I have time.
+전|-|before|수업 전에 책을 읽어요.|I read a book before class.
+이후|-|after; afterwards|수업 이후에 쉬어요.|I rest after class.
+동안|-|during; for (a duration)|수업 동안 한국어로 말해요.|I speak Korean during class.
+함께|-|together|함께 공부해요.|We study together.
+바꾸다|바꿔요|change|문장을 바꿔요.|I change the sentence.
+말|-|words; speech|친절한 말을 해요.|I say something kind.
+첫째|-|first (point)|첫째, 시간이 필요해요.|First, we need time.
+둘째|-|second (point)|둘째, 연습이 필요해요.|Second, we need practice.
+예를 들면|-|for example|예를 들면, 책을 읽어요.|For example, I read books.
+되다|돼요|become; turn into|선생님이 돼요.|I become a teacher.
+''' )
+rows('Ideas and writing','''원인|-|cause|문제의 원인을 찾아요.|I look for the cause of the problem.
+결과|-|result|결과를 비교해요.|I compare the results.
+영향|-|effect; influence|영향을 설명해요.|I explain the impact.
+변화|-|change|변화가 있어요.|There is a change.
+증가하다|증가해요|increase|학생이 증가해요.|The number of students increases.
+감소하다|감소해요|decrease|학생이 감소해요.|The number of students decreases.
+해결하다|해결해요|solve|문제를 해결해요.|I solve the problem.
+줄이다|줄여요|reduce something|비용을 줄여요.|I reduce costs.
+늘리다|늘려요|increase something|공부 시간을 늘려요.|I increase my study time.
+필요성|-|necessity; need|연습의 필요성을 설명해요.|I explain the need for practice.
+장점|-|advantage; strength|장점을 설명해요.|I explain the advantages.
+단점|-|disadvantage; weakness|단점을 비교해요.|I compare the disadvantages.
+의견|-|opinion|의견을 말해요.|I give my opinion.
+근거|-|supporting reason; evidence|근거가 필요해요.|Evidence is needed.
+대책|-|countermeasure; solution plan|대책을 이야기해요.|We discuss solutions.
+사회|-|society|사회가 바뀌어요.|Society changes.
+환경|-|environment|환경이 중요해요.|The environment is important.
+기술|-|technology; skill|기술을 배워요.|I learn a skill.
+교육|-|education|교육이 필요해요.|Education is necessary.
+비용|-|cost|비용이 비싸요.|The cost is high.
+효과|-|effect; effectiveness|효과가 있어요.|It has an effect.
+자료|-|material; data|자료를 찾아요.|I look for materials.
+조사|-|survey; investigation|조사 결과를 읽어요.|I read the survey results.
+비율|-|proportion; percentage|비율을 비교해요.|I compare the proportions.
+제안하다|제안해요|propose; suggest|방법을 제안해요.|I propose a method.
+요약하다|요약해요|summarise|내용을 요약해요.|I summarise the content.
+수정하다|수정해요|revise; correct|문장을 수정해요.|I revise the sentence.
+바뀌다|바뀌어요|change (intransitive)|계획이 바뀌어요.|The plan changes.
+노력|-|effort|노력이 필요해요.|Effort is needed.
+관계|-|relationship|관계가 중요해요.|Relationships are important.
+관점|-|perspective|관점이 달라요.|The perspectives are different.
+존중하다|존중해요|respect|서로의 의견을 존중해요.|We respect each other's opinions.
+오해|-|misunderstanding|오해가 있어요.|There is a misunderstanding.
+신뢰|-|trust|신뢰가 중요해요.|Trust is important.
+공통점|-|similarity; common point|공통점을 찾아요.|I look for similarities.
+개인|-|individual|개인의 의견을 들어요.|I listen to an individual's opinion.
+모임|-|gathering; meeting|오늘 모임이 있어요.|There is a gathering today.
+공연|-|performance; concert|공연을 봐요.|I watch a performance.
+연습|-|practice; rehearsal|연습이 끝나요.|Practice ends.
+피아노|-|piano|피아노를 연주해요.|I play the piano.
+오케스트라|-|orchestra|오케스트라 공연을 봐요.|I watch an orchestra performance.
+지휘자|-|conductor|지휘자에게 질문해요.|I ask the conductor a question.
+''' )
+rows('Work and courtesy','''회의|-|meeting|오늘 회의가 있어요.|There is a meeting today.
+일정|-|schedule|일정을 확인해요.|I check the schedule.
+확인하다|확인해요|check; confirm|주소를 확인해요.|I check the address.
+전달하다|전달해요|convey; pass on|소식을 전달해요.|I pass on the news.
+요청하다|요청해요|request|자료를 요청해요.|I request the materials.
+제공하다|제공해요|provide|정보를 제공해요.|I provide information.
+협의하다|협의해요|discuss to reach agreement|일정을 협의해요.|We discuss the schedule.
+변경하다|변경해요|change; modify|약속 시간을 변경해요.|I change the appointment time.
+참석하다|참석해요|attend|회의에 참석해요.|I attend a meeting.
+감사하다|감사해요|be thankful|도움에 감사해요.|I am grateful for the help.
+말씀|-|speech; words (honorific or humble)|선생님의 말씀을 들어요.|I listen to the teacher's words.
+명함|-|business card|명함을 받아요.|I receive a business card.
+예절|-|etiquette|예절을 배워요.|I learn etiquette.
+예의|-|courtesy; manners|예의가 중요해요.|Manners are important.
+부탁|-|favour; request|부탁이 있어요.|I have a favour to ask.
+답장|-|reply (to a message)|답장을 보내요.|I send a reply.
+제목|-|title; subject line|이메일 제목을 써요.|I write the email subject.
+첨부|-|attachment; attaching|첨부 파일을 봐요.|I look at the attached file.
+연락처|-|contact details|연락처를 알려줘요.|I give the contact details.
+담당자|-|person in charge|담당자에게 연락해요.|I contact the person in charge.
+드리다|드려요|give (humble)|선생님께 선물을 드려요.|I give the teacher a gift.
+말씀하다|말씀해요|speak; say (honorific)|선생님이 말씀해요.|The teacher speaks.
+괜찮다|괜찮아요|be okay|이 시간이 괜찮아요.|This time is fine.
+불편하다|불편해요|be inconvenient; uncomfortable|이 신발은 불편해요.|These shoes are uncomfortable.
+정중하다|정중해요|be polite; courteous|표현이 정중해요.|The expression is polite.
+''' )
+rows('Body and everyday actions','''몸|-|body|몸이 아파요.|My body hurts.
+머리|-|head; hair|머리가 아파요.|My head hurts.
+눈|-|eye|눈이 커요.|The eyes are big.
+코|-|nose|코가 작아요.|The nose is small.
+입|-|mouth|입이 작아요.|The mouth is small.
+귀|-|ear|귀가 커요.|The ears are big.
+손|-|hand|손이 작아요.|The hands are small.
+팔|-|arm|팔이 길어요.|The arms are long.
+다리|-|leg|다리가 길어요.|The legs are long.
+근육|-|muscle|근육이 아파요.|My muscles hurt.
+밀다|밀어요|push|문을 밀어요.|I push the door.
+뭉치다|뭉쳐요|bunch up; become tight|근육이 뭉쳐요.|My muscles feel tight.
+문|-|door|문이 커요.|The door is big.
+열다|열어요|open|문을 열어요.|I open the door.
+닫다|닫아요|close|문을 닫아요.|I close the door.
+씻다|씻어요|wash|손을 씻어요.|I wash my hands.
+일어나다|일어나요|get up; wake up|아침에 일어나요.|I get up in the morning.
+놀다|놀아요|play; hang out|공원에서 놀아요.|I play in the park.
+뛰다|뛰어요|run; jump|공원에서 뛰어요.|I run in the park.
+날다|날아요|fly|새가 날아요.|A bird flies.
+수영하다|수영해요|swim|수영을 해요.|I swim.
+수영|-|swimming|수영을 좋아해요.|I like swimming.
+길다|길어요|be long|다리가 길어요.|The legs are long.
+짧다|짧아요|be short (length)|팔이 짧아요.|The arms are short.
+빠르다|빨라요|be fast|기차가 빨라요.|The train is fast.
+느리다|느려요|be slow|거북이가 느려요.|The turtle is slow.
+덥다|더워요|be hot (weather)|오늘은 더워요.|It is hot today.
+춥다|추워요|be cold (weather)|오늘은 추워요.|It is cold today.
+맛있다|맛있어요|be delicious|빵이 맛있어요.|The bread is delicious.
+맛없다|맛없어요|not taste good|이 음식은 맛없어요.|This food does not taste good.
+피곤하다|피곤해요|be tired|오늘은 피곤해요.|I am tired today.
