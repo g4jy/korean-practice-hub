@@ -1,0 +1,28 @@
+{
+  "text": "학교가",
+  "text_sha256": "e7c531aede5519737f58681cbd675f123f4fd0b703c7057131de6267eee11eee",
+  "request_sha256": "f32097a30189595d8028ebba259b975bccc4237a78af026e10e13f4b80f5d409",
+  "file": "f32097a30189595d8028ebba259b975bccc4237a78af026e10e13f4b80f5d409.mp3",
+  "audio_sha256": "7a72d398c718109492712bdfe362040dc15a79df86c5797aa3cfbde50a3c58f2",
+  "schema_version": 1,
+  "source_kind": "edge_generation",
+  "provider": "edge-tts",
+  "voice": "ko-KR-SunHiNeural",
+  "rate": "+0%",
+  "volume": "+0%",
+  "pitch": "+0Hz",
+  "reviewed_public": true,
+  "client_version": "7.2.7",
+  "generated_at": "2026-10-07T00:16:16.071746+00:00",
+  "generator_sha256": "d28e393ff4b0a5f549666603bd8b6c08d314dbb1cc46911053ff2938a06daec7",
+  "vocab_sha256": "014673cf87a0d3cae3f8d346b85d7d8344372a32c5713556d4df1f7d9f1ba6d4",
+  "approval_scope": "static",
+  "boundaries": [
+    {
+      "type": "SentenceBoundary",
+      "offset": 1000000,
+      "duration": 16125000,
+      "text": "학교가"
+    }
+  ]
+}

@@ -122,6 +122,24 @@ class AudioTests(unittest.TestCase):
         self.assertIn('\uC800\uB294 \uBB34\uC5C7\uC744 \uB9C8\uC154\uC694?', groups['action_sentences'])
         self.assertIn('\uC9D1\uC774 \uCEE4\uC694', groups['describe_sentences'])
 
+    def test_static_scope_requires_explicit_review_and_excludes_sentences(self):
+        data = copy.deepcopy(DATA)
+        block = TEXT + '\uC5D0'
+        data['action'] = {'subjects': [{'kr': '\uC800\uB294'}], 'verbs': [{'present': '\uAC00\uC694'}],
+                          'places': [{'kr': TEXT, 'formE': {'kr': block}}]}
+        vocab = g.json_bytes(data)
+        approval = dict(self.approval, vocab_sha256=g.digest(vocab), texts=[block])
+        def run(value):
+            return asyncio.run(g.generate_approved(data, self.directory, value, remote_check=lambda: 'same', vocab_bytes=vocab))
+        with self.assertRaises(ValueError):
+            run(approval)
+        approval['scope'] = 'static'
+        self.assertEqual(run(approval)['generated'], 1)
+        approval['texts'] = ['\uC800\uB294 \uAC00\uC694']
+        with self.assertRaises(ValueError):
+            run(approval)
+        self.assertEqual(len(calls), 1)
+
 
 if __name__ == '__main__':
     unittest.main()

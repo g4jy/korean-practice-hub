@@ -2,6 +2,7 @@
 
 --generate --approved-texts PATH requires {"reviewed_public": true,
 "vocab_sha256": "...", "texts": ["exact public vocabulary", ...]}.
+Explicit "scope": "static" also allows reviewed static builder blocks, never sentences.
 Never supply learner exports, private examples, evidence or history.
 Existing legacy files are preserved, not certified by this generator's existence.
 """
@@ -263,7 +264,11 @@ async def generate_approved(data, directory, approval, remote_check=checked_remo
     if any(not isinstance(t, str) or not t for t in texts):
         raise ValueError("Approval must contain nonempty exact strings")
     # Generation is intentionally bounded to generic vocabulary, not examples or combinations.
-    if not set(texts) <= required_card_texts(data):
+    scope = approval.get('scope', 'cards')
+    if scope not in ('cards', 'static'):
+        raise ValueError('Only cards or explicitly reviewed static scope is permitted')
+    allowed = text_groups(data)['static'] if scope == 'static' else required_card_texts(data)
+    if not set(texts) <= allowed:
         raise ValueError("Approval contains text outside public vocabulary")
     baseline = remote_check()
     directory.mkdir(parents=True, exist_ok=True)
@@ -303,7 +308,7 @@ async def generate_approved(data, directory, approval, remote_check=checked_remo
             proof.update(schema_version=1, source_kind='edge_generation', provider="edge-tts", voice=VOICE, rate=RATE, volume=VOLUME,
                          pitch=PITCH, reviewed_public=True, client_version=importlib.metadata.version("edge-tts"),
                          generated_at=datetime.now(timezone.utc).isoformat(), generator_sha256=digest(Path(__file__).read_bytes()),
-                         vocab_sha256=approval["vocab_sha256"], boundaries=boundaries)
+                         vocab_sha256=approval["vocab_sha256"], approval_scope=scope, boundaries=boundaries)
             proof_bytes = json_bytes(proof)
             entry["receipt_sha256"] = digest(proof_bytes)
             publish_new(directory / entry["file"], audio)

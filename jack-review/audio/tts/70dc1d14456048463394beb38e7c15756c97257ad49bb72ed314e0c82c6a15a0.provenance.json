@@ -1,0 +1,28 @@
+{
+  "text": "영화관에서",
+  "text_sha256": "28b8a22dce507810799d65437999c6f65fc8f31e4f7957c3479e2471fe0252ee",
+  "request_sha256": "70dc1d14456048463394beb38e7c15756c97257ad49bb72ed314e0c82c6a15a0",
+  "file": "70dc1d14456048463394beb38e7c15756c97257ad49bb72ed314e0c82c6a15a0.mp3",
+  "audio_sha256": "a6da22c9a490a90baee2fdbd16dc212b472bc3c4f8a84edcb7e281e53d15648f",
+  "schema_version": 1,
+  "source_kind": "edge_generation",
+  "provider": "edge-tts",
+  "voice": "ko-KR-SunHiNeural",
+  "rate": "+0%",
+  "volume": "+0%",
+  "pitch": "+0Hz",
+  "reviewed_public": true,
+  "client_version": "7.2.7",
+  "generated_at": "2026-10-07T00:15:38.711045+00:00",
+  "generator_sha256": "d28e393ff4b0a5f549666603bd8b6c08d314dbb1cc46911053ff2938a06daec7",
+  "vocab_sha256": "014673cf87a0d3cae3f8d346b85d7d8344372a32c5713556d4df1f7d9f1ba6d4",
+  "approval_scope": "static",
+  "boundaries": [
+    {
+      "type": "SentenceBoundary",
+      "offset": 1000000,
+      "duration": 19125000,
+      "text": "영화관에서"
+    }
+  ]
+}

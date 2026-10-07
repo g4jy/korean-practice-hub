@@ -1,0 +1,28 @@
+{
+  "text": "은행에서",
+  "text_sha256": "f51fc9c42b5b41abb2ad7cafc9a92b39ac618a7144619037befdc25caae9a273",
+  "request_sha256": "057d0e389dfdbf06fd8bfef24d4579723cced907de273d0fe33e862bd4aeab54",
+  "file": "057d0e389dfdbf06fd8bfef24d4579723cced907de273d0fe33e862bd4aeab54.mp3",
+  "audio_sha256": "931822bcb560be6a2b38b3c67dc7b40f7b65d2a3e23cbc6ebaa446492d6e41af",
+  "schema_version": 1,
+  "source_kind": "edge_generation",
+  "provider": "edge-tts",
+  "voice": "ko-KR-SunHiNeural",
+  "rate": "+0%",
+  "volume": "+0%",
+  "pitch": "+0Hz",
+  "reviewed_public": true,
+  "client_version": "7.2.7",
+  "generated_at": "2026-10-07T00:15:49.260836+00:00",
+  "generator_sha256": "d28e393ff4b0a5f549666603bd8b6c08d314dbb1cc46911053ff2938a06daec7",
+  "vocab_sha256": "014673cf87a0d3cae3f8d346b85d7d8344372a32c5713556d4df1f7d9f1ba6d4",
+  "approval_scope": "static",
+  "boundaries": [
+    {
+      "type": "SentenceBoundary",
+      "offset": 1000000,
+      "duration": 16625000,
+      "text": "은행에서"
+    }
+  ]
+}

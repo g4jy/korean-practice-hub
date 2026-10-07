@@ -1,0 +1,28 @@
+{
+  "text": "연필을",
+  "text_sha256": "5a413b8489d9f9920b08319815b6849654047f9702eac388aa10755b23b61ba5",
+  "request_sha256": "ae1c27da240c25a982e84cece0e0cfc9e45e3d9c138572e94dceb6bb55d9d6ec",
+  "file": "ae1c27da240c25a982e84cece0e0cfc9e45e3d9c138572e94dceb6bb55d9d6ec.mp3",
+  "audio_sha256": "7b1938b082fbe8599d47a3c1a99d14b0e90cb366e78c94f73f3da264f82df11d",
+  "schema_version": 1,
+  "source_kind": "edge_generation",
+  "provider": "edge-tts",
+  "voice": "ko-KR-SunHiNeural",
+  "rate": "+0%",
+  "volume": "+0%",
+  "pitch": "+0Hz",
+  "reviewed_public": true,
+  "client_version": "7.2.7",
+  "generated_at": "2026-10-07T00:15:33.447823+00:00",
+  "generator_sha256": "d28e393ff4b0a5f549666603bd8b6c08d314dbb1cc46911053ff2938a06daec7",
+  "vocab_sha256": "014673cf87a0d3cae3f8d346b85d7d8344372a32c5713556d4df1f7d9f1ba6d4",
+  "approval_scope": "static",
+  "boundaries": [
+    {
+      "type": "SentenceBoundary",
+      "offset": 1000000,
+      "duration": 16000000,
+      "text": "연필을"
+    }
+  ]
+}

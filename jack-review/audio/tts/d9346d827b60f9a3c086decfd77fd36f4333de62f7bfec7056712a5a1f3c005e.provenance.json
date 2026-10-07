@@ -1,0 +1,28 @@
+{
+  "text": "나는",
+  "text_sha256": "39967d81683e1aa6d7f363793f6b3bc8e29efbe6e02abeca6a73f5db2b7002d7",
+  "request_sha256": "d9346d827b60f9a3c086decfd77fd36f4333de62f7bfec7056712a5a1f3c005e",
+  "file": "d9346d827b60f9a3c086decfd77fd36f4333de62f7bfec7056712a5a1f3c005e.mp3",
+  "audio_sha256": "a7333ca571f7c44f2e0bdb0d7fb5e0f2b8a954c8a2173707a9d269380ab9d883",
+  "schema_version": 1,
+  "source_kind": "edge_generation",
+  "provider": "edge-tts",
+  "voice": "ko-KR-SunHiNeural",
+  "rate": "+0%",
+  "volume": "+0%",
+  "pitch": "+0Hz",
+  "reviewed_public": true,
+  "client_version": "7.2.7",
+  "generated_at": "2026-10-07T00:14:08.510610+00:00",
+  "generator_sha256": "d28e393ff4b0a5f549666603bd8b6c08d314dbb1cc46911053ff2938a06daec7",
+  "vocab_sha256": "014673cf87a0d3cae3f8d346b85d7d8344372a32c5713556d4df1f7d9f1ba6d4",
+  "approval_scope": "static",
+  "boundaries": [
+    {
+      "type": "SentenceBoundary",
+      "offset": 1000000,
+      "duration": 14500000,
+      "text": "나는"
+    }
+  ]
+}

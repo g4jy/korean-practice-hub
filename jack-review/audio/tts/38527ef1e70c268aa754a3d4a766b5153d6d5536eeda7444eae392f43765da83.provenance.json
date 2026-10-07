@@ -1,0 +1,28 @@
+{
+  "text": "우체국에서",
+  "text_sha256": "6630ab7749d7f53efa4c68d80e2690bc6d5a1de5e6addf042dd8582d5bbc56e1",
+  "request_sha256": "38527ef1e70c268aa754a3d4a766b5153d6d5536eeda7444eae392f43765da83",
+  "file": "38527ef1e70c268aa754a3d4a766b5153d6d5536eeda7444eae392f43765da83.mp3",
+  "audio_sha256": "a67db52dd8d206f560c90f8f0c2b14051ea2d71f3651a474653e0ef1bf434ff9",
+  "schema_version": 1,
+  "source_kind": "edge_generation",
+  "provider": "edge-tts",
+  "voice": "ko-KR-SunHiNeural",
+  "rate": "+0%",
+  "volume": "+0%",
+  "pitch": "+0Hz",
+  "reviewed_public": true,
+  "client_version": "7.2.7",
+  "generated_at": "2026-10-07T00:15:43.964452+00:00",
+  "generator_sha256": "d28e393ff4b0a5f549666603bd8b6c08d314dbb1cc46911053ff2938a06daec7",
+  "vocab_sha256": "014673cf87a0d3cae3f8d346b85d7d8344372a32c5713556d4df1f7d9f1ba6d4",
+  "approval_scope": "static",
+  "boundaries": [
+    {
+      "type": "SentenceBoundary",
+      "offset": 1000000,
+      "duration": 19000000,
+      "text": "우체국에서"
+    }
+  ]
+}

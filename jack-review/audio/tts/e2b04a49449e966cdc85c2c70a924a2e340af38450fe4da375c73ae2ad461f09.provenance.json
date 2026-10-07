@@ -1,0 +1,28 @@
+{
+  "text": "방에",
+  "text_sha256": "6744ad97e6c1288d41a32703b7086225a739adc78cc1b8d0faf14cad99e730b1",
+  "request_sha256": "e2b04a49449e966cdc85c2c70a924a2e340af38450fe4da375c73ae2ad461f09",
+  "file": "e2b04a49449e966cdc85c2c70a924a2e340af38450fe4da375c73ae2ad461f09.mp3",
+  "audio_sha256": "8eaae0777e13c0f100e2ed7c6648268af5a8ef28153fbab5181915e4a8adf89e",
+  "schema_version": 1,
+  "source_kind": "edge_generation",
+  "provider": "edge-tts",
+  "voice": "ko-KR-SunHiNeural",
+  "rate": "+0%",
+  "volume": "+0%",
+  "pitch": "+0Hz",
+  "reviewed_public": true,
+  "client_version": "7.2.7",
+  "generated_at": "2026-10-07T00:14:37.696347+00:00",
+  "generator_sha256": "d28e393ff4b0a5f549666603bd8b6c08d314dbb1cc46911053ff2938a06daec7",
+  "vocab_sha256": "014673cf87a0d3cae3f8d346b85d7d8344372a32c5713556d4df1f7d9f1ba6d4",
+  "approval_scope": "static",
+  "boundaries": [
+    {
+      "type": "SentenceBoundary",
+      "offset": 1000000,
+      "duration": 14375000,
+      "text": "방에"
+    }
+  ]
+}

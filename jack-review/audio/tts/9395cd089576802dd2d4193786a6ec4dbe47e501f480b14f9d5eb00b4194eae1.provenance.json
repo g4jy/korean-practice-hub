@@ -1,0 +1,28 @@
+{
+  "text": "날씨가",
+  "text_sha256": "7f36def9da34b4ea34049c687a88eecec0bd8cee2c4a9c227316b7242173cdf1",
+  "request_sha256": "9395cd089576802dd2d4193786a6ec4dbe47e501f480b14f9d5eb00b4194eae1",
+  "file": "9395cd089576802dd2d4193786a6ec4dbe47e501f480b14f9d5eb00b4194eae1.mp3",
+  "audio_sha256": "79eda5f94e7e9e63eeb4045e2c450396ae154624bcd9bceb010063ac5fd1c685",
+  "schema_version": 1,
+  "source_kind": "edge_generation",
+  "provider": "edge-tts",
+  "voice": "ko-KR-SunHiNeural",
+  "rate": "+0%",
+  "volume": "+0%",
+  "pitch": "+0Hz",
+  "reviewed_public": true,
+  "client_version": "7.2.7",
+  "generated_at": "2026-10-07T00:14:11.172576+00:00",
+  "generator_sha256": "d28e393ff4b0a5f549666603bd8b6c08d314dbb1cc46911053ff2938a06daec7",
+  "vocab_sha256": "014673cf87a0d3cae3f8d346b85d7d8344372a32c5713556d4df1f7d9f1ba6d4",
+  "approval_scope": "static",
+  "boundaries": [
+    {
+      "type": "SentenceBoundary",
+      "offset": 1000000,
+      "duration": 16250000,
+      "text": "날씨가"
+    }
+  ]
+}

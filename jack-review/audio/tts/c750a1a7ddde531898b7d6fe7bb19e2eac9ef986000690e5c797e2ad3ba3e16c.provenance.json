@@ -1,0 +1,28 @@
+{
+  "text": "미용실에서",
+  "text_sha256": "834912906f2cef623475da797de8857a1987a8f14c207723362cdcc333c9e946",
+  "request_sha256": "c750a1a7ddde531898b7d6fe7bb19e2eac9ef986000690e5c797e2ad3ba3e16c",
+  "file": "c750a1a7ddde531898b7d6fe7bb19e2eac9ef986000690e5c797e2ad3ba3e16c.mp3",
+  "audio_sha256": "1224c4d3f2542ea6751dd95b69ff8b2a5a76edfa327a84a9904dc5803e9cb777",
+  "schema_version": 1,
+  "source_kind": "edge_generation",
+  "provider": "edge-tts",
+  "voice": "ko-KR-SunHiNeural",
+  "rate": "+0%",
+  "volume": "+0%",
+  "pitch": "+0Hz",
+  "reviewed_public": true,
+  "client_version": "7.2.7",
+  "generated_at": "2026-10-07T00:14:32.477981+00:00",
+  "generator_sha256": "d28e393ff4b0a5f549666603bd8b6c08d314dbb1cc46911053ff2938a06daec7",
+  "vocab_sha256": "014673cf87a0d3cae3f8d346b85d7d8344372a32c5713556d4df1f7d9f1ba6d4",
+  "approval_scope": "static",
+  "boundaries": [
+    {
+      "type": "SentenceBoundary",
+      "offset": 1000000,
+      "duration": 18500000,
+      "text": "미용실에서"
+    }
+  ]
+}

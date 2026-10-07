@@ -1,0 +1,28 @@
+{
+  "text": "학생이",
+  "text_sha256": "6186fc8f724b430f213039704821c0f8ae25c0728fa5bf9500b4ab4db6b049f3",
+  "request_sha256": "9019cc1242368ff072c5734a78bbfc0ada2a965eac7b79956371623d3484e445",
+  "file": "9019cc1242368ff072c5734a78bbfc0ada2a965eac7b79956371623d3484e445.mp3",
+  "audio_sha256": "eaf4a7917fc679cd82c9aae19056c7ad0a6f1b2a070656880265dd447dc0f556",
+  "schema_version": 1,
+  "source_kind": "edge_generation",
+  "provider": "edge-tts",
+  "voice": "ko-KR-SunHiNeural",
+  "rate": "+0%",
+  "volume": "+0%",
+  "pitch": "+0Hz",
+  "reviewed_public": true,
+  "client_version": "7.2.7",
+  "generated_at": "2026-10-07T00:16:21.487557+00:00",
+  "generator_sha256": "d28e393ff4b0a5f549666603bd8b6c08d314dbb1cc46911053ff2938a06daec7",
+  "vocab_sha256": "014673cf87a0d3cae3f8d346b85d7d8344372a32c5713556d4df1f7d9f1ba6d4",
+  "approval_scope": "static",
+  "boundaries": [
+    {
+      "type": "SentenceBoundary",
+      "offset": 1000000,
+      "duration": 16500000,
+      "text": "학생이"
+    }
+  ]
+}

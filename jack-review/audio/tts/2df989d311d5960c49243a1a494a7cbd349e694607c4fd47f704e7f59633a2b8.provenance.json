@@ -1,0 +1,28 @@
+{
+  "text": "사람이",
+  "text_sha256": "3f33d9d6ca9be288c4e302c423c32078ff29f24149e71fdbc91257128a28debb",
+  "request_sha256": "2df989d311d5960c49243a1a494a7cbd349e694607c4fd47f704e7f59633a2b8",
+  "file": "2df989d311d5960c49243a1a494a7cbd349e694607c4fd47f704e7f59633a2b8.mp3",
+  "audio_sha256": "2ffced509da8761a70d37c0ee6e735f6dcc3244c9f1084987bd6ca32ed1947b2",
+  "schema_version": 1,
+  "source_kind": "edge_generation",
+  "provider": "edge-tts",
+  "voice": "ko-KR-SunHiNeural",
+  "rate": "+0%",
+  "volume": "+0%",
+  "pitch": "+0Hz",
+  "reviewed_public": true,
+  "client_version": "7.2.7",
+  "generated_at": "2026-10-07T00:14:58.590273+00:00",
+  "generator_sha256": "d28e393ff4b0a5f549666603bd8b6c08d314dbb1cc46911053ff2938a06daec7",
+  "vocab_sha256": "014673cf87a0d3cae3f8d346b85d7d8344372a32c5713556d4df1f7d9f1ba6d4",
+  "approval_scope": "static",
+  "boundaries": [
+    {
+      "type": "SentenceBoundary",
+      "offset": 1000000,
+      "duration": 16250000,
+      "text": "사람이"
+    }
+  ]
+}

@@ -1,0 +1,28 @@
+{
+  "text": "숙제를",
+  "text_sha256": "029ebc8300fce395704c6c035e14fe1a329bc030671f3885f94364acb03231d1",
+  "request_sha256": "486aec58a0ae585cd549281b5d3882a6cd5e5f93bff2d8c789fd15e08cf6d5d6",
+  "file": "486aec58a0ae585cd549281b5d3882a6cd5e5f93bff2d8c789fd15e08cf6d5d6.mp3",
+  "audio_sha256": "9ab97649da99e757e3633a2c85f525487c76f04d6bd684958935a08bf4bc5c81",
+  "schema_version": 1,
+  "source_kind": "edge_generation",
+  "provider": "edge-tts",
+  "voice": "ko-KR-SunHiNeural",
+  "rate": "+0%",
+  "volume": "+0%",
+  "pitch": "+0Hz",
+  "reviewed_public": true,
+  "client_version": "7.2.7",
+  "generated_at": "2026-10-07T00:15:17.408712+00:00",
+  "generator_sha256": "d28e393ff4b0a5f549666603bd8b6c08d314dbb1cc46911053ff2938a06daec7",
+  "vocab_sha256": "014673cf87a0d3cae3f8d346b85d7d8344372a32c5713556d4df1f7d9f1ba6d4",
+  "approval_scope": "static",
+  "boundaries": [
+    {
+      "type": "SentenceBoundary",
+      "offset": 1000000,
+      "duration": 16500000,
+      "text": "숙제를"
+    }
+  ]
+}

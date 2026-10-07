@@ -1,0 +1,28 @@
+{
+  "text": "침실에서",
+  "text_sha256": "1cf6e6f37c5b8674a547550566e0dc5b960588584d24f5b08f607c15765ebe3d",
+  "request_sha256": "4b49c45a7a17fec22e04bc39eaa00c7f52a039c9bb6767f4409421068f585ec5",
+  "file": "4b49c45a7a17fec22e04bc39eaa00c7f52a039c9bb6767f4409421068f585ec5.mp3",
+  "audio_sha256": "9760f28fc26628c5a7e24c4ac6e8f177490213ce375144d5ae02acfb72cf1bb9",
+  "schema_version": 1,
+  "source_kind": "edge_generation",
+  "provider": "edge-tts",
+  "voice": "ko-KR-SunHiNeural",
+  "rate": "+0%",
+  "volume": "+0%",
+  "pitch": "+0Hz",
+  "reviewed_public": true,
+  "client_version": "7.2.7",
+  "generated_at": "2026-10-07T00:16:10.580016+00:00",
+  "generator_sha256": "d28e393ff4b0a5f549666603bd8b6c08d314dbb1cc46911053ff2938a06daec7",
+  "vocab_sha256": "014673cf87a0d3cae3f8d346b85d7d8344372a32c5713556d4df1f7d9f1ba6d4",
+  "approval_scope": "static",
+  "boundaries": [
+    {
+      "type": "SentenceBoundary",
+      "offset": 1000000,
+      "duration": 17750000,
+      "text": "침실에서"
+    }
+  ]
+}

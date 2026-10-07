@@ -1,0 +1,28 @@
+{
+  "text": "공원이",
+  "text_sha256": "223081471c5796270c242df2ea5eb110a1f3abc7503f02540a1bc1716c84059b",
+  "request_sha256": "91a1f3913476feda347454c270fc740e325772afceb7fdec8a11a67a6980fe16",
+  "file": "91a1f3913476feda347454c270fc740e325772afceb7fdec8a11a67a6980fe16.mp3",
+  "audio_sha256": "19cbd1f4681e78ff4ab719f2a27673b750ba5a9fe93ff98bae33b83eeaa1b09b",
+  "schema_version": 1,
+  "source_kind": "edge_generation",
+  "provider": "edge-tts",
+  "voice": "ko-KR-SunHiNeural",
+  "rate": "+0%",
+  "volume": "+0%",
+  "pitch": "+0Hz",
+  "reviewed_public": true,
+  "client_version": "7.2.7",
+  "generated_at": "2026-10-07T00:13:58.089753+00:00",
+  "generator_sha256": "d28e393ff4b0a5f549666603bd8b6c08d314dbb1cc46911053ff2938a06daec7",
+  "vocab_sha256": "014673cf87a0d3cae3f8d346b85d7d8344372a32c5713556d4df1f7d9f1ba6d4",
+  "approval_scope": "static",
+  "boundaries": [
+    {
+      "type": "SentenceBoundary",
+      "offset": 1000000,
+      "duration": 15750000,
+      "text": "공원이"
+    }
+  ]
+}

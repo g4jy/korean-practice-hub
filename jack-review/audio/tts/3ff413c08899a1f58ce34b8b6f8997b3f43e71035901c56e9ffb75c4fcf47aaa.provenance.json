@@ -1,0 +1,28 @@
+{
+  "text": "가게에",
+  "text_sha256": "dcd7d2a0ec316502a2f33d648e2ef59e5f2dbb27908baa8132b60ea73d1ee9f3",
+  "request_sha256": "3ff413c08899a1f58ce34b8b6f8997b3f43e71035901c56e9ffb75c4fcf47aaa",
+  "file": "3ff413c08899a1f58ce34b8b6f8997b3f43e71035901c56e9ffb75c4fcf47aaa.mp3",
+  "audio_sha256": "85da7a291a5b5a5f40150ebb10408ce6610ed36f1d713512f73751f8187c033e",
+  "schema_version": 1,
+  "source_kind": "edge_generation",
+  "provider": "edge-tts",
+  "voice": "ko-KR-SunHiNeural",
+  "rate": "+0%",
+  "volume": "+0%",
+  "pitch": "+0Hz",
+  "reviewed_public": true,
+  "client_version": "7.2.7",
+  "generated_at": "2026-10-07T00:13:36.687607+00:00",
+  "generator_sha256": "d28e393ff4b0a5f549666603bd8b6c08d314dbb1cc46911053ff2938a06daec7",
+  "vocab_sha256": "014673cf87a0d3cae3f8d346b85d7d8344372a32c5713556d4df1f7d9f1ba6d4",
+  "approval_scope": "static",
+  "boundaries": [
+    {
+      "type": "SentenceBoundary",
+      "offset": 1000000,
+      "duration": 15625000,
+      "text": "가게에"
+    }
+  ]
+}

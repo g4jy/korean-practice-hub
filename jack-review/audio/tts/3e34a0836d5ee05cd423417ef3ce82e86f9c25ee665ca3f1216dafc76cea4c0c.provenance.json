@@ -1,0 +1,28 @@
+{
+  "text": "부엌에",
+  "text_sha256": "d1b8708da2141b2e756ac4263f0495463b1066e0e156e23cd43f60514ec5b32d",
+  "request_sha256": "3e34a0836d5ee05cd423417ef3ce82e86f9c25ee665ca3f1216dafc76cea4c0c",
+  "file": "3e34a0836d5ee05cd423417ef3ce82e86f9c25ee665ca3f1216dafc76cea4c0c.mp3",
+  "audio_sha256": "60616bac70ddb1d2e23fa20b9c93bd30b4abbc21d4238ad8ff29cc3be58ffcea",
+  "schema_version": 1,
+  "source_kind": "edge_generation",
+  "provider": "edge-tts",
+  "voice": "ko-KR-SunHiNeural",
+  "rate": "+0%",
+  "volume": "+0%",
+  "pitch": "+0Hz",
+  "reviewed_public": true,
+  "client_version": "7.2.7",
+  "generated_at": "2026-10-07T00:14:50.765474+00:00",
+  "generator_sha256": "d28e393ff4b0a5f549666603bd8b6c08d314dbb1cc46911053ff2938a06daec7",
+  "vocab_sha256": "014673cf87a0d3cae3f8d346b85d7d8344372a32c5713556d4df1f7d9f1ba6d4",
+  "approval_scope": "static",
+  "boundaries": [
+    {
+      "type": "SentenceBoundary",
+      "offset": 1000000,
+      "duration": 15500000,
+      "text": "부엌에"
+    }
+  ]
+}

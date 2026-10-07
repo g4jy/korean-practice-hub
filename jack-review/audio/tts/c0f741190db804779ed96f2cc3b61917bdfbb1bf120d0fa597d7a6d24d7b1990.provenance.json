@@ -1,0 +1,28 @@
+{
+  "text": "문제가",
+  "text_sha256": "2c69fc4d7301d4e27b45124dd1c7f6ab55beeab04042f26a8516aea2eab3b339",
+  "request_sha256": "c0f741190db804779ed96f2cc3b61917bdfbb1bf120d0fa597d7a6d24d7b1990",
+  "file": "c0f741190db804779ed96f2cc3b61917bdfbb1bf120d0fa597d7a6d24d7b1990.mp3",
+  "audio_sha256": "87400c969c130a62be78c813cee244cb20dc020844e1249ee212258a889f0b99",
+  "schema_version": 1,
+  "source_kind": "edge_generation",
+  "provider": "edge-tts",
+  "voice": "ko-KR-SunHiNeural",
+  "rate": "+0%",
+  "volume": "+0%",
+  "pitch": "+0Hz",
+  "reviewed_public": true,
+  "client_version": "7.2.7",
+  "generated_at": "2026-10-07T00:14:24.448071+00:00",
+  "generator_sha256": "d28e393ff4b0a5f549666603bd8b6c08d314dbb1cc46911053ff2938a06daec7",
+  "vocab_sha256": "014673cf87a0d3cae3f8d346b85d7d8344372a32c5713556d4df1f7d9f1ba6d4",
+  "approval_scope": "static",
+  "boundaries": [
+    {
+      "type": "SentenceBoundary",
+      "offset": 1000000,
+      "duration": 16375000,
+      "text": "문제가"
+    }
+  ]
+}

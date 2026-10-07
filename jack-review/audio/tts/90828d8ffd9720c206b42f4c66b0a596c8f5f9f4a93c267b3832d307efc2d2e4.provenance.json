@@ -1,0 +1,28 @@
+{
+  "text": "밥을",
+  "text_sha256": "59f360b400889823dcc4571d55abc826f2034604dc9255def6bd1f5326ec2fc8",
+  "request_sha256": "90828d8ffd9720c206b42f4c66b0a596c8f5f9f4a93c267b3832d307efc2d2e4",
+  "file": "90828d8ffd9720c206b42f4c66b0a596c8f5f9f4a93c267b3832d307efc2d2e4.mp3",
+  "audio_sha256": "7fd8a09e8f83e70ea4126939dffa58b41cfaf013b1e2f5d66d67945892d95446",
+  "schema_version": 1,
+  "source_kind": "edge_generation",
+  "provider": "edge-tts",
+  "voice": "ko-KR-SunHiNeural",
+  "rate": "+0%",
+  "volume": "+0%",
+  "pitch": "+0Hz",
+  "reviewed_public": true,
+  "client_version": "7.2.7",
+  "generated_at": "2026-10-07T00:14:35.112743+00:00",
+  "generator_sha256": "d28e393ff4b0a5f549666603bd8b6c08d314dbb1cc46911053ff2938a06daec7",
+  "vocab_sha256": "014673cf87a0d3cae3f8d346b85d7d8344372a32c5713556d4df1f7d9f1ba6d4",
+  "approval_scope": "static",
+  "boundaries": [
+    {
+      "type": "SentenceBoundary",
+      "offset": 1000000,
+      "duration": 14375000,
+      "text": "밥을"
+    }
+  ]
+}

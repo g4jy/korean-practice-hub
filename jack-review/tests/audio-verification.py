@@ -63,7 +63,7 @@ def verify(legacy_baseline=None):
                   boundary_text_mismatches=boundary_mismatches,
                   original_96_bytes_unchanged=original_unchanged, files=files,
                   missing_required_count=len(report['missing_required_words']),
-                  generation_data_scope='Approved public card kr/polite only; no examples, learner history or evidence sent.',
+                  generation_data_scope='Approved public cards/polite and explicitly reviewed static blocks only; no examples, learner history or evidence sent.',
                   dynamic_generation=False, voice='ko-KR-SunHiNeural',
                   source_distinction='repository_lineage is inherited mapping/blob evidence, not newly observed Edge generation or acoustic identity verification.')
     report['passed'] = not (invalid or zero or decode_errors or duplicate_files or boundary_mismatches or report['missing_required_words']) and original_unchanged is not False

@@ -1,0 +1,28 @@
+{
+  "text": "회의실에",
+  "text_sha256": "0260d668838d64389ec5df2d6ccb3a9cc22c4c55f92f56054d25a8ea8c5facae",
+  "request_sha256": "d4cd13ce89111e1837b5fb9eefd498282f5b51453978ebb40651714c03a63411",
+  "file": "d4cd13ce89111e1837b5fb9eefd498282f5b51453978ebb40651714c03a63411.mp3",
+  "audio_sha256": "b847c49cf2991177cdfee0fb9f060d9c3f98b62d7a9867070804d6be3b62c34b",
+  "schema_version": 1,
+  "source_kind": "edge_generation",
+  "provider": "edge-tts",
+  "voice": "ko-KR-SunHiNeural",
+  "rate": "+0%",
+  "volume": "+0%",
+  "pitch": "+0Hz",
+  "reviewed_public": true,
+  "client_version": "7.2.7",
+  "generated_at": "2026-10-07T00:16:34.787460+00:00",
+  "generator_sha256": "d28e393ff4b0a5f549666603bd8b6c08d314dbb1cc46911053ff2938a06daec7",
+  "vocab_sha256": "014673cf87a0d3cae3f8d346b85d7d8344372a32c5713556d4df1f7d9f1ba6d4",
+  "approval_scope": "static",
+  "boundaries": [
+    {
+      "type": "SentenceBoundary",
+      "offset": 1000000,
+      "duration": 17250000,
+      "text": "회의실에"
+    }
+  ]
+}

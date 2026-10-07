@@ -1,0 +1,28 @@
+{
+  "text": "우체국에",
+  "text_sha256": "4895a09babef6bdf33be195ecf81c8947777de98a38673ade4cea9d338e5d63f",
+  "request_sha256": "42d56d659c2c4929a4cdb8baf33bfac8a0ce108d1d3162c81310ef33d39a7eec",
+  "file": "42d56d659c2c4929a4cdb8baf33bfac8a0ce108d1d3162c81310ef33d39a7eec.mp3",
+  "audio_sha256": "2eae1ccc090105e1dc278f1f0849d17d54a8c7cef18e277b7decf60d7c869048",
+  "schema_version": 1,
+  "source_kind": "edge_generation",
+  "provider": "edge-tts",
+  "voice": "ko-KR-SunHiNeural",
+  "rate": "+0%",
+  "volume": "+0%",
+  "pitch": "+0Hz",
+  "reviewed_public": true,
+  "client_version": "7.2.7",
+  "generated_at": "2026-10-07T00:15:41.323862+00:00",
+  "generator_sha256": "d28e393ff4b0a5f549666603bd8b6c08d314dbb1cc46911053ff2938a06daec7",
+  "vocab_sha256": "014673cf87a0d3cae3f8d346b85d7d8344372a32c5713556d4df1f7d9f1ba6d4",
+  "approval_scope": "static",
+  "boundaries": [
+    {
+      "type": "SentenceBoundary",
+      "offset": 1000000,
+      "duration": 17125000,
+      "text": "우체국에"
+    }
+  ]
+}

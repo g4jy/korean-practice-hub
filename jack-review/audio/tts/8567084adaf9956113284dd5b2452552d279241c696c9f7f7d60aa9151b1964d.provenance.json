@@ -1,0 +1,28 @@
+{
+  "text": "선생님이",
+  "text_sha256": "1f942b077ca4a24be3b83c518f46940d3c4d96e8d0a06fc07b782cdad3ad7304",
+  "request_sha256": "8567084adaf9956113284dd5b2452552d279241c696c9f7f7d60aa9151b1964d",
+  "file": "8567084adaf9956113284dd5b2452552d279241c696c9f7f7d60aa9151b1964d.mp3",
+  "audio_sha256": "cb5a040144717deb45dc4c353f0efd8211ecabb55444559bfed66580a837a1c0",
+  "schema_version": 1,
+  "source_kind": "edge_generation",
+  "provider": "edge-tts",
+  "voice": "ko-KR-SunHiNeural",
+  "rate": "+0%",
+  "volume": "+0%",
+  "pitch": "+0Hz",
+  "reviewed_public": true,
+  "client_version": "7.2.7",
+  "generated_at": "2026-10-07T00:15:12.097631+00:00",
+  "generator_sha256": "d28e393ff4b0a5f549666603bd8b6c08d314dbb1cc46911053ff2938a06daec7",
+  "vocab_sha256": "014673cf87a0d3cae3f8d346b85d7d8344372a32c5713556d4df1f7d9f1ba6d4",
+  "approval_scope": "static",
+  "boundaries": [
+    {
+      "type": "SentenceBoundary",
+      "offset": 1000000,
+      "duration": 17375000,
+      "text": "선생님이"
+    }
+  ]
+}

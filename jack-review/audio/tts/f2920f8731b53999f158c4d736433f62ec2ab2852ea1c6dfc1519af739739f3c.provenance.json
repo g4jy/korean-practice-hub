@@ -1,0 +1,28 @@
+{
+  "text": "책이",
+  "text_sha256": "3898f40e123c46cffc919e40d1518050b30367f4677ef420739b92d719071579",
+  "request_sha256": "f2920f8731b53999f158c4d736433f62ec2ab2852ea1c6dfc1519af739739f3c",
+  "file": "f2920f8731b53999f158c4d736433f62ec2ab2852ea1c6dfc1519af739739f3c.mp3",
+  "audio_sha256": "298c36eb74519753dc61b0f6b360f9a5deb827cb5b425b50ef17e09e6cf3bfd9",
+  "schema_version": 1,
+  "source_kind": "edge_generation",
+  "provider": "edge-tts",
+  "voice": "ko-KR-SunHiNeural",
+  "rate": "+0%",
+  "volume": "+0%",
+  "pitch": "+0Hz",
+  "reviewed_public": true,
+  "client_version": "7.2.7",
+  "generated_at": "2026-10-07T00:15:57.334945+00:00",
+  "generator_sha256": "d28e393ff4b0a5f549666603bd8b6c08d314dbb1cc46911053ff2938a06daec7",
+  "vocab_sha256": "014673cf87a0d3cae3f8d346b85d7d8344372a32c5713556d4df1f7d9f1ba6d4",
+  "approval_scope": "static",
+  "boundaries": [
+    {
+      "type": "SentenceBoundary",
+      "offset": 1000000,
+      "duration": 14875000,
+      "text": "책이"
+    }
+  ]
+}

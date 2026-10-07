@@ -1836,6 +1836,627 @@
       "audio_sha256": "42499a78ff7deb471c796c30f0d8fbca8e252cc952740d8999d8b385112f7248",
       "receipt": "8b34ae93ff4ded4f95c85b4551d7c6116d8ddbba06e0f1a8b2bee9dcdaf9fc3c.provenance.json",
       "receipt_sha256": "ea1ac81b7aea8e61b1511e99c8ff6dd0fdbea88359f5e7597fa2539eeab101c3"
+    },
+    "가게에": {
+      "text": "가게에",
+      "text_sha256": "dcd7d2a0ec316502a2f33d648e2ef59e5f2dbb27908baa8132b60ea73d1ee9f3",
+      "request_sha256": "3ff413c08899a1f58ce34b8b6f8997b3f43e71035901c56e9ffb75c4fcf47aaa",
+      "file": "3ff413c08899a1f58ce34b8b6f8997b3f43e71035901c56e9ffb75c4fcf47aaa.mp3",
+      "audio_sha256": "85da7a291a5b5a5f40150ebb10408ce6610ed36f1d713512f73751f8187c033e",
+      "receipt": "3ff413c08899a1f58ce34b8b6f8997b3f43e71035901c56e9ffb75c4fcf47aaa.provenance.json",
+      "receipt_sha256": "7bee40a886e103c3b28959a323acac8ba745595a74da994c38d0bc55704598b0"
+    },
+    "가게에서": {
+      "text": "가게에서",
+      "text_sha256": "b0c1b40c97480a29b4b2a342441fa6610536e78bf0b8cf748a97e43a4811b946",
+      "request_sha256": "2bd3b469a306409547a997e56f99abb4e78c90641bd4867c4ed99b2e89f79f7c",
+      "file": "2bd3b469a306409547a997e56f99abb4e78c90641bd4867c4ed99b2e89f79f7c.mp3",
+      "audio_sha256": "df5c7c43005ede4d2b7640f80ab7b1938757668857b40902cb7bd5d440f06ac4",
+      "receipt": "2bd3b469a306409547a997e56f99abb4e78c90641bd4867c4ed99b2e89f79f7c.provenance.json",
+      "receipt_sha256": "6a8d77b951212c2a173a0386c93a446fb15ea6d001fb277a725f43fbda98812c"
+    },
+    "가방을": {
+      "text": "가방을",
+      "text_sha256": "86a22a446a6e3a008dac26ca88f91394abf42a3408d3c27bdf493fab21fdaa90",
+      "request_sha256": "9d90f1a663a58cde5de8f697b78772102ff7e9b583bc5e97e5c803d49b1ed087",
+      "file": "9d90f1a663a58cde5de8f697b78772102ff7e9b583bc5e97e5c803d49b1ed087.mp3",
+      "audio_sha256": "da808ed072bb0fa5686d5cc207fa7950449ed0402f6bd2c32718ad17b35388c3",
+      "receipt": "9d90f1a663a58cde5de8f697b78772102ff7e9b583bc5e97e5c803d49b1ed087.provenance.json",
+      "receipt_sha256": "2bd0c10a9dbc21f2bcab9f337a60ba9ec1abff8e265a9208eb2ba2dc4c55caaa"
+    },
+    "가방이": {
+      "text": "가방이",
+      "text_sha256": "3bacd65ffcbf66c44b886205cd677e4bfa78bb31c921e56e536c475c7c354200",
+      "request_sha256": "cc7eec76f0e74601552f2e271ed47be46fd3d202f020c2140205776b9bac0efc",
+      "file": "cc7eec76f0e74601552f2e271ed47be46fd3d202f020c2140205776b9bac0efc.mp3",
+      "audio_sha256": "fe75a82a3e581d05cfddbb6856a6aed3fe2900011141236d1e9a26a90dc6712c",
+      "receipt": "cc7eec76f0e74601552f2e271ed47be46fd3d202f020c2140205776b9bac0efc.provenance.json",
+      "receipt_sha256": "3565f7301e3241b943de6727c7b7f5193bea4c85f4901344a15c92ede3375f76"
+    },
+    "가족은": {
+      "text": "가족은",
+      "text_sha256": "bb01930fb21665e3e8fbb229da36c9fc4a7c3183fa75d8619ca814e20bca5efc",
+      "request_sha256": "b57460a4257759004a136d8065e6b1d7ea48fc52f1570d0876d73aeb7d5867d7",
+      "file": "b57460a4257759004a136d8065e6b1d7ea48fc52f1570d0876d73aeb7d5867d7.mp3",
+      "audio_sha256": "e555390085780d3e81e909a15bef051e77fb12faf8fb0c0b8f0c1c72d323b1f6",
+      "receipt": "b57460a4257759004a136d8065e6b1d7ea48fc52f1570d0876d73aeb7d5867d7.provenance.json",
+      "receipt_sha256": "79020820378451008ee327752d05b5e70582668d34bd6d88d1c60de4a830fc9a"
+    },
+    "가족이": {
+      "text": "가족이",
+      "text_sha256": "50bc5ffaea0ad139b0b2ead224fd63626328c8bd65aa8723f62deec1a586ebab",
+      "request_sha256": "413316b96e6048540e1b9ec19c178ac97dd64d1c476e6387625fefb3e5c6502a",
+      "file": "413316b96e6048540e1b9ec19c178ac97dd64d1c476e6387625fefb3e5c6502a.mp3",
+      "audio_sha256": "85362e694180c9d3488d2bb771ca3ea5933358ec5cb45860bd57cd48216366fb",
+      "receipt": "413316b96e6048540e1b9ec19c178ac97dd64d1c476e6387625fefb3e5c6502a.provenance.json",
+      "receipt_sha256": "e3befaff47f6c4892db2947a7ca9445e72205f0aef9042d436cbbfda8366cf93"
+    },
+    "거실에": {
+      "text": "거실에",
+      "text_sha256": "6530196daa110a07d9aa087f690023fede824b550430a431c0051012a9a8b67f",
+      "request_sha256": "e6203b055577e5682262c65757b1ca35a4401b789657699e907cb6db72ef22d0",
+      "file": "e6203b055577e5682262c65757b1ca35a4401b789657699e907cb6db72ef22d0.mp3",
+      "audio_sha256": "c462a69ba661395a6f33d0f1b038683ed1324ca87753c3157852cf94140c01b2",
+      "receipt": "e6203b055577e5682262c65757b1ca35a4401b789657699e907cb6db72ef22d0.provenance.json",
+      "receipt_sha256": "d6cbd999c9a745fb69721b6c12733976004a129ac19e5ac5f7ff3e8ea00051d0"
+    },
+    "거실에서": {
+      "text": "거실에서",
+      "text_sha256": "2c022927cba57d8e5253d9c09137f73eaefbaa67f4fe8bed486f6bb1e513d4b8",
+      "request_sha256": "e1095fece487ab1b9f0d828c650b0948e6163d9fee5f9abb041bd8e8bb01634b",
+      "file": "e1095fece487ab1b9f0d828c650b0948e6163d9fee5f9abb041bd8e8bb01634b.mp3",
+      "audio_sha256": "1c47d96ad1ae3224a4b4c4c70bebbfe84c57afe943780d629e12846c60b4fb09",
+      "receipt": "e1095fece487ab1b9f0d828c650b0948e6163d9fee5f9abb041bd8e8bb01634b.provenance.json",
+      "receipt_sha256": "89fd1aafdbf9909b8e1012afeedd010c8d79019161042ee634e46b0a8bd0af0f"
+    },
+    "공원이": {
+      "text": "공원이",
+      "text_sha256": "223081471c5796270c242df2ea5eb110a1f3abc7503f02540a1bc1716c84059b",
+      "request_sha256": "91a1f3913476feda347454c270fc740e325772afceb7fdec8a11a67a6980fe16",
+      "file": "91a1f3913476feda347454c270fc740e325772afceb7fdec8a11a67a6980fe16.mp3",
+      "audio_sha256": "19cbd1f4681e78ff4ab719f2a27673b750ba5a9fe93ff98bae33b83eeaa1b09b",
+      "receipt": "91a1f3913476feda347454c270fc740e325772afceb7fdec8a11a67a6980fe16.provenance.json",
+      "receipt_sha256": "70e2f33b508ba5aafcb0ac0b248a19e4cc25e2e08debb31746ac425277f1d052"
+    },
+    "공책을": {
+      "text": "공책을",
+      "text_sha256": "44393d9e40c1deacc2dfa70e0e6fbc72d89693b1b0ac2ef44c4fcdf702451e40",
+      "request_sha256": "1b3b603845c2effabb0a76f1db374b19cf487a647285abda91b74b8af850c8c4",
+      "file": "1b3b603845c2effabb0a76f1db374b19cf487a647285abda91b74b8af850c8c4.mp3",
+      "audio_sha256": "38d4d02465c47748b5310d6830ae9b965b7880a81ee1977d90fa5cd935d51e94",
+      "receipt": "1b3b603845c2effabb0a76f1db374b19cf487a647285abda91b74b8af850c8c4.provenance.json",
+      "receipt_sha256": "ff3a60276da9bf2929cfc6623c6befec390497cbbcb156d891f36bac1f7d0ce6"
+    },
+    "교실에": {
+      "text": "교실에",
+      "text_sha256": "4fb7933e1351bcdded0df354b9e3608f777fcec5f9d04d15d91bce44f883d1f5",
+      "request_sha256": "07ddb19c2b9217f3377cf8bae2eeb580fd2262dec75130dad6672d3beb43db50",
+      "file": "07ddb19c2b9217f3377cf8bae2eeb580fd2262dec75130dad6672d3beb43db50.mp3",
+      "audio_sha256": "f119af528fe28ef187fa2328dbb7681dba94ea088d962ad366d0d81f2c37ff3f",
+      "receipt": "07ddb19c2b9217f3377cf8bae2eeb580fd2262dec75130dad6672d3beb43db50.provenance.json",
+      "receipt_sha256": "efabc463011e72c8aaec1617aab5ee2abfa3f27a8313da089ee3260799ce5b1c"
+    },
+    "교실에서": {
+      "text": "교실에서",
+      "text_sha256": "ad2f288245e2ec80975d3ecf3d304b49f498c177f2ad68c4127a60ddb86351ad",
+      "request_sha256": "d77afd102446631930bd5e744f890e40704957c6208fdc093ad9ed86c6d21538",
+      "file": "d77afd102446631930bd5e744f890e40704957c6208fdc093ad9ed86c6d21538.mp3",
+      "audio_sha256": "da68a63a6d70fde86975990498db0662ee1dcd41070fbb0609cec6d4025b8020",
+      "receipt": "d77afd102446631930bd5e744f890e40704957c6208fdc093ad9ed86c6d21538.provenance.json",
+      "receipt_sha256": "3deaad6a3bd2d94ba18fb0c8b6941e1548758fb1f92ccd77b1bbfad9e903e92d"
+    },
+    "나는": {
+      "text": "나는",
+      "text_sha256": "39967d81683e1aa6d7f363793f6b3bc8e29efbe6e02abeca6a73f5db2b7002d7",
+      "request_sha256": "d9346d827b60f9a3c086decfd77fd36f4333de62f7bfec7056712a5a1f3c005e",
+      "file": "d9346d827b60f9a3c086decfd77fd36f4333de62f7bfec7056712a5a1f3c005e.mp3",
+      "audio_sha256": "a7333ca571f7c44f2e0bdb0d7fb5e0f2b8a954c8a2173707a9d269380ab9d883",
+      "receipt": "d9346d827b60f9a3c086decfd77fd36f4333de62f7bfec7056712a5a1f3c005e.provenance.json",
+      "receipt_sha256": "2a6b39260725f93ba2e045c046dafc000175aa71119e242971d12e6d1f155e7f"
+    },
+    "날씨가": {
+      "text": "날씨가",
+      "text_sha256": "7f36def9da34b4ea34049c687a88eecec0bd8cee2c4a9c227316b7242173cdf1",
+      "request_sha256": "9395cd089576802dd2d4193786a6ec4dbe47e501f480b14f9d5eb00b4194eae1",
+      "file": "9395cd089576802dd2d4193786a6ec4dbe47e501f480b14f9d5eb00b4194eae1.mp3",
+      "audio_sha256": "79eda5f94e7e9e63eeb4045e2c450396ae154624bcd9bceb010063ac5fd1c685",
+      "receipt": "9395cd089576802dd2d4193786a6ec4dbe47e501f480b14f9d5eb00b4194eae1.provenance.json",
+      "receipt_sha256": "5978458e9607d59561c3d668cb0174b6dab36f8056fd31dea57c3b28c6ceb116"
+    },
+    "동생은": {
+      "text": "동생은",
+      "text_sha256": "9196be622beec823bde0a4a2751caa06faf478d700aa02c7483599bd266a7cee",
+      "request_sha256": "213392542f3805200626b929fb3058a6245e9fdce578832f65c9ce2a43d39263",
+      "file": "213392542f3805200626b929fb3058a6245e9fdce578832f65c9ce2a43d39263.mp3",
+      "audio_sha256": "afd546386cbeecab5a1e05ba84cba880b8ac55b3b0591e8dae72f757970a8242",
+      "receipt": "213392542f3805200626b929fb3058a6245e9fdce578832f65c9ce2a43d39263.provenance.json",
+      "receipt_sha256": "52d4a840927d287415be59036a5b13d292fb1fe3d95260adc9b2a430a5306381"
+    },
+    "동생이": {
+      "text": "동생이",
+      "text_sha256": "599230a656a3cfb2f54a334b8020aa5f71ef7711488d4733fea0424fb333d88c",
+      "request_sha256": "7d548db29647ddb217b5a5073114e82ca645882e25893494ae85e177928f2f10",
+      "file": "7d548db29647ddb217b5a5073114e82ca645882e25893494ae85e177928f2f10.mp3",
+      "audio_sha256": "d8fe2b2a78e6904c2e28b32ff76b12c980705c67af28bd6bbaabedf4bad21a23",
+      "receipt": "7d548db29647ddb217b5a5073114e82ca645882e25893494ae85e177928f2f10.provenance.json",
+      "receipt_sha256": "a1ef4442b7fb78a08f98414ede3a41a9f70e874e8527237927484c467d8faefb"
+    },
+    "무엇을": {
+      "text": "무엇을",
+      "text_sha256": "24dedd16c140f1fef2428f019f5f4db000128ad461fab33a7afaa92d96138529",
+      "request_sha256": "3838172f3221dd218ee845e880bf2b4b0339cfce38d676e341cda9799e8ad0d4",
+      "file": "3838172f3221dd218ee845e880bf2b4b0339cfce38d676e341cda9799e8ad0d4.mp3",
+      "audio_sha256": "62995c6458e3eb2f2d6e94468b44b8f5a265e92ad8395e2446cb70dc9e6d35f2",
+      "receipt": "3838172f3221dd218ee845e880bf2b4b0339cfce38d676e341cda9799e8ad0d4.provenance.json",
+      "receipt_sha256": "6e5683dc44ebd4ec6087d70add949d5ab75944897db5545a8db3f181da6efad5"
+    },
+    "문장이": {
+      "text": "문장이",
+      "text_sha256": "2e1e36eaa8dcfb1e0b7a34bcefaa3031b04f469d230c53da2fb6b5e30e04c625",
+      "request_sha256": "c3254a36f155cebe7b8e06f67f86aca86244f3a65d207736284043b8f5ad99b4",
+      "file": "c3254a36f155cebe7b8e06f67f86aca86244f3a65d207736284043b8f5ad99b4.mp3",
+      "audio_sha256": "a2342af550ae6a18f0558403f2f19d786828fcb1820a8a020c7315899cf8c538",
+      "receipt": "c3254a36f155cebe7b8e06f67f86aca86244f3a65d207736284043b8f5ad99b4.provenance.json",
+      "receipt_sha256": "b899766e7e2a8c3b23ef7a7ad775c9ad1506757c5ab90ca9455b19f15444a54a"
+    },
+    "문제가": {
+      "text": "문제가",
+      "text_sha256": "2c69fc4d7301d4e27b45124dd1c7f6ab55beeab04042f26a8516aea2eab3b339",
+      "request_sha256": "c0f741190db804779ed96f2cc3b61917bdfbb1bf120d0fa597d7a6d24d7b1990",
+      "file": "c0f741190db804779ed96f2cc3b61917bdfbb1bf120d0fa597d7a6d24d7b1990.mp3",
+      "audio_sha256": "87400c969c130a62be78c813cee244cb20dc020844e1249ee212258a889f0b99",
+      "receipt": "c0f741190db804779ed96f2cc3b61917bdfbb1bf120d0fa597d7a6d24d7b1990.provenance.json",
+      "receipt_sha256": "b7402c6dbe8a1bc77793010f2bc7075378266175893ea58214aa2e30a14be66f"
+    },
+    "물을": {
+      "text": "물을",
+      "text_sha256": "46ddd583ad8778f3f0dede7bab5a3aceeca164fe9da8078b2b3c98367e25981d",
+      "request_sha256": "78b67a6375220eb6ed9c85efc4b9bab060a7f72e6eaabd73e465d376bdf35c09",
+      "file": "78b67a6375220eb6ed9c85efc4b9bab060a7f72e6eaabd73e465d376bdf35c09.mp3",
+      "audio_sha256": "1889b397bf0943422a08eb441bb3446ca2804dbe421ae828ea375fa7aeb562e4",
+      "receipt": "78b67a6375220eb6ed9c85efc4b9bab060a7f72e6eaabd73e465d376bdf35c09.provenance.json",
+      "receipt_sha256": "f84e9c306b238228c24e0ef704cc97125063df7df00859d808bbcc875bc7b3a7"
+    },
+    "미용실에": {
+      "text": "미용실에",
+      "text_sha256": "33c20c7dd0ccc81c4e8d0327a97ee40ce2eaf7422a26d848385483dd69bae284",
+      "request_sha256": "fb7b00a0adece5feead58e4750999fd20ca863dfb61b703b76cb7b0e05390bd6",
+      "file": "fb7b00a0adece5feead58e4750999fd20ca863dfb61b703b76cb7b0e05390bd6.mp3",
+      "audio_sha256": "dd2ce3f3596b96e905970031593b5df6a2baa576f91247d24e88e96af3d84492",
+      "receipt": "fb7b00a0adece5feead58e4750999fd20ca863dfb61b703b76cb7b0e05390bd6.provenance.json",
+      "receipt_sha256": "c6ba97b965a48a72fada54a1dc2e31d0ebfdc94c399086e395499b771d8eed0c"
+    },
+    "미용실에서": {
+      "text": "미용실에서",
+      "text_sha256": "834912906f2cef623475da797de8857a1987a8f14c207723362cdcc333c9e946",
+      "request_sha256": "c750a1a7ddde531898b7d6fe7bb19e2eac9ef986000690e5c797e2ad3ba3e16c",
+      "file": "c750a1a7ddde531898b7d6fe7bb19e2eac9ef986000690e5c797e2ad3ba3e16c.mp3",
+      "audio_sha256": "1224c4d3f2542ea6751dd95b69ff8b2a5a76edfa327a84a9904dc5803e9cb777",
+      "receipt": "c750a1a7ddde531898b7d6fe7bb19e2eac9ef986000690e5c797e2ad3ba3e16c.provenance.json",
+      "receipt_sha256": "c6f2459a047739f9a67c2524855cfb58f0901c338d64b049d6ecf66015c7a5af"
+    },
+    "밥을": {
+      "text": "밥을",
+      "text_sha256": "59f360b400889823dcc4571d55abc826f2034604dc9255def6bd1f5326ec2fc8",
+      "request_sha256": "90828d8ffd9720c206b42f4c66b0a596c8f5f9f4a93c267b3832d307efc2d2e4",
+      "file": "90828d8ffd9720c206b42f4c66b0a596c8f5f9f4a93c267b3832d307efc2d2e4.mp3",
+      "audio_sha256": "7fd8a09e8f83e70ea4126939dffa58b41cfaf013b1e2f5d66d67945892d95446",
+      "receipt": "90828d8ffd9720c206b42f4c66b0a596c8f5f9f4a93c267b3832d307efc2d2e4.provenance.json",
+      "receipt_sha256": "631ca216f9b8c40bcf5c28cf56ac26290edc48029460a438a9db993253b15fc0"
+    },
+    "방에": {
+      "text": "방에",
+      "text_sha256": "6744ad97e6c1288d41a32703b7086225a739adc78cc1b8d0faf14cad99e730b1",
+      "request_sha256": "e2b04a49449e966cdc85c2c70a924a2e340af38450fe4da375c73ae2ad461f09",
+      "file": "e2b04a49449e966cdc85c2c70a924a2e340af38450fe4da375c73ae2ad461f09.mp3",
+      "audio_sha256": "8eaae0777e13c0f100e2ed7c6648268af5a8ef28153fbab5181915e4a8adf89e",
+      "receipt": "e2b04a49449e966cdc85c2c70a924a2e340af38450fe4da375c73ae2ad461f09.provenance.json",
+      "receipt_sha256": "5efaf798bb820c570763cae43db459dda7358e8bef186d99ad79b711949affbe"
+    },
+    "방에서": {
+      "text": "방에서",
+      "text_sha256": "321ce3637540a310e75f3bf2baf890e51076643372a6225e4479fe7758166793",
+      "request_sha256": "c61d32a76f884b56660898a6d7030118913ffd2fd927cd68e7339f65fb1b1d69",
+      "file": "c61d32a76f884b56660898a6d7030118913ffd2fd927cd68e7339f65fb1b1d69.mp3",
+      "audio_sha256": "586d458cc04c8a07b6e5d5f364f8f1e324ce487e5f08f603f771bf93a3bb7398",
+      "receipt": "c61d32a76f884b56660898a6d7030118913ffd2fd927cd68e7339f65fb1b1d69.provenance.json",
+      "receipt_sha256": "cdde06766e0df9100eb987fde0635105e9b3cf9c7b7b062aba5011442ab52f22"
+    },
+    "방이": {
+      "text": "방이",
+      "text_sha256": "f8b8dcbdcf795ca5e772494b42a71117115e67ecf22c41d31d538dbe8a72f05d",
+      "request_sha256": "9e8edda4681810ad67c0df14f962104874b55dfaedf1911873e2587b2897b158",
+      "file": "9e8edda4681810ad67c0df14f962104874b55dfaedf1911873e2587b2897b158.mp3",
+      "audio_sha256": "22c62c592bcc11556e028cab8d691eeae3c22ed81ccf7f25caebbda4ab3ec1c1",
+      "receipt": "9e8edda4681810ad67c0df14f962104874b55dfaedf1911873e2587b2897b158.provenance.json",
+      "receipt_sha256": "4c7092168ea7c11ef1b7a84d6fab92d82ba7b74b33446016f8c90998d88ef18a"
+    },
+    "부모님은": {
+      "text": "부모님은",
+      "text_sha256": "5b24126f50ddb3695818f22b5f17a29e6b5bfade81cfb9c4a24cb8f4b6d6dc0a",
+      "request_sha256": "1b8fce0a5e559aae1d775aca53c5c2640066ec4f5204d83f475d04a3c99f4b08",
+      "file": "1b8fce0a5e559aae1d775aca53c5c2640066ec4f5204d83f475d04a3c99f4b08.mp3",
+      "audio_sha256": "a231c32e9c02dc758495d5085a67d0a5db493acf6360456964bf0e735f0f5a21",
+      "receipt": "1b8fce0a5e559aae1d775aca53c5c2640066ec4f5204d83f475d04a3c99f4b08.provenance.json",
+      "receipt_sha256": "495b9784a7baaaa2b3fd13244345857a727ae18bb31149280ed67e4a4a189c5b"
+    },
+    "부모님이": {
+      "text": "부모님이",
+      "text_sha256": "7f3cf589d922be64a074b398b60136424f8364d097f849f70f79a1d94459a860",
+      "request_sha256": "964d700c3eb52d5c1942b41877d5355539342ae49e035d74872085e459c5db92",
+      "file": "964d700c3eb52d5c1942b41877d5355539342ae49e035d74872085e459c5db92.mp3",
+      "audio_sha256": "9a5457aafea183d2a430f0d698e2de439e126493fbb452a6c9cb0b4f88c3e204",
+      "receipt": "964d700c3eb52d5c1942b41877d5355539342ae49e035d74872085e459c5db92.provenance.json",
+      "receipt_sha256": "fa7c911887ec94f7921865ec8982584416eb7749510983e1450e30bd77fdcd8b"
+    },
+    "부엌에": {
+      "text": "부엌에",
+      "text_sha256": "d1b8708da2141b2e756ac4263f0495463b1066e0e156e23cd43f60514ec5b32d",
+      "request_sha256": "3e34a0836d5ee05cd423417ef3ce82e86f9c25ee665ca3f1216dafc76cea4c0c",
+      "file": "3e34a0836d5ee05cd423417ef3ce82e86f9c25ee665ca3f1216dafc76cea4c0c.mp3",
+      "audio_sha256": "60616bac70ddb1d2e23fa20b9c93bd30b4abbc21d4238ad8ff29cc3be58ffcea",
+      "receipt": "3e34a0836d5ee05cd423417ef3ce82e86f9c25ee665ca3f1216dafc76cea4c0c.provenance.json",
+      "receipt_sha256": "7bffddd5976adc91a7e4fb777b303d1f2ff4d59f3c275aba221db9a3e6fb88d4"
+    },
+    "부엌에서": {
+      "text": "부엌에서",
+      "text_sha256": "888945bcc6b206e46a7c283b59a1766cc48ea7a596fd00a5397d1db1c17a6089",
+      "request_sha256": "e0fca3c1a1ea7ea497b46fabf01d0de89a771de3ef251069bcf6664941554e56",
+      "file": "e0fca3c1a1ea7ea497b46fabf01d0de89a771de3ef251069bcf6664941554e56.mp3",
+      "audio_sha256": "3002c939694fc484fcd639972d01f0933a0fa908b5f88590b4bf3661b0bda4bd",
+      "receipt": "e0fca3c1a1ea7ea497b46fabf01d0de89a771de3ef251069bcf6664941554e56.provenance.json",
+      "receipt_sha256": "1104f0f21e0d5020c667f50054f7813a5dd15a32160f4be882dc4a81a12859f8"
+    },
+    "사람은": {
+      "text": "사람은",
+      "text_sha256": "987448c10afe56108009e6bea1bf17ec68cde1bd188c2349c44fbfc60249d264",
+      "request_sha256": "14e6484d3550b686525aa5987bef63d46b5791c490a0332ee15c3297f8c600e2",
+      "file": "14e6484d3550b686525aa5987bef63d46b5791c490a0332ee15c3297f8c600e2.mp3",
+      "audio_sha256": "2c967c171cb2c7e7d45ef1dde978af294b8e0d2d4001a5a4e4e05173adb19aae",
+      "receipt": "14e6484d3550b686525aa5987bef63d46b5791c490a0332ee15c3297f8c600e2.provenance.json",
+      "receipt_sha256": "d40709154dcf5bef913e2d1e19a2825a84c3e87d8e740887c713b57ef82768dd"
+    },
+    "사람이": {
+      "text": "사람이",
+      "text_sha256": "3f33d9d6ca9be288c4e302c423c32078ff29f24149e71fdbc91257128a28debb",
+      "request_sha256": "2df989d311d5960c49243a1a494a7cbd349e694607c4fd47f704e7f59633a2b8",
+      "file": "2df989d311d5960c49243a1a494a7cbd349e694607c4fd47f704e7f59633a2b8.mp3",
+      "audio_sha256": "2ffced509da8761a70d37c0ee6e735f6dcc3244c9f1084987bd6ca32ed1947b2",
+      "receipt": "2df989d311d5960c49243a1a494a7cbd349e694607c4fd47f704e7f59633a2b8.provenance.json",
+      "receipt_sha256": "06dd6048a61a1270d534c43fb09576257cca7443505fed90ab791e385e0ea38c"
+    },
+    "사무실에": {
+      "text": "사무실에",
+      "text_sha256": "2a2702038caabbddf12fd96bdedec82ea54b5a07592deddb8d150366647b47d4",
+      "request_sha256": "1978e02ef41e38a361bdaa06f426e4c3427fb1754510e6d5a5ce1e3805364927",
+      "file": "1978e02ef41e38a361bdaa06f426e4c3427fb1754510e6d5a5ce1e3805364927.mp3",
+      "audio_sha256": "fa883304d8b30ac97523a034837d2b5fad7e78a2fe59dc3c801935e21a2fd3de",
+      "receipt": "1978e02ef41e38a361bdaa06f426e4c3427fb1754510e6d5a5ce1e3805364927.provenance.json",
+      "receipt_sha256": "f6a2495ea7ca940152c99c20831fac95fca06b95d4116c754b60fb30a6395eb9"
+    },
+    "사무실에서": {
+      "text": "사무실에서",
+      "text_sha256": "d30cebc3b299e51f6f8f1c89d77ec6a7a022e83c3234c32cf8c5ee3370493f1d",
+      "request_sha256": "25b71fc64eae6d59c495ca7767caa5ca1fbc6b64403f9ca5f1d6dcd266228952",
+      "file": "25b71fc64eae6d59c495ca7767caa5ca1fbc6b64403f9ca5f1d6dcd266228952.mp3",
+      "audio_sha256": "60612ad9f0da0fb39729c67ac3c2dfe08448efe3baa8cfea29c650b367d647f2",
+      "receipt": "25b71fc64eae6d59c495ca7767caa5ca1fbc6b64403f9ca5f1d6dcd266228952.provenance.json",
+      "receipt_sha256": "aa161716bc858a0cbfa4575a05c23b114f616882b801be49f4a6c698897ee9c8"
+    },
+    "사진을": {
+      "text": "사진을",
+      "text_sha256": "3394e235d3ed53a58eaf58be367ec13b7032241654992a4690862f56a37a25da",
+      "request_sha256": "a7f0799169db7fe310927421681c9598ac63a05c0abc2f95d0f8035ff724780f",
+      "file": "a7f0799169db7fe310927421681c9598ac63a05c0abc2f95d0f8035ff724780f.mp3",
+      "audio_sha256": "1b3cc633e5863f58126da06e5dc43afdd9a1077932f927fd4b8ad64abb3e1adc",
+      "receipt": "a7f0799169db7fe310927421681c9598ac63a05c0abc2f95d0f8035ff724780f.provenance.json",
+      "receipt_sha256": "986c8fb7ec36e5152ff42b81acb241c0ad4a587e9ed90c8e54e0e1d403483e89"
+    },
+    "선생님은": {
+      "text": "선생님은",
+      "text_sha256": "c7ef4222518a3b7c537de23698b0670b70be6102e40acad7969dba28f0d8c890",
+      "request_sha256": "13f421afc3b524906b98d84347ad9eb2fe2fca4b3ab6b22cd0452e3d3631c131",
+      "file": "13f421afc3b524906b98d84347ad9eb2fe2fca4b3ab6b22cd0452e3d3631c131.mp3",
+      "audio_sha256": "a22390a7a4dae0ccf48344684f575f9cbd1940b51129f1ad91a4e935a80d97f8",
+      "receipt": "13f421afc3b524906b98d84347ad9eb2fe2fca4b3ab6b22cd0452e3d3631c131.provenance.json",
+      "receipt_sha256": "491a0004c7999e0763d2d9a4c76171107351f15a6101a796bcd0f03dd565de28"
+    },
+    "선생님이": {
+      "text": "선생님이",
+      "text_sha256": "1f942b077ca4a24be3b83c518f46940d3c4d96e8d0a06fc07b782cdad3ad7304",
+      "request_sha256": "8567084adaf9956113284dd5b2452552d279241c696c9f7f7d60aa9151b1964d",
+      "file": "8567084adaf9956113284dd5b2452552d279241c696c9f7f7d60aa9151b1964d.mp3",
+      "audio_sha256": "cb5a040144717deb45dc4c353f0efd8211ecabb55444559bfed66580a837a1c0",
+      "receipt": "8567084adaf9956113284dd5b2452552d279241c696c9f7f7d60aa9151b1964d.provenance.json",
+      "receipt_sha256": "8fa8f65f9004e7a5521057e015ea5e27e715097716d4c922356f3320cfc89542"
+    },
+    "숙제가": {
+      "text": "숙제가",
+      "text_sha256": "c4773e97b3a105b2ec6af9291a95b9832adc029587ee13e307dde01bb48645be",
+      "request_sha256": "a010b0b61c78b4d0a5cf88dd81de577f3f814667440780d5982521b279a207e8",
+      "file": "a010b0b61c78b4d0a5cf88dd81de577f3f814667440780d5982521b279a207e8.mp3",
+      "audio_sha256": "db2e7a6bcaaee14230a4a22ca838fb018b91422d66f891a98a20b685b7b83f9e",
+      "receipt": "a010b0b61c78b4d0a5cf88dd81de577f3f814667440780d5982521b279a207e8.provenance.json",
+      "receipt_sha256": "a044d333ff37357e11c6f8aba9f4b72b19e211162d9940f22ad36fa7c56f5e13"
+    },
+    "숙제를": {
+      "text": "숙제를",
+      "text_sha256": "029ebc8300fce395704c6c035e14fe1a329bc030671f3885f94364acb03231d1",
+      "request_sha256": "486aec58a0ae585cd549281b5d3882a6cd5e5f93bff2d8c789fd15e08cf6d5d6",
+      "file": "486aec58a0ae585cd549281b5d3882a6cd5e5f93bff2d8c789fd15e08cf6d5d6.mp3",
+      "audio_sha256": "9ab97649da99e757e3633a2c85f525487c76f04d6bd684958935a08bf4bc5c81",
+      "receipt": "486aec58a0ae585cd549281b5d3882a6cd5e5f93bff2d8c789fd15e08cf6d5d6.provenance.json",
+      "receipt_sha256": "8fbf4d595aae049522965da76e08b0cd3e0f9bb8f64481f89e518ecaa41458ed"
+    },
+    "아이가": {
+      "text": "아이가",
+      "text_sha256": "820c647554b7d3f4fc3abbf2467e4f748ba450f117f4b3ec0b08af6daded83ae",
+      "request_sha256": "949bc27236bf6ff91b8d9da33380ec5491cda0002ad55be3456478243496b6df",
+      "file": "949bc27236bf6ff91b8d9da33380ec5491cda0002ad55be3456478243496b6df.mp3",
+      "audio_sha256": "b7f11e94e99136bccbde5381800cd60fbf7369908ecb53240c8349b60a5e144a",
+      "receipt": "949bc27236bf6ff91b8d9da33380ec5491cda0002ad55be3456478243496b6df.provenance.json",
+      "receipt_sha256": "9297c3514774dd650be481f667ec38228faadb83579c89f9a81ff84881b40836"
+    },
+    "아이는": {
+      "text": "아이는",
+      "text_sha256": "b5de3f046a03a48bff6513d64813c00674628fa58444c47ce3382b50d01172e3",
+      "request_sha256": "b400eb5a88130b6c7fec8b642a4d5df1e09bb46b5e039a06a8325a7498bf4e4a",
+      "file": "b400eb5a88130b6c7fec8b642a4d5df1e09bb46b5e039a06a8325a7498bf4e4a.mp3",
+      "audio_sha256": "7b5f142feb67ba953e76d55ef85a9e0942cce85b0d32670d1f800981e2e433a5",
+      "receipt": "b400eb5a88130b6c7fec8b642a4d5df1e09bb46b5e039a06a8325a7498bf4e4a.provenance.json",
+      "receipt_sha256": "d7ebd9ff57ec3660bc21ec681cf8becf8305f21c7f6ead03f135435fe1e1acb5"
+    },
+    "약을": {
+      "text": "약을",
+      "text_sha256": "f745a64b3ad605aada03ce4b96e390511351db295fe605107cd4293b0c57c1fc",
+      "request_sha256": "7e46f6c06a3337adde58e829a1076afd24740961c63210b44f72b63ee2c7576d",
+      "file": "7e46f6c06a3337adde58e829a1076afd24740961c63210b44f72b63ee2c7576d.mp3",
+      "audio_sha256": "84ac348f32ffa56db437a67a3abca3eaaf3eb03633c4893068575c1e61bbbe99",
+      "receipt": "7e46f6c06a3337adde58e829a1076afd24740961c63210b44f72b63ee2c7576d.provenance.json",
+      "receipt_sha256": "6ec73a303d6ce4eb311732b395e29669ed955532b7bc27606c7936244ab4dc7b"
+    },
+    "역에": {
+      "text": "역에",
+      "text_sha256": "2cb273753d1bb2cea1c6685f1fae8467649e64f96934472c17d5e016d54d38ee",
+      "request_sha256": "6b90f0e977b4325bf9997fc92cbd53a421db67a35409ae5a7deedd216a5831c8",
+      "file": "6b90f0e977b4325bf9997fc92cbd53a421db67a35409ae5a7deedd216a5831c8.mp3",
+      "audio_sha256": "d1e5b90d105245315735dcaaea972bcb89bbd001d442725594814e40b6db96f1",
+      "receipt": "6b90f0e977b4325bf9997fc92cbd53a421db67a35409ae5a7deedd216a5831c8.provenance.json",
+      "receipt_sha256": "1db560c0d8196497b855c7e480a31a296e4d3faa5778a57c34cae8813140d0fe"
+    },
+    "역에서": {
+      "text": "역에서",
+      "text_sha256": "063a232a8f106008c11d5cddc5ac75c57360a48b9238eef157086e8f7a81ca33",
+      "request_sha256": "9c4a6ed4d08288cba3818e41a88048d3f7c4a5090c5a5be228b69a4c7849b427",
+      "file": "9c4a6ed4d08288cba3818e41a88048d3f7c4a5090c5a5be228b69a4c7849b427.mp3",
+      "audio_sha256": "bde0c20666ea5304d0163238902c008e0808afd7b017fe6b6ed488c6a5acbffb",
+      "receipt": "9c4a6ed4d08288cba3818e41a88048d3f7c4a5090c5a5be228b69a4c7849b427.provenance.json",
+      "receipt_sha256": "1d2e0571b5c977b37f34b114f43ef3cc066f30a13cd5f6631ed53ddf71bd41a8"
+    },
+    "연필을": {
+      "text": "연필을",
+      "text_sha256": "5a413b8489d9f9920b08319815b6849654047f9702eac388aa10755b23b61ba5",
+      "request_sha256": "ae1c27da240c25a982e84cece0e0cfc9e45e3d9c138572e94dceb6bb55d9d6ec",
+      "file": "ae1c27da240c25a982e84cece0e0cfc9e45e3d9c138572e94dceb6bb55d9d6ec.mp3",
+      "audio_sha256": "7b1938b082fbe8599d47a3c1a99d14b0e90cb366e78c94f73f3da264f82df11d",
+      "receipt": "ae1c27da240c25a982e84cece0e0cfc9e45e3d9c138572e94dceb6bb55d9d6ec.provenance.json",
+      "receipt_sha256": "d36549255f062dc38e8f06f10da8e1d9bc93e6cc691600267c4193fdc1ed3332"
+    },
+    "영화관에": {
+      "text": "영화관에",
+      "text_sha256": "1d7a8f7f15e66dcfe0de37fb961b52ff2609e766373c5b8237d3d151ecd7db4a",
+      "request_sha256": "898ad409ecf96cc7dea0ea7854e391267c130408d0d0b6d9a2d3da603bd04e48",
+      "file": "898ad409ecf96cc7dea0ea7854e391267c130408d0d0b6d9a2d3da603bd04e48.mp3",
+      "audio_sha256": "f9b0b11e5701a9a7c505d0d609e75602f9cc5fc5244d8964bd702d767f7b4b6f",
+      "receipt": "898ad409ecf96cc7dea0ea7854e391267c130408d0d0b6d9a2d3da603bd04e48.provenance.json",
+      "receipt_sha256": "c4b737b0398ea1ffbcc287d6f8b10dd8e6bc75bd5d3219b539889c448b746586"
+    },
+    "영화관에서": {
+      "text": "영화관에서",
+      "text_sha256": "28b8a22dce507810799d65437999c6f65fc8f31e4f7957c3479e2471fe0252ee",
+      "request_sha256": "70dc1d14456048463394beb38e7c15756c97257ad49bb72ed314e0c82c6a15a0",
+      "file": "70dc1d14456048463394beb38e7c15756c97257ad49bb72ed314e0c82c6a15a0.mp3",
+      "audio_sha256": "a6da22c9a490a90baee2fdbd16dc212b472bc3c4f8a84edcb7e281e53d15648f",
+      "receipt": "70dc1d14456048463394beb38e7c15756c97257ad49bb72ed314e0c82c6a15a0.provenance.json",
+      "receipt_sha256": "eadac83ae9c68ce8484829d161a173e09998a2b3b9a9204c7bde1af62e016315"
+    },
+    "우체국에": {
+      "text": "우체국에",
+      "text_sha256": "4895a09babef6bdf33be195ecf81c8947777de98a38673ade4cea9d338e5d63f",
+      "request_sha256": "42d56d659c2c4929a4cdb8baf33bfac8a0ce108d1d3162c81310ef33d39a7eec",
+      "file": "42d56d659c2c4929a4cdb8baf33bfac8a0ce108d1d3162c81310ef33d39a7eec.mp3",
+      "audio_sha256": "2eae1ccc090105e1dc278f1f0849d17d54a8c7cef18e277b7decf60d7c869048",
+      "receipt": "42d56d659c2c4929a4cdb8baf33bfac8a0ce108d1d3162c81310ef33d39a7eec.provenance.json",
+      "receipt_sha256": "8f38fe6c2af9caf16c81c7c8b5c676c84583f0f2ab3cb527b4eadf36a43556d1"
+    },
+    "우체국에서": {
+      "text": "우체국에서",
+      "text_sha256": "6630ab7749d7f53efa4c68d80e2690bc6d5a1de5e6addf042dd8582d5bbc56e1",
+      "request_sha256": "38527ef1e70c268aa754a3d4a766b5153d6d5536eeda7444eae392f43765da83",
+      "file": "38527ef1e70c268aa754a3d4a766b5153d6d5536eeda7444eae392f43765da83.mp3",
+      "audio_sha256": "a67db52dd8d206f560c90f8f0c2b14051ea2d71f3651a474653e0ef1bf434ff9",
+      "receipt": "38527ef1e70c268aa754a3d4a766b5153d6d5536eeda7444eae392f43765da83.provenance.json",
+      "receipt_sha256": "230c1cd5f651a1264e7d61e55070d48a2c50f2d801396a7e1cf5651023fe0a96"
+    },
+    "은행에": {
+      "text": "은행에",
+      "text_sha256": "0f8e6a5fe26751e4584fa34f51b25b40e301e067e9f820dba0990cf3b4521a0d",
+      "request_sha256": "c14d38d8d21068318c36cc9d17eeeae5f1e671d28f490c0121034f8c04727ba0",
+      "file": "c14d38d8d21068318c36cc9d17eeeae5f1e671d28f490c0121034f8c04727ba0.mp3",
+      "audio_sha256": "23f731dc7146eda2927436d7fb5765fe535014e1b9624862ea8a30175e050e00",
+      "receipt": "c14d38d8d21068318c36cc9d17eeeae5f1e671d28f490c0121034f8c04727ba0.provenance.json",
+      "receipt_sha256": "fdcc87c36f8bc74024a66acccf69fa8a5dce953531be2a7309328e20dd796e69"
+    },
+    "은행에서": {
+      "text": "은행에서",
+      "text_sha256": "f51fc9c42b5b41abb2ad7cafc9a92b39ac618a7144619037befdc25caae9a273",
+      "request_sha256": "057d0e389dfdbf06fd8bfef24d4579723cced907de273d0fe33e862bd4aeab54",
+      "file": "057d0e389dfdbf06fd8bfef24d4579723cced907de273d0fe33e862bd4aeab54.mp3",
+      "audio_sha256": "931822bcb560be6a2b38b3c67dc7b40f7b65d2a3e23cbc6ebaa446492d6e41af",
+      "receipt": "057d0e389dfdbf06fd8bfef24d4579723cced907de273d0fe33e862bd4aeab54.provenance.json",
+      "receipt_sha256": "dfcf5b51ab0e98e064d63cd664b0d20deff351b2f915b9264ae5d4704143421d"
+    },
+    "이름을": {
+      "text": "이름을",
+      "text_sha256": "c2024c1d7bd90d3cff861b8988d630a268ce40f3674c600f78e34e4305c133a1",
+      "request_sha256": "022b6e7e87d9cf6a6b27720a9cf980b306857232311ea3d27e934745bb0cdca7",
+      "file": "022b6e7e87d9cf6a6b27720a9cf980b306857232311ea3d27e934745bb0cdca7.mp3",
+      "audio_sha256": "42edd1419ae5b7cf73672455bee59ffd7f37c560f23b6895c3ee4692d2ba423c",
+      "receipt": "022b6e7e87d9cf6a6b27720a9cf980b306857232311ea3d27e934745bb0cdca7.provenance.json",
+      "receipt_sha256": "53db7647964844ef29d74e7a8b3fccb2ba84695dc95d510833e23d221490442b"
+    },
+    "책을": {
+      "text": "책을",
+      "text_sha256": "e44a325e9f08fbcedc0096683b6dfb339bc545cf735b318b6c02c16473fb2794",
+      "request_sha256": "f49a23f5c5fe5d30c0a082b1b020b9a0ed12b5c643140544957cbddb22f51258",
+      "file": "f49a23f5c5fe5d30c0a082b1b020b9a0ed12b5c643140544957cbddb22f51258.mp3",
+      "audio_sha256": "47c123607b8809cf1ff2b03e490e693b5d7eb2a875402a02a8f6215ad1c20094",
+      "receipt": "f49a23f5c5fe5d30c0a082b1b020b9a0ed12b5c643140544957cbddb22f51258.provenance.json",
+      "receipt_sha256": "ede4963244878fdfa2b1f8fb02eb0f69d650bef5bed1f08d1883b64814fd08b5"
+    },
+    "책이": {
+      "text": "책이",
+      "text_sha256": "3898f40e123c46cffc919e40d1518050b30367f4677ef420739b92d719071579",
+      "request_sha256": "f2920f8731b53999f158c4d736433f62ec2ab2852ea1c6dfc1519af739739f3c",
+      "file": "f2920f8731b53999f158c4d736433f62ec2ab2852ea1c6dfc1519af739739f3c.mp3",
+      "audio_sha256": "298c36eb74519753dc61b0f6b360f9a5deb827cb5b425b50ef17e09e6cf3bfd9",
+      "receipt": "f2920f8731b53999f158c4d736433f62ec2ab2852ea1c6dfc1519af739739f3c.provenance.json",
+      "receipt_sha256": "0cf141e9a56fadf29b3dc54645d55cad3460678688981c4a91c8b2e7a08909b5"
+    },
+    "친구가": {
+      "text": "친구가",
+      "text_sha256": "61bf5bfb043d2161ceedfe4b0959d88b35d9f2dc498bdebf89df2afbf17a51c8",
+      "request_sha256": "81a7e3140f6d26bad3a34312006bc8c1242b1d5b188d443246e2da1f54fef991",
+      "file": "81a7e3140f6d26bad3a34312006bc8c1242b1d5b188d443246e2da1f54fef991.mp3",
+      "audio_sha256": "16d24e426b6fb5e42ad86a0905cb04b597579f1df9e2eed22fa225bebd89c4e0",
+      "receipt": "81a7e3140f6d26bad3a34312006bc8c1242b1d5b188d443246e2da1f54fef991.provenance.json",
+      "receipt_sha256": "42c59f487253f626dfda02d2c8995a62b21dce4ad887d47a9739fbdd95137572"
+    },
+    "친구는": {
+      "text": "친구는",
+      "text_sha256": "3cc026d51b6dcef53c27e8e45069489a2a7235078e7d8bf62558894cd39d5a1d",
+      "request_sha256": "8e3a1b05a43552685efe0b31258a4cb9dd87d5fbab88019e7dd6b6dc907e09d5",
+      "file": "8e3a1b05a43552685efe0b31258a4cb9dd87d5fbab88019e7dd6b6dc907e09d5.mp3",
+      "audio_sha256": "7c30afe7008353eb96c516275a99b690e8364f893617185bd1b047a0b93ae1e8",
+      "receipt": "8e3a1b05a43552685efe0b31258a4cb9dd87d5fbab88019e7dd6b6dc907e09d5.provenance.json",
+      "receipt_sha256": "bf83587e486ca50a4aef551a12f0f99c2cc156c6659a2e0e8baebfc21f6d77c0"
+    },
+    "친구를": {
+      "text": "친구를",
+      "text_sha256": "3c7703f0cd253041049147857bdb08c0ee47a4939e0d6ef9f3a32e9e8fdda78d",
+      "request_sha256": "e0c224b710395b9e0354c848198af773268b5679ad1abaa51f8ad1c4b41c1a3f",
+      "file": "e0c224b710395b9e0354c848198af773268b5679ad1abaa51f8ad1c4b41c1a3f.mp3",
+      "audio_sha256": "135e261d574f3238944aaca030f8695f414a9b1751257b52021c06b1aefea5a2",
+      "receipt": "e0c224b710395b9e0354c848198af773268b5679ad1abaa51f8ad1c4b41c1a3f.provenance.json",
+      "receipt_sha256": "c4a5a5d1ba7b8688e8260e75aca73b5713a6e25a00e66c8cf5b1d6af7d386adc"
+    },
+    "침실에": {
+      "text": "침실에",
+      "text_sha256": "482968be42cfdd4618ef1d16385a37bafdab9ef5a89b02eb84daba09782c2463",
+      "request_sha256": "b254072f173bd9fda67aac3b0bf6c35384d765f36c5c569eee785d405fb5200f",
+      "file": "b254072f173bd9fda67aac3b0bf6c35384d765f36c5c569eee785d405fb5200f.mp3",
+      "audio_sha256": "5afe970480e68533b3c51bf333614f6818d8695b6eef6b701e00811bbeb042fa",
+      "receipt": "b254072f173bd9fda67aac3b0bf6c35384d765f36c5c569eee785d405fb5200f.provenance.json",
+      "receipt_sha256": "700b8496b2a9c4fdb13c47c00922cbdf118c7c66435ec5b1591f42098e4842eb"
+    },
+    "침실에서": {
+      "text": "침실에서",
+      "text_sha256": "1cf6e6f37c5b8674a547550566e0dc5b960588584d24f5b08f607c15765ebe3d",
+      "request_sha256": "4b49c45a7a17fec22e04bc39eaa00c7f52a039c9bb6767f4409421068f585ec5",
+      "file": "4b49c45a7a17fec22e04bc39eaa00c7f52a039c9bb6767f4409421068f585ec5.mp3",
+      "audio_sha256": "9760f28fc26628c5a7e24c4ac6e8f177490213ce375144d5ae02acfb72cf1bb9",
+      "receipt": "4b49c45a7a17fec22e04bc39eaa00c7f52a039c9bb6767f4409421068f585ec5.provenance.json",
+      "receipt_sha256": "3630260c90c8deb708b9c855908bde1005b6fc7d81b5c123d1ef1a6e88cc25c9"
+    },
+    "커피를": {
+      "text": "커피를",
+      "text_sha256": "5f07afae7adf3e91d8befbab22b6a812f04ff9580493d8995dc7793d4294206a",
+      "request_sha256": "615c89d77638617bbffac714ab19c47e551f83c1adf39e9810c66147df807b59",
+      "file": "615c89d77638617bbffac714ab19c47e551f83c1adf39e9810c66147df807b59.mp3",
+      "audio_sha256": "6ec13f6d037969e70336777e9660e781a93b8ac7e2c2ccf94e9fc010dd9bf7f0",
+      "receipt": "615c89d77638617bbffac714ab19c47e551f83c1adf39e9810c66147df807b59.provenance.json",
+      "receipt_sha256": "02df5700c16aeb084cbea944c533e1168c63680c7dd29945793b6a2f170d98fb"
+    },
+    "학교가": {
+      "text": "학교가",
+      "text_sha256": "e7c531aede5519737f58681cbd675f123f4fd0b703c7057131de6267eee11eee",
+      "request_sha256": "f32097a30189595d8028ebba259b975bccc4237a78af026e10e13f4b80f5d409",
+      "file": "f32097a30189595d8028ebba259b975bccc4237a78af026e10e13f4b80f5d409.mp3",
+      "audio_sha256": "7a72d398c718109492712bdfe362040dc15a79df86c5797aa3cfbde50a3c58f2",
+      "receipt": "f32097a30189595d8028ebba259b975bccc4237a78af026e10e13f4b80f5d409.provenance.json",
+      "receipt_sha256": "c4d7c337703146acc9add701d7ca1bcb4715147b83fe6f13343af8bed26cce53"
+    },
+    "학생은": {
+      "text": "학생은",
+      "text_sha256": "35bbc601fa4febb7e9678ed3f3b3651112837c8fc938beb2175cbc257db0b5d9",
+      "request_sha256": "f5570ae406a33d2f917dd50cd9cdbd954ec7035a761576348d01d939c5ff4d6a",
+      "file": "f5570ae406a33d2f917dd50cd9cdbd954ec7035a761576348d01d939c5ff4d6a.mp3",
+      "audio_sha256": "80afa36d5ae18dbf59eefb9a9b3204a8580e7d86d6f08b7454306f6cabe858f5",
+      "receipt": "f5570ae406a33d2f917dd50cd9cdbd954ec7035a761576348d01d939c5ff4d6a.provenance.json",
+      "receipt_sha256": "c4b6273bc414e908ac603855e6b02e5598519580c9207a3589e69ba2bd9d40ef"
+    },
+    "학생이": {
+      "text": "학생이",
+      "text_sha256": "6186fc8f724b430f213039704821c0f8ae25c0728fa5bf9500b4ab4db6b049f3",
+      "request_sha256": "9019cc1242368ff072c5734a78bbfc0ada2a965eac7b79956371623d3484e445",
+      "file": "9019cc1242368ff072c5734a78bbfc0ada2a965eac7b79956371623d3484e445.mp3",
+      "audio_sha256": "eaf4a7917fc679cd82c9aae19056c7ad0a6f1b2a070656880265dd447dc0f556",
+      "receipt": "9019cc1242368ff072c5734a78bbfc0ada2a965eac7b79956371623d3484e445.provenance.json",
+      "receipt_sha256": "448c6e889d37a4140da097d83d35db558060dde231b79b4173d90c86b965a264"
+    },
+    "한국어가": {
+      "text": "한국어가",
+      "text_sha256": "d88a1b914525ecf61609c5a0dc532474e9716e729e963e0ac7aff522c9d32f70",
+      "request_sha256": "af638c9f23c6f13cda6b09f046a5db511ac9facc3012fed421b6bea42d0f8a60",
+      "file": "af638c9f23c6f13cda6b09f046a5db511ac9facc3012fed421b6bea42d0f8a60.mp3",
+      "audio_sha256": "fb1c5325e15741747ce971d00a77b00ac7f9739d44c6033699fe580feee2c4bf",
+      "receipt": "af638c9f23c6f13cda6b09f046a5db511ac9facc3012fed421b6bea42d0f8a60.provenance.json",
+      "receipt_sha256": "d3cb00fa5cb5c3e64a36be7e3e2ad223c2b42a9feb34cbe13f7eec2819428462"
+    },
+    "한국어를": {
+      "text": "한국어를",
+      "text_sha256": "5ceaa932f63f4a694c6f92cf4b6c2d3994fd885ae638813226b90cf65b5a957e",
+      "request_sha256": "21ba763239b9da24dde8ab6a93c1cc423f1e37d01d94a1a911630f99b14055b4",
+      "file": "21ba763239b9da24dde8ab6a93c1cc423f1e37d01d94a1a911630f99b14055b4.mp3",
+      "audio_sha256": "90eeda9594cdf072ebfe9b03dff7c40f273bfffa4737f55363dab07ea9f43681",
+      "receipt": "21ba763239b9da24dde8ab6a93c1cc423f1e37d01d94a1a911630f99b14055b4.provenance.json",
+      "receipt_sha256": "7d9c264dd7ecd000f755b07f0fe9648f983985e7421962860d79849e47bd50eb"
+    },
+    "화장실에": {
+      "text": "화장실에",
+      "text_sha256": "ba5bce2c01120c5d7f7894bcba1d3348ad685a2492dbb53455ae0f972df2ad68",
+      "request_sha256": "e29ddb834926c7487da76eeedf594fa2caa4450b1ba8ce882712d505c1e3c7d8",
+      "file": "e29ddb834926c7487da76eeedf594fa2caa4450b1ba8ce882712d505c1e3c7d8.mp3",
+      "audio_sha256": "489f3aa62ea217c2e6e6d3e251d5f96a27d15f4b865871023da5cf948c06d477",
+      "receipt": "e29ddb834926c7487da76eeedf594fa2caa4450b1ba8ce882712d505c1e3c7d8.provenance.json",
+      "receipt_sha256": "78cc36c301596870610e7bfd069db9adb47eb2dd1ecab930651bc50623374f8c"
+    },
+    "화장실에서": {
+      "text": "화장실에서",
+      "text_sha256": "d6aef0d14b2f32f1941cc03e7accf97777511b500068b5820b21e156bbfdd19e",
+      "request_sha256": "c92d5edda36947685a257a0498c6b856230f6f8bf7d62a1bbbeab6c2299b7d3d",
+      "file": "c92d5edda36947685a257a0498c6b856230f6f8bf7d62a1bbbeab6c2299b7d3d.mp3",
+      "audio_sha256": "c354a61eec96de37f65dce0c3ca5ba90bd65a6fc6d37d3cbb3751aa26592cd44",
+      "receipt": "c92d5edda36947685a257a0498c6b856230f6f8bf7d62a1bbbeab6c2299b7d3d.provenance.json",
+      "receipt_sha256": "236828bdc7cfdbe5940bd8929411b7f18a1a02f57bbf1026eb951d99b8c8fac1"
+    },
+    "회의실에": {
+      "text": "회의실에",
+      "text_sha256": "0260d668838d64389ec5df2d6ccb3a9cc22c4c55f92f56054d25a8ea8c5facae",
+      "request_sha256": "d4cd13ce89111e1837b5fb9eefd498282f5b51453978ebb40651714c03a63411",
+      "file": "d4cd13ce89111e1837b5fb9eefd498282f5b51453978ebb40651714c03a63411.mp3",
+      "audio_sha256": "b847c49cf2991177cdfee0fb9f060d9c3f98b62d7a9867070804d6be3b62c34b",
+      "receipt": "d4cd13ce89111e1837b5fb9eefd498282f5b51453978ebb40651714c03a63411.provenance.json",
+      "receipt_sha256": "cdf8914a7859d86e68fd76b3e2653fbd63a43875a942452f8502322f17c26550"
+    },
+    "회의실에서": {
+      "text": "회의실에서",
+      "text_sha256": "67ba70e9ed2ed7962d17569a14507ceba2733c93eb29b94ca2c56bb57f9cbfc9",
+      "request_sha256": "069d4b01009c316b211860081f80736490bfd1a1afbe6a640df45996d61e470b",
+      "file": "069d4b01009c316b211860081f80736490bfd1a1afbe6a640df45996d61e470b.mp3",
+      "audio_sha256": "e327283e5353fc7f2049e75743c1223c9e5935e0ee973089947935638a729e6c",
+      "receipt": "069d4b01009c316b211860081f80736490bfd1a1afbe6a640df45996d61e470b.provenance.json",
+      "receipt_sha256": "dd312ad321745b3b08789e44d9e470c69ad12d26e3f8cb2fec5184e6100a796e"
     }
   },
   "legacy_entries": {

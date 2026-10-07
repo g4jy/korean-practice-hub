@@ -1,0 +1,28 @@
+{
+  "text": "역에",
+  "text_sha256": "2cb273753d1bb2cea1c6685f1fae8467649e64f96934472c17d5e016d54d38ee",
+  "request_sha256": "6b90f0e977b4325bf9997fc92cbd53a421db67a35409ae5a7deedd216a5831c8",
+  "file": "6b90f0e977b4325bf9997fc92cbd53a421db67a35409ae5a7deedd216a5831c8.mp3",
+  "audio_sha256": "d1e5b90d105245315735dcaaea972bcb89bbd001d442725594814e40b6db96f1",
+  "schema_version": 1,
+  "source_kind": "edge_generation",
+  "provider": "edge-tts",
+  "voice": "ko-KR-SunHiNeural",
+  "rate": "+0%",
+  "volume": "+0%",
+  "pitch": "+0Hz",
+  "reviewed_public": true,
+  "client_version": "7.2.7",
+  "generated_at": "2026-10-07T00:15:28.143268+00:00",
+  "generator_sha256": "d28e393ff4b0a5f549666603bd8b6c08d314dbb1cc46911053ff2938a06daec7",
+  "vocab_sha256": "014673cf87a0d3cae3f8d346b85d7d8344372a32c5713556d4df1f7d9f1ba6d4",
+  "approval_scope": "static",
+  "boundaries": [
+    {
+      "type": "SentenceBoundary",
+      "offset": 1000000,
+      "duration": 14875000,
+      "text": "역에"
+    }
+  ]
+}

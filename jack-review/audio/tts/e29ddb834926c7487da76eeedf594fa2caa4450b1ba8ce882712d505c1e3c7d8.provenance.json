@@ -1,0 +1,28 @@
+{
+  "text": "화장실에",
+  "text_sha256": "ba5bce2c01120c5d7f7894bcba1d3348ad685a2492dbb53455ae0f972df2ad68",
+  "request_sha256": "e29ddb834926c7487da76eeedf594fa2caa4450b1ba8ce882712d505c1e3c7d8",
+  "file": "e29ddb834926c7487da76eeedf594fa2caa4450b1ba8ce882712d505c1e3c7d8.mp3",
+  "audio_sha256": "489f3aa62ea217c2e6e6d3e251d5f96a27d15f4b865871023da5cf948c06d477",
+  "schema_version": 1,
+  "source_kind": "edge_generation",
+  "provider": "edge-tts",
+  "voice": "ko-KR-SunHiNeural",
+  "rate": "+0%",
+  "volume": "+0%",
+  "pitch": "+0Hz",
+  "reviewed_public": true,
+  "client_version": "7.2.7",
+  "generated_at": "2026-10-07T00:16:29.428791+00:00",
+  "generator_sha256": "d28e393ff4b0a5f549666603bd8b6c08d314dbb1cc46911053ff2938a06daec7",
+  "vocab_sha256": "014673cf87a0d3cae3f8d346b85d7d8344372a32c5713556d4df1f7d9f1ba6d4",
+  "approval_scope": "static",
+  "boundaries": [
+    {
+      "type": "SentenceBoundary",
+      "offset": 1000000,
+      "duration": 17000000,
+      "text": "화장실에"
+    }
+  ]
+}

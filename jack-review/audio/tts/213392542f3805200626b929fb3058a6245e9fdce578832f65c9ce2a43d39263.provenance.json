@@ -1,0 +1,28 @@
+{
+  "text": "동생은",
+  "text_sha256": "9196be622beec823bde0a4a2751caa06faf478d700aa02c7483599bd266a7cee",
+  "request_sha256": "213392542f3805200626b929fb3058a6245e9fdce578832f65c9ce2a43d39263",
+  "file": "213392542f3805200626b929fb3058a6245e9fdce578832f65c9ce2a43d39263.mp3",
+  "audio_sha256": "afd546386cbeecab5a1e05ba84cba880b8ac55b3b0591e8dae72f757970a8242",
+  "schema_version": 1,
+  "source_kind": "edge_generation",
+  "provider": "edge-tts",
+  "voice": "ko-KR-SunHiNeural",
+  "rate": "+0%",
+  "volume": "+0%",
+  "pitch": "+0Hz",
+  "reviewed_public": true,
+  "client_version": "7.2.7",
+  "generated_at": "2026-10-07T00:14:13.778507+00:00",
+  "generator_sha256": "d28e393ff4b0a5f549666603bd8b6c08d314dbb1cc46911053ff2938a06daec7",
+  "vocab_sha256": "014673cf87a0d3cae3f8d346b85d7d8344372a32c5713556d4df1f7d9f1ba6d4",
+  "approval_scope": "static",
+  "boundaries": [
+    {
+      "type": "SentenceBoundary",
+      "offset": 1000000,
+      "duration": 16875000,
+      "text": "동생은"
+    }
+  ]
+}

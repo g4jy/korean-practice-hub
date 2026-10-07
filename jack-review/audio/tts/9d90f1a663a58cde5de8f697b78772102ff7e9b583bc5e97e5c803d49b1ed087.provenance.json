@@ -1,0 +1,28 @@
+{
+  "text": "가방을",
+  "text_sha256": "86a22a446a6e3a008dac26ca88f91394abf42a3408d3c27bdf493fab21fdaa90",
+  "request_sha256": "9d90f1a663a58cde5de8f697b78772102ff7e9b583bc5e97e5c803d49b1ed087",
+  "file": "9d90f1a663a58cde5de8f697b78772102ff7e9b583bc5e97e5c803d49b1ed087.mp3",
+  "audio_sha256": "da808ed072bb0fa5686d5cc207fa7950449ed0402f6bd2c32718ad17b35388c3",
+  "schema_version": 1,
+  "source_kind": "edge_generation",
+  "provider": "edge-tts",
+  "voice": "ko-KR-SunHiNeural",
+  "rate": "+0%",
+  "volume": "+0%",
+  "pitch": "+0Hz",
+  "reviewed_public": true,
+  "client_version": "7.2.7",
+  "generated_at": "2026-10-07T00:13:41.828700+00:00",
+  "generator_sha256": "d28e393ff4b0a5f549666603bd8b6c08d314dbb1cc46911053ff2938a06daec7",
+  "vocab_sha256": "014673cf87a0d3cae3f8d346b85d7d8344372a32c5713556d4df1f7d9f1ba6d4",
+  "approval_scope": "static",
+  "boundaries": [
+    {
+      "type": "SentenceBoundary",
+      "offset": 1000000,
+      "duration": 15750000,
+      "text": "가방을"
+    }
+  ]
+}

@@ -1,0 +1,28 @@
+{
+  "text": "아이가",
+  "text_sha256": "820c647554b7d3f4fc3abbf2467e4f748ba450f117f4b3ec0b08af6daded83ae",
+  "request_sha256": "949bc27236bf6ff91b8d9da33380ec5491cda0002ad55be3456478243496b6df",
+  "file": "949bc27236bf6ff91b8d9da33380ec5491cda0002ad55be3456478243496b6df.mp3",
+  "audio_sha256": "b7f11e94e99136bccbde5381800cd60fbf7369908ecb53240c8349b60a5e144a",
+  "schema_version": 1,
+  "source_kind": "edge_generation",
+  "provider": "edge-tts",
+  "voice": "ko-KR-SunHiNeural",
+  "rate": "+0%",
+  "volume": "+0%",
+  "pitch": "+0Hz",
+  "reviewed_public": true,
+  "client_version": "7.2.7",
+  "generated_at": "2026-10-07T00:15:20.037277+00:00",
+  "generator_sha256": "d28e393ff4b0a5f549666603bd8b6c08d314dbb1cc46911053ff2938a06daec7",
+  "vocab_sha256": "014673cf87a0d3cae3f8d346b85d7d8344372a32c5713556d4df1f7d9f1ba6d4",
+  "approval_scope": "static",
+  "boundaries": [
+    {
+      "type": "SentenceBoundary",
+      "offset": 1000000,
+      "duration": 15625000,
+      "text": "아이가"
+    }
+  ]
+}

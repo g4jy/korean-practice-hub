@@ -1,0 +1,28 @@
+{
+  "text": "친구를",
+  "text_sha256": "3c7703f0cd253041049147857bdb08c0ee47a4939e0d6ef9f3a32e9e8fdda78d",
+  "request_sha256": "e0c224b710395b9e0354c848198af773268b5679ad1abaa51f8ad1c4b41c1a3f",
+  "file": "e0c224b710395b9e0354c848198af773268b5679ad1abaa51f8ad1c4b41c1a3f.mp3",
+  "audio_sha256": "135e261d574f3238944aaca030f8695f414a9b1751257b52021c06b1aefea5a2",
+  "schema_version": 1,
+  "source_kind": "edge_generation",
+  "provider": "edge-tts",
+  "voice": "ko-KR-SunHiNeural",
+  "rate": "+0%",
+  "volume": "+0%",
+  "pitch": "+0Hz",
+  "reviewed_public": true,
+  "client_version": "7.2.7",
+  "generated_at": "2026-10-07T00:16:05.369472+00:00",
+  "generator_sha256": "d28e393ff4b0a5f549666603bd8b6c08d314dbb1cc46911053ff2938a06daec7",
+  "vocab_sha256": "014673cf87a0d3cae3f8d346b85d7d8344372a32c5713556d4df1f7d9f1ba6d4",
+  "approval_scope": "static",
+  "boundaries": [
+    {
+      "type": "SentenceBoundary",
+      "offset": 1000000,
+      "duration": 15250000,
+      "text": "친구를"
+    }
+  ]
+}

@@ -1,0 +1,28 @@
+{
+  "text": "교실에서",
+  "text_sha256": "ad2f288245e2ec80975d3ecf3d304b49f498c177f2ad68c4127a60ddb86351ad",
+  "request_sha256": "d77afd102446631930bd5e744f890e40704957c6208fdc093ad9ed86c6d21538",
+  "file": "d77afd102446631930bd5e744f890e40704957c6208fdc093ad9ed86c6d21538.mp3",
+  "audio_sha256": "da68a63a6d70fde86975990498db0662ee1dcd41070fbb0609cec6d4025b8020",
+  "schema_version": 1,
+  "source_kind": "edge_generation",
+  "provider": "edge-tts",
+  "voice": "ko-KR-SunHiNeural",
+  "rate": "+0%",
+  "volume": "+0%",
+  "pitch": "+0Hz",
+  "reviewed_public": true,
+  "client_version": "7.2.7",
+  "generated_at": "2026-10-07T00:14:05.926278+00:00",
+  "generator_sha256": "d28e393ff4b0a5f549666603bd8b6c08d314dbb1cc46911053ff2938a06daec7",
+  "vocab_sha256": "014673cf87a0d3cae3f8d346b85d7d8344372a32c5713556d4df1f7d9f1ba6d4",
+  "approval_scope": "static",
+  "boundaries": [
+    {
+      "type": "SentenceBoundary",
+      "offset": 1000000,
+      "duration": 17500000,
+      "text": "교실에서"
+    }
+  ]
+}
