@@ -1,0 +1,27 @@
+{
+  "text": "작다",
+  "text_sha256": "bc42f85bf5be37c92f7cd8fbb995a8b9b431dc0c606e78b96996c9f26b7f5339",
+  "request_sha256": "01fe4ba0a397a4e154be849d4c1433442e7c6caccf5266f84187a6b8d1980249",
+  "file": "01fe4ba0a397a4e154be849d4c1433442e7c6caccf5266f84187a6b8d1980249.mp3",
+  "audio_sha256": "b590b24165b63fcda0cafaeb5f5f727148b600b7b9e2274ec102131397f20463",
+  "schema_version": 1,
+  "source_kind": "edge_generation",
+  "provider": "edge-tts",
+  "voice": "ko-KR-SunHiNeural",
+  "rate": "+0%",
+  "volume": "+0%",
+  "pitch": "+0Hz",
+  "reviewed_public": true,
+  "client_version": "7.2.7",
+  "generated_at": "2026-10-07T00:02:56.443176+00:00",
+  "generator_sha256": "1b6d82280d25b616d10658cd33609a4ee616be973468bd3f58c6d147363d9a10",
+  "vocab_sha256": "014673cf87a0d3cae3f8d346b85d7d8344372a32c5713556d4df1f7d9f1ba6d4",
+  "boundaries": [
+    {
+      "type": "SentenceBoundary",
+      "offset": 1000000,
+      "duration": 16000000,
+      "text": "작다"
+    }
+  ]
+}

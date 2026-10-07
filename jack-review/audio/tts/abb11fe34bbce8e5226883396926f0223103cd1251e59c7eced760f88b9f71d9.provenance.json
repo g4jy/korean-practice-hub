@@ -1,0 +1,27 @@
+{
+  "text": "있다",
+  "text_sha256": "96fe52db2531c9e73e535b2102ef2505aa6808348c01a621cf8a8b3fbb4e3bf7",
+  "request_sha256": "abb11fe34bbce8e5226883396926f0223103cd1251e59c7eced760f88b9f71d9",
+  "file": "abb11fe34bbce8e5226883396926f0223103cd1251e59c7eced760f88b9f71d9.mp3",
+  "audio_sha256": "af4b44c004dbd0911b661b12dda543901cd81b39bb2e6759f15a3bca6bf182a6",
+  "schema_version": 1,
+  "source_kind": "edge_generation",
+  "provider": "edge-tts",
+  "voice": "ko-KR-SunHiNeural",
+  "rate": "+0%",
+  "volume": "+0%",
+  "pitch": "+0Hz",
+  "reviewed_public": true,
+  "client_version": "7.2.7",
+  "generated_at": "2026-10-07T00:02:48.197077+00:00",
+  "generator_sha256": "1b6d82280d25b616d10658cd33609a4ee616be973468bd3f58c6d147363d9a10",
+  "vocab_sha256": "014673cf87a0d3cae3f8d346b85d7d8344372a32c5713556d4df1f7d9f1ba6d4",
+  "boundaries": [
+    {
+      "type": "SentenceBoundary",
+      "offset": 1000000,
+      "duration": 14500000,
+      "text": "있다"
+    }
+  ]
+}

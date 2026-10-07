@@ -1,0 +1,27 @@
+{
+  "text": "짧아요",
+  "text_sha256": "6349e9828cc43fe9511ef3cf4028960504f12623200e9c77f4f4ddbc0e2b15f2",
+  "request_sha256": "14b3f34df4297758a0927c8b1e56710c39e5e39177636d3263b87ef51c0cf4e1",
+  "file": "14b3f34df4297758a0927c8b1e56710c39e5e39177636d3263b87ef51c0cf4e1.mp3",
+  "audio_sha256": "505c7ef404f827f4367aefd207e3b7b43f2d4418215af44a2388210c00f7fc33",
+  "schema_version": 1,
+  "source_kind": "edge_generation",
+  "provider": "edge-tts",
+  "voice": "ko-KR-SunHiNeural",
+  "rate": "+0%",
+  "volume": "+0%",
+  "pitch": "+0Hz",
+  "reviewed_public": true,
+  "client_version": "7.2.7",
+  "generated_at": "2026-10-07T00:03:20.156334+00:00",
+  "generator_sha256": "1b6d82280d25b616d10658cd33609a4ee616be973468bd3f58c6d147363d9a10",
+  "vocab_sha256": "014673cf87a0d3cae3f8d346b85d7d8344372a32c5713556d4df1f7d9f1ba6d4",
+  "boundaries": [
+    {
+      "type": "SentenceBoundary",
+      "offset": 1000000,
+      "duration": 15625000,
+      "text": "짧아요"
+    }
+  ]
+}

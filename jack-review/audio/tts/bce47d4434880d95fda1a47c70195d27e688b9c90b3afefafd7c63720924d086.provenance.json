@@ -1,0 +1,27 @@
+{
+  "text": "기다려요",
+  "text_sha256": "1dd2493c7d67e61bb22c5d5e2df3b3ccb8aefcccf958e86afe6c46f2ec8034df",
+  "request_sha256": "bce47d4434880d95fda1a47c70195d27e688b9c90b3afefafd7c63720924d086",
+  "file": "bce47d4434880d95fda1a47c70195d27e688b9c90b3afefafd7c63720924d086.mp3",
+  "audio_sha256": "e39f73a02e3ce009bbda98d91d085166fa0efc5cda591f29ebd9247a92315b8f",
+  "schema_version": 1,
+  "source_kind": "edge_generation",
+  "provider": "edge-tts",
+  "voice": "ko-KR-SunHiNeural",
+  "rate": "+0%",
+  "volume": "+0%",
+  "pitch": "+0Hz",
+  "reviewed_public": true,
+  "client_version": "7.2.7",
+  "generated_at": "2026-10-06T23:58:45.952527+00:00",
+  "generator_sha256": "1b6d82280d25b616d10658cd33609a4ee616be973468bd3f58c6d147363d9a10",
+  "vocab_sha256": "014673cf87a0d3cae3f8d346b85d7d8344372a32c5713556d4df1f7d9f1ba6d4",
+  "boundaries": [
+    {
+      "type": "SentenceBoundary",
+      "offset": 1000000,
+      "duration": 16250000,
+      "text": "기다려요"
+    }
+  ]
+}

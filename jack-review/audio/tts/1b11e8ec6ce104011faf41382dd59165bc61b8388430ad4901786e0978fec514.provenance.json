@@ -1,0 +1,27 @@
+{
+  "text": "작아요",
+  "text_sha256": "06323249e8025245f8ff2a26259a8042bad4d9ac8a3d3d7c3c0b718471cc452d",
+  "request_sha256": "1b11e8ec6ce104011faf41382dd59165bc61b8388430ad4901786e0978fec514",
+  "file": "1b11e8ec6ce104011faf41382dd59165bc61b8388430ad4901786e0978fec514.mp3",
+  "audio_sha256": "f19157e3efac5b262975f0a53412732b1620e03acfa2860a628b0dc57185ceea",
+  "schema_version": 1,
+  "source_kind": "edge_generation",
+  "provider": "edge-tts",
+  "voice": "ko-KR-SunHiNeural",
+  "rate": "+0%",
+  "volume": "+0%",
+  "pitch": "+0Hz",
+  "reviewed_public": true,
+  "client_version": "7.2.7",
+  "generated_at": "2026-10-07T00:02:59.082592+00:00",
+  "generator_sha256": "1b6d82280d25b616d10658cd33609a4ee616be973468bd3f58c6d147363d9a10",
+  "vocab_sha256": "014673cf87a0d3cae3f8d346b85d7d8344372a32c5713556d4df1f7d9f1ba6d4",
+  "boundaries": [
+    {
+      "type": "SentenceBoundary",
+      "offset": 1000000,
+      "duration": 15625000,
+      "text": "작아요"
+    }
+  ]
+}

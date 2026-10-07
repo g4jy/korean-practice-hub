@@ -1,0 +1,27 @@
+{
+  "text": "멀다",
+  "text_sha256": "e6d01e903c854714b6011691ec68db573a58e9ac5a581824f6916fdbba076216",
+  "request_sha256": "08a6e9d06bf10649a430a8b309513a55655d96d2074fad3c73f42def5e7cff21",
+  "file": "08a6e9d06bf10649a430a8b309513a55655d96d2074fad3c73f42def5e7cff21.mp3",
+  "audio_sha256": "930784cbe747c8c2cd103f8ca6952464b95e19b3356aa4846e869a3c2eba9fa0",
+  "schema_version": 1,
+  "source_kind": "edge_generation",
+  "provider": "edge-tts",
+  "voice": "ko-KR-SunHiNeural",
+  "rate": "+0%",
+  "volume": "+0%",
+  "pitch": "+0Hz",
+  "reviewed_public": true,
+  "client_version": "7.2.7",
+  "generated_at": "2026-10-06T23:59:44.649588+00:00",
+  "generator_sha256": "1b6d82280d25b616d10658cd33609a4ee616be973468bd3f58c6d147363d9a10",
+  "vocab_sha256": "014673cf87a0d3cae3f8d346b85d7d8344372a32c5713556d4df1f7d9f1ba6d4",
+  "boundaries": [
+    {
+      "type": "SentenceBoundary",
+      "offset": 1000000,
+      "duration": 17500000,
+      "text": "멀다"
+    }
+  ]
+}

@@ -1,0 +1,27 @@
+{
+  "text": "아프다",
+  "text_sha256": "912c6f176a189a34657977263788992a2f826da8e2b06f5568447989ef27e2a7",
+  "request_sha256": "5e98da950a24c41b501bd42597d231bd2820aa0fa657619bf9a9cd50c4d622e7",
+  "file": "5e98da950a24c41b501bd42597d231bd2820aa0fa657619bf9a9cd50c4d622e7.mp3",
+  "audio_sha256": "752883116b544bede47b3a70c2186f4093208d6d10e95937dff94787010b668d",
+  "schema_version": 1,
+  "source_kind": "edge_generation",
+  "provider": "edge-tts",
+  "voice": "ko-KR-SunHiNeural",
+  "rate": "+0%",
+  "volume": "+0%",
+  "pitch": "+0Hz",
+  "reviewed_public": true,
+  "client_version": "7.2.7",
+  "generated_at": "2026-10-07T00:01:33.326781+00:00",
+  "generator_sha256": "1b6d82280d25b616d10658cd33609a4ee616be973468bd3f58c6d147363d9a10",
+  "vocab_sha256": "014673cf87a0d3cae3f8d346b85d7d8344372a32c5713556d4df1f7d9f1ba6d4",
+  "boundaries": [
+    {
+      "type": "SentenceBoundary",
+      "offset": 1000000,
+      "duration": 19250000,
+      "text": "아프다"
+    }
+  ]
+}

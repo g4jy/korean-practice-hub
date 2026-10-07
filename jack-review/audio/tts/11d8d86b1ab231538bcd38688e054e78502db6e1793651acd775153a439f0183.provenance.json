@@ -1,0 +1,27 @@
+{
+  "text": "을/를",
+  "text_sha256": "5407a521139ec81f061e667e5f9fe20307553777cae8a111ef7bb2152c5c6662",
+  "request_sha256": "11d8d86b1ab231538bcd38688e054e78502db6e1793651acd775153a439f0183",
+  "file": "11d8d86b1ab231538bcd38688e054e78502db6e1793651acd775153a439f0183.mp3",
+  "audio_sha256": "e874fa0c3d790fac4063cb1af3040552ee54600916df517ea529c8240faa7188",
+  "schema_version": 1,
+  "source_kind": "edge_generation",
+  "provider": "edge-tts",
+  "voice": "ko-KR-SunHiNeural",
+  "rate": "+0%",
+  "volume": "+0%",
+  "pitch": "+0Hz",
+  "reviewed_public": true,
+  "client_version": "7.2.7",
+  "generated_at": "2026-10-07T00:02:32.339250+00:00",
+  "generator_sha256": "1b6d82280d25b616d10658cd33609a4ee616be973468bd3f58c6d147363d9a10",
+  "vocab_sha256": "014673cf87a0d3cae3f8d346b85d7d8344372a32c5713556d4df1f7d9f1ba6d4",
+  "boundaries": [
+    {
+      "type": "SentenceBoundary",
+      "offset": 1000000,
+      "duration": 15625000,
+      "text": "을/를"
+    }
+  ]
+}

@@ -1,0 +1,27 @@
+{
+  "text": "마시다",
+  "text_sha256": "dbfc687cbb29318d3ccd36efd0cbe0c53854eb29b82341428f8ee9e5b4a41678",
+  "request_sha256": "cab46e66e6ec743d4c2259c776caf811bd9eadbd9198941a7812b9ba3f184be7",
+  "file": "cab46e66e6ec743d4c2259c776caf811bd9eadbd9198941a7812b9ba3f184be7.mp3",
+  "audio_sha256": "c4cc7c17ac7b60daea08cbc0dab38057ee6eb8ba7cff14d6818278593e3dce56",
+  "schema_version": 1,
+  "source_kind": "edge_generation",
+  "provider": "edge-tts",
+  "voice": "ko-KR-SunHiNeural",
+  "rate": "+0%",
+  "volume": "+0%",
+  "pitch": "+0Hz",
+  "reviewed_public": true,
+  "client_version": "7.2.7",
+  "generated_at": "2026-10-06T23:59:15.653545+00:00",
+  "generator_sha256": "1b6d82280d25b616d10658cd33609a4ee616be973468bd3f58c6d147363d9a10",
+  "vocab_sha256": "014673cf87a0d3cae3f8d346b85d7d8344372a32c5713556d4df1f7d9f1ba6d4",
+  "boundaries": [
+    {
+      "type": "SentenceBoundary",
+      "offset": 1000000,
+      "duration": 19500000,
+      "text": "마시다"
+    }
+  ]
+}

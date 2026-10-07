@@ -61,6 +61,7 @@ const LessonUpdates = (() => {
     for (const w of pkg.vocabulary) {
       const existing = catalog.get(w.id);
       if (existing && existing.kr !== w.kr) throw new Error('Word ID already belongs to a different Korean form: ' + w.kr);
+      if (existing && normalized(existing.en) !== w.en) throw new Error('Word ID already belongs to a different meaning; use a unique sense ID');
       if (existing?._lessonDocumentedAt && Date.parse(existing._lessonDocumentedAt) > Date.parse(pkg.documentedAt)) {
         summary.preserved.push({word: w.kr, reason: 'Newer lesson vocabulary retained'}); continue;
       }
@@ -71,11 +72,13 @@ const LessonUpdates = (() => {
       if (index >= 0) state.words[index] = merged; else state.words.push(merged);
       catalog.set(w.id, merged);
     }
-    for (const o of pkg.observations) {
+    // Event chronology, not lexical ID order, decides the last applicable observation.
+    for (const o of [...pkg.observations].sort((a,b) => Date.parse(a.observedAt) - Date.parse(b.observedAt) || a.id.localeCompare(b.id))) {
       const key = JSON.stringify([pkg.lessonId, o.id]), previous = state.observations[key];
       const unchanged = previous && JSON.stringify(previous.event) === JSON.stringify(o);
       if (unchanged) { summary.preserved.push({word: o.observedForm, reason: 'Observation already processed'}); continue; }
       if (previous && (previous.event.observedAt !== o.observedAt || previous.event.observedForm !== o.observedForm)) throw new Error('Keep observation IDs and timestamps stable; use a new ID for a new observation');
+      if (previous && previous.event.status !== o.status) throw new Error('Keep observation status stable; use a new ID for a changed observation');
       if (previous?.event.wordId && previous.event.wordId !== o.wordId) throw new Error('A resolved observation cannot be retargeted. Use a new observation ID.');
       if (o.wordId && !catalog.has(o.wordId)) throw new Error('Unknown word ID: ' + o.wordId);
       const entry = {event: o, lessonId: pkg.lessonId, revision: pkg.revision, appliedAt: new Date().toISOString(), applied: false};
@@ -83,7 +86,10 @@ const LessonUpdates = (() => {
         entry.reason = 'Meaning needs teacher review'; summary.unresolved.push(o.observedForm);
       } else {
         const m = state.mastery[o.wordId] || {}, when = Date.parse(o.observedAt), word = catalog.get(o.wordId);
-        if (Math.max(m.lastLearningAt || 0, m.lastLessonObservedAt || 0, state.lastResetAt || 0) > when) {
+        const unknownLearningTime = (m.known === true || m.status === 'know' || m.b >= 3) && !(Number.isFinite(m.lastLearningAt) && m.lastLearningAt > 0);
+        if (unknownLearningTime) {
+          entry.reason = 'Known rating has no verified learning timestamp; teacher review needed'; summary.preserved.push({word: word.kr, reason: entry.reason});
+        } else if (Math.max(m.lastLearningAt || 0, m.lastLessonObservedAt || 0, state.lastResetAt || 0) > when) {
           entry.reason = 'Newer learning or lesson observation retained'; summary.preserved.push({word: word.kr, reason: entry.reason});
         } else {
           entry.previous = {...m}; entry.applied = true;

@@ -1,0 +1,27 @@
+{
+  "text": "산책하다",
+  "text_sha256": "c55ed96b19a1f2f29ce784408ad979e8ec4399993339363aae680b0f83b6db1f",
+  "request_sha256": "775ea8776732f40b2026e4642f46c8fa727d044b0bbf8feaee111e3795651773",
+  "file": "775ea8776732f40b2026e4642f46c8fa727d044b0bbf8feaee111e3795651773.mp3",
+  "audio_sha256": "42add8ab597993a0a8f32359e999be832c9b1cdf04abd96d9d42d24eb040e87b",
+  "schema_version": 1,
+  "source_kind": "edge_generation",
+  "provider": "edge-tts",
+  "voice": "ko-KR-SunHiNeural",
+  "rate": "+0%",
+  "volume": "+0%",
+  "pitch": "+0Hz",
+  "reviewed_public": true,
+  "client_version": "7.2.7",
+  "generated_at": "2026-10-07T00:00:42.344276+00:00",
+  "generator_sha256": "1b6d82280d25b616d10658cd33609a4ee616be973468bd3f58c6d147363d9a10",
+  "vocab_sha256": "014673cf87a0d3cae3f8d346b85d7d8344372a32c5713556d4df1f7d9f1ba6d4",
+  "boundaries": [
+    {
+      "type": "SentenceBoundary",
+      "offset": 1000000,
+      "duration": 19125000,
+      "text": "산책하다"
+    }
+  ]
+}

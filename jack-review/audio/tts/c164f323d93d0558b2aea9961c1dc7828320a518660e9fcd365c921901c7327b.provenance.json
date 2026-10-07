@@ -1,0 +1,27 @@
+{
+  "text": "문제",
+  "text_sha256": "bc0fca46ae9a48794dbdb6b3695ebd909536ed85259b211408d502a026b6dc88",
+  "request_sha256": "c164f323d93d0558b2aea9961c1dc7828320a518660e9fcd365c921901c7327b",
+  "file": "c164f323d93d0558b2aea9961c1dc7828320a518660e9fcd365c921901c7327b.mp3",
+  "audio_sha256": "4afaf59209f0d8cbfd42aca20d967b4d42c3abb456a44a1d0bdafb5e93081980",
+  "schema_version": 1,
+  "source_kind": "edge_generation",
+  "provider": "edge-tts",
+  "voice": "ko-KR-SunHiNeural",
+  "rate": "+0%",
+  "volume": "+0%",
+  "pitch": "+0Hz",
+  "reviewed_public": true,
+  "client_version": "7.2.7",
+  "generated_at": "2026-10-07T00:00:05.090076+00:00",
+  "generator_sha256": "1b6d82280d25b616d10658cd33609a4ee616be973468bd3f58c6d147363d9a10",
+  "vocab_sha256": "014673cf87a0d3cae3f8d346b85d7d8344372a32c5713556d4df1f7d9f1ba6d4",
+  "boundaries": [
+    {
+      "type": "SentenceBoundary",
+      "offset": 1000000,
+      "duration": 14750000,
+      "text": "문제"
+    }
+  ]
+}

@@ -1,0 +1,27 @@
+{
+  "text": "살다",
+  "text_sha256": "12dad67abf287f9a30d4284b14b4e709bca991838270f3236e57c9ceb8037154",
+  "request_sha256": "5bf51040cb005f16594541d2acd29836f1d1c5582eaa3889722179275c596c97",
+  "file": "5bf51040cb005f16594541d2acd29836f1d1c5582eaa3889722179275c596c97.mp3",
+  "audio_sha256": "ed9218c7a3c24781471262372e579c5628cee1e5e95f6e0476c41edb7d40586c",
+  "schema_version": 1,
+  "source_kind": "edge_generation",
+  "provider": "edge-tts",
+  "voice": "ko-KR-SunHiNeural",
+  "rate": "+0%",
+  "volume": "+0%",
+  "pitch": "+0Hz",
+  "reviewed_public": true,
+  "client_version": "7.2.7",
+  "generated_at": "2026-10-07T00:00:47.587749+00:00",
+  "generator_sha256": "1b6d82280d25b616d10658cd33609a4ee616be973468bd3f58c6d147363d9a10",
+  "vocab_sha256": "014673cf87a0d3cae3f8d346b85d7d8344372a32c5713556d4df1f7d9f1ba6d4",
+  "boundaries": [
+    {
+      "type": "SentenceBoundary",
+      "offset": 1000000,
+      "duration": 18375000,
+      "text": "살다"
+    }
+  ]
+}

@@ -1,0 +1,27 @@
+{
+  "text": "의자",
+  "text_sha256": "e8bb0f33e8ba6ddcf691bceb2b1c2aef68b95bbaa317963ebfbfdae5b2318bcd",
+  "request_sha256": "b6c06f77ca2585caa800956f1a17a63e0622106c7fbf6a25b0a0a7c6545ac05f",
+  "file": "b6c06f77ca2585caa800956f1a17a63e0622106c7fbf6a25b0a0a7c6545ac05f.mp3",
+  "audio_sha256": "df87f03d8cabcfd441406b900dcf26fe301051f8d71c287eb993e756caa1707e",
+  "schema_version": 1,
+  "source_kind": "edge_generation",
+  "provider": "edge-tts",
+  "voice": "ko-KR-SunHiNeural",
+  "rate": "+0%",
+  "volume": "+0%",
+  "pitch": "+0Hz",
+  "reviewed_public": true,
+  "client_version": "7.2.7",
+  "generated_at": "2026-10-07T00:02:34.978548+00:00",
+  "generator_sha256": "1b6d82280d25b616d10658cd33609a4ee616be973468bd3f58c6d147363d9a10",
+  "vocab_sha256": "014673cf87a0d3cae3f8d346b85d7d8344372a32c5713556d4df1f7d9f1ba6d4",
+  "boundaries": [
+    {
+      "type": "SentenceBoundary",
+      "offset": 1000000,
+      "duration": 14750000,
+      "text": "의자"
+    }
+  ]
+}

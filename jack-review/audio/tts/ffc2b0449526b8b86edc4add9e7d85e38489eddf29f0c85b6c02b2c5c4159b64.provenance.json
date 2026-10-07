@@ -1,0 +1,27 @@
+{
+  "text": "살아요",
+  "text_sha256": "c21baf3f3fa55089ec5397d2ff2b50cc01b8c144419db5d9502275a24615a316",
+  "request_sha256": "ffc2b0449526b8b86edc4add9e7d85e38489eddf29f0c85b6c02b2c5c4159b64",
+  "file": "ffc2b0449526b8b86edc4add9e7d85e38489eddf29f0c85b6c02b2c5c4159b64.mp3",
+  "audio_sha256": "033b83202c310697b3cb02ca4b123508341d98a291676c93da111a24deafd942",
+  "schema_version": 1,
+  "source_kind": "edge_generation",
+  "provider": "edge-tts",
+  "voice": "ko-KR-SunHiNeural",
+  "rate": "+0%",
+  "volume": "+0%",
+  "pitch": "+0Hz",
+  "reviewed_public": true,
+  "client_version": "7.2.7",
+  "generated_at": "2026-10-07T00:00:50.301755+00:00",
+  "generator_sha256": "1b6d82280d25b616d10658cd33609a4ee616be973468bd3f58c6d147363d9a10",
+  "vocab_sha256": "014673cf87a0d3cae3f8d346b85d7d8344372a32c5713556d4df1f7d9f1ba6d4",
+  "boundaries": [
+    {
+      "type": "SentenceBoundary",
+      "offset": 1000000,
+      "duration": 15625000,
+      "text": "살아요"
+    }
+  ]
+}

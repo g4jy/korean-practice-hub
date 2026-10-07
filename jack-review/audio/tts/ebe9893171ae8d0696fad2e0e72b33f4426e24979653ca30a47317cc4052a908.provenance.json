@@ -1,0 +1,27 @@
+{
+  "text": "말하다",
+  "text_sha256": "f70cb61c1b19f1388e680064e640a1e7f2c26f042c39facba94b59059dafd339",
+  "request_sha256": "ebe9893171ae8d0696fad2e0e72b33f4426e24979653ca30a47317cc4052a908",
+  "file": "ebe9893171ae8d0696fad2e0e72b33f4426e24979653ca30a47317cc4052a908.mp3",
+  "audio_sha256": "b83400c0f8803e7848a2c909a7e18711eb36687d44b260ced18400ea583f2b3d",
+  "schema_version": 1,
+  "source_kind": "edge_generation",
+  "provider": "edge-tts",
+  "voice": "ko-KR-SunHiNeural",
+  "rate": "+0%",
+  "volume": "+0%",
+  "pitch": "+0Hz",
+  "reviewed_public": true,
+  "client_version": "7.2.7",
+  "generated_at": "2026-10-06T23:59:32.772297+00:00",
+  "generator_sha256": "1b6d82280d25b616d10658cd33609a4ee616be973468bd3f58c6d147363d9a10",
+  "vocab_sha256": "014673cf87a0d3cae3f8d346b85d7d8344372a32c5713556d4df1f7d9f1ba6d4",
+  "boundaries": [
+    {
+      "type": "SentenceBoundary",
+      "offset": 1000000,
+      "duration": 18625000,
+      "text": "말하다"
+    }
+  ]
+}

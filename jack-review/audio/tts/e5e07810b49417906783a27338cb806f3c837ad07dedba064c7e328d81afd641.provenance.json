@@ -1,0 +1,27 @@
+{
+  "text": "가다",
+  "text_sha256": "233cb510410b09d69cdc65ce28a7eb1951a74ee9b62aa8433bf9a023cd09a2ac",
+  "request_sha256": "e5e07810b49417906783a27338cb806f3c837ad07dedba064c7e328d81afd641",
+  "file": "e5e07810b49417906783a27338cb806f3c837ad07dedba064c7e328d81afd641.mp3",
+  "audio_sha256": "f3acd82ed1a82a0a33b519446b1a86dfbf7315389f27ceffceb6828ef776d84d",
+  "schema_version": 1,
+  "source_kind": "edge_generation",
+  "provider": "edge-tts",
+  "voice": "ko-KR-SunHiNeural",
+  "rate": "+0%",
+  "volume": "+0%",
+  "pitch": "+0Hz",
+  "reviewed_public": true,
+  "client_version": "7.2.7",
+  "generated_at": "2026-10-06T23:58:14.760852+00:00",
+  "generator_sha256": "1b6d82280d25b616d10658cd33609a4ee616be973468bd3f58c6d147363d9a10",
+  "vocab_sha256": "014673cf87a0d3cae3f8d346b85d7d8344372a32c5713556d4df1f7d9f1ba6d4",
+  "boundaries": [
+    {
+      "type": "SentenceBoundary",
+      "offset": 1000000,
+      "duration": 18125000,
+      "text": "가다"
+    }
+  ]
+}

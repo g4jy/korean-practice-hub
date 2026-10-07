@@ -1,0 +1,27 @@
+{
+  "text": "하다",
+  "text_sha256": "505de0a2f6be73fa77586075f5ab06651ce1da35c8b7c12211103725f96a90b7",
+  "request_sha256": "56b66bdcb8553a75ace590a062bc91dbb7884a6e3d752467235debdc5423315b",
+  "file": "56b66bdcb8553a75ace590a062bc91dbb7884a6e3d752467235debdc5423315b.mp3",
+  "audio_sha256": "bacf5a5a544efa454e2ac5d8dc6a3df0e22c03bdece232b24b3ec200db163165",
+  "schema_version": 1,
+  "source_kind": "edge_generation",
+  "provider": "edge-tts",
+  "voice": "ko-KR-SunHiNeural",
+  "rate": "+0%",
+  "volume": "+0%",
+  "pitch": "+0Hz",
+  "reviewed_public": true,
+  "client_version": "7.2.7",
+  "generated_at": "2026-10-07T00:03:46.471072+00:00",
+  "generator_sha256": "1b6d82280d25b616d10658cd33609a4ee616be973468bd3f58c6d147363d9a10",
+  "vocab_sha256": "014673cf87a0d3cae3f8d346b85d7d8344372a32c5713556d4df1f7d9f1ba6d4",
+  "boundaries": [
+    {
+      "type": "SentenceBoundary",
+      "offset": 1000000,
+      "duration": 16875000,
+      "text": "하다"
+    }
+  ]
+}

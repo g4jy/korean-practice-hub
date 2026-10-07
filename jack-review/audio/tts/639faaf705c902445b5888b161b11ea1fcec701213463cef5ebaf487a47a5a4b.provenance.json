@@ -1,0 +1,27 @@
+{
+  "text": "나",
+  "text_sha256": "1098bbe54520ab2a367cb44888f829c7bb843cf525e6721b99f022c9953abd4d",
+  "request_sha256": "639faaf705c902445b5888b161b11ea1fcec701213463cef5ebaf487a47a5a4b",
+  "file": "639faaf705c902445b5888b161b11ea1fcec701213463cef5ebaf487a47a5a4b.mp3",
+  "audio_sha256": "afba9d0c1cc88c967261de73f2a5866728be4094f60419e4316f3a6ac8ccf924",
+  "schema_version": 1,
+  "source_kind": "edge_generation",
+  "provider": "edge-tts",
+  "voice": "ko-KR-SunHiNeural",
+  "rate": "+0%",
+  "volume": "+0%",
+  "pitch": "+0Hz",
+  "reviewed_public": true,
+  "client_version": "7.2.7",
+  "generated_at": "2026-10-06T23:58:51.967461+00:00",
+  "generator_sha256": "1b6d82280d25b616d10658cd33609a4ee616be973468bd3f58c6d147363d9a10",
+  "vocab_sha256": "014673cf87a0d3cae3f8d346b85d7d8344372a32c5713556d4df1f7d9f1ba6d4",
+  "boundaries": [
+    {
+      "type": "SentenceBoundary",
+      "offset": 1000000,
+      "duration": 12875000,
+      "text": "나"
+    }
+  ]
+}

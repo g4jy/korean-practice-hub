@@ -1,0 +1,27 @@
+{
+  "text": "위",
+  "text_sha256": "e0bebb354d8f7f3b0c8204eb75c50bfa0454ca9797de7d5d8d4c1ddc4d77a399",
+  "request_sha256": "1df67bec74e6f61bcffd190266c63187a22ff98c9540616e8ac4ba6e373d8660",
+  "file": "1df67bec74e6f61bcffd190266c63187a22ff98c9540616e8ac4ba6e373d8660.mp3",
+  "audio_sha256": "feebe6da59ebdcb9927be00c86c6c748ac8c1dec8027659f5f3afd44218d0ed5",
+  "schema_version": 1,
+  "source_kind": "edge_generation",
+  "provider": "edge-tts",
+  "voice": "ko-KR-SunHiNeural",
+  "rate": "+0%",
+  "volume": "+0%",
+  "pitch": "+0Hz",
+  "reviewed_public": true,
+  "client_version": "7.2.7",
+  "generated_at": "2026-10-07T00:02:26.203025+00:00",
+  "generator_sha256": "1b6d82280d25b616d10658cd33609a4ee616be973468bd3f58c6d147363d9a10",
+  "vocab_sha256": "014673cf87a0d3cae3f8d346b85d7d8344372a32c5713556d4df1f7d9f1ba6d4",
+  "boundaries": [
+    {
+      "type": "SentenceBoundary",
+      "offset": 1000000,
+      "duration": 12375000,
+      "text": "위"
+    }
+  ]
+}

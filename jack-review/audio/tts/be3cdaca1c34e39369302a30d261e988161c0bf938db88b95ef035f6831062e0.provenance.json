@@ -1,0 +1,27 @@
+{
+  "text": "명절",
+  "text_sha256": "7626dbdf4beacffb4c81c52b51ed71a18d47618b7e951d0f098d21cbe17356bd",
+  "request_sha256": "be3cdaca1c34e39369302a30d261e988161c0bf938db88b95ef035f6831062e0",
+  "file": "be3cdaca1c34e39369302a30d261e988161c0bf938db88b95ef035f6831062e0.mp3",
+  "audio_sha256": "f842ebbc34bf0d854c3fb80ace61a709f66ee33a9001669e8e31a42a9b780be0",
+  "schema_version": 1,
+  "source_kind": "edge_generation",
+  "provider": "edge-tts",
+  "voice": "ko-KR-SunHiNeural",
+  "rate": "+0%",
+  "volume": "+0%",
+  "pitch": "+0Hz",
+  "reviewed_public": true,
+  "client_version": "7.2.7",
+  "generated_at": "2026-10-06T23:59:50.025547+00:00",
+  "generator_sha256": "1b6d82280d25b616d10658cd33609a4ee616be973468bd3f58c6d147363d9a10",
+  "vocab_sha256": "014673cf87a0d3cae3f8d346b85d7d8344372a32c5713556d4df1f7d9f1ba6d4",
+  "boundaries": [
+    {
+      "type": "SentenceBoundary",
+      "offset": 1000000,
+      "duration": 16750000,
+      "text": "명절"
+    }
+  ]
+}

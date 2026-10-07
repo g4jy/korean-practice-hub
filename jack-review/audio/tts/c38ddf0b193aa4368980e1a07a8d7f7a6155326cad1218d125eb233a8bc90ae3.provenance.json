@@ -1,0 +1,27 @@
+{
+  "text": "특선",
+  "text_sha256": "0ecf6eed5144ca0cb5269417a1c2195ccb4b92bd574325d1f957a9567460586b",
+  "request_sha256": "c38ddf0b193aa4368980e1a07a8d7f7a6155326cad1218d125eb233a8bc90ae3",
+  "file": "c38ddf0b193aa4368980e1a07a8d7f7a6155326cad1218d125eb233a8bc90ae3.mp3",
+  "audio_sha256": "22d1f042f4c28b955a14d9e36939699100fed84790c08f0df1a83098530a664a",
+  "schema_version": 1,
+  "source_kind": "edge_generation",
+  "provider": "edge-tts",
+  "voice": "ko-KR-SunHiNeural",
+  "rate": "+0%",
+  "volume": "+0%",
+  "pitch": "+0Hz",
+  "reviewed_public": true,
+  "client_version": "7.2.7",
+  "generated_at": "2026-10-07T00:03:42.914866+00:00",
+  "generator_sha256": "1b6d82280d25b616d10658cd33609a4ee616be973468bd3f58c6d147363d9a10",
+  "vocab_sha256": "014673cf87a0d3cae3f8d346b85d7d8344372a32c5713556d4df1f7d9f1ba6d4",
+  "boundaries": [
+    {
+      "type": "SentenceBoundary",
+      "offset": 1000000,
+      "duration": 16250000,
+      "text": "특선"
+    }
+  ]
+}

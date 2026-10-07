@@ -1,0 +1,4 @@
+# Audio receipts are byte-hashed by the browser and must survive Windows checkout.
+audio/tts/*.json text eol=lf
+audio/tts/*.mp3 binary
+data/vocab.json text eol=lf

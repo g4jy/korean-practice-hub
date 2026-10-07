@@ -2069,6 +2069,109 @@
             "exampleKr": "공원에서 산책해요.",
             "exampleEn": "I take a walk in the park.",
             "id": "ko:%EC%82%B0%EC%B1%85%ED%95%98%EB%8B%A4"
+          },
+          {
+            "id": "ko:%EB%AA%A8%EC%9D%B4%EB%8B%A4",
+            "kr": "모이다",
+            "en": "to gather; to come together",
+            "rom": "MO-I-DA",
+            "polite": "모여요"
+          },
+          {
+            "id": "ko:%EB%A7%8C%EB%93%A4%EB%8B%A4",
+            "kr": "만들다",
+            "en": "to make",
+            "rom": "MAN-DEUL-DA",
+            "polite": "만들어요"
+          }
+        ]
+      },
+      {
+        "name": "Weather",
+        "cards": [
+          {
+            "id": "ko:%ED%9D%90%EB%A6%AC%EB%8B%A4",
+            "kr": "흐리다",
+            "en": "to be cloudy",
+            "rom": "HEU-RI-DA",
+            "polite": "흐려요"
+          }
+        ]
+      },
+      {
+        "name": "Holidays",
+        "cards": [
+          {
+            "id": "ko:%ED%9C%B4%EC%9D%BC",
+            "kr": "휴일",
+            "en": "a day off; a holiday",
+            "rom": "HYU-IL"
+          },
+          {
+            "id": "ko:%ED%9C%B4%EA%B0%80",
+            "kr": "휴가",
+            "en": "vacation; leave from work",
+            "rom": "HYU-GA"
+          },
+          {
+            "id": "ko:%EA%B3%B5%ED%9C%B4%EC%9D%BC",
+            "kr": "공휴일",
+            "en": "a public holiday",
+            "rom": "GONG-HYU-IL"
+          },
+          {
+            "id": "ko:%EC%A3%BC%EB%A7%90",
+            "kr": "주말",
+            "en": "the weekend",
+            "rom": "JU-MAL"
+          },
+          {
+            "id": "ko:%EB%AA%85%EC%A0%88",
+            "kr": "명절",
+            "en": "a traditional holiday",
+            "rom": "MYEONG-JEOL"
+          },
+          {
+            "id": "ko:%EC%84%B1%EB%AC%98%ED%95%98%EB%8B%A4",
+            "kr": "성묘하다",
+            "en": "to visit and tend an ancestral grave",
+            "rom": "SEONG-MYO-HA-DA",
+            "polite": "성묘해요"
+          },
+          {
+            "id": "ko:%EB%B2%8C%EC%B4%88%ED%95%98%EB%8B%A4",
+            "kr": "벌초하다",
+            "en": "to cut grass around a grave",
+            "rom": "BEOL-CHO-HA-DA",
+            "polite": "벌초해요"
+          }
+        ]
+      },
+      {
+        "name": "Descriptors",
+        "cards": [
+          {
+            "id": "ko:%ED%8A%B9%EB%B3%84",
+            "kr": "특별",
+            "en": "special",
+            "rom": "TEUK-BYEOL"
+          },
+          {
+            "id": "ko:%ED%8A%B9%EC%84%A0",
+            "kr": "특선",
+            "en": "a special selection; specially selected",
+            "rom": "TEUK-SEON"
+          }
+        ]
+      },
+      {
+        "name": "Food",
+        "cards": [
+          {
+            "id": "ko:%EC%86%A1%ED%8E%B8",
+            "kr": "송편",
+            "en": "songpyeon; a filled rice cake",
+            "rom": "SONG-PYEON"
           }
         ]
       }

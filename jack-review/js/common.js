@@ -14,75 +14,99 @@ const App = (() => {
     return vocabData;
   }
 
-  /* --- TTS with Pre-generated Audio + Web Speech API Fallback --- */
+  /* --- Exact local Edge audio, never device voices or word splicing. --- */
+  let manifestPromise = null;
   async function loadAudioManifest() {
-    try {
-      const resp = await fetch(audioBasePath + 'manifest.json');
-      if (resp.ok) {
-        audioManifest = await resp.json();
-        console.log(`Loaded ${Object.keys(audioManifest).length} audio files`);
-      }
-    } catch (e) {
-      console.log('No pre-generated audio, using Web Speech API');
+    if (!manifestPromise) {
+      manifestPromise = (async () => {
+        try {
+          const response = await fetch(audioBasePath + 'manifest.json', {cache: 'no-cache'});
+          if (!response.ok) return;
+          const manifest = await response.json();
+          if (manifest.schema_version === 2 && manifest.entries && typeof manifest.entries === 'object') {
+            audioManifest = manifest.entries;
+          }
+        } catch (_) { /* Missing or legacy evidence is unavailable. */ }
+      })();
     }
+    return manifestPromise;
   }
 
   let currentSpeakAudio = null;
+  let currentAudioURL = null;
+  let speakRequest = 0;
 
-  function speak(text) {
-    // Stop any previous playback
-    if (currentSpeakAudio) { currentSpeakAudio.pause(); currentSpeakAudio = null; }
-    speechSynthesis.cancel();
-
-    // Exact match in manifest
-    if (audioManifest && audioManifest[text]) {
-      const audio = new Audio(audioBasePath + audioManifest[text]);
-      currentSpeakAudio = audio;
-      audio.play().catch(() => speakWebAPI(text));
-      return;
+  function stopAudio() {
+    if (currentSpeakAudio) {
+      currentSpeakAudio.onended = null;
+      currentSpeakAudio.onerror = null;
+      currentSpeakAudio.pause();
+      currentSpeakAudio = null;
     }
-
-    // For sentences: try sequential word playback from manifest
-    if (audioManifest && text.includes(' ')) {
-      const words = text.split(/\s+/);
-      const audioWords = words.filter(w => audioManifest[w]);
-      // Use sequential playback if >50% of words have audio
-      if (audioWords.length > words.length * 0.5) {
-        speakSequential(words, 0);
-        return;
-      }
-    }
-
-    speakWebAPI(text);
+    if (currentAudioURL) { URL.revokeObjectURL(currentAudioURL); currentAudioURL = null; }
   }
 
-  function speakSequential(words, idx) {
-    if (idx >= words.length) return;
-    const word = words[idx];
-    if (audioManifest && audioManifest[word]) {
-      const audio = new Audio(audioBasePath + audioManifest[word]);
-      currentSpeakAudio = audio;
-      audio.onended = () => speakSequential(words, idx + 1);
-      audio.play().catch(() => {
-        speakWebAPI(word);
-        setTimeout(() => speakSequential(words, idx + 1), 600);
-      });
-    } else {
-      speakWebAPI(word);
-      setTimeout(() => speakSequential(words, idx + 1), 600);
-    }
+  async function audioSHA256(value) {
+    const bytes = typeof value === 'string' ? new TextEncoder().encode(value) : value;
+    const hash = await crypto.subtle.digest('SHA-256', bytes);
+    return Array.from(new Uint8Array(hash), n => n.toString(16).padStart(2, '0')).join('');
   }
 
-  function speakWebAPI(text) {
-    if (!('speechSynthesis' in window)) return;
-    speechSynthesis.cancel();
-    const utter = new SpeechSynthesisUtterance(text);
-    utter.lang = 'ko-KR';
-    utter.rate = 0.85;
-    const voices = speechSynthesis.getVoices();
-    const ko = voices.find(v => v.lang.startsWith('ko'));
-    if (ko) utter.voice = ko;
-    speechSynthesis.speak(utter);
+  async function verifiedAudio(text) {
+    const entry = audioManifest && Object.hasOwn(audioManifest, text) ? audioManifest[text] : null;
+    if (!entry || entry.text !== text || entry.text_sha256 !== await audioSHA256(text)) throw new Error('Missing exact audio');
+    const key = entry.request_sha256;
+    if (!/^[a-f0-9]{64}$/.test(key) || !/^[a-zA-Z0-9_-]+\.mp3$/.test(entry.file) || entry.receipt !== key + '.provenance.json') throw new Error('Invalid audio path');
+    const response = await fetch(audioBasePath + entry.receipt, {cache: 'no-cache'});
+    if (!response.ok) throw new Error('Missing provenance');
+    const proofBytes = await response.arrayBuffer();
+    if (await audioSHA256(proofBytes) !== entry.receipt_sha256) throw new Error('Provenance checksum mismatch');
+    const proof = JSON.parse(new TextDecoder().decode(proofBytes));
+    if (proof.schema_version !== 1 || proof.provider !== 'edge-tts' || proof.reviewed_public !== true ||
+        !/^[a-f0-9]{64}$/.test(proof.generator_sha256)) throw new Error('Unverified source');
+    if (proof.source_kind === 'repository_lineage') {
+      // Inherited assets have source-code/blob lineage, not new service receipts.
+      if (!/^[a-f0-9]{40}$/.test(proof.source_commit) || proof.original_audio_sha256 !== entry.audio_sha256 ||
+          proof.original_text !== text || proof.original_file !== entry.file ||
+          !/^[a-f0-9]{64}$/.test(proof.source_manifest_sha256) || !(proof.duration_seconds > 0)) throw new Error('Invalid inherited evidence');
+    } else if (proof.source_kind !== 'edge_generation' || entry.file !== key + '.mp3' ||
+               !proof.client_version || !proof.generated_at) throw new Error('Invalid generation evidence');
+    for (const field of ['text', 'text_sha256', 'request_sha256', 'file', 'audio_sha256']) {
+      if (proof[field] !== entry[field]) throw new Error('Provenance mismatch');
+    }
+    if (proof.voice !== 'ko-KR-SunHiNeural' || proof.rate !== '+0%' || proof.volume !== '+0%' || proof.pitch !== '+0Hz') throw new Error('Unsupported settings');
+    const request = ['edge-tts', proof.voice, proof.rate, proof.volume, proof.pitch, text];
+    if (await audioSHA256(JSON.stringify(request)) !== key) throw new Error('Request mismatch');
+    const audioResponse = await fetch(audioBasePath + entry.file, {cache: 'no-cache'});
+    if (!audioResponse.ok) throw new Error('Missing audio');
+    const bytes = await audioResponse.arrayBuffer();
+    if (!bytes.byteLength || await audioSHA256(bytes) !== entry.audio_sha256) throw new Error('Audio checksum mismatch');
+    return new Blob([bytes], {type: 'audio/mpeg'});
+  }
+
+  async function speak(text) {
+    const request = ++speakRequest;
+    stopAudio();
+    try {
+      if (typeof text !== 'string' || !text.length) throw new Error('Empty audio');
+      await loadAudioManifest();
+      const blob = await verifiedAudio(text);
+      if (request !== speakRequest) return {status: 'cancelled'};
+      currentAudioURL = URL.createObjectURL(blob);
+      const audio = new Audio(currentAudioURL);
+      currentSpeakAudio = audio;
+      audio.onended = () => { if (request === speakRequest) stopAudio(); };
+      audio.onerror = () => {
+        if (request === speakRequest) { stopAudio(); showToast('Exact audio unavailable for this text.'); }
+      };
+      await audio.play();
+      return {status: request === speakRequest ? 'playing' : 'cancelled'};
+    } catch (_) {
+      if (request !== speakRequest) return {status: 'cancelled'};
+      stopAudio();
+      showToast('Exact audio unavailable for this text.');
+      return {status: 'unavailable'};
+    }
   }
 
   /* --- Korean Particle Helpers --- */
@@ -155,7 +179,7 @@ const App = (() => {
     return Storage.rateWord(card, status, source || 'flashcard');
   }
   function flushBatch() { /* Private learner data stays on this device. */ }
-  function getWordMastery() { return typeof Storage !== 'undefined' ? Storage.cachedMastery() : {}; }
+  function getWordMastery() { return typeof Storage !== 'undefined' && typeof Storage.cachedMastery === 'function' ? Storage.cachedMastery() : {}; }
   function getWeakWords() {
     return Object.entries(getWordMastery()).filter(([,m]) => m.status === 'dont_know' || m.status === 'unsure').map(([id]) => id);
   }
@@ -165,9 +189,6 @@ const App = (() => {
 
   /* --- Init --- */
   async function init() {
-    if ('speechSynthesis' in window) {
-      speechSynthesis.getVoices();
-    }
     await loadAudioManifest();
     initRomToggle();
     initEnToggle();
@@ -187,7 +208,7 @@ const App = (() => {
   /* --- Build Card Pool (for Learn/Quiz pages) --- */
   async function buildCardPool() {
     const data = await loadVocab();
-    if (typeof Storage !== 'undefined') await Storage.init();
+    if (typeof Storage !== 'undefined' && typeof Storage.init === 'function') await Storage.init();
     const byId = new Map();
     function add(word, category) {
       if (!word.kr) return;
@@ -205,7 +226,7 @@ const App = (() => {
       (d.adverbs || []).forEach(w => add(w, 'Adverbs'));
     }
     (data.flashcards?.categories || []).forEach(cat => (cat.cards || []).forEach(w => add(w, cat.name)));
-    if (typeof Storage !== 'undefined') (await Storage.getUserWords()).forEach(w => add(w, w.category || 'My Words'));
+    if (typeof Storage !== 'undefined' && typeof Storage.getUserWords === 'function') (await Storage.getUserWords()).forEach(w => add(w, w.category || 'My Words'));
     const allCards = [...byId.values()], categories = new Map();
     for (const c of allCards) { if (!categories.has(c.category)) categories.set(c.category, []); categories.get(c.category).push(c); }
     return {allCards, categories};

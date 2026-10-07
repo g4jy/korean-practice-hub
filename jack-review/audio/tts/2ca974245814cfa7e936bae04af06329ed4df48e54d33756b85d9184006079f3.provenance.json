@@ -1,0 +1,27 @@
+{
+  "text": "도착해요",
+  "text_sha256": "c8a139f0292c17295ee91b8fc2696f885ccefe8e6a2d31148c1166cae4bec58e",
+  "request_sha256": "2ca974245814cfa7e936bae04af06329ed4df48e54d33756b85d9184006079f3",
+  "file": "2ca974245814cfa7e936bae04af06329ed4df48e54d33756b85d9184006079f3.mp3",
+  "audio_sha256": "4aa67e210d278e41fe08951411ae5798eb40d1764e2f786f3dc01928f4268934",
+  "schema_version": 1,
+  "source_kind": "edge_generation",
+  "provider": "edge-tts",
+  "voice": "ko-KR-SunHiNeural",
+  "rate": "+0%",
+  "volume": "+0%",
+  "pitch": "+0Hz",
+  "reviewed_public": true,
+  "client_version": "7.2.7",
+  "generated_at": "2026-10-06T23:59:08.638732+00:00",
+  "generator_sha256": "1b6d82280d25b616d10658cd33609a4ee616be973468bd3f58c6d147363d9a10",
+  "vocab_sha256": "014673cf87a0d3cae3f8d346b85d7d8344372a32c5713556d4df1f7d9f1ba6d4",
+  "boundaries": [
+    {
+      "type": "SentenceBoundary",
+      "offset": 1000000,
+      "duration": 17500000,
+      "text": "도착해요"
+    }
+  ]
+}

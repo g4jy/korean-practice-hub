@@ -1,0 +1,27 @@
+{
+  "text": "벌초하다",
+  "text_sha256": "b11f0b4a2a9c2e28788967fffeda03fb6c8d7d3160bbea292ccf001226ec7f38",
+  "request_sha256": "4dc836bfd515fa6b6e3056a9d3b98ba44f5908803edf2089b42f72d1f2e3bb25",
+  "file": "4dc836bfd515fa6b6e3056a9d3b98ba44f5908803edf2089b42f72d1f2e3bb25.mp3",
+  "audio_sha256": "3672340a3f900a17aeec242cf332232a16ff9399624e33789e6752148d661d0e",
+  "schema_version": 1,
+  "source_kind": "edge_generation",
+  "provider": "edge-tts",
+  "voice": "ko-KR-SunHiNeural",
+  "rate": "+0%",
+  "volume": "+0%",
+  "pitch": "+0Hz",
+  "reviewed_public": true,
+  "client_version": "7.2.7",
+  "generated_at": "2026-10-07T00:00:15.538744+00:00",
+  "generator_sha256": "1b6d82280d25b616d10658cd33609a4ee616be973468bd3f58c6d147363d9a10",
+  "vocab_sha256": "014673cf87a0d3cae3f8d346b85d7d8344372a32c5713556d4df1f7d9f1ba6d4",
+  "boundaries": [
+    {
+      "type": "SentenceBoundary",
+      "offset": 1000000,
+      "duration": 19250000,
+      "text": "벌초하다"
+    }
+  ]
+}

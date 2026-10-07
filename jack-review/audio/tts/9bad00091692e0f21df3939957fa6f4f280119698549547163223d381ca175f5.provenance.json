@@ -1,0 +1,27 @@
+{
+  "text": "모여요",
+  "text_sha256": "139f707bf5a93aece54b926069c8fe2f94dc169107cd6d4c2ce38196a9606484",
+  "request_sha256": "9bad00091692e0f21df3939957fa6f4f280119698549547163223d381ca175f5",
+  "file": "9bad00091692e0f21df3939957fa6f4f280119698549547163223d381ca175f5.mp3",
+  "audio_sha256": "3ba813874d22bb9d88711a21553791fa927a6726c0256e493400d1e0fc8b2700",
+  "schema_version": 1,
+  "source_kind": "edge_generation",
+  "provider": "edge-tts",
+  "voice": "ko-KR-SunHiNeural",
+  "rate": "+0%",
+  "volume": "+0%",
+  "pitch": "+0Hz",
+  "reviewed_public": true,
+  "client_version": "7.2.7",
+  "generated_at": "2026-10-06T23:59:52.870663+00:00",
+  "generator_sha256": "1b6d82280d25b616d10658cd33609a4ee616be973468bd3f58c6d147363d9a10",
+  "vocab_sha256": "014673cf87a0d3cae3f8d346b85d7d8344372a32c5713556d4df1f7d9f1ba6d4",
+  "boundaries": [
+    {
+      "type": "SentenceBoundary",
+      "offset": 1000000,
+      "duration": 16000000,
+      "text": "모여요"
+    }
+  ]
+}

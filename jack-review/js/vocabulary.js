@@ -1,5 +1,13 @@
 /* === Integrated Vocabulary Page — Words / Practice / Quiz === */
-(async () => {
+function vocabularyState(record) {
+  if (record?.known === true || record?.status === 'know') return 'known';
+  if (record?.status === 'dont_know' || record?.status === 'unsure') return 'review';
+  // Old boolean-only ratings remain usable; absent or unassessed data is not weakness.
+  if (record?.status == null && record?.known === false) return 'review';
+  return 'unassessed';
+}
+if (typeof module !== 'undefined' && module.exports) module.exports = {vocabularyState};
+if (typeof document !== 'undefined') (async () => {
   await Storage.init();
   const vocabData = await App.loadVocab();
   const { allCards, categories } = await App.buildCardPool();
@@ -57,9 +65,10 @@
     if (adjPolite[c.kr]) c.polite = adjPolite[c.kr];
   });
 
-  // Simple Know/Don't Know model
+  // Views never create a rating. Only explicit student actions write progress.
   let M = await Storage.getMastery();
-  const isKnown = kr => M[kr] && M[kr].known === true;
+  const stateOf = id => vocabularyState(M[id]);
+  const isKnown = id => stateOf(id) === 'known';
   const $ = id => document.getElementById(id);
 
   // Romanization toggle
@@ -93,12 +102,12 @@
 
   // ========== STATS ==========
   function updateStats() {
-    const knowCount = allCards.filter(c => isKnown(c.id)).length;
-    const dontKnow = allCards.length - knowCount;
+    const counts = {unassessed: 0, review: 0, known: 0};
+    allCards.forEach(c => counts[stateOf(c.id)]++);
     $('vocab-stats').innerHTML =
-      '<span class="stat-pill stat-dk">' + dontKnow + ' Don\'t Know</span>' +
-      '<span class="stat-pill stat-k">' + knowCount + ' Know</span>' +
-      '<span class="stat-pill stat-all">' + allCards.length + ' Total</span>';
+      '<span class="stat-pill stat-unassessed">' + counts.unassessed + ' Unassessed</span>' +
+      '<span class="stat-pill stat-dk">' + counts.review + ' Review</span>' +
+      '<span class="stat-pill stat-k">' + counts.known + ' Known</span>';
   }
 
   // ========== WORD LIST ==========
@@ -140,8 +149,7 @@
   function renderWords() {
     let words = [...allCards];
     if (currentCatFilter !== 'all') words = words.filter(c => c.category === currentCatFilter);
-    if (currentFilter === 'know') words = words.filter(c => isKnown(c.id));
-    else if (currentFilter === 'dont-know') words = words.filter(c => !isKnown(c.id));
+    if (currentFilter !== 'all') words = words.filter(c => stateOf(c.id) === currentFilter);
     if (searchQuery) words = words.filter(c =>
       c.kr.includes(searchQuery) || c.en.toLowerCase().includes(searchQuery) ||
       (c.polite && c.polite.includes(searchQuery)) || c.rom.toLowerCase().includes(searchQuery)
@@ -151,7 +159,10 @@
     if (!words.length) { list.innerHTML = '<p class="word-empty">No words found</p>'; return; }
 
     list.innerHTML = words.map(w => {
-      const known = isKnown(w.id);
+      const state = stateOf(w.id), known = state === 'known';
+      const label = {known: 'Known', review: 'Review', unassessed: 'Unassessed'}[state];
+      const action = known ? 'Mark for review' : 'Mark as known';
+      const tooltip = App.escapeHTML(label + ': ' + w.kr + '. ' + action);
       const krDisplay = w.polite ? w.kr + ' / ' + w.polite : w.kr;
       return '<div class="word-row">' +
         '<div class="word-info">' +
@@ -159,8 +170,8 @@
           '<span class="word-en">' + App.escapeHTML(w.en) + '</span>' +
           (w.rom ? '<span class="word-rom rom-text">' + App.escapeHTML(w.rom) + '</span>' : '') +
         '</div>' +
-        '<button class="word-toggle ' + (known ? 'known' : '') + '" data-id="' + App.escapeHTML(w.id) + '">' +
-          (known ? '✓' : '✗') +
+        '<button class="word-toggle ' + state + '" data-id="' + App.escapeHTML(w.id) + '" title="' + tooltip + '" aria-label="' + tooltip + '">' +
+          (known ? '✓' : state === 'review' ? '✗' : '?') +
         '</button>' +
       '</div>';
     }).join('');
@@ -176,14 +187,15 @@
     });
   }
 
-  // ========== STUDY (only Don't Know words) ==========
+  // ========== STUDY (unassessed and review cards) ==========
   let PQ = [], PI = 0, POPEN = false, pKnow = 0, practiceGeneration = 0;
 
   function updatePracticeInfo() {
-    const dk = allCards.filter(c => !isKnown(c.id)).length;
-    $('practice-info').innerHTML = 'Study your unknown words. Mark ones you now know.<br><b>' + dk + '</b> words to study';
-    $('go-practice').textContent = 'Study Don\'t Know (' + dk + ')';
-    $('go-practice').disabled = dk === 0;
+    const unassessed = allCards.filter(c => stateOf(c.id) === 'unassessed').length;
+    const review = allCards.filter(c => stateOf(c.id) === 'review').length;
+    $('practice-info').textContent = unassessed + ' Unassessed / ' + review + ' Review';
+    $('go-practice').textContent = 'Study (' + (unassessed + review) + ')';
+    $('go-practice').disabled = unassessed + review === 0;
   }
 
   $('go-practice').addEventListener('click', () => {
@@ -202,7 +214,7 @@
       $('done-screen').classList.remove('hidden');
       $('done-icon').textContent = '\uD83D\uDCAA';
       $('done-title').textContent = 'Study Done!';
-      $('done-desc').textContent = pKnow + ' words moved to Know';
+      $('done-desc').textContent = pKnow + ' words marked Known';
       return;
     }
     POPEN = false;
@@ -226,7 +238,7 @@
     $('practice-actions').classList.remove('hidden');
   });
 
-  // "Still don't know" → keep as-is, move to next
+  // An explicit review answer is timestamped and appended to history, even for a new card.
   let practiceSaving = false;
   $('btn-dont').addEventListener('click', async () => {
     if (!POPEN || practiceSaving || !PQ[PI]) return;
@@ -262,7 +274,7 @@
 
   // ========== QUIZ ==========
   let quizSize = 25;
-  let quizFilter = 'all'; // all, dont-know, know
+  let quizFilter = 'all'; // all, unassessed, review, known
   let quizCat = 'all';
   let RQ = [], RI = 0, RSC = 0, RANS = false, qFlipped = 0, quizGeneration = 0;
 
@@ -296,8 +308,7 @@
 
   function getQuizPool() {
     let pool = quizCat === 'all' ? [...allCards] : allCards.filter(c => c.category === quizCat);
-    if (quizFilter === 'dont-know') pool = pool.filter(c => !isKnown(c.id));
-    else if (quizFilter === 'know') pool = pool.filter(c => isKnown(c.id));
+    if (quizFilter !== 'all') pool = pool.filter(c => stateOf(c.id) === quizFilter);
     return pool;
   }
 
@@ -357,19 +368,20 @@
         if (RANS) return;
         RANS = true; const generation = quizGeneration;
         grid.querySelectorAll('.quiz-opt').forEach(x => x.classList.add('off'));
-        const wasKnown = isKnown(w.id);
+        const previousState = stateOf(w.id);
         const correct = o.id === w.id;
         if (correct) {
           btn.classList.add('ok'); RSC++;
-          if (!wasKnown) qFlipped++;
         } else {
           btn.classList.add('bad');
           grid.querySelectorAll('.quiz-opt').forEach(x => {
             if (x.textContent.startsWith(w.kr)) x.classList.add('show');
           });
-          if (wasKnown) qFlipped++;
         }
-        try { M = await Storage.rateWord(w, correct ? 'know' : 'dont_know', 'quiz', {quiz: true}); }
+        try {
+          M = await Storage.rateWord(w, correct ? 'know' : 'dont_know', 'quiz', {quiz: true});
+          if (previousState !== stateOf(w.id)) qFlipped++;
+        }
         catch (error) { App.showToast('Answer was not saved: ' + error.message); }
         if (generation !== quizGeneration) return;
         $('quiz-sc').textContent = RSC;
@@ -422,7 +434,7 @@
 
     $('add-word-form').reset();
     modal.classList.add('hidden');
-    App.showToast('Added: ' + word.kr + ' (Don\'t Know)');
+    App.showToast('Added: ' + word.kr + ' (Unassessed)');
     updateStats(); renderWords(); updatePracticeInfo(); updateQuizInfo();
   });
 

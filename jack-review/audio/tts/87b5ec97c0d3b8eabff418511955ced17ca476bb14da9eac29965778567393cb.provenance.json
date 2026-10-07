@@ -1,0 +1,27 @@
+{
+  "text": "회의실",
+  "text_sha256": "6348461e6f2fde88e73283627a5c53078d1edac1223e165d796e5ec2b78bf384",
+  "request_sha256": "87b5ec97c0d3b8eabff418511955ced17ca476bb14da9eac29965778567393cb",
+  "file": "87b5ec97c0d3b8eabff418511955ced17ca476bb14da9eac29965778567393cb.mp3",
+  "audio_sha256": "4372303bdec478ec80adccaba4007c280e67a2ca6b7c9cbb33f2b8eb90825171",
+  "schema_version": 1,
+  "source_kind": "edge_generation",
+  "provider": "edge-tts",
+  "voice": "ko-KR-SunHiNeural",
+  "rate": "+0%",
+  "volume": "+0%",
+  "pitch": "+0Hz",
+  "reviewed_public": true,
+  "client_version": "7.2.7",
+  "generated_at": "2026-10-07T00:03:57.975181+00:00",
+  "generator_sha256": "1b6d82280d25b616d10658cd33609a4ee616be973468bd3f58c6d147363d9a10",
+  "vocab_sha256": "014673cf87a0d3cae3f8d346b85d7d8344372a32c5713556d4df1f7d9f1ba6d4",
+  "boundaries": [
+    {
+      "type": "SentenceBoundary",
+      "offset": 1000000,
+      "duration": 17500000,
+      "text": "회의실"
+    }
+  ]
+}

@@ -1,0 +1,27 @@
+{
+  "text": "산책해요",
+  "text_sha256": "81eeeb855cc14bd0d433568dd252831c001ad9ea4d5835b989cf83baf12efffc",
+  "request_sha256": "c56b9500816bbd05e3ba67fabe3949edaf8e2da8093b83b8589362c206109398",
+  "file": "c56b9500816bbd05e3ba67fabe3949edaf8e2da8093b83b8589362c206109398.mp3",
+  "audio_sha256": "4b6b406976c9260bc553bf56194995d3e143f67c8addab7c3f9afcbaa6bb01c5",
+  "schema_version": 1,
+  "source_kind": "edge_generation",
+  "provider": "edge-tts",
+  "voice": "ko-KR-SunHiNeural",
+  "rate": "+0%",
+  "volume": "+0%",
+  "pitch": "+0Hz",
+  "reviewed_public": true,
+  "client_version": "7.2.7",
+  "generated_at": "2026-10-07T00:00:44.998014+00:00",
+  "generator_sha256": "1b6d82280d25b616d10658cd33609a4ee616be973468bd3f58c6d147363d9a10",
+  "vocab_sha256": "014673cf87a0d3cae3f8d346b85d7d8344372a32c5713556d4df1f7d9f1ba6d4",
+  "boundaries": [
+    {
+      "type": "SentenceBoundary",
+      "offset": 1000000,
+      "duration": 17375000,
+      "text": "산책해요"
+    }
+  ]
+}

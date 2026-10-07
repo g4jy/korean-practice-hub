@@ -1,0 +1,27 @@
+{
+  "text": "침실",
+  "text_sha256": "d00abe5b484e8ee7bdc82d8419338c7163284870d02d3119b7f1589627e43ff0",
+  "request_sha256": "bf0d7b48a3fb264e1fbc3e098de58d891c38e8add4bba3aa2ed78b12a0ba7eca",
+  "file": "bf0d7b48a3fb264e1fbc3e098de58d891c38e8add4bba3aa2ed78b12a0ba7eca.mp3",
+  "audio_sha256": "789377e04a38a95c4fe7e13216771307a084532e2758b4cb71cfcb56c1bd5b02",
+  "schema_version": 1,
+  "source_kind": "edge_generation",
+  "provider": "edge-tts",
+  "voice": "ko-KR-SunHiNeural",
+  "rate": "+0%",
+  "volume": "+0%",
+  "pitch": "+0Hz",
+  "reviewed_public": true,
+  "client_version": "7.2.7",
+  "generated_at": "2026-10-07T00:03:27.285465+00:00",
+  "generator_sha256": "1b6d82280d25b616d10658cd33609a4ee616be973468bd3f58c6d147363d9a10",
+  "vocab_sha256": "014673cf87a0d3cae3f8d346b85d7d8344372a32c5713556d4df1f7d9f1ba6d4",
+  "boundaries": [
+    {
+      "type": "SentenceBoundary",
+      "offset": 1000000,
+      "duration": 16250000,
+      "text": "침실"
+    }
+  ]
+}

@@ -1,0 +1,27 @@
+{
+  "text": "쉬다",
+  "text_sha256": "62b3b824836a1f2cb1c5fe65cb5b3db8058b69013f2acb8f4486c9743e64b591",
+  "request_sha256": "d59941a28555b6b7d6dace96d46b28b586bd8eff4bb372178f001485effd0b04",
+  "file": "d59941a28555b6b7d6dace96d46b28b586bd8eff4bb372178f001485effd0b04.mp3",
+  "audio_sha256": "cafb2de9659f0855c33a648c9a34daec89a8e90ef4326c65b370c3ab885e9edd",
+  "schema_version": 1,
+  "source_kind": "edge_generation",
+  "provider": "edge-tts",
+  "voice": "ko-KR-SunHiNeural",
+  "rate": "+0%",
+  "volume": "+0%",
+  "pitch": "+0Hz",
+  "reviewed_public": true,
+  "client_version": "7.2.7",
+  "generated_at": "2026-10-07T00:01:11.499678+00:00",
+  "generator_sha256": "1b6d82280d25b616d10658cd33609a4ee616be973468bd3f58c6d147363d9a10",
+  "vocab_sha256": "014673cf87a0d3cae3f8d346b85d7d8344372a32c5713556d4df1f7d9f1ba6d4",
+  "boundaries": [
+    {
+      "type": "SentenceBoundary",
+      "offset": 1000000,
+      "duration": 18750000,
+      "text": "쉬다"
+    }
+  ]
+}

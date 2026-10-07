@@ -1,0 +1,27 @@
+{
+  "text": "일하다",
+  "text_sha256": "3313fc8f7aeacdfbc30f0811f7656061b44151b746b20e07c51234dbca3edcf5",
+  "request_sha256": "7d361d6027c42344643057b9c5bd298dcc33665c6ec99f60e08a81f982071ff5",
+  "file": "7d361d6027c42344643057b9c5bd298dcc33665c6ec99f60e08a81f982071ff5.mp3",
+  "audio_sha256": "8e588fed79a68d18597cd3989822e8cf4d4b61f5ca319141b7760e3d9509ba30",
+  "schema_version": 1,
+  "source_kind": "edge_generation",
+  "provider": "edge-tts",
+  "voice": "ko-KR-SunHiNeural",
+  "rate": "+0%",
+  "volume": "+0%",
+  "pitch": "+0Hz",
+  "reviewed_public": true,
+  "client_version": "7.2.7",
+  "generated_at": "2026-10-07T00:02:41.223941+00:00",
+  "generator_sha256": "1b6d82280d25b616d10658cd33609a4ee616be973468bd3f58c6d147363d9a10",
+  "vocab_sha256": "014673cf87a0d3cae3f8d346b85d7d8344372a32c5713556d4df1f7d9f1ba6d4",
+  "boundaries": [
+    {
+      "type": "SentenceBoundary",
+      "offset": 1000000,
+      "duration": 17125000,
+      "text": "일하다"
+    }
+  ]
+}

@@ -1,0 +1,27 @@
+{
+  "text": "좋아해요",
+  "text_sha256": "5f9319d9c169323b3fe40379e017a7e6ec305dce8584743c357a49365c89f66d",
+  "request_sha256": "017f6b4648f74858da65453b5b63343b1964612d0b82d75071bb6cfb0e134089",
+  "file": "017f6b4648f74858da65453b5b63343b1964612d0b82d75071bb6cfb0e134089.mp3",
+  "audio_sha256": "73f719476b5f101ef61fc7297f1b3a857d2ebd00a640d963b8ab29671bff1692",
+  "schema_version": 1,
+  "source_kind": "edge_generation",
+  "provider": "edge-tts",
+  "voice": "ko-KR-SunHiNeural",
+  "rate": "+0%",
+  "volume": "+0%",
+  "pitch": "+0Hz",
+  "reviewed_public": true,
+  "client_version": "7.2.7",
+  "generated_at": "2026-10-07T00:03:11.375768+00:00",
+  "generator_sha256": "1b6d82280d25b616d10658cd33609a4ee616be973468bd3f58c6d147363d9a10",
+  "vocab_sha256": "014673cf87a0d3cae3f8d346b85d7d8344372a32c5713556d4df1f7d9f1ba6d4",
+  "boundaries": [
+    {
+      "type": "SentenceBoundary",
+      "offset": 1000000,
+      "duration": 17125000,
+      "text": "좋아해요"
+    }
+  ]
+}

@@ -1,0 +1,27 @@
+{
+  "text": "공책",
+  "text_sha256": "06bbecd00d0929ecc83f04dde4962c06e5de32bb6de82cb564d9793a5a01223b",
+  "request_sha256": "fcba2fddd01bb9cab49dff92ed536e37b6d2ddba1ab226fcdb9fdcab79a2ebdc",
+  "file": "fcba2fddd01bb9cab49dff92ed536e37b6d2ddba1ab226fcdb9fdcab79a2ebdc.mp3",
+  "audio_sha256": "f2040e01163c6c50db72ec443e5d7333557d0a02f72fb133979f3bbf224befe3",
+  "schema_version": 1,
+  "source_kind": "edge_generation",
+  "provider": "edge-tts",
+  "voice": "ko-KR-SunHiNeural",
+  "rate": "+0%",
+  "volume": "+0%",
+  "pitch": "+0Hz",
+  "reviewed_public": true,
+  "client_version": "7.2.7",
+  "generated_at": "2026-10-06T23:58:36.738213+00:00",
+  "generator_sha256": "1b6d82280d25b616d10658cd33609a4ee616be973468bd3f58c6d147363d9a10",
+  "vocab_sha256": "014673cf87a0d3cae3f8d346b85d7d8344372a32c5713556d4df1f7d9f1ba6d4",
+  "boundaries": [
+    {
+      "type": "SentenceBoundary",
+      "offset": 1000000,
+      "duration": 15250000,
+      "text": "공책"
+    }
+  ]
+}

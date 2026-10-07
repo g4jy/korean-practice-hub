@@ -1,0 +1,27 @@
+{
+  "text": "놀아요",
+  "text_sha256": "5ded521f7bcbc7326b73248b1dc1af7a644637809d549ae4f2969aecb06fef11",
+  "request_sha256": "814b6cd6686c55cccf2d02ef52e6c36b077545e751eb1008e3759d49b273ad4a",
+  "file": "814b6cd6686c55cccf2d02ef52e6c36b077545e751eb1008e3759d49b273ad4a.mp3",
+  "audio_sha256": "0927ec7e2ba06b44d750123ada161294cac8ff2e8b758c50458c34bf94d823ad",
+  "schema_version": 1,
+  "source_kind": "edge_generation",
+  "provider": "edge-tts",
+  "voice": "ko-KR-SunHiNeural",
+  "rate": "+0%",
+  "volume": "+0%",
+  "pitch": "+0Hz",
+  "reviewed_public": true,
+  "client_version": "7.2.7",
+  "generated_at": "2026-10-06T23:58:58.374925+00:00",
+  "generator_sha256": "1b6d82280d25b616d10658cd33609a4ee616be973468bd3f58c6d147363d9a10",
+  "vocab_sha256": "014673cf87a0d3cae3f8d346b85d7d8344372a32c5713556d4df1f7d9f1ba6d4",
+  "boundaries": [
+    {
+      "type": "SentenceBoundary",
+      "offset": 1000000,
+      "duration": 15125000,
+      "text": "놀아요"
+    }
+  ]
+}

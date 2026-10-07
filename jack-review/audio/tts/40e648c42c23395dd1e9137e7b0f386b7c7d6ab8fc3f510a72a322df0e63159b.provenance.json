@@ -1,0 +1,27 @@
+{
+  "text": "문장",
+  "text_sha256": "22f146433241fd2aa3fe9cc3b6ac69b550fd681de081db9af779e2781f93b6a6",
+  "request_sha256": "40e648c42c23395dd1e9137e7b0f386b7c7d6ab8fc3f510a72a322df0e63159b",
+  "file": "40e648c42c23395dd1e9137e7b0f386b7c7d6ab8fc3f510a72a322df0e63159b.mp3",
+  "audio_sha256": "d3d5eafe1409ed44739ae2e7c0728143582933ea1180cb00043ab609abd49d41",
+  "schema_version": 1,
+  "source_kind": "edge_generation",
+  "provider": "edge-tts",
+  "voice": "ko-KR-SunHiNeural",
+  "rate": "+0%",
+  "volume": "+0%",
+  "pitch": "+0Hz",
+  "reviewed_public": true,
+  "client_version": "7.2.7",
+  "generated_at": "2026-10-07T00:00:01.026088+00:00",
+  "generator_sha256": "1b6d82280d25b616d10658cd33609a4ee616be973468bd3f58c6d147363d9a10",
+  "vocab_sha256": "014673cf87a0d3cae3f8d346b85d7d8344372a32c5713556d4df1f7d9f1ba6d4",
+  "boundaries": [
+    {
+      "type": "SentenceBoundary",
+      "offset": 1000000,
+      "duration": 16000000,
+      "text": "문장"
+    }
+  ]
+}

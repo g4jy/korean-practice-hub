@@ -1,0 +1,27 @@
+{
+  "text": "자주",
+  "text_sha256": "604b383d216f9452c5d23e83ad062e56acf392b8509bc87f1a5e0285ba65b459",
+  "request_sha256": "dcc1e51653fded6a5d61526c59819a4be83a043b1ef5669daead39f72a8bacd2",
+  "file": "dcc1e51653fded6a5d61526c59819a4be83a043b1ef5669daead39f72a8bacd2.mp3",
+  "audio_sha256": "d57671dfa8891b934170515e5e424886f2e18d3ec7ed163f4cc5f330efd1a2c4",
+  "schema_version": 1,
+  "source_kind": "edge_generation",
+  "provider": "edge-tts",
+  "voice": "ko-KR-SunHiNeural",
+  "rate": "+0%",
+  "volume": "+0%",
+  "pitch": "+0Hz",
+  "reviewed_public": true,
+  "client_version": "7.2.7",
+  "generated_at": "2026-10-07T00:02:53.568084+00:00",
+  "generator_sha256": "1b6d82280d25b616d10658cd33609a4ee616be973468bd3f58c6d147363d9a10",
+  "vocab_sha256": "014673cf87a0d3cae3f8d346b85d7d8344372a32c5713556d4df1f7d9f1ba6d4",
+  "boundaries": [
+    {
+      "type": "SentenceBoundary",
+      "offset": 1000000,
+      "duration": 15750000,
+      "text": "자주"
+    }
+  ]
+}

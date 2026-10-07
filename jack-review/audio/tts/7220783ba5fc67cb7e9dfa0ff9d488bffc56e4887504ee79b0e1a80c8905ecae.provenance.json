@@ -1,0 +1,27 @@
+{
+  "text": "가게",
+  "text_sha256": "c013538e549a4dedbd4a22561e55a20674eb52a55b748c203b65c48820840b86",
+  "request_sha256": "7220783ba5fc67cb7e9dfa0ff9d488bffc56e4887504ee79b0e1a80c8905ecae",
+  "file": "7220783ba5fc67cb7e9dfa0ff9d488bffc56e4887504ee79b0e1a80c8905ecae.mp3",
+  "audio_sha256": "2f1c14189e85603d7f24916362416a5dab57eb525ac8a79edfbfceb7b83bc2ff",
+  "schema_version": 1,
+  "source_kind": "edge_generation",
+  "provider": "edge-tts",
+  "voice": "ko-KR-SunHiNeural",
+  "rate": "+0%",
+  "volume": "+0%",
+  "pitch": "+0Hz",
+  "reviewed_public": true,
+  "client_version": "7.2.7",
+  "generated_at": "2026-10-06T23:58:05.063487+00:00",
+  "generator_sha256": "1b6d82280d25b616d10658cd33609a4ee616be973468bd3f58c6d147363d9a10",
+  "vocab_sha256": "014673cf87a0d3cae3f8d346b85d7d8344372a32c5713556d4df1f7d9f1ba6d4",
+  "boundaries": [
+    {
+      "type": "SentenceBoundary",
+      "offset": 1000000,
+      "duration": 14625000,
+      "text": "가게"
+    }
+  ]
+}

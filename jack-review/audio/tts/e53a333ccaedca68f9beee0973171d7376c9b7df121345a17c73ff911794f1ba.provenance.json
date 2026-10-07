@@ -1,0 +1,27 @@
+{
+  "text": "뒤",
+  "text_sha256": "c65326b2de936236c2227e26003444811b85e22120ce8ee480b5eefe53e9b319",
+  "request_sha256": "e53a333ccaedca68f9beee0973171d7376c9b7df121345a17c73ff911794f1ba",
+  "file": "e53a333ccaedca68f9beee0973171d7376c9b7df121345a17c73ff911794f1ba.mp3",
+  "audio_sha256": "56a923f966555e3fa641b12a39f4e963fd1779fda4af93239a2af3874f6f6e37",
+  "schema_version": 1,
+  "source_kind": "edge_generation",
+  "provider": "edge-tts",
+  "voice": "ko-KR-SunHiNeural",
+  "rate": "+0%",
+  "volume": "+0%",
+  "pitch": "+0Hz",
+  "reviewed_public": true,
+  "client_version": "7.2.7",
+  "generated_at": "2026-10-06T23:59:12.134991+00:00",
+  "generator_sha256": "1b6d82280d25b616d10658cd33609a4ee616be973468bd3f58c6d147363d9a10",
+  "vocab_sha256": "014673cf87a0d3cae3f8d346b85d7d8344372a32c5713556d4df1f7d9f1ba6d4",
+  "boundaries": [
+    {
+      "type": "SentenceBoundary",
+      "offset": 1000000,
+      "duration": 12750000,
+      "text": "뒤"
+    }
+  ]
+}

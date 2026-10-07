@@ -1,0 +1,27 @@
+{
+  "text": "혼자",
+  "text_sha256": "9d309cd460ea409c50fbed2bf4a6ec6e8c57f40185f8212c9e358119578083bd",
+  "request_sha256": "960b97b9daaac9746b52af9105437b725b954a271d8c864c92a6337adfdd60f4",
+  "file": "960b97b9daaac9746b52af9105437b725b954a271d8c864c92a6337adfdd60f4.mp3",
+  "audio_sha256": "ae7c1349930941c0a27e9f6851ebbbff04b25c59199bcec0f6c90f3c948d6bf5",
+  "schema_version": 1,
+  "source_kind": "edge_generation",
+  "provider": "edge-tts",
+  "voice": "ko-KR-SunHiNeural",
+  "rate": "+0%",
+  "volume": "+0%",
+  "pitch": "+0Hz",
+  "reviewed_public": true,
+  "client_version": "7.2.7",
+  "generated_at": "2026-10-07T00:03:53.658415+00:00",
+  "generator_sha256": "1b6d82280d25b616d10658cd33609a4ee616be973468bd3f58c6d147363d9a10",
+  "vocab_sha256": "014673cf87a0d3cae3f8d346b85d7d8344372a32c5713556d4df1f7d9f1ba6d4",
+  "boundaries": [
+    {
+      "type": "SentenceBoundary",
+      "offset": 1000000,
+      "duration": 15625000,
+      "text": "혼자"
+    }
+  ]
+}

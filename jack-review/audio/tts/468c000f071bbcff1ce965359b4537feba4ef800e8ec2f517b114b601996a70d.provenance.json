@@ -1,0 +1,27 @@
+{
+  "text": "무엇",
+  "text_sha256": "c95167f3fe21887b732075e11623a3f8da80582c4a882d223adac258afac279a",
+  "request_sha256": "468c000f071bbcff1ce965359b4537feba4ef800e8ec2f517b114b601996a70d",
+  "file": "468c000f071bbcff1ce965359b4537feba4ef800e8ec2f517b114b601996a70d.mp3",
+  "audio_sha256": "4b7155bba76b8a25977bfcf1263190cbe0685cae08a27666fb35a2c8d2c150fd",
+  "schema_version": 1,
+  "source_kind": "edge_generation",
+  "provider": "edge-tts",
+  "voice": "ko-KR-SunHiNeural",
+  "rate": "+0%",
+  "volume": "+0%",
+  "pitch": "+0Hz",
+  "reviewed_public": true,
+  "client_version": "7.2.7",
+  "generated_at": "2026-10-06T23:59:58.352316+00:00",
+  "generator_sha256": "1b6d82280d25b616d10658cd33609a4ee616be973468bd3f58c6d147363d9a10",
+  "vocab_sha256": "014673cf87a0d3cae3f8d346b85d7d8344372a32c5713556d4df1f7d9f1ba6d4",
+  "boundaries": [
+    {
+      "type": "SentenceBoundary",
+      "offset": 1000000,
+      "duration": 13375000,
+      "text": "무엇"
+    }
+  ]
+}

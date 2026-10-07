@@ -1,0 +1,27 @@
+{
+  "text": "말해요",
+  "text_sha256": "5536c3debe8d6f91fbe72eab87fc6a65641f3ff0a5783fc1b10d3931874ac1a5",
+  "request_sha256": "c49a00273d419d2afb31988825c91cf823a6ad08767024c26dd8f824353058f7",
+  "file": "c49a00273d419d2afb31988825c91cf823a6ad08767024c26dd8f824353058f7.mp3",
+  "audio_sha256": "5c4127438ded11dc332b932db86ba52d10bdaac8066c05cff395cb06f7e4b733",
+  "schema_version": 1,
+  "source_kind": "edge_generation",
+  "provider": "edge-tts",
+  "voice": "ko-KR-SunHiNeural",
+  "rate": "+0%",
+  "volume": "+0%",
+  "pitch": "+0Hz",
+  "reviewed_public": true,
+  "client_version": "7.2.7",
+  "generated_at": "2026-10-06T23:59:35.655553+00:00",
+  "generator_sha256": "1b6d82280d25b616d10658cd33609a4ee616be973468bd3f58c6d147363d9a10",
+  "vocab_sha256": "014673cf87a0d3cae3f8d346b85d7d8344372a32c5713556d4df1f7d9f1ba6d4",
+  "boundaries": [
+    {
+      "type": "SentenceBoundary",
+      "offset": 1000000,
+      "duration": 15375000,
+      "text": "말해요"
+    }
+  ]
+}

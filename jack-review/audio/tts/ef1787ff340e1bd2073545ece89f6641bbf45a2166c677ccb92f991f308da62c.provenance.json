@@ -1,0 +1,27 @@
+{
+  "text": "어떻다",
+  "text_sha256": "e0a8c114a77e081454d17699e48c2313f4cebc53ff3076cae20feca272797bb7",
+  "request_sha256": "ef1787ff340e1bd2073545ece89f6641bbf45a2166c677ccb92f991f308da62c",
+  "file": "ef1787ff340e1bd2073545ece89f6641bbf45a2166c677ccb92f991f308da62c.mp3",
+  "audio_sha256": "c93dfbf0d06c5573521f5961f2173e4c364df9c7918a950ae49e8119ebf1e526",
+  "schema_version": 1,
+  "source_kind": "edge_generation",
+  "provider": "edge-tts",
+  "voice": "ko-KR-SunHiNeural",
+  "rate": "+0%",
+  "volume": "+0%",
+  "pitch": "+0Hz",
+  "reviewed_public": true,
+  "client_version": "7.2.7",
+  "generated_at": "2026-10-07T00:01:45.085627+00:00",
+  "generator_sha256": "1b6d82280d25b616d10658cd33609a4ee616be973468bd3f58c6d147363d9a10",
+  "vocab_sha256": "014673cf87a0d3cae3f8d346b85d7d8344372a32c5713556d4df1f7d9f1ba6d4",
+  "boundaries": [
+    {
+      "type": "SentenceBoundary",
+      "offset": 1000000,
+      "duration": 17000000,
+      "text": "어떻다"
+    }
+  ]
+}

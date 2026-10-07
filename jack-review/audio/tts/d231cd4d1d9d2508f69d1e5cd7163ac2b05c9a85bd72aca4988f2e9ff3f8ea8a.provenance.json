@@ -1,0 +1,27 @@
+{
+  "text": "미용실",
+  "text_sha256": "9f4f9d50afd9fc9a7edb8107b69f20b2a3f055773c30ff3772e4fa12e718a969",
+  "request_sha256": "d231cd4d1d9d2508f69d1e5cd7163ac2b05c9a85bd72aca4988f2e9ff3f8ea8a",
+  "file": "d231cd4d1d9d2508f69d1e5cd7163ac2b05c9a85bd72aca4988f2e9ff3f8ea8a.mp3",
+  "audio_sha256": "ae642a4399de8a55c36feefee919ed1b23b037e9a29b53922f6b00d480125181",
+  "schema_version": 1,
+  "source_kind": "edge_generation",
+  "provider": "edge-tts",
+  "voice": "ko-KR-SunHiNeural",
+  "rate": "+0%",
+  "volume": "+0%",
+  "pitch": "+0Hz",
+  "reviewed_public": true,
+  "client_version": "7.2.7",
+  "generated_at": "2026-10-07T00:00:09.582405+00:00",
+  "generator_sha256": "1b6d82280d25b616d10658cd33609a4ee616be973468bd3f58c6d147363d9a10",
+  "vocab_sha256": "014673cf87a0d3cae3f8d346b85d7d8344372a32c5713556d4df1f7d9f1ba6d4",
+  "boundaries": [
+    {
+      "type": "SentenceBoundary",
+      "offset": 1000000,
+      "duration": 17750000,
+      "text": "미용실"
+    }
+  ]
+}

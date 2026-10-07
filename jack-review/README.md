@@ -2,8 +2,9 @@
 
 Faithful copy of g4jy/korean-practice-miyahh at d778c1928736947766b1559aed8f243a1cb6c07d, with Jack’s reviewed Chapter 3–4 content and teacher-requested activity vocabulary.
 
-- 117 words and 5 particle-pattern cards; present-polite forms supplied by the reviewed lesson
-- Original flashcard, vocabulary, study, quiz, sentence-builder, audio fallback, export/import and local progress behavior retained
+- 130 words and 5 particle-pattern cards; reviewed present-polite forms where available
+- Flashcard, vocabulary, study, quiz, sentence-builder, export/import and local progress behavior retained
+- Exact-match Edge TTS audio only. Missing or failed audio is reported explicitly; there is no device-voice or partial-word fallback
 - All localStorage and IndexedDB names isolated for Jack
 - Sentence builders use only studied vocabulary, present tense and 오늘. No new past/future or degree-adverb content is introduced
 - Explicit Submit, durable pending copies, and results CSV are available in all five study entry pages; network delivery is disabled until the teacher receiver is restored and tested
@@ -32,6 +33,8 @@ The JSON object accepts only these fields:
 Base card IDs are `ko:` plus the URL-encoded, NFC-normalized Korean form. An explicit unique sense ID can represent a homograph; matching is by ID, never by inferred conjugation or English meaning. Omit `wordId` when the meaning is unclear. A later revision can resolve that observation with its original ID and timestamp. Already resolved observations cannot be retargeted, and a new classroom observation needs a new ID. An unassessed or unknown producer field is not evidence of poor recall and must not be converted to a weak status.
 
 Re-importing an identical revision is a no-op. An older revision is skipped; different contents under an already applied revision are rejected. A newer revision never replays an unchanged observation. An older observation does not override a later study answer, later lesson observation or progress reset. All overrides preserve response counters and record the previous rating in local history.
+
+An existing word ID cannot be reused for a different meaning. Legacy Known ratings without a trustworthy learning timestamp are retained for review rather than silently overwritten. Imports and backup merges commit atomically; failed writes can be retried without duplicating observations.
 
 ### Publication boundary
 

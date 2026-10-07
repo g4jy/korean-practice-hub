@@ -1,0 +1,27 @@
+{
+  "text": "쇼핑해요",
+  "text_sha256": "1af49b83a43dd85d1e0a747b7d4c73d0015b22d7d79255e0145c30df1ce3d052",
+  "request_sha256": "18b6f5de15c1b0f96b9f10de64fa51ef5e7f6b1efec0dc635da6f378883e6c1b",
+  "file": "18b6f5de15c1b0f96b9f10de64fa51ef5e7f6b1efec0dc635da6f378883e6c1b.mp3",
+  "audio_sha256": "4958c2d27c06b9a4a57ff777089938aeffd66175b611d352ebfa4bf8e630cf15",
+  "schema_version": 1,
+  "source_kind": "edge_generation",
+  "provider": "edge-tts",
+  "voice": "ko-KR-SunHiNeural",
+  "rate": "+0%",
+  "volume": "+0%",
+  "pitch": "+0Hz",
+  "reviewed_public": true,
+  "client_version": "7.2.7",
+  "generated_at": "2026-10-07T00:01:07.929610+00:00",
+  "generator_sha256": "1b6d82280d25b616d10658cd33609a4ee616be973468bd3f58c6d147363d9a10",
+  "vocab_sha256": "014673cf87a0d3cae3f8d346b85d7d8344372a32c5713556d4df1f7d9f1ba6d4",
+  "boundaries": [
+    {
+      "type": "SentenceBoundary",
+      "offset": 1000000,
+      "duration": 17125000,
+      "text": "쇼핑해요"
+    }
+  ]
+}

@@ -1,0 +1,27 @@
+{
+  "text": "저기",
+  "text_sha256": "1a8b5723b01cfd9368f853a9e8cc30b12da69ca2e2990aac9ba3078f50e91f8c",
+  "request_sha256": "46aa1d52f9ac9d7a5916c66c173a78c89aceb14d31bcfc917a6ec47c36f49130",
+  "file": "46aa1d52f9ac9d7a5916c66c173a78c89aceb14d31bcfc917a6ec47c36f49130.mp3",
+  "audio_sha256": "aa136391181b4f50129445f0b0d186721d166b6a56b5f7579009883f8e23506c",
+  "schema_version": 1,
+  "source_kind": "edge_generation",
+  "provider": "edge-tts",
+  "voice": "ko-KR-SunHiNeural",
+  "rate": "+0%",
+  "volume": "+0%",
+  "pitch": "+0Hz",
+  "reviewed_public": true,
+  "client_version": "7.2.7",
+  "generated_at": "2026-10-07T00:03:04.399572+00:00",
+  "generator_sha256": "1b6d82280d25b616d10658cd33609a4ee616be973468bd3f58c6d147363d9a10",
+  "vocab_sha256": "014673cf87a0d3cae3f8d346b85d7d8344372a32c5713556d4df1f7d9f1ba6d4",
+  "boundaries": [
+    {
+      "type": "SentenceBoundary",
+      "offset": 1000000,
+      "duration": 15000000,
+      "text": "저기"
+    }
+  ]
+}

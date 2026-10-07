@@ -1,0 +1,27 @@
+{
+  "text": "계단",
+  "text_sha256": "cbd5d64a59da9222d59205538c03a3686a9982d5207f47c06345036e239af4d8",
+  "request_sha256": "d9682fd2da6194be2f0cfdef24e203c38f1e8797ef74386baa0e76a653106675",
+  "file": "d9682fd2da6194be2f0cfdef24e203c38f1e8797ef74386baa0e76a653106675.mp3",
+  "audio_sha256": "61dfe8598b1c2b2df3dcc238e2a0dc855a674b6ef2baf1e1f6b45d7f517973ad",
+  "schema_version": 1,
+  "source_kind": "edge_generation",
+  "provider": "edge-tts",
+  "voice": "ko-KR-SunHiNeural",
+  "rate": "+0%",
+  "volume": "+0%",
+  "pitch": "+0Hz",
+  "reviewed_public": true,
+  "client_version": "7.2.7",
+  "generated_at": "2026-10-06T23:58:29.484098+00:00",
+  "generator_sha256": "1b6d82280d25b616d10658cd33609a4ee616be973468bd3f58c6d147363d9a10",
+  "vocab_sha256": "014673cf87a0d3cae3f8d346b85d7d8344372a32c5713556d4df1f7d9f1ba6d4",
+  "boundaries": [
+    {
+      "type": "SentenceBoundary",
+      "offset": 1000000,
+      "duration": 15125000,
+      "text": "계단"
+    }
+  ]
+}

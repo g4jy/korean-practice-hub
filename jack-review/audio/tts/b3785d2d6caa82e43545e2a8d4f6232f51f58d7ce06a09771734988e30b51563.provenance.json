@@ -1,0 +1,27 @@
+{
+  "text": "특별",
+  "text_sha256": "d1dda53fe376988b83dd74b9ca0cac1abe9ea85ec5e2b1ac02ee419d87cfeb8a",
+  "request_sha256": "b3785d2d6caa82e43545e2a8d4f6232f51f58d7ce06a09771734988e30b51563",
+  "file": "b3785d2d6caa82e43545e2a8d4f6232f51f58d7ce06a09771734988e30b51563.mp3",
+  "audio_sha256": "384cdd3a2fdc6d3e2ed03547be3d798faddbdd88e3fdae3dc3dfe5a7a733951e",
+  "schema_version": 1,
+  "source_kind": "edge_generation",
+  "provider": "edge-tts",
+  "voice": "ko-KR-SunHiNeural",
+  "rate": "+0%",
+  "volume": "+0%",
+  "pitch": "+0Hz",
+  "reviewed_public": true,
+  "client_version": "7.2.7",
+  "generated_at": "2026-10-07T00:03:40.175387+00:00",
+  "generator_sha256": "1b6d82280d25b616d10658cd33609a4ee616be973468bd3f58c6d147363d9a10",
+  "vocab_sha256": "014673cf87a0d3cae3f8d346b85d7d8344372a32c5713556d4df1f7d9f1ba6d4",
+  "boundaries": [
+    {
+      "type": "SentenceBoundary",
+      "offset": 1000000,
+      "duration": 15250000,
+      "text": "특별"
+    }
+  ]
+}

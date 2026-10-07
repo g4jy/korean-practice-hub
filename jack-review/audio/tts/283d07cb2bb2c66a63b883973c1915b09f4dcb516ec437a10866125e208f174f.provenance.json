@@ -1,0 +1,27 @@
+{
+  "text": "어때요",
+  "text_sha256": "6dbf157a4dc7e6e8b537a7126330da8573aa1bd58a32ad37c5d319f83994f73c",
+  "request_sha256": "283d07cb2bb2c66a63b883973c1915b09f4dcb516ec437a10866125e208f174f",
+  "file": "283d07cb2bb2c66a63b883973c1915b09f4dcb516ec437a10866125e208f174f.mp3",
+  "audio_sha256": "be7381c5b0fc9ab2400d02462fb4a881e5252f6784bd630ac0537c7543c38189",
+  "schema_version": 1,
+  "source_kind": "edge_generation",
+  "provider": "edge-tts",
+  "voice": "ko-KR-SunHiNeural",
+  "rate": "+0%",
+  "volume": "+0%",
+  "pitch": "+0Hz",
+  "reviewed_public": true,
+  "client_version": "7.2.7",
+  "generated_at": "2026-10-07T00:01:42.339325+00:00",
+  "generator_sha256": "1b6d82280d25b616d10658cd33609a4ee616be973468bd3f58c6d147363d9a10",
+  "vocab_sha256": "014673cf87a0d3cae3f8d346b85d7d8344372a32c5713556d4df1f7d9f1ba6d4",
+  "boundaries": [
+    {
+      "type": "SentenceBoundary",
+      "offset": 1000000,
+      "duration": 16000000,
+      "text": "어때요"
+    }
+  ]
+}

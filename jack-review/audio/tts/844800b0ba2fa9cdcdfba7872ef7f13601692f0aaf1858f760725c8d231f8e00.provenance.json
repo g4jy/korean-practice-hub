@@ -1,0 +1,27 @@
+{
+  "text": "보다",
+  "text_sha256": "6a45cf834264a5ec36113824c2c48dea888e2fbafcad2d12c110a34932728e7a",
+  "request_sha256": "844800b0ba2fa9cdcdfba7872ef7f13601692f0aaf1858f760725c8d231f8e00",
+  "file": "844800b0ba2fa9cdcdfba7872ef7f13601692f0aaf1858f760725c8d231f8e00.mp3",
+  "audio_sha256": "148c8df4549d574252a0d8816e7f90ecb93291e55f7de7e4a2927eeeffb2b69e",
+  "schema_version": 1,
+  "source_kind": "edge_generation",
+  "provider": "edge-tts",
+  "voice": "ko-KR-SunHiNeural",
+  "rate": "+0%",
+  "volume": "+0%",
+  "pitch": "+0Hz",
+  "reviewed_public": true,
+  "client_version": "7.2.7",
+  "generated_at": "2026-10-07T00:00:21.874707+00:00",
+  "generator_sha256": "1b6d82280d25b616d10658cd33609a4ee616be973468bd3f58c6d147363d9a10",
+  "vocab_sha256": "014673cf87a0d3cae3f8d346b85d7d8344372a32c5713556d4df1f7d9f1ba6d4",
+  "boundaries": [
+    {
+      "type": "SentenceBoundary",
+      "offset": 1000000,
+      "duration": 17625000,
+      "text": "보다"
+    }
+  ]
+}
