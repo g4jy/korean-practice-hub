@@ -1,0 +1,3386 @@
+[
+  {
+    "file": "6ffd015ff4c3322ac70c9d8c.mp3",
+    "text": "생각하다"
+  },
+  {
+    "file": "2160126fe198ec3d5d0e31e0.mp3",
+    "text": "생각해요"
+  },
+  {
+    "file": "41dc36b9d43cec37abf4c091.mp3",
+    "text": "저는 가족을 생각해요."
+  },
+  {
+    "file": "c82e2f4887d4be700a3874e6.mp3",
+    "text": "설명하다"
+  },
+  {
+    "file": "1836154fd3a16907bd58f31b.mp3",
+    "text": "설명해요"
+  },
+  {
+    "file": "ecb334198d19b9fe4d27fcfd.mp3",
+    "text": "선생님이 문법을 설명해요."
+  },
+  {
+    "file": "a42ff5cd8ca0b9097ee91d99.mp3",
+    "text": "비교하다"
+  },
+  {
+    "file": "8d2922731ee996d8f477a1a2.mp3",
+    "text": "비교해요"
+  },
+  {
+    "file": "949425c8efad5e523684362b.mp3",
+    "text": "두 문장을 비교해요."
+  },
+  {
+    "file": "2ba756b1c3583db0778a8e4b.mp3",
+    "text": "연습하다"
+  },
+  {
+    "file": "fa751687ca843c3d6888bb7d.mp3",
+    "text": "연습해요"
+  },
+  {
+    "file": "6440ae6dbb4d21015d388665.mp3",
+    "text": "한국어를 자주 연습해요."
+  },
+  {
+    "file": "36170cc58deed32d9dcedae2.mp3",
+    "text": "준비하다"
+  },
+  {
+    "file": "ee94d464cf1545a47a813a54.mp3",
+    "text": "준비해요"
+  },
+  {
+    "file": "3ec55dca1b614f07e37c1605.mp3",
+    "text": "수업을 준비해요."
+  },
+  {
+    "file": "4a5043339cfcc5fdfd49ab07.mp3",
+    "text": "계획하다"
+  },
+  {
+    "file": "5e9a2069f3b44787d2669e37.mp3",
+    "text": "계획해요"
+  },
+  {
+    "file": "f2e89a52825cd7aa19a84a28.mp3",
+    "text": "여행을 계획해요."
+  },
+  {
+    "file": "fc001754fa34535b35d4d5cf.mp3",
+    "text": "이해하다"
+  },
+  {
+    "file": "684f5446015e625fa7a67fbe.mp3",
+    "text": "이해해요"
+  },
+  {
+    "file": "d04d56fa03a2e4f7c932f856.mp3",
+    "text": "질문을 이해해요."
+  },
+  {
+    "file": "93e3308b9dd20149a4c57e5d.mp3",
+    "text": "시작하다"
+  },
+  {
+    "file": "56b02cb67a9f0e9cccedaeac.mp3",
+    "text": "시작해요"
+  },
+  {
+    "file": "47022a94d14c076fce6a3b23.mp3",
+    "text": "수업을 시작해요."
+  },
+  {
+    "file": "80a25f4e1416ded1f12265e4.mp3",
+    "text": "끝나다"
+  },
+  {
+    "file": "e022eeff662d5b9b6c992173.mp3",
+    "text": "끝나요"
+  },
+  {
+    "file": "3d3f0b30c2cb00095ce1d5b2.mp3",
+    "text": "수업이 끝나요."
+  },
+  {
+    "file": "686f8e089bf22cd01d10e666.mp3",
+    "text": "끝내다"
+  },
+  {
+    "file": "85aea4a95be147165ad58a12.mp3",
+    "text": "끝내요"
+  },
+  {
+    "file": "d5f66190ce683005637015db.mp3",
+    "text": "숙제를 끝내요."
+  },
+  {
+    "file": "cfe0233d2be88a8338fd04f3.mp3",
+    "text": "돌아오다"
+  },
+  {
+    "file": "7b57427e55bed0bad97c4830.mp3",
+    "text": "돌아와요"
+  },
+  {
+    "file": "cd40d81013040ef46cfcadf9.mp3",
+    "text": "집에 돌아와요."
+  },
+  {
+    "file": "d56e2e0e23cd1763208c03ed.mp3",
+    "text": "지내다"
+  },
+  {
+    "file": "dda13336b1a19f44caff6b1b.mp3",
+    "text": "지내요"
+  },
+  {
+    "file": "d7cec11d9007bed72c61fa44.mp3",
+    "text": "잘 지내요."
+  },
+  {
+    "file": "ea6fae0a54340254cbe6efa2.mp3",
+    "text": "모이다"
+  },
+  {
+    "file": "139f707bf5a93aece54b9260.mp3",
+    "text": "모여요"
+  },
+  {
+    "file": "5cd50ef0f9bae2286d911634.mp3",
+    "text": "가족이 집에 모여요."
+  },
+  {
+    "file": "2bf93bc3434e8c476626c4eb.mp3",
+    "text": "예약하다"
+  },
+  {
+    "file": "bebf104fa6a6c327406546b3.mp3",
+    "text": "예약해요"
+  },
+  {
+    "file": "1b350395658f8c4df69f8c7c.mp3",
+    "text": "식당을 예약해요."
+  },
+  {
+    "file": "dc82df55affb977bd3f4daf9.mp3",
+    "text": "주문하다"
+  },
+  {
+    "file": "57cbe5011f2d02de02e33e8d.mp3",
+    "text": "주문해요"
+  },
+  {
+    "file": "27ee4d21e400923ca109f1ed.mp3",
+    "text": "음식을 주문해요."
+  },
+  {
+    "file": "169eb5d7a0d76e97fa7f1b7c.mp3",
+    "text": "부르다"
+  },
+  {
+    "file": "66d3e2451fce15ddc8a3e905.mp3",
+    "text": "불러요"
+  },
+  {
+    "file": "325b9ec68190b742720af671.mp3",
+    "text": "노래를 불러요."
+  },
+  {
+    "file": "1fb31f8ce435292337194692.mp3",
+    "text": "춤추다"
+  },
+  {
+    "file": "84048dffc70de08921809faf.mp3",
+    "text": "춤춰요"
+  },
+  {
+    "file": "199fcf3f1476c6c0c20bc772.mp3",
+    "text": "친구가 춤춰요."
+  },
+  {
+    "file": "8f5efeb4058ba36f31b7ac8b.mp3",
+    "text": "연주하다"
+  },
+  {
+    "file": "b6a67cedd20732f52b1f321e.mp3",
+    "text": "연주해요"
+  },
+  {
+    "file": "d89e438b75bb0a66add240f2.mp3",
+    "text": "피아노를 연주해요."
+  },
+  {
+    "file": "99db668f96f302945cbdb524.mp3",
+    "text": "듣기"
+  },
+  {
+    "file": "e8616f1e503d1eb3258e877a.mp3",
+    "text": "듣기가 어려워요."
+  },
+  {
+    "file": "107b4aeadfc315f7224ca29c.mp3",
+    "text": "읽기"
+  },
+  {
+    "file": "b6b513ab7bfde60bc3eb192c.mp3",
+    "text": "읽기를 연습해요."
+  },
+  {
+    "file": "4c2306809937812ded490cb2.mp3",
+    "text": "쓰기"
+  },
+  {
+    "file": "d70b468dec966bc81f9e49c4.mp3",
+    "text": "쓰기를 연습해요."
+  },
+  {
+    "file": "02bee4644fba56594751d49f.mp3",
+    "text": "말하기"
+  },
+  {
+    "file": "3b24ea907cc676e08673ea69.mp3",
+    "text": "말하기가 재미있어요."
+  },
+  {
+    "file": "ffdbb8e412c414ae8a1623e4.mp3",
+    "text": "문법"
+  },
+  {
+    "file": "a4b4daddac6ab9aaa86dedff.mp3",
+    "text": "문법을 공부해요."
+  },
+  {
+    "file": "7a2560172c8c2df91b9c3148.mp3",
+    "text": "표현"
+  },
+  {
+    "file": "33dd8d763d1c62c58f7166df.mp3",
+    "text": "이 표현을 자주 써요."
+  },
+  {
+    "file": "883d841ce6a33cf78194dbb0.mp3",
+    "text": "뜻"
+  },
+  {
+    "file": "fd350fe16bc971a7b2d0795f.mp3",
+    "text": "단어의 뜻을 물어봐요."
+  },
+  {
+    "file": "6445cb23ec9811b5f35a6cf2.mp3",
+    "text": "이유"
+  },
+  {
+    "file": "50e5835760f9aa4fa39feb74.mp3",
+    "text": "이유를 설명해요."
+  },
+  {
+    "file": "b0fe4ea3ac5ac4022d19c29d.mp3",
+    "text": "계획"
+  },
+  {
+    "file": "d588197f80e2e041f287ab19.mp3",
+    "text": "여행 계획이 있어요."
+  },
+  {
+    "file": "340b9a0fcd5fc1d6bfa37577.mp3",
+    "text": "경험"
+  },
+  {
+    "file": "851b72e74b023ffa78ceb3c6.mp3",
+    "text": "경험을 이야기해요."
+  },
+  {
+    "file": "a4a801d526fb251193b08479.mp3",
+    "text": "방법"
+  },
+  {
+    "file": "25320cdc576ad4df1d17bffd.mp3",
+    "text": "방법을 알려줘요."
+  },
+  {
+    "file": "8d1a750c9351d1b803fc9497.mp3",
+    "text": "선택"
+  },
+  {
+    "file": "01b06c3739797276bbf9442f.mp3",
+    "text": "선택이 어려워요."
+  },
+  {
+    "file": "b9b47d9dee081fdee3de274f.mp3",
+    "text": "차이"
+  },
+  {
+    "file": "c0dc610a312d35c7a15c2eea.mp3",
+    "text": "차이를 설명해요."
+  },
+  {
+    "file": "580bb8d061b97e66f221879a.mp3",
+    "text": "문화"
+  },
+  {
+    "file": "b50490d21afea7ef60c9cdf7.mp3",
+    "text": "한국 문화를 공부해요."
+  },
+  {
+    "file": "c4b267a6b5c6a012a9896c6b.mp3",
+    "text": "전통"
+  },
+  {
+    "file": "0ddc3267f99649d155d0ac8a.mp3",
+    "text": "전통을 배워요."
+  },
+  {
+    "file": "7626dbdf4beacffb4c81c52b.mp3",
+    "text": "명절"
+  },
+  {
+    "file": "ac29d1c114f5325a87736f17.mp3",
+    "text": "명절에 가족을 만나요."
+  },
+  {
+    "file": "186bf2f255c7c8f2273c3364.mp3",
+    "text": "추석"
+  },
+  {
+    "file": "42adb0c8442a93e425d781a6.mp3",
+    "text": "추석에 가족이 모여요."
+  },
+  {
+    "file": "bcf982ecaec0843c761cd1e8.mp3",
+    "text": "설날"
+  },
+  {
+    "file": "0000cfd82773f4007d5eb9fc.mp3",
+    "text": "설날에 부모님을 만나요."
+  },
+  {
+    "file": "828c4030dd68aa7bc8860710.mp3",
+    "text": "요즘"
+  },
+  {
+    "file": "b3ba8988cf8dd73bbb4bb241.mp3",
+    "text": "요즘 한국어를 공부해요."
+  },
+  {
+    "file": "666599febd987f532ea6ab00.mp3",
+    "text": "보통"
+  },
+  {
+    "file": "18bdfbc318f49a118a33c7ec.mp3",
+    "text": "보통 집에서 쉬어요."
+  },
+  {
+    "file": "08b35eb63efd4aaae44c34f2.mp3",
+    "text": "왜"
+  },
+  {
+    "file": "3c3c49d8cd44f5f415f6428d.mp3",
+    "text": "왜 한국어를 공부해요?"
+  },
+  {
+    "file": "6dbf157a4dc7e6e8b537a712.mp3",
+    "text": "어때요"
+  },
+  {
+    "file": "6778515ad1aa52d738d3e08f.mp3",
+    "text": "날씨가 어때요?"
+  },
+  {
+    "file": "8fd32c9572450a80df7d8a26.mp3",
+    "text": "가장"
+  },
+  {
+    "file": "1a4487304899d4ab2b62a915.mp3",
+    "text": "무엇을 가장 좋아해요?"
+  },
+  {
+    "file": "1e2cb79b6970d0213fd9c56c.mp3",
+    "text": "더"
+  },
+  {
+    "file": "465ebd04fe5d62af26187280.mp3",
+    "text": "물을 더 마셔요."
+  },
+  {
+    "file": "b4049b7414b62d9bee5d6567.mp3",
+    "text": "조금"
+  },
+  {
+    "file": "312fa63b4df7b459cf06c213.mp3",
+    "text": "조금 어려워요."
+  },
+  {
+    "file": "8aff11a4aebdccdbf05dad62.mp3",
+    "text": "잘"
+  },
+  {
+    "file": "a03cba218df7de829cedfda9.mp3",
+    "text": "한국어를 잘 읽어요."
+  },
+  {
+    "file": "d5d6a44c9a8924522b2974f8.mp3",
+    "text": "매일"
+  },
+  {
+    "file": "216b4fe7cbbf632eb66cc92f.mp3",
+    "text": "매일 연습해요."
+  },
+  {
+    "file": "f1d42a32366087dde8c32369.mp3",
+    "text": "항상"
+  },
+  {
+    "file": "f98054d3f88486dd2f57995b.mp3",
+    "text": "항상 물을 마셔요."
+  },
+  {
+    "file": "920b0d402f08f1fbae958154.mp3",
+    "text": "다시"
+  },
+  {
+    "file": "aeb8b0873cabecc51121a078.mp3",
+    "text": "다시 읽어요."
+  },
+  {
+    "file": "fbeb53408bcf7039778f598d.mp3",
+    "text": "서로"
+  },
+  {
+    "file": "d6d4988a67b907bede811a57.mp3",
+    "text": "서로 도와요."
+  },
+  {
+    "file": "711af702d3e214bd3faaf677.mp3",
+    "text": "그리고"
+  },
+  {
+    "file": "bef192b96ab1e5159b534ca0.mp3",
+    "text": "밥을 먹어요. 그리고 쉬어요."
+  },
+  {
+    "file": "e128a74754aad5c866ee78d1.mp3",
+    "text": "하지만"
+  },
+  {
+    "file": "8bed8c9365ca5797d7e18008.mp3",
+    "text": "이 가방은 커요. 하지만 비싸요."
+  },
+  {
+    "file": "8df56b9bfbdae2fd84634581.mp3",
+    "text": "그래서"
+  },
+  {
+    "file": "01ff15ec7a37f1b8381c9916.mp3",
+    "text": "아파요. 그래서 쉬어요."
+  },
+  {
+    "file": "1505f995680e9a46c72cf300.mp3",
+    "text": "도와주다"
+  },
+  {
+    "file": "45de2e1783fb0df4184b5067.mp3",
+    "text": "도와줘요"
+  },
+  {
+    "file": "848bdaa7a00e3eaab0a6a9a1.mp3",
+    "text": "친구를 도와줘요."
+  },
+  {
+    "file": "7feaaecf170e0c6a578f9fcb.mp3",
+    "text": "돕다"
+  },
+  {
+    "file": "79138edff1c591288242199f.mp3",
+    "text": "도와요"
+  },
+  {
+    "file": "266f9abab2540f2ac0acdbad.mp3",
+    "text": "친구를 도와요."
+  },
+  {
+    "file": "dfedd225bb659d500f65134e.mp3",
+    "text": "두"
+  },
+  {
+    "file": "3e5df09dd285da81f8bb9b2b.mp3",
+    "text": "두 문장을 읽어요."
+  },
+  {
+    "file": "63e45de15f675f1b8d813be3.mp3",
+    "text": "문제점"
+  },
+  {
+    "file": "75396a599ec2a6ff45999244.mp3",
+    "text": "문제점을 찾아요."
+  },
+  {
+    "file": "cb0f24046b508710d6315e71.mp3",
+    "text": "내용"
+  },
+  {
+    "file": "2b3b6dc871d2f10a8a80530e.mp3",
+    "text": "내용을 설명해요."
+  },
+  {
+    "file": "2eb73fba696e2fe4ea0a206e.mp3",
+    "text": "예"
+  },
+  {
+    "file": "c1442834c18ae6a0bf17d68c.mp3",
+    "text": "예를 들어요."
+  },
+  {
+    "file": "7ff37822e89462ea5014c9dd.mp3",
+    "text": "들다"
+  },
+  {
+    "file": "aeb2d3d96f13c8aed88412ea.mp3",
+    "text": "가방을 들어요."
+  },
+  {
+    "file": "43bc9c47e0f938b11288fb19.mp3",
+    "text": "때"
+  },
+  {
+    "file": "97a13e4ca084733f8d4f8b00.mp3",
+    "text": "시간이 있을 때 공부해요."
+  },
+  {
+    "file": "d9f427c3257e81e05a249fd3.mp3",
+    "text": "전"
+  },
+  {
+    "file": "fea23a8b359d3a08e232cd05.mp3",
+    "text": "수업 전에 책을 읽어요."
+  },
+  {
+    "file": "ee1d8655d66d382b52a56d37.mp3",
+    "text": "이후"
+  },
+  {
+    "file": "b6c62a50f6506de2eaaff69f.mp3",
+    "text": "수업 이후에 쉬어요."
+  },
+  {
+    "file": "2aa02e1d6b86b37d7e2b08c0.mp3",
+    "text": "동안"
+  },
+  {
+    "file": "5b5f99c4a5052c8b006d8b4d.mp3",
+    "text": "수업 동안 한국어로 말해요."
+  },
+  {
+    "file": "6d2b6bbf82785e6dce3dcd70.mp3",
+    "text": "함께"
+  },
+  {
+    "file": "746b8c63360edfc1ad24114c.mp3",
+    "text": "함께 공부해요."
+  },
+  {
+    "file": "dfbb3ea79fc80c6f3f0ed4c1.mp3",
+    "text": "말"
+  },
+  {
+    "file": "fa838ad79dbe68dd55ab739c.mp3",
+    "text": "친절한 말을 해요."
+  },
+  {
+    "file": "3f038018ca33140ec2915872.mp3",
+    "text": "첫째"
+  },
+  {
+    "file": "df9edc9ccb15f3dfdf074a16.mp3",
+    "text": "첫째, 시간이 필요해요."
+  },
+  {
+    "file": "d32fb19bd64f81d079e16609.mp3",
+    "text": "둘째"
+  },
+  {
+    "file": "59b0e99433988d09e0ccb8ff.mp3",
+    "text": "둘째, 연습이 필요해요."
+  },
+  {
+    "file": "96948cf938838e31d44bed8f.mp3",
+    "text": "예를 들면"
+  },
+  {
+    "file": "a87a6581c51394e3c5e11d1a.mp3",
+    "text": "예를 들면, 책을 읽어요."
+  },
+  {
+    "file": "91b4dc2748cba787dd6f199b.mp3",
+    "text": "되다"
+  },
+  {
+    "file": "9f1cdf460348e44aca122b63.mp3",
+    "text": "돼요"
+  },
+  {
+    "file": "3e1864a8359ba6414dea27cf.mp3",
+    "text": "선생님이 돼요."
+  },
+  {
+    "file": "b84254868f623d278671ec7d.mp3",
+    "text": "원인"
+  },
+  {
+    "file": "c41c535a84d0607ee6fde62a.mp3",
+    "text": "문제의 원인을 찾아요."
+  },
+  {
+    "file": "109383e344db8ae54a47c140.mp3",
+    "text": "결과"
+  },
+  {
+    "file": "71db46bc78796725874100bf.mp3",
+    "text": "결과를 비교해요."
+  },
+  {
+    "file": "5528424f5f612845dbac705e.mp3",
+    "text": "영향"
+  },
+  {
+    "file": "ff99dad8a7d7289952e04dbd.mp3",
+    "text": "영향을 설명해요."
+  },
+  {
+    "file": "d06231d77cebc3d059aa69ad.mp3",
+    "text": "변화"
+  },
+  {
+    "file": "077c78259defece3eee44e49.mp3",
+    "text": "변화가 있어요."
+  },
+  {
+    "file": "98b8140ff15dd0e97289e182.mp3",
+    "text": "증가하다"
+  },
+  {
+    "file": "17d30822c6cc31e06a0284fc.mp3",
+    "text": "증가해요"
+  },
+  {
+    "file": "efa8ab5dcbdbbb5fe3c2b45c.mp3",
+    "text": "학생이 증가해요."
+  },
+  {
+    "file": "5eb6674b5af0abad3f64f17b.mp3",
+    "text": "감소하다"
+  },
+  {
+    "file": "f1be11ab25257006e8f0dbe2.mp3",
+    "text": "감소해요"
+  },
+  {
+    "file": "8739cb8fac54d64a60f0a46e.mp3",
+    "text": "학생이 감소해요."
+  },
+  {
+    "file": "8e98d5387ed6c4534848aad8.mp3",
+    "text": "해결하다"
+  },
+  {
+    "file": "0bb1becbae41fbcd8c8fb00e.mp3",
+    "text": "해결해요"
+  },
+  {
+    "file": "96c3f31d5c4f9cab0b108f39.mp3",
+    "text": "문제를 해결해요."
+  },
+  {
+    "file": "cd093d6c487c80cfcc0c4220.mp3",
+    "text": "줄이다"
+  },
+  {
+    "file": "c862c0739c17eeaebab80852.mp3",
+    "text": "줄여요"
+  },
+  {
+    "file": "1fdfc9eaf7eb8649c647caa1.mp3",
+    "text": "비용을 줄여요."
+  },
+  {
+    "file": "3c64c7ba9cabe0c07c5807f9.mp3",
+    "text": "늘리다"
+  },
+  {
+    "file": "cb6a4bd5601b320e2da62556.mp3",
+    "text": "늘려요"
+  },
+  {
+    "file": "21cdb7474d9520c4aeb67918.mp3",
+    "text": "공부 시간을 늘려요."
+  },
+  {
+    "file": "c30a639bd882f21fde4c0c60.mp3",
+    "text": "필요성"
+  },
+  {
+    "file": "5592155131c79ea3c004f47d.mp3",
+    "text": "연습의 필요성을 설명해요."
+  },
+  {
+    "file": "359027c169a8afa3896feed9.mp3",
+    "text": "장점"
+  },
+  {
+    "file": "8e8ecfa47884a4ef48521f58.mp3",
+    "text": "장점을 설명해요."
+  },
+  {
+    "file": "a204c3bdd36dba938b09449c.mp3",
+    "text": "단점"
+  },
+  {
+    "file": "91bbad92ee64922425e576b2.mp3",
+    "text": "단점을 비교해요."
+  },
+  {
+    "file": "1eaed37a207480d88b786dd4.mp3",
+    "text": "의견"
+  },
+  {
+    "file": "bd7a20820aa4c5292c071894.mp3",
+    "text": "의견을 말해요."
+  },
+  {
+    "file": "d7794cf130b736a7916042cc.mp3",
+    "text": "근거"
+  },
+  {
+    "file": "431947284ff4598f9a262ad4.mp3",
+    "text": "근거가 필요해요."
+  },
+  {
+    "file": "0cb854c7ace0b785e8ef696f.mp3",
+    "text": "대책"
+  },
+  {
+    "file": "0ec0daf05a3202c79cac3c0e.mp3",
+    "text": "대책을 이야기해요."
+  },
+  {
+    "file": "550a40b940e2e59e11c942c3.mp3",
+    "text": "사회"
+  },
+  {
+    "file": "de229b364b696fc04e04abbd.mp3",
+    "text": "사회가 바뀌어요."
+  },
+  {
+    "file": "5d36e09c3271e0e77bdf8e9a.mp3",
+    "text": "환경"
+  },
+  {
+    "file": "4c50a33f47d1148f171761a3.mp3",
+    "text": "환경이 중요해요."
+  },
+  {
+    "file": "a78cee47656be418e74755f3.mp3",
+    "text": "기술"
+  },
+  {
+    "file": "770a559140d1904ca53f2272.mp3",
+    "text": "기술을 배워요."
+  },
+  {
+    "file": "4da9a75910ede3adef017b5a.mp3",
+    "text": "교육"
+  },
+  {
+    "file": "1a5a646e5519339f0bdb803b.mp3",
+    "text": "교육이 필요해요."
+  },
+  {
+    "file": "24423dd67b3a782699d9bcae.mp3",
+    "text": "비용"
+  },
+  {
+    "file": "653c34e2bc68a5085af0a85d.mp3",
+    "text": "비용이 비싸요."
+  },
+  {
+    "file": "377d1a0f2e6c609d9b7bdd86.mp3",
+    "text": "효과"
+  },
+  {
+    "file": "e45980ec66b54995bbc69db7.mp3",
+    "text": "효과가 있어요."
+  },
+  {
+    "file": "6416867e472594899d643f67.mp3",
+    "text": "자료"
+  },
+  {
+    "file": "43408bd87210e2d3025e9f03.mp3",
+    "text": "자료를 찾아요."
+  },
+  {
+    "file": "e9e7abfc765737f0ebf8f26e.mp3",
+    "text": "조사"
+  },
+  {
+    "file": "3883b9f52e8def99a9095528.mp3",
+    "text": "조사 결과를 읽어요."
+  },
+  {
+    "file": "4f2b88ba7005890c9380b225.mp3",
+    "text": "비율"
+  },
+  {
+    "file": "5cdc6772848433181953eb98.mp3",
+    "text": "비율을 비교해요."
+  },
+  {
+    "file": "3fe11d5e24d3e91842e58357.mp3",
+    "text": "제안하다"
+  },
+  {
+    "file": "7afcfcca20fb5897bbbd980d.mp3",
+    "text": "제안해요"
+  },
+  {
+    "file": "d243b52189992dd28e448335.mp3",
+    "text": "방법을 제안해요."
+  },
+  {
+    "file": "3053dbc1be51d8c3087242fc.mp3",
+    "text": "요약하다"
+  },
+  {
+    "file": "815d2257289abc2db3ff5bb5.mp3",
+    "text": "요약해요"
+  },
+  {
+    "file": "aa3050715d6bb8a09545ad73.mp3",
+    "text": "내용을 요약해요."
+  },
+  {
+    "file": "b6e8be30b43ccf4bad5ab396.mp3",
+    "text": "수정하다"
+  },
+  {
+    "file": "8e5c993c12ab43ae93c408d4.mp3",
+    "text": "수정해요"
+  },
+  {
+    "file": "120adb15f65b60bac9f592eb.mp3",
+    "text": "문장을 수정해요."
+  },
+  {
+    "file": "5207e639323d4244d47ede02.mp3",
+    "text": "바뀌다"
+  },
+  {
+    "file": "5f5d9677bf9e548f7224b156.mp3",
+    "text": "바뀌어요"
+  },
+  {
+    "file": "c3f74487aa98d624115762ae.mp3",
+    "text": "계획이 바뀌어요."
+  },
+  {
+    "file": "1119b060db74766fb336d6e0.mp3",
+    "text": "노력"
+  },
+  {
+    "file": "9f15df264f46c417458f07be.mp3",
+    "text": "노력이 필요해요."
+  },
+  {
+    "file": "18ab6599abaaab1b0c2d3168.mp3",
+    "text": "관계"
+  },
+  {
+    "file": "43fa6321a5bb0ae58989203a.mp3",
+    "text": "관계가 중요해요."
+  },
+  {
+    "file": "5dcd4e43f9ff098330bba5bf.mp3",
+    "text": "관점"
+  },
+  {
+    "file": "f8d921c00ba45f27a54fc170.mp3",
+    "text": "관점이 달라요."
+  },
+  {
+    "file": "56fbe47d0efba605b0634c95.mp3",
+    "text": "존중하다"
+  },
+  {
+    "file": "55bf601d0529dea98a8647f7.mp3",
+    "text": "존중해요"
+  },
+  {
+    "file": "989782d1ac45a082c9e105c8.mp3",
+    "text": "서로의 의견을 존중해요."
+  },
+  {
+    "file": "a317fe4511680982e2e2e42c.mp3",
+    "text": "오해"
+  },
+  {
+    "file": "f899e69f961a955d53bf8d70.mp3",
+    "text": "오해가 있어요."
+  },
+  {
+    "file": "817d68fde8418413891bc6fd.mp3",
+    "text": "신뢰"
+  },
+  {
+    "file": "16e10ee3e58aabf196419d6c.mp3",
+    "text": "신뢰가 중요해요."
+  },
+  {
+    "file": "a21126b92e8cb846b96926cb.mp3",
+    "text": "공통점"
+  },
+  {
+    "file": "edbdbe7d4e8a97679dd28980.mp3",
+    "text": "공통점을 찾아요."
+  },
+  {
+    "file": "9b679df05d68aaba608e3c26.mp3",
+    "text": "개인"
+  },
+  {
+    "file": "a9de51ecb90124ef44ed305e.mp3",
+    "text": "개인의 의견을 들어요."
+  },
+  {
+    "file": "2485fc53da01e9d64bb61fe2.mp3",
+    "text": "모임"
+  },
+  {
+    "file": "d816c3931cd4b0b6fea7400e.mp3",
+    "text": "오늘 모임이 있어요."
+  },
+  {
+    "file": "1c3a0a24ef01c77b9620e27a.mp3",
+    "text": "공연"
+  },
+  {
+    "file": "c276adcdf4d01527666042ec.mp3",
+    "text": "공연을 봐요."
+  },
+  {
+    "file": "3906aa577b0627036d72a953.mp3",
+    "text": "연습"
+  },
+  {
+    "file": "778087736a89bc2ff638d523.mp3",
+    "text": "연습이 끝나요."
+  },
+  {
+    "file": "a42d6c6f1325fb230dd85001.mp3",
+    "text": "피아노"
+  },
+  {
+    "file": "a56e6dfc9dced1715d76388a.mp3",
+    "text": "오케스트라"
+  },
+  {
+    "file": "fd889af7f6472adc9c15989c.mp3",
+    "text": "오케스트라 공연을 봐요."
+  },
+  {
+    "file": "a03ada7fd1c290d5560f13f7.mp3",
+    "text": "지휘자"
+  },
+  {
+    "file": "63d65f23f9f798a72609255c.mp3",
+    "text": "지휘자에게 질문해요."
+  },
+  {
+    "file": "8ada2d6d6aa420fc4f0d0595.mp3",
+    "text": "회의"
+  },
+  {
+    "file": "592b1519ca4fbc89dca8621f.mp3",
+    "text": "오늘 회의가 있어요."
+  },
+  {
+    "file": "510d062ea38e7953e8878d51.mp3",
+    "text": "일정"
+  },
+  {
+    "file": "af63b0537a8f15b366ce971f.mp3",
+    "text": "일정을 확인해요."
+  },
+  {
+    "file": "895c2bcd51e10cf1d30ac6b8.mp3",
+    "text": "확인하다"
+  },
+  {
+    "file": "c186c156ff151efe15163db4.mp3",
+    "text": "확인해요"
+  },
+  {
+    "file": "c149aa0d979175b9dc29eea0.mp3",
+    "text": "주소를 확인해요."
+  },
+  {
+    "file": "b1f7ad11d02e3ec10f5e6c4b.mp3",
+    "text": "전달하다"
+  },
+  {
+    "file": "ab2fb08ab511b23bd1a472c1.mp3",
+    "text": "전달해요"
+  },
+  {
+    "file": "22db7807656ab3e1ab17bff8.mp3",
+    "text": "소식을 전달해요."
+  },
+  {
+    "file": "19bb55358ad74ec75b2a9fc0.mp3",
+    "text": "요청하다"
+  },
+  {
+    "file": "3e7a4493c118001f99500540.mp3",
+    "text": "요청해요"
+  },
+  {
+    "file": "0ed8cb044340e35b32464da2.mp3",
+    "text": "자료를 요청해요."
+  },
+  {
+    "file": "dc2354d843d7f250146cdbb9.mp3",
+    "text": "제공하다"
+  },
+  {
+    "file": "22b8832b101e4579bd9ea36c.mp3",
+    "text": "제공해요"
+  },
+  {
+    "file": "175da83eb859998277bb4fe0.mp3",
+    "text": "정보를 제공해요."
+  },
+  {
+    "file": "e443a87b48dad0e6ced0c24d.mp3",
+    "text": "협의하다"
+  },
+  {
+    "file": "ab9ca152a5aa02dbdf103a22.mp3",
+    "text": "협의해요"
+  },
+  {
+    "file": "2e8cd77ecc16789f9042af24.mp3",
+    "text": "일정을 협의해요."
+  },
+  {
+    "file": "577b56a576eeacc5d8693bd5.mp3",
+    "text": "변경하다"
+  },
+  {
+    "file": "a0e7e18d4f40f465ef2a78e0.mp3",
+    "text": "변경해요"
+  },
+  {
+    "file": "13d513e783add2f9c1d42af8.mp3",
+    "text": "약속 시간을 변경해요."
+  },
+  {
+    "file": "f054f7e6fad02b9e23418f24.mp3",
+    "text": "참석하다"
+  },
+  {
+    "file": "00cba71eef11606167ccdf00.mp3",
+    "text": "참석해요"
+  },
+  {
+    "file": "d36e5b297f289c677241cc15.mp3",
+    "text": "회의에 참석해요."
+  },
+  {
+    "file": "552d49e405b9383e08034e84.mp3",
+    "text": "감사하다"
+  },
+  {
+    "file": "a9022a73b067191e2f8cc9b3.mp3",
+    "text": "감사해요"
+  },
+  {
+    "file": "08459e051828be27596f03a3.mp3",
+    "text": "도움에 감사해요."
+  },
+  {
+    "file": "9fa325aa12d3fdd018192315.mp3",
+    "text": "말씀"
+  },
+  {
+    "file": "9fc374a9b9296286c070253b.mp3",
+    "text": "선생님의 말씀을 들어요."
+  },
+  {
+    "file": "9948c1a693a3601168ecd0ae.mp3",
+    "text": "명함"
+  },
+  {
+    "file": "b9c2374cfae3480b00d844f3.mp3",
+    "text": "명함을 받아요."
+  },
+  {
+    "file": "895306a0165e4e06a7c597e9.mp3",
+    "text": "예절"
+  },
+  {
+    "file": "1fed38b8363b4deb763db42f.mp3",
+    "text": "예절을 배워요."
+  },
+  {
+    "file": "886100242a964457d096d32b.mp3",
+    "text": "예의"
+  },
+  {
+    "file": "c47e979c200610329a3e91de.mp3",
+    "text": "예의가 중요해요."
+  },
+  {
+    "file": "941d76ddd357e6c67c2ed04e.mp3",
+    "text": "부탁"
+  },
+  {
+    "file": "f236fcd60ddc906eb3bc2b97.mp3",
+    "text": "부탁이 있어요."
+  },
+  {
+    "file": "f2cc75e43342768fd2be410a.mp3",
+    "text": "답장"
+  },
+  {
+    "file": "236d67eb08e771815add9e5e.mp3",
+    "text": "답장을 보내요."
+  },
+  {
+    "file": "08b17e433630742bc70022e9.mp3",
+    "text": "제목"
+  },
+  {
+    "file": "eff13a7379d368d074c79c1a.mp3",
+    "text": "이메일 제목을 써요."
+  },
+  {
+    "file": "353b76cf0280ba31ff54960b.mp3",
+    "text": "첨부"
+  },
+  {
+    "file": "165baef832d06fa2546f77c5.mp3",
+    "text": "첨부 파일을 봐요."
+  },
+  {
+    "file": "67c1e932f9bc7bd77503bcce.mp3",
+    "text": "연락처"
+  },
+  {
+    "file": "7b35911cef1ae71c6872631c.mp3",
+    "text": "연락처를 알려줘요."
+  },
+  {
+    "file": "c9cacdac4264cd8d65fcfe64.mp3",
+    "text": "담당자"
+  },
+  {
+    "file": "abe0a5206e7fa3fd9bb1ba58.mp3",
+    "text": "담당자에게 연락해요."
+  },
+  {
+    "file": "e583f55bf1cfad46331c22f8.mp3",
+    "text": "드리다"
+  },
+  {
+    "file": "7fae1ecf8d11af6a38dd7f69.mp3",
+    "text": "드려요"
+  },
+  {
+    "file": "5b08ac55dd99d4f56ac016c3.mp3",
+    "text": "선생님께 선물을 드려요."
+  },
+  {
+    "file": "e90996cf12d134d920d4df59.mp3",
+    "text": "말씀하다"
+  },
+  {
+    "file": "db3cf03f61db01f3907e3036.mp3",
+    "text": "말씀해요"
+  },
+  {
+    "file": "68105f6840d529f6d2387f20.mp3",
+    "text": "선생님이 말씀해요."
+  },
+  {
+    "file": "b9a2699f824000e36e45abe7.mp3",
+    "text": "괜찮다"
+  },
+  {
+    "file": "db585874cabc5ce89a9a72e3.mp3",
+    "text": "괜찮아요"
+  },
+  {
+    "file": "4be088670cf9e65058832e66.mp3",
+    "text": "이 시간이 괜찮아요."
+  },
+  {
+    "file": "e3a81c369f5e123fbec075eb.mp3",
+    "text": "불편하다"
+  },
+  {
+    "file": "74593ed59c4859ad4e8efae8.mp3",
+    "text": "불편해요"
+  },
+  {
+    "file": "4634a601c20b661170faf78c.mp3",
+    "text": "이 신발은 불편해요."
+  },
+  {
+    "file": "097b062680ccfaca68c16f70.mp3",
+    "text": "정중하다"
+  },
+  {
+    "file": "dd69c5e120045ed8e9831af2.mp3",
+    "text": "정중해요"
+  },
+  {
+    "file": "9351e215ba16353faae1409b.mp3",
+    "text": "표현이 정중해요."
+  },
+  {
+    "file": "955149b012635be1833ca61c.mp3",
+    "text": "몸"
+  },
+  {
+    "file": "327de1c2a21e4fdee7c7947b.mp3",
+    "text": "몸이 아파요."
+  },
+  {
+    "file": "74eee3ddf202a62b75965f70.mp3",
+    "text": "머리"
+  },
+  {
+    "file": "b2b9b440c74e8f2d6e0e77ea.mp3",
+    "text": "머리가 아파요."
+  },
+  {
+    "file": "ab1b14816087979d21432388.mp3",
+    "text": "눈"
+  },
+  {
+    "file": "49a17e6e2e066e6cd6774880.mp3",
+    "text": "눈이 커요."
+  },
+  {
+    "file": "f4f759edb468db531ae2081c.mp3",
+    "text": "코"
+  },
+  {
+    "file": "6a20e35e2ecf985e01fe550d.mp3",
+    "text": "코가 작아요."
+  },
+  {
+    "file": "c503f60b315f818ea2681785.mp3",
+    "text": "입"
+  },
+  {
+    "file": "5ddda2484be140beda64e79e.mp3",
+    "text": "입이 작아요."
+  },
+  {
+    "file": "001e793a4472c6fe626957cf.mp3",
+    "text": "귀"
+  },
+  {
+    "file": "b9326343a7dd4291d2b5da64.mp3",
+    "text": "귀가 커요."
+  },
+  {
+    "file": "27d4fa6af704520dcfd68f93.mp3",
+    "text": "손"
+  },
+  {
+    "file": "c28af499efae42db3a2932b7.mp3",
+    "text": "손이 작아요."
+  },
+  {
+    "file": "aab1afda0edcd3aeba74554b.mp3",
+    "text": "팔"
+  },
+  {
+    "file": "1ced3ffc9d47afd2ae8ee541.mp3",
+    "text": "팔이 길어요."
+  },
+  {
+    "file": "982037b144c2b329e189d33d.mp3",
+    "text": "다리"
+  },
+  {
+    "file": "8fb0c0b8c03b9b5472c51a0c.mp3",
+    "text": "다리가 길어요."
+  },
+  {
+    "file": "ab5f451d39c3167437d6b17a.mp3",
+    "text": "근육"
+  },
+  {
+    "file": "9d7f54d3436ad482c78026ed.mp3",
+    "text": "근육이 아파요."
+  },
+  {
+    "file": "2e251676952afc35931d26c1.mp3",
+    "text": "밀다"
+  },
+  {
+    "file": "1c8ffe45a1b1cb33702321d7.mp3",
+    "text": "밀어요"
+  },
+  {
+    "file": "0ebb029883925a944229e72b.mp3",
+    "text": "문을 밀어요."
+  },
+  {
+    "file": "dc62c7a03a43ccba94a6f28b.mp3",
+    "text": "뭉치다"
+  },
+  {
+    "file": "18aa9328844523f9d3260fe2.mp3",
+    "text": "뭉쳐요"
+  },
+  {
+    "file": "a879aadcee07801a413080b9.mp3",
+    "text": "근육이 뭉쳐요."
+  },
+  {
+    "file": "e2c7d5c49b61f5326c139536.mp3",
+    "text": "문"
+  },
+  {
+    "file": "ac7f518e8aea8c93379d66a8.mp3",
+    "text": "문이 커요."
+  },
+  {
+    "file": "a835c2d2f8006f03ff99b48d.mp3",
+    "text": "열다"
+  },
+  {
+    "file": "c92e2ad8f850b3a20b818ef6.mp3",
+    "text": "열어요"
+  },
+  {
+    "file": "6738fb8e397284abc5221ec9.mp3",
+    "text": "문을 열어요."
+  },
+  {
+    "file": "b9f8f7c9bcb83cea095f47b8.mp3",
+    "text": "닫다"
+  },
+  {
+    "file": "6ef8065bdbf38ee74fd8f25c.mp3",
+    "text": "닫아요"
+  },
+  {
+    "file": "38f774dd643ab3ed12efb4a7.mp3",
+    "text": "문을 닫아요."
+  },
+  {
+    "file": "1fc19ed194af133839403906.mp3",
+    "text": "씻다"
+  },
+  {
+    "file": "768f6fa918f4b942491a9245.mp3",
+    "text": "씻어요"
+  },
+  {
+    "file": "02b09c9573f791470d30c7c0.mp3",
+    "text": "손을 씻어요."
+  },
+  {
+    "file": "d57c47b0949440ff623b9ab3.mp3",
+    "text": "일어나다"
+  },
+  {
+    "file": "6f39d15c419709f91840c569.mp3",
+    "text": "일어나요"
+  },
+  {
+    "file": "4b52bbc2c3bb8b7c41273aaf.mp3",
+    "text": "아침에 일어나요."
+  },
+  {
+    "file": "8fc8305f6371680eeecadac6.mp3",
+    "text": "놀다"
+  },
+  {
+    "file": "5ded521f7bcbc7326b73248b.mp3",
+    "text": "놀아요"
+  },
+  {
+    "file": "dc9eddc8b8a7917328cd3913.mp3",
+    "text": "공원에서 놀아요."
+  },
+  {
+    "file": "96e5ecf6b0d33341a17f554e.mp3",
+    "text": "뛰다"
+  },
+  {
+    "file": "a72a1d4342977ddd151686a3.mp3",
+    "text": "뛰어요"
+  },
+  {
+    "file": "e5c7cf9aaabc846d1803ec91.mp3",
+    "text": "공원에서 뛰어요."
+  },
+  {
+    "file": "76b67f83e82ca545fcf63605.mp3",
+    "text": "날다"
+  },
+  {
+    "file": "bc3e62e2a32359cecad56274.mp3",
+    "text": "날아요"
+  },
+  {
+    "file": "1fe967ce7d617948cdb44186.mp3",
+    "text": "새가 날아요."
+  },
+  {
+    "file": "0aa3907321a68bda6d12b5eb.mp3",
+    "text": "수영하다"
+  },
+  {
+    "file": "c2c0ad724c96e97b655c64b0.mp3",
+    "text": "수영해요"
+  },
+  {
+    "file": "8c720a6b96ff51d141f3ceed.mp3",
+    "text": "수영을 해요."
+  },
+  {
+    "file": "a2fcc3f1c53a37caae9b50d0.mp3",
+    "text": "수영"
+  },
+  {
+    "file": "62ead5961d4c789c58ab7691.mp3",
+    "text": "수영을 좋아해요."
+  },
+  {
+    "file": "013e520a738e476f5fd972ac.mp3",
+    "text": "길다"
+  },
+  {
+    "file": "723d2e97e2532c89b2d591a3.mp3",
+    "text": "길어요"
+  },
+  {
+    "file": "6dab7d40289b180d0cb072ec.mp3",
+    "text": "짧다"
+  },
+  {
+    "file": "6349e9828cc43fe9511ef3cf.mp3",
+    "text": "짧아요"
+  },
+  {
+    "file": "b918c563523c05cdc481fcba.mp3",
+    "text": "팔이 짧아요."
+  },
+  {
+    "file": "904de91feaff572f721fc5e9.mp3",
+    "text": "빠르다"
+  },
+  {
+    "file": "2a8f45e9c9f342b21b709dec.mp3",
+    "text": "빨라요"
+  },
+  {
+    "file": "e666775a8380b949d845e014.mp3",
+    "text": "기차가 빨라요."
+  },
+  {
+    "file": "fefab822c00f5a651f89bc29.mp3",
+    "text": "느리다"
+  },
+  {
+    "file": "c5d56b352f080edfb756a7c7.mp3",
+    "text": "느려요"
+  },
+  {
+    "file": "fdb7865235c547700f469a68.mp3",
+    "text": "거북이가 느려요."
+  },
+  {
+    "file": "038a0682ef015c0a8e457a7b.mp3",
+    "text": "덥다"
+  },
+  {
+    "file": "a7cdcc35241e817d98db8da5.mp3",
+    "text": "더워요"
+  },
+  {
+    "file": "6a6f7025b9bbe52206db6a9e.mp3",
+    "text": "오늘은 더워요."
+  },
+  {
+    "file": "7c651efb56d12a6540a4ac9c.mp3",
+    "text": "춥다"
+  },
+  {
+    "file": "b12c290a39e0e08e9bbed966.mp3",
+    "text": "추워요"
+  },
+  {
+    "file": "f31395e2f5e1b44848d84896.mp3",
+    "text": "오늘은 추워요."
+  },
+  {
+    "file": "21e91ac8a208ff9e520af65a.mp3",
+    "text": "맛있다"
+  },
+  {
+    "file": "d2df2197e887a0da537ced68.mp3",
+    "text": "맛있어요"
+  },
+  {
+    "file": "950a5cb22c0bc7dd1640b4f4.mp3",
+    "text": "빵이 맛있어요."
+  },
+  {
+    "file": "039760c04c09d00a70e6232e.mp3",
+    "text": "맛없다"
+  },
+  {
+    "file": "2a6bdcdce593dd0b70de2ae0.mp3",
+    "text": "맛없어요"
+  },
+  {
+    "file": "8fec86c144f68afb0dcb70f5.mp3",
+    "text": "이 음식은 맛없어요."
+  },
+  {
+    "file": "69e26389ae2a6e2f50d86a89.mp3",
+    "text": "피곤하다"
+  },
+  {
+    "file": "7cc11a35b3f1b26febdb8ca0.mp3",
+    "text": "피곤해요"
+  },
+  {
+    "file": "75445b05c6a5a2d65095699d.mp3",
+    "text": "오늘은 피곤해요."
+  },
+  {
+    "file": "23457023f6034aaf6759f594.mp3",
+    "text": "바쁘다"
+  },
+  {
+    "file": "e0ac65fa7828ce7c0656d217.mp3",
+    "text": "바빠요"
+  },
+  {
+    "file": "c6349dc679e0494408206f79.mp3",
+    "text": "오늘은 바빠요."
+  },
+  {
+    "file": "941cc7ece011b725bcb56742.mp3",
+    "text": "건강하다"
+  },
+  {
+    "file": "eb2d69d9807342b6fb69c3c9.mp3",
+    "text": "건강해요"
+  },
+  {
+    "file": "07f0d017ea288c5c4190f43a.mp3",
+    "text": "몸이 건강해요."
+  },
+  {
+    "file": "e2d38c50201cf36dbda03346.mp3",
+    "text": "새"
+  },
+  {
+    "file": "3959784b1829ecd14e7d1904.mp3",
+    "text": "새가 작아요."
+  },
+  {
+    "file": "12f9eaa937895bbde5863466.mp3",
+    "text": "거북이"
+  },
+  {
+    "file": "c7ebcf7f66c4322ad6c338bc.mp3",
+    "text": "거북이가 있어요."
+  },
+  {
+    "file": "6504c4e0dfbf5051694d065b.mp3",
+    "text": "코끼리"
+  },
+  {
+    "file": "014b9bdfef13845999269b28.mp3",
+    "text": "코끼리가 커요."
+  },
+  {
+    "file": "df410774e3dd128a2f39a456.mp3",
+    "text": "사자"
+  },
+  {
+    "file": "ce87d8dfa351181dc50dbb07.mp3",
+    "text": "사자 사진을 봐요."
+  },
+  {
+    "file": "4c5bb33e3ad8cc346af1a158.mp3",
+    "text": "곰"
+  },
+  {
+    "file": "87d4700a1ed3aefdbd533cea.mp3",
+    "text": "곰이 커요."
+  },
+  {
+    "file": "a5246384c2bf2169222753d3.mp3",
+    "text": "호랑이"
+  },
+  {
+    "file": "65bbabd061ba0f8533e3e08d.mp3",
+    "text": "호랑이 사진을 찍어요."
+  },
+  {
+    "file": "178f9a83d1441110188d8537.mp3",
+    "text": "펭귄"
+  },
+  {
+    "file": "b2fc3176ee824dae99e09895.mp3",
+    "text": "펭귄이 작아요."
+  },
+  {
+    "file": "86be246c750e677c46c60f6f.mp3",
+    "text": "원숭이"
+  },
+  {
+    "file": "888d1281c6ec765d8e15ae34.mp3",
+    "text": "원숭이가 와요."
+  },
+  {
+    "file": "4e0f2a64814ac0cdc90a5ba0.mp3",
+    "text": "색"
+  },
+  {
+    "file": "6f3e460e6a2a9a56e113caa3.mp3",
+    "text": "색이 달라요."
+  },
+  {
+    "file": "312153cf826c5582fb77486c.mp3",
+    "text": "빨간색"
+  },
+  {
+    "file": "c6f0b709092062acf61969e8.mp3",
+    "text": "빨간색을 좋아해요."
+  },
+  {
+    "file": "53ca6b594a240acca9a51b6f.mp3",
+    "text": "파란색"
+  },
+  {
+    "file": "58a112099e28639ef74c3514.mp3",
+    "text": "파란색 모자예요."
+  },
+  {
+    "file": "08cc0870bd508821acc6845c.mp3",
+    "text": "노란색"
+  },
+  {
+    "file": "beedcd4ac4b1a45714daaa31.mp3",
+    "text": "노란색 가방이에요."
+  },
+  {
+    "file": "31824fa47ff2f0e5d83704f2.mp3",
+    "text": "초록색"
+  },
+  {
+    "file": "a280d7fa4528558331a4fc8e.mp3",
+    "text": "초록색 옷을 입어요."
+  },
+  {
+    "file": "aa4155165c4852a943b97412.mp3",
+    "text": "보라색"
+  },
+  {
+    "file": "3e4d51054a11f0e528b5bbc1.mp3",
+    "text": "보라색을 좋아해요."
+  },
+  {
+    "file": "068f45501fd1dcc3aba84f5b.mp3",
+    "text": "양말"
+  },
+  {
+    "file": "406b3edd8af8c8e54bd21c8d.mp3",
+    "text": "양말을 사요."
+  },
+  {
+    "file": "ba3b7d3398291b57354e13e3.mp3",
+    "text": "운동화"
+  },
+  {
+    "file": "fcb0d2a5a352725067d815fd.mp3",
+    "text": "운동화를 신어요."
+  },
+  {
+    "file": "cfdd828384c45d2301f0c35e.mp3",
+    "text": "신다"
+  },
+  {
+    "file": "e9f187a3b7fc6e1bcea5cd0d.mp3",
+    "text": "신어요"
+  },
+  {
+    "file": "8ce17d1bde4602df725bdd31.mp3",
+    "text": "신발을 신어요."
+  },
+  {
+    "file": "62c9da6515c8237ff0f16846.mp3",
+    "text": "끼다"
+  },
+  {
+    "file": "bf7a3fc5f26c279873652dd0.mp3",
+    "text": "껴요"
+  },
+  {
+    "file": "8d6285ae7d1b8d4b258e07c9.mp3",
+    "text": "장갑을 껴요."
+  },
+  {
+    "file": "7df1a991b810512557dd674c.mp3",
+    "text": "메다"
+  },
+  {
+    "file": "1f587d2d8735a4044d20d161.mp3",
+    "text": "메요"
+  },
+  {
+    "file": "038633cb47d06b122644fb25.mp3",
+    "text": "가방을 메요."
+  },
+  {
+    "file": "bb003394f5f694deb9ea5dee.mp3",
+    "text": "장갑"
+  },
+  {
+    "file": "4d6dde4aa21af72e23a0ca01.mp3",
+    "text": "장갑이 필요해요."
+  },
+  {
+    "file": "f977ac4486c2b67cd296f9cf.mp3",
+    "text": "티셔츠"
+  },
+  {
+    "file": "a304f7db4a78bba57378de82.mp3",
+    "text": "티셔츠를 입어요."
+  },
+  {
+    "file": "fb24dd66a8c8c7dd42d18537.mp3",
+    "text": "바지"
+  },
+  {
+    "file": "439c440dc4e46bf1ce3b14b9.mp3",
+    "text": "바지가 길어요."
+  },
+  {
+    "file": "b967dea5488a0b55846e3253.mp3",
+    "text": "치마"
+  },
+  {
+    "file": "1110d4443fcc1b8849d57c37.mp3",
+    "text": "치마를 골라요."
+  },
+  {
+    "file": "740b80a0f4f8ee4087dd745c.mp3",
+    "text": "화장품"
+  },
+  {
+    "file": "74927dc9fad2ddb8b72c9712.mp3",
+    "text": "화장품을 골라요."
+  },
+  {
+    "file": "60be380dfd52bdfeffe245fc.mp3",
+    "text": "제품"
+  },
+  {
+    "file": "af73fc292553babc5c298245.mp3",
+    "text": "제품을 비교해요."
+  },
+  {
+    "file": "9bf1d7f6c86b9df586e4a124.mp3",
+    "text": "토너"
+  },
+  {
+    "file": "137f082af6469d3d13c367f7.mp3",
+    "text": "토너를 사요."
+  },
+  {
+    "file": "57c1832ad5ea140d17b1f6c4.mp3",
+    "text": "로션"
+  },
+  {
+    "file": "9890c7a20df0f23337191bb7.mp3",
+    "text": "로션을 발라요."
+  },
+  {
+    "file": "048ca4a327aba411fae72221.mp3",
+    "text": "크림"
+  },
+  {
+    "file": "197efe1b529b3a755bd1cc7c.mp3",
+    "text": "크림이 부드러워요."
+  },
+  {
+    "file": "29c85f644e9f3bbe9337e42d.mp3",
+    "text": "세럼"
+  },
+  {
+    "file": "e6d69b7197716632d40f6131.mp3",
+    "text": "세럼을 사용해요."
+  },
+  {
+    "file": "197f19cd929b3486001a1b0f.mp3",
+    "text": "에센스"
+  },
+  {
+    "file": "1734cb28f6ed1bada1aae065.mp3",
+    "text": "에센스를 발라요."
+  },
+  {
+    "file": "05d16ca41d9df2933507e466.mp3",
+    "text": "앰플"
+  },
+  {
+    "file": "93a9f08b3be6a8f44231ca00.mp3",
+    "text": "앰플을 골라요."
+  },
+  {
+    "file": "336fd48bba4a864864862a8f.mp3",
+    "text": "선크림"
+  },
+  {
+    "file": "e0e70e70bd06d1aefcdc529b.mp3",
+    "text": "선크림을 발라요."
+  },
+  {
+    "file": "336f00498f6652ce8e4dc527.mp3",
+    "text": "클렌저"
+  },
+  {
+    "file": "433e53e530b1d13fce12e008.mp3",
+    "text": "클렌저를 사용해요."
+  },
+  {
+    "file": "9d3864ac74dc45df5780db18.mp3",
+    "text": "클렌징 오일"
+  },
+  {
+    "file": "aa7fdbfbcf9209f19e6c072b.mp3",
+    "text": "클렌징 오일을 사요."
+  },
+  {
+    "file": "1aad54b3571e33961361b23a.mp3",
+    "text": "폼 클렌저"
+  },
+  {
+    "file": "bb0e36673e18bf22115c22b7.mp3",
+    "text": "폼 클렌저를 골라요."
+  },
+  {
+    "file": "40a21c5ca836cf18da2e2164.mp3",
+    "text": "마스크팩"
+  },
+  {
+    "file": "9c3160a4d7b3a261e731ae74.mp3",
+    "text": "마스크팩을 사요."
+  },
+  {
+    "file": "09d0df72d85e766a6c91a4e0.mp3",
+    "text": "미스트"
+  },
+  {
+    "file": "dc7858a46d9a757f44843c89.mp3",
+    "text": "미스트를 뿌려요."
+  },
+  {
+    "file": "58515a2dd18f3c9892fa5bbd.mp3",
+    "text": "립밤"
+  },
+  {
+    "file": "897bd3ce55138fdbe77d78ad.mp3",
+    "text": "립밤을 발라요."
+  },
+  {
+    "file": "f04e377784acaa8a75e07f54.mp3",
+    "text": "파운데이션"
+  },
+  {
+    "file": "e30981cfab0485a1c074c572.mp3",
+    "text": "파운데이션 색을 비교해요."
+  },
+  {
+    "file": "0dc885578cc0ff8566035476.mp3",
+    "text": "쿠션"
+  },
+  {
+    "file": "659983f1f382c0d4e7324c05.mp3",
+    "text": "쿠션을 사용해요."
+  },
+  {
+    "file": "f5a475bd46f929cd50afadbe.mp3",
+    "text": "컨실러"
+  },
+  {
+    "file": "77be374d62862582d7d4dc4f.mp3",
+    "text": "컨실러를 발라요."
+  },
+  {
+    "file": "9b7c16ddc3d0f8aa92ce1177.mp3",
+    "text": "파우더"
+  },
+  {
+    "file": "9c2751f3fb5095ffaafbaeb4.mp3",
+    "text": "파우더를 사용해요."
+  },
+  {
+    "file": "4fccc98d12b9720c88ae0191.mp3",
+    "text": "립스틱"
+  },
+  {
+    "file": "eab2f5d7d9c05ed46e752322.mp3",
+    "text": "립스틱 색이 예뻐요."
+  },
+  {
+    "file": "2ab06103292c5d650d25c02f.mp3",
+    "text": "피부"
+  },
+  {
+    "file": "df3a2c3bfed11e90d562c64b.mp3",
+    "text": "피부가 건조해요."
+  },
+  {
+    "file": "7ea4f78b1143d0ff3ef1bc5a.mp3",
+    "text": "건성"
+  },
+  {
+    "file": "50d3eb4bcbc41a81bd21931b.mp3",
+    "text": "건성 피부예요."
+  },
+  {
+    "file": "a7f6e1f35bbe20bfd8b6d7a4.mp3",
+    "text": "지성"
+  },
+  {
+    "file": "bf62d88d396f693ecb3e27de.mp3",
+    "text": "지성 피부예요."
+  },
+  {
+    "file": "73c1bb26e879a0424e2fdb40.mp3",
+    "text": "복합성"
+  },
+  {
+    "file": "0c223fab43dc6b77d548e46d.mp3",
+    "text": "복합성 피부예요."
+  },
+  {
+    "file": "e1da00a77159eb16d58f9498.mp3",
+    "text": "민감성"
+  },
+  {
+    "file": "45e7ee55522bd1959353fff6.mp3",
+    "text": "민감성 피부예요."
+  },
+  {
+    "file": "be4fb213d24a82dd0e4e5cfb.mp3",
+    "text": "보습"
+  },
+  {
+    "file": "40f107ffbbc7785e63cbdd15.mp3",
+    "text": "보습이 필요해요."
+  },
+  {
+    "file": "ae192cce97d5b6b544ca0aab.mp3",
+    "text": "수분"
+  },
+  {
+    "file": "5b68cccf5a8da69ed330362e.mp3",
+    "text": "수분이 많아요."
+  },
+  {
+    "file": "d7881f38af7ab0ae23175ced.mp3",
+    "text": "유분"
+  },
+  {
+    "file": "95a73157a00b1d2305200d22.mp3",
+    "text": "유분이 많아요."
+  },
+  {
+    "file": "1f1c8336cec9a392f6c41fc2.mp3",
+    "text": "향"
+  },
+  {
+    "file": "bb7d4e71a6f904b1ac41fb07.mp3",
+    "text": "향이 좋아요."
+  },
+  {
+    "file": "bbc03679c784a7688f855d7e.mp3",
+    "text": "성분"
+  },
+  {
+    "file": "3542ebfc7dbca276b0c4f3ff.mp3",
+    "text": "성분을 확인해요."
+  },
+  {
+    "file": "d92689e38e1e0146d0c933bd.mp3",
+    "text": "제형"
+  },
+  {
+    "file": "33fe43380c5c5d8952503d52.mp3",
+    "text": "제형이 달라요."
+  },
+  {
+    "file": "bddbf54923476cf6ed974d13.mp3",
+    "text": "질감"
+  },
+  {
+    "file": "cd1bd32fc1a124c9854379cf.mp3",
+    "text": "질감이 부드러워요."
+  },
+  {
+    "file": "9f5e62d12e815b936def0522.mp3",
+    "text": "발림성"
+  },
+  {
+    "file": "635b82045589fb5b133a30a9.mp3",
+    "text": "발림성이 좋아요."
+  },
+  {
+    "file": "3cd7ccdaa5c6eef8de804991.mp3",
+    "text": "흡수력"
+  },
+  {
+    "file": "2b3777dc34bbedb76bfab83a.mp3",
+    "text": "흡수력을 비교해요."
+  },
+  {
+    "file": "07029ad0ee3e5ac407604391.mp3",
+    "text": "지속력"
+  },
+  {
+    "file": "0f923c36d9be1e4c60a63e6e.mp3",
+    "text": "지속력이 좋아요."
+  },
+  {
+    "file": "ac28d6e7a8523be3a6d31e48.mp3",
+    "text": "커버력"
+  },
+  {
+    "file": "4fb3d8ad58c82accda1a977b.mp3",
+    "text": "커버력이 좋아요."
+  },
+  {
+    "file": "451ca483daff8b3d93bc990e.mp3",
+    "text": "밀착력"
+  },
+  {
+    "file": "a214d2f3dc9f4ffe64afd2d2.mp3",
+    "text": "밀착력을 비교해요."
+  },
+  {
+    "file": "dee6741b481b7dbb05de6848.mp3",
+    "text": "발색"
+  },
+  {
+    "file": "bf30025e168513d3d1a5f0f2.mp3",
+    "text": "발색이 좋아요."
+  },
+  {
+    "file": "d6da0eaa005834e524354d05.mp3",
+    "text": "마무리감"
+  },
+  {
+    "file": "512910e32e9ab6ce767a27b4.mp3",
+    "text": "마무리감이 달라요."
+  },
+  {
+    "file": "ac10c26471872004a5d530b2.mp3",
+    "text": "광택"
+  },
+  {
+    "file": "95c6a0c0612e61d578c98dfc.mp3",
+    "text": "광택이 있어요."
+  },
+  {
+    "file": "3b42ecf8717cc7fd392743ba.mp3",
+    "text": "바르다"
+  },
+  {
+    "file": "aeba07a18e353c07aab6fabf.mp3",
+    "text": "발라요"
+  },
+  {
+    "file": "4ad3eb98eb3c94cc53bd5332.mp3",
+    "text": "크림을 발라요."
+  },
+  {
+    "file": "9486f088d39eab79fc2bd437.mp3",
+    "text": "뿌리다"
+  },
+  {
+    "file": "92c5ea1c2dec2ea7899cd9df.mp3",
+    "text": "뿌려요"
+  },
+  {
+    "file": "285b2d28edc78ce05fc40652.mp3",
+    "text": "지우다"
+  },
+  {
+    "file": "b600d56fae19170108d42b3b.mp3",
+    "text": "지워요"
+  },
+  {
+    "file": "28600ff8746b16d39ee3b229.mp3",
+    "text": "화장을 지워요."
+  },
+  {
+    "file": "f93f4d00ab8d4d44b4839542.mp3",
+    "text": "흡수되다"
+  },
+  {
+    "file": "11197f16cd58a640bafcc6ca.mp3",
+    "text": "흡수돼요"
+  },
+  {
+    "file": "6e6dc1422c056f4653a8c0bf.mp3",
+    "text": "크림이 빨리 흡수돼요."
+  },
+  {
+    "file": "96a8f415d06e2b9d8bcb797e.mp3",
+    "text": "흡수하다"
+  },
+  {
+    "file": "b5fa0b61fe27e0ea0f697488.mp3",
+    "text": "흡수해요"
+  },
+  {
+    "file": "3be2e843d69d0d279ecac352.mp3",
+    "text": "피부가 수분을 흡수해요."
+  },
+  {
+    "file": "5c95d4b7777acda8ce8a1466.mp3",
+    "text": "문지르다"
+  },
+  {
+    "file": "712e6bdede26c574107ba44b.mp3",
+    "text": "문질러요"
+  },
+  {
+    "file": "8190a04ca92fb508538552ff.mp3",
+    "text": "손을 천천히 문질러요."
+  },
+  {
+    "file": "f07545c162724f388e851b0e.mp3",
+    "text": "두드리다"
+  },
+  {
+    "file": "a9d5404e67aa1af0d6aa3e9d.mp3",
+    "text": "두드려요"
+  },
+  {
+    "file": "838778382d4381620b5bf882.mp3",
+    "text": "피부를 가볍게 두드려요."
+  },
+  {
+    "file": "d718d80676afafaaaf30d6ec.mp3",
+    "text": "펴다"
+  },
+  {
+    "file": "369a476e6a5d1935ec0ba988.mp3",
+    "text": "펴요"
+  },
+  {
+    "file": "c3cba927f733b59551d743cb.mp3",
+    "text": "손을 펴요."
+  },
+  {
+    "file": "6a756d0d85627cd7d25ddd55.mp3",
+    "text": "촉촉하다"
+  },
+  {
+    "file": "a6d91731ab256d4bf4b8baec.mp3",
+    "text": "촉촉해요"
+  },
+  {
+    "file": "6e116b00d38f0a25340ffd60.mp3",
+    "text": "피부가 촉촉해요."
+  },
+  {
+    "file": "7fc2b0b82414a20f7b11ed3a.mp3",
+    "text": "건조하다"
+  },
+  {
+    "file": "4c8b21851e7634781dcbea22.mp3",
+    "text": "건조해요"
+  },
+  {
+    "file": "5bca329372c891599d09cea4.mp3",
+    "text": "부드럽다"
+  },
+  {
+    "file": "269836a00a4ea4fea4012a19.mp3",
+    "text": "부드러워요"
+  },
+  {
+    "file": "5f47ba3b39a210d31c57349d.mp3",
+    "text": "끈적이다"
+  },
+  {
+    "file": "cc072a838e2e15e5dceb13ea.mp3",
+    "text": "끈적여요"
+  },
+  {
+    "file": "b46ab2d01b0e38bc15423fa9.mp3",
+    "text": "손이 끈적여요."
+  },
+  {
+    "file": "77632f6eee12aa1b173673bb.mp3",
+    "text": "가볍다"
+  },
+  {
+    "file": "b357f76a077745a45ab4dc96.mp3",
+    "text": "가벼워요"
+  },
+  {
+    "file": "f10b3ac402eb586b3a030a11.mp3",
+    "text": "가방이 가벼워요."
+  },
+  {
+    "file": "91e3eab0a3ea6c9e4a4d2681.mp3",
+    "text": "무겁다"
+  },
+  {
+    "file": "02d29bc7e0fbf3a882a49f43.mp3",
+    "text": "무거워요"
+  },
+  {
+    "file": "5b7e8e2e82f67d26f4d210a9.mp3",
+    "text": "가방이 무거워요."
+  },
+  {
+    "file": "11fcb0e62a825a5018bc1750.mp3",
+    "text": "산뜻하다"
+  },
+  {
+    "file": "b5242094ca3d58ed2455654f.mp3",
+    "text": "산뜻해요"
+  },
+  {
+    "file": "ac12cd24b6cdfa36edb7bf85.mp3",
+    "text": "마무리감이 산뜻해요."
+  },
+  {
+    "file": "842efb3cddcd4cbbb7646b65.mp3",
+    "text": "매끄럽다"
+  },
+  {
+    "file": "cae158d9cb3baee5a9325d55.mp3",
+    "text": "매끄러워요"
+  },
+  {
+    "file": "a95e07d962bb6a28d86bdbb5.mp3",
+    "text": "피부가 매끄러워요."
+  },
+  {
+    "file": "aea1a2ecffb228018953b34f.mp3",
+    "text": "은은하다"
+  },
+  {
+    "file": "93893e7a163ba626eba6a188.mp3",
+    "text": "은은해요"
+  },
+  {
+    "file": "7de9e60d4991da891745938f.mp3",
+    "text": "향이 은은해요."
+  },
+  {
+    "file": "3e25867b1220e775a63fd24b.mp3",
+    "text": "진하다"
+  },
+  {
+    "file": "054cfd0cbfc7c7e3f48f4f1a.mp3",
+    "text": "진해요"
+  },
+  {
+    "file": "04990d62723584806bbd6b86.mp3",
+    "text": "색이 진해요."
+  },
+  {
+    "file": "d12ced81f1cc251a380e0cfe.mp3",
+    "text": "연하다"
+  },
+  {
+    "file": "c0e4413719da7490c0e46011.mp3",
+    "text": "연해요"
+  },
+  {
+    "file": "5986d391eb6370236f3fc4c1.mp3",
+    "text": "색이 연해요."
+  },
+  {
+    "file": "bb70e938bbf8b324f2295fd7.mp3",
+    "text": "순하다"
+  },
+  {
+    "file": "09af47b62215393617520dea.mp3",
+    "text": "순해요"
+  },
+  {
+    "file": "d4286c140cef96d271dff6b5.mp3",
+    "text": "향이 순해요."
+  },
+  {
+    "file": "38c1b40757a204e578e9ca5c.mp3",
+    "text": "가격"
+  },
+  {
+    "file": "a59753dbacc3440841825814.mp3",
+    "text": "가격을 물어봐요."
+  },
+  {
+    "file": "e6ac1362406cc066d352d504.mp3",
+    "text": "용량"
+  },
+  {
+    "file": "e8235e97e71e53b3aa1b8183.mp3",
+    "text": "용량을 비교해요."
+  },
+  {
+    "file": "8a755685636f287aad71757a.mp3",
+    "text": "용기"
+  },
+  {
+    "file": "658d684f966f79cd84b09446.mp3",
+    "text": "용기가 작아요."
+  },
+  {
+    "file": "2bafb453d96b372577751d09.mp3",
+    "text": "포장"
+  },
+  {
+    "file": "82c44635bdbc471389c42405.mp3",
+    "text": "포장이 예뻐요."
+  },
+  {
+    "file": "bccba97727f96c00088e3129.mp3",
+    "text": "샘플"
+  },
+  {
+    "file": "7bcf677848269da92780e6ce.mp3",
+    "text": "샘플을 받아요."
+  },
+  {
+    "file": "1b5b7f9e7a75d73e6c901b05.mp3",
+    "text": "후기"
+  },
+  {
+    "file": "41d6d4c55d40c35fc8d1d322.mp3",
+    "text": "후기를 읽어요."
+  },
+  {
+    "file": "559380a1cea8a17ccb0a314b.mp3",
+    "text": "브랜드"
+  },
+  {
+    "file": "371b60bd73d801399dc20040.mp3",
+    "text": "브랜드가 달라요."
+  },
+  {
+    "file": "37ccd7d822c8e4eb7b328442.mp3",
+    "text": "할인"
+  },
+  {
+    "file": "699ff40529df8d2be3769edb.mp3",
+    "text": "할인이 있어요."
+  },
+  {
+    "file": "c396dd563fe12c6bb9e64b4e.mp3",
+    "text": "매장"
+  },
+  {
+    "file": "8ba4c1204f57fbb0eebd956c.mp3",
+    "text": "매장에서 골라요."
+  },
+  {
+    "file": "6e1b9aecaabc2f386ed17b08.mp3",
+    "text": "재고"
+  },
+  {
+    "file": "5d18dc74c8590c036582d454.mp3",
+    "text": "재고가 있어요."
+  },
+  {
+    "file": "f08aa6724ab44510863064bd.mp3",
+    "text": "사용법"
+  },
+  {
+    "file": "e3d72a2ea51f668781aca647.mp3",
+    "text": "사용법을 읽어요."
+  },
+  {
+    "file": "a81569fd95caa59f33520fec.mp3",
+    "text": "사용감"
+  },
+  {
+    "file": "f4b755069b655ead4d9e40ce.mp3",
+    "text": "사용감이 좋아요."
+  },
+  {
+    "file": "e68309c0a7388d50ba46ce36.mp3",
+    "text": "유통기한"
+  },
+  {
+    "file": "a0f6d284630e53205a902c79.mp3",
+    "text": "유통기한을 확인해요."
+  },
+  {
+    "file": "5891b70a9b6fdf41d3b66ede.mp3",
+    "text": "추천"
+  },
+  {
+    "file": "c90558f17eebe2cf236c9898.mp3",
+    "text": "추천을 받아요."
+  },
+  {
+    "file": "9985ce70b4d09b025063c149.mp3",
+    "text": "화장"
+  },
+  {
+    "file": "6b1e828c2c9c4820421dea57.mp3",
+    "text": "구매하다"
+  },
+  {
+    "file": "42776adf868f6051247e57a9.mp3",
+    "text": "구매해요"
+  },
+  {
+    "file": "8bd411484302d0c2eb7eaf56.mp3",
+    "text": "선물을 구매해요."
+  },
+  {
+    "file": "6dcad4851dcc94219874ad18.mp3",
+    "text": "선택하다"
+  },
+  {
+    "file": "5936f8d97c3fa748c578f652.mp3",
+    "text": "선택해요"
+  },
+  {
+    "file": "aa0090b5d5a3f93c1ec9ddf8.mp3",
+    "text": "색을 선택해요."
+  },
+  {
+    "file": "340391047747705f99762f6c.mp3",
+    "text": "추천하다"
+  },
+  {
+    "file": "2d73beb0600aba5e2fe07f78.mp3",
+    "text": "추천해요"
+  },
+  {
+    "file": "a3ced3023071f0898ab771f9.mp3",
+    "text": "이 책을 추천해요."
+  },
+  {
+    "file": "6d08580e9b08815338a61dc6.mp3",
+    "text": "맞다"
+  },
+  {
+    "file": "bcc473b26491895baa49f658.mp3",
+    "text": "맞아요"
+  },
+  {
+    "file": "7ec4db7bed4926a6b8e636c0.mp3",
+    "text": "신발이 맞아요."
+  },
+  {
+    "file": "f62ff8982d788e72028f3e9f.mp3",
+    "text": "예쁘다"
+  },
+  {
+    "file": "a5623750987455866fae8c0f.mp3",
+    "text": "예뻐요"
+  },
+  {
+    "file": "df3a74b155b305ea8d953e95.mp3",
+    "text": "가볍게"
+  },
+  {
+    "file": "87e6d6fb32f4a19f89f00204.mp3",
+    "text": "가볍게 두드려요."
+  },
+  {
+    "file": "5e0fa9f5c77a46b1623ebd51.mp3",
+    "text": "연습실"
+  },
+  {
+    "file": "2e76c32b43903b008b090788.mp3",
+    "text": "연습실에서 만나요."
+  },
+  {
+    "file": "f78aa6994fa2ec9c91305cd9.mp3",
+    "text": "선호하다"
+  },
+  {
+    "file": "ce699fafb0e1c48d6a28619f.mp3",
+    "text": "선호해요"
+  },
+  {
+    "file": "6255b879732561945042cc62.mp3",
+    "text": "저는 조용한 곳을 선호해요."
+  },
+  {
+    "file": "1cd9dc985df28c4908a7b574.mp3",
+    "text": "조용하다"
+  },
+  {
+    "file": "0625d41aea698e5c3f083adb.mp3",
+    "text": "조용해요"
+  },
+  {
+    "file": "1d5c8404c73e6514859d3606.mp3",
+    "text": "도서관이 조용해요."
+  },
+  {
+    "file": "24875f860934407bb8fb6e23.mp3",
+    "text": "곳"
+  },
+  {
+    "file": "d93a35ac6e7593f1dd5e1178.mp3",
+    "text": "이곳이 좋아요."
+  },
+  {
+    "file": "f7b06733762a4646c18b73e3.mp3",
+    "text": "이곳"
+  },
+  {
+    "file": "93612cc4997a22955cec7987.mp3",
+    "text": "이곳에서 공부해요."
+  },
+  {
+    "file": "37ca98883f5001d4cce6081d.mp3",
+    "text": "몇"
+  },
+  {
+    "file": "823d88043a703d99644f933c.mp3",
+    "text": "몇 명이에요?"
+  },
+  {
+    "file": "9f96b8e22cc06bfafc548ef4.mp3",
+    "text": "명"
+  },
+  {
+    "file": "e9d528b1e763af8e30227a05.mp3",
+    "text": "두 명이 와요."
+  },
+  {
+    "file": "a57ab05712bfb600cb4b38bb.mp3",
+    "text": "개"
+  },
+  {
+    "file": "cb9d9166a3e36648e4b2ed97.mp3",
+    "text": "사과 두 개를 사요."
+  },
+  {
+    "file": "ca06065856b9c29b0c803fe4.mp3",
+    "text": "잔"
+  },
+  {
+    "file": "0802fa52b191325df778a21f.mp3",
+    "text": "커피 두 잔을 사요."
+  },
+  {
+    "file": "5e113c9ef13b571371a0a223.mp3",
+    "text": "권"
+  },
+  {
+    "file": "0bce6176bfae4e3a554d5a20.mp3",
+    "text": "책 두 권을 읽어요."
+  },
+  {
+    "file": "31eaf1068c99d7f1add76984.mp3",
+    "text": "병"
+  },
+  {
+    "file": "c97c6d32144da4f8d4750ca2.mp3",
+    "text": "물 두 병을 사요."
+  },
+  {
+    "file": "bfa42cf6a12e912330383a28.mp3",
+    "text": "시"
+  },
+  {
+    "file": "91ae1c2fcff00739970a7b61.mp3",
+    "text": "두 시에 만나요."
+  },
+  {
+    "file": "ca4a187881dbf529d05eb168.mp3",
+    "text": "분"
+  },
+  {
+    "file": "0cff3c822c37a13331a9a6fb.mp3",
+    "text": "몇 분이에요?"
+  },
+  {
+    "file": "556dcbf069a950eb94f3a0e8.mp3",
+    "text": "하나"
+  },
+  {
+    "file": "d35c3c880c5c8f7e8779fc76.mp3",
+    "text": "하나만 골라요."
+  },
+  {
+    "file": "ca76b1284fc2088d64d76243.mp3",
+    "text": "둘"
+  },
+  {
+    "file": "86c372852ede0ef7820ea306.mp3",
+    "text": "하나, 둘."
+  },
+  {
+    "file": "28ed1f7d8986d21d30a52e74.mp3",
+    "text": "셋"
+  },
+  {
+    "file": "0d42f1471ff1b551204bff95.mp3",
+    "text": "하나, 둘, 셋."
+  },
+  {
+    "file": "2752a0238ad7b1eeb2993f32.mp3",
+    "text": "넷"
+  },
+  {
+    "file": "67e50bbfdf12b7968c4387eb.mp3",
+    "text": "셋, 넷."
+  },
+  {
+    "file": "0d616c5afd4feb1394a9813b.mp3",
+    "text": "다섯"
+  },
+  {
+    "file": "65c7a036675b3c6c2a1ee34b.mp3",
+    "text": "다섯 명이 와요."
+  },
+  {
+    "file": "e3da184cbf43240adbd97043.mp3",
+    "text": "여섯"
+  },
+  {
+    "file": "1d713b0fac7945d5d47dcc50.mp3",
+    "text": "여섯 시에 만나요."
+  },
+  {
+    "file": "3036db5d69be8f4dece49f9a.mp3",
+    "text": "일곱"
+  },
+  {
+    "file": "fcb6990a40c2331a076b740c.mp3",
+    "text": "일곱 시에 와요."
+  },
+  {
+    "file": "042fbd833c9fdd6b8ba3d664.mp3",
+    "text": "여덟"
+  },
+  {
+    "file": "6cda4652ffe772bc9c9a011e.mp3",
+    "text": "여덟 시에 가요."
+  },
+  {
+    "file": "20ed618de39e3d7de102c06b.mp3",
+    "text": "아홉"
+  },
+  {
+    "file": "d902282fee9c467ec24cdad0.mp3",
+    "text": "아홉 시에 만나요."
+  },
+  {
+    "file": "6f4112362e973dd65e652916.mp3",
+    "text": "열"
+  },
+  {
+    "file": "ffdc042e4afbe1910f605d39.mp3",
+    "text": "열 시에 가요."
+  },
+  {
+    "file": "89233692031a62c60e6ef602.mp3",
+    "text": "한"
+  },
+  {
+    "file": "b9568eda4d27d133e4dba7b7.mp3",
+    "text": "사과 한 개예요."
+  },
+  {
+    "file": "1bcc05bddb3c9e8c0bec5340.mp3",
+    "text": "세"
+  },
+  {
+    "file": "be01e5cc4fa11a0620f70891.mp3",
+    "text": "책 세 권이에요."
+  },
+  {
+    "file": "70ae9bc35b2d378b00ef6a13.mp3",
+    "text": "좀"
+  },
+  {
+    "file": "a7b4f874b20ac5904977bb7e.mp3",
+    "text": "좀 쉬어요."
+  },
+  {
+    "file": "9b8771f8faf3d2314ee03260.mp3",
+    "text": "가르쳐주다"
+  },
+  {
+    "file": "89b3556f44f16438e91567ff.mp3",
+    "text": "가르쳐줘요"
+  },
+  {
+    "file": "54938c8cf876b027725b6ab0.mp3",
+    "text": "한국어를 가르쳐줘요."
+  },
+  {
+    "file": "315ea821accc0b30a13ba626.mp3",
+    "text": "연락드리다"
+  },
+  {
+    "file": "e85a5ea31ed535bffb686e0b.mp3",
+    "text": "연락드려요"
+  },
+  {
+    "file": "c1dcacfe27cc62fdda3c332e.mp3",
+    "text": "선생님께 연락드려요."
+  },
+  {
+    "file": "e0a8c114a77e081454d17699.mp3",
+    "text": "어떻다"
+  },
+  {
+    "file": "023aa5fb341789792a992052.mp3",
+    "text": "자다"
+  },
+  {
+    "file": "06bda50561159508e8507262.mp3",
+    "text": "자요"
+  },
+  {
+    "file": "0e7a2fb76f7e20ed1e4816c9.mp3",
+    "text": "집에서 자요."
+  },
+  {
+    "file": "b0566314f635fe32e273142e.mp3",
+    "text": "잊다"
+  },
+  {
+    "file": "726183da8185e373a8d8bc1b.mp3",
+    "text": "잊어요"
+  },
+  {
+    "file": "b3331e2c3416a71dd8a346f5.mp3",
+    "text": "이름을 잊어요."
+  },
+  {
+    "file": "7582493f75565a84cbf17fbf.mp3",
+    "text": "걱정"
+  },
+  {
+    "file": "cce0363b65a974f0d1458569.mp3",
+    "text": "걱정이 많아요."
+  },
+  {
+    "file": "d47f2b93b27e999d9b44541d.mp3",
+    "text": "익숙하다"
+  },
+  {
+    "file": "ba381d3c2708aecaa169dea7.mp3",
+    "text": "익숙해요"
+  },
+  {
+    "file": "3b7747acd8513942c7922bdc.mp3",
+    "text": "이 표현이 익숙해요."
+  },
+  {
+    "file": "71ab7f4d89daedabda61672e.mp3",
+    "text": "즐겁다"
+  },
+  {
+    "file": "bb7dcc4d210f50e0d1c824f2.mp3",
+    "text": "즐거워요"
+  },
+  {
+    "file": "be1cb2244c75acbd352d20fb.mp3",
+    "text": "수업이 즐거워요."
+  },
+  {
+    "file": "e3eff4fbd4afe320fdac3b32.mp3",
+    "text": "어울리다"
+  },
+  {
+    "file": "9d7f86d5dcc2a5995a65b719.mp3",
+    "text": "어울려요"
+  },
+  {
+    "file": "82494959ae891649931ca20c.mp3",
+    "text": "색이 잘 어울려요."
+  },
+  {
+    "file": "e9da00d63b62272d40746732.mp3",
+    "text": "안녕하다"
+  },
+  {
+    "file": "07520818dc97f704d27961e0.mp3",
+    "text": "안녕해요"
+  },
+  {
+    "file": "d62d94affe19fbb6ec2cec8c.mp3",
+    "text": "안녕하세요?"
+  },
+  {
+    "file": "2c68318e352971113645cbc7.mp3",
+    "text": "안녕하세요"
+  },
+  {
+    "file": "538b1f187b5470c83c425010.mp3",
+    "text": "안녕하세요, 선생님."
+  },
+  {
+    "file": "d5cacddd111bc906da5c1ccf.mp3",
+    "text": "반갑다"
+  },
+  {
+    "file": "06d7434a5981e436450209d1.mp3",
+    "text": "반가워요"
+  },
+  {
+    "file": "a5fddbc201cb8774cdb7cc1e.mp3",
+    "text": "만나서 반가워요."
+  },
+  {
+    "file": "656cf6c32585f66d3b2196cb.mp3",
+    "text": "죄송하다"
+  },
+  {
+    "file": "e9f7fd1f9febb8b27ec021c7.mp3",
+    "text": "죄송해요"
+  },
+  {
+    "file": "b8e0f605c2b24096e496075c.mp3",
+    "text": "늦어서 죄송해요."
+  },
+  {
+    "file": "8678e3dcf30b4fad0aa54088.mp3",
+    "text": "늦다"
+  },
+  {
+    "file": "762d40d4fc9486340da53da5.mp3",
+    "text": "늦어요"
+  },
+  {
+    "file": "6eccfe1b4319d0c81233efe7.mp3",
+    "text": "친구가 늦어요."
+  },
+  {
+    "file": "ad7d0dbc5dc3902625ab7d86.mp3",
+    "text": "보내드리다"
+  },
+  {
+    "file": "b667316aad395b6cf8c0d4b3.mp3",
+    "text": "보내드려요"
+  },
+  {
+    "file": "07ad7d173a99b1c36eb41884.mp3",
+    "text": "자료를 보내드려요."
+  },
+  {
+    "file": "c9b4aed6d54a88472fe89496.mp3",
+    "text": "공부"
+  },
+  {
+    "file": "d3c4448b321c1e144d2fcdf2.mp3",
+    "text": "공부를 시작해요."
+  },
+  {
+    "file": "94aa2c60f00d50c916f553d1.mp3",
+    "text": "클렌징"
+  },
+  {
+    "file": "19df88ed0babeef1b38e0776.mp3",
+    "text": "클렌징이 필요해요."
+  },
+  {
+    "file": "0870c6ef62d0fc3e9ceb2583.mp3",
+    "text": "오일"
+  },
+  {
+    "file": "7c3bddca16c859a5c85945dc.mp3",
+    "text": "오일을 발라요."
+  },
+  {
+    "file": "90a8402c9ad6f45ae7878553.mp3",
+    "text": "폼"
+  },
+  {
+    "file": "942819f133fdcccc9efb7856.mp3",
+    "text": "폼 클렌저를 사용해요."
+  },
+  {
+    "file": "66b2ad55d8645d92ed83619b.mp3",
+    "text": "아니다"
+  },
+  {
+    "file": "2a86f32067c011ee98056681.mp3",
+    "text": "아니에요"
+  },
+  {
+    "file": "f2f044c13014f60d5dd70a65.mp3",
+    "text": "저는 학생이 아니에요."
+  },
+  {
+    "file": "8c3f651d3083e63da64415c1.mp3",
+    "text": "설명"
+  },
+  {
+    "file": "3d0823158cd5bbb5fb7f363b.mp3",
+    "text": "설명이 쉬워요."
+  },
+  {
+    "file": "774be83e44842779b3fdf0c5.mp3",
+    "text": "해결"
+  },
+  {
+    "file": "e4d2eb47e85a28ae82f1c97a.mp3",
+    "text": "해결 방법을 찾아요."
+  },
+  {
+    "file": "91390eadfad43d09c4585d2e.mp3",
+    "text": "처음"
+  },
+  {
+    "file": "83f9cafb0503bba1871db1d8.mp3",
+    "text": "처음 만나요."
+  },
+  {
+    "file": "3ad4e3c6c1e70deec620f753.mp3",
+    "text": "따르다"
+  },
+  {
+    "file": "6854a777126e0972b2f6b78a.mp3",
+    "text": "따라요"
+  },
+  {
+    "file": "6feb0b91c73a352febd7427a.mp3",
+    "text": "방법을 따라요."
+  },
+  {
+    "file": "1c219583a3d4af3b666960db.mp3",
+    "text": "차이점"
+  },
+  {
+    "file": "426adda54d2d58b1c70c373f.mp3",
+    "text": "차이점을 설명해요."
+  },
+  {
+    "file": "1443a6c090b122289ad77a7f.mp3",
+    "text": "것"
+  },
+  {
+    "file": "b52d18cc12a4afc0530784fd.mp3",
+    "text": "좋은 것을 골라요."
+  },
+  {
+    "file": "82e3bb1b27351e4d45ed77e3.mp3",
+    "text": "걷다"
+  },
+  {
+    "file": "562af938eb611aa1a86139b2.mp3",
+    "text": "걸어요"
+  },
+  {
+    "file": "a097b50688143cd4daa9e047.mp3",
+    "text": "공원에서 걸어요."
+  },
+  {
+    "file": "79c5ada11647bce644078741.mp3",
+    "text": "어제"
+  },
+  {
+    "file": "55329ef3f5be030bb6934db0.mp3",
+    "text": "어제 친구를 만났어요."
+  },
+  {
+    "file": "1e07b94ba5182a41e7de0ba0.mp3",
+    "text": "내일"
+  },
+  {
+    "file": "32d79fb7cfee669db3669ba0.mp3",
+    "text": "내일 친구를 만나요."
+  },
+  {
+    "file": "6ac12a8f8e4e4c22657b2970.mp3",
+    "text": "생각"
+  },
+  {
+    "file": "d7fdfcd25ac71f4b9924d256.mp3",
+    "text": "제 생각에는 연습이 중요해요."
+  },
+  {
+    "file": "61eaecc09cb7e53dbc6e2334.mp3",
+    "text": "장소"
+  },
+  {
+    "file": "0253cf705c82093e80a9076a.mp3",
+    "text": "장소를 알려줘요."
+  },
+  {
+    "file": "07b3c15a29688a55c61b934f.mp3",
+    "text": "관심"
+  },
+  {
+    "file": "24212583e37ea3225ddf245b.mp3",
+    "text": "한국어에 관심이 있어요."
+  },
+  {
+    "file": "946f8147acaaf499e924272e.mp3",
+    "text": "상황"
+  },
+  {
+    "file": "58b0caf73c4570bd79327940.mp3",
+    "text": "상황을 설명해요."
+  },
+  {
+    "file": "7258c17132926a4ba78ba41c.mp3",
+    "text": "역할"
+  },
+  {
+    "file": "a74104de3068240e490075a5.mp3",
+    "text": "역할이 중요해요."
+  },
+  {
+    "file": "f376240a37fbad9834c503e8.mp3",
+    "text": "느낌"
+  },
+  {
+    "file": "6844ab61c68e9519d87d47db.mp3",
+    "text": "느낌이 달라요."
+  },
+  {
+    "file": "2513c886e137082c1a4f7590.mp3",
+    "text": "일상"
+  },
+  {
+    "file": "893e52fa1edc8d1ffb941926.mp3",
+    "text": "일상을 이야기해요."
+  },
+  {
+    "file": "cf9ef5f1ef01d87a94a1a2b3.mp3",
+    "text": "온라인"
+  },
+  {
+    "file": "98d36829fed26a8f1b470c21.mp3",
+    "text": "온라인으로 공부해요."
+  },
+  {
+    "file": "41abb599007a8f8a3050b81b.mp3",
+    "text": "무슨"
+  },
+  {
+    "file": "5cf1b070a8613734908ab946.mp3",
+    "text": "무슨 책을 읽어요?"
+  },
+  {
+    "file": "76e7139b030308e75b1cdc70.mp3",
+    "text": "어느"
+  },
+  {
+    "file": "fb0185e6fb8cf031a53c12dd.mp3",
+    "text": "어느 가게에 가요?"
+  },
+  {
+    "file": "d14f5bfb24390ed9c4da9c92.mp3",
+    "text": "그런"
+  },
+  {
+    "file": "91bff91a870243986d5f4e51.mp3",
+    "text": "그런 일이 있어요."
+  },
+  {
+    "file": "e7ce9cf0ec012e05cb2b900a.mp3",
+    "text": "때문"
+  },
+  {
+    "file": "331ff7da188a2ff244e807a5.mp3",
+    "text": "날씨 때문에 집에 있어요."
+  },
+  {
+    "file": "88664882bd6c94940f609454.mp3",
+    "text": "다름"
+  },
+  {
+    "file": "240ce9eab2b5aec535610982.mp3",
+    "text": "다름이 아니라 질문이 있어요."
+  },
+  {
+    "file": "96303fbb42bf3d764fa02d02.mp3",
+    "text": "위하다"
+  },
+  {
+    "file": "5e395c434b72eca73f8224fa.mp3",
+    "text": "위해요"
+  },
+  {
+    "file": "40b99b5fceade79de8cfa2a2.mp3",
+    "text": "가족을 위해요."
+  },
+  {
+    "file": "1589c16515823209ca51106e.mp3",
+    "text": "지난"
+  },
+  {
+    "file": "4d89d1d483eb0da0a7b87c13.mp3",
+    "text": "지난 주말에 쉬었어요."
+  },
+  {
+    "file": "aef613c6612d424ab454e083.mp3",
+    "text": "다음"
+  },
+  {
+    "file": "103e604de7915c542a22dd91.mp3",
+    "text": "다음 문장을 읽어요."
+  },
+  {
+    "file": "da78d4146f0588e8450a9177.mp3",
+    "text": "이번"
+  },
+  {
+    "file": "0f6c7964bdd0ab10cb29aba1.mp3",
+    "text": "이번 주에 공부해요."
+  },
+  {
+    "file": "6234d5b178a8b25809d84955.mp3",
+    "text": "주"
+  },
+  {
+    "file": "590240ae44ed6306c8a398d1.mp3",
+    "text": "이번 주에 수업이 있어요."
+  },
+  {
+    "file": "59a79337fd9ab69bc177e37e.mp3",
+    "text": "점"
+  },
+  {
+    "file": "954fcfbd6eaa83b2e4a173cf.mp3",
+    "text": "좋은 점이 많아요."
+  },
+  {
+    "file": "b49faf879a59fe63a6058b02.mp3",
+    "text": "밖에"
+  },
+  {
+    "file": "a81937285ec4cd95829f1146.mp3",
+    "text": "물밖에 없어요."
+  },
+  {
+    "file": "fc3d924ec6725c21b50b91da.mp3",
+    "text": "아직"
+  },
+  {
+    "file": "7385efe41a53ed06d74d07a9.mp3",
+    "text": "아직 집에 있어요."
+  },
+  {
+    "file": "44adfe36e1f5e4fe0260c78d.mp3",
+    "text": "고개"
+  },
+  {
+    "file": "c1b1982b94ce294edba3bbd6.mp3",
+    "text": "고개를 숙여요."
+  },
+  {
+    "file": "0df1134d156f85e2b9f3227a.mp3",
+    "text": "숙이다"
+  },
+  {
+    "file": "ade5cefa4c61119261520c55.mp3",
+    "text": "숙여요"
+  },
+  {
+    "file": "b7c8ef4933c71a834692ad39.mp3",
+    "text": "미리"
+  },
+  {
+    "file": "28fecbb7b7010c016a744ada.mp3",
+    "text": "미리 준비해요."
+  },
+  {
+    "file": "2b2ab898a3e77b601db6ee3e.mp3",
+    "text": "답변"
+  },
+  {
+    "file": "1ef242290f5e58bf5673aca6.mp3",
+    "text": "답변을 보내요."
+  },
+  {
+    "file": "1bb289b6e5d9e641ff85a600.mp3",
+    "text": "아무"
+  },
+  {
+    "file": "f72eb1debceb9e4db82643cf.mp3",
+    "text": "아무 문제가 없어요."
+  },
+  {
+    "file": "05961d5b80925e69568c9177.mp3",
+    "text": "관계자"
+  },
+  {
+    "file": "a83ca4ee7bf8bf2814ceb0b5.mp3",
+    "text": "관계자에게 물어봐요."
+  },
+  {
+    "file": "2186559acad40e79834fe438.mp3",
+    "text": "원하다"
+  },
+  {
+    "file": "eaa1f98692e7fc1b2b5c8bcb.mp3",
+    "text": "원해요"
+  },
+  {
+    "file": "e2667ac005df34c3f4986248.mp3",
+    "text": "도움을 원해요."
+  },
+  {
+    "file": "0a9915cd5915474e927c1427.mp3",
+    "text": "늘다"
+  },
+  {
+    "file": "849e262872c3cff579dc687b.mp3",
+    "text": "늘어요"
+  },
+  {
+    "file": "e6a414069eae2970fdaeef4b.mp3",
+    "text": "한국어가 늘어요."
+  },
+  {
+    "file": "df1b33bc83ac7a2b1c306a34.mp3",
+    "text": "어휘"
+  },
+  {
+    "file": "a19f87973b70537b9f509700.mp3",
+    "text": "어휘를 공부해요."
+  },
+  {
+    "file": "546e211475887e7443f1324e.mp3",
+    "text": "실수"
+  },
+  {
+    "file": "ca86d0b8e15d1448d5c6bb3d.mp3",
+    "text": "실수를 고쳐요."
+  },
+  {
+    "file": "594fd99add1f497ba95b4b34.mp3",
+    "text": "고치다"
+  },
+  {
+    "file": "a6c0aae168d48a5f3335ac52.mp3",
+    "text": "고쳐요"
+  },
+  {
+    "file": "1a62e9cdb2df7eb7013e04fc.mp3",
+    "text": "문장을 고쳐요."
+  },
+  {
+    "file": "9132eb626207a0b027625ecf.mp3",
+    "text": "여러"
+  },
+  {
+    "file": "41d879db96e920322cefc118.mp3",
+    "text": "여러 책을 읽어요."
+  },
+  {
+    "file": "1a771e4b7f99176bc0a6bc02.mp3",
+    "text": "정도"
+  },
+  {
+    "file": "83ce129b9479f1b70fd0d641.mp3",
+    "text": "한 시간 정도 공부해요."
+  },
+  {
+    "file": "b3bef5fa2aa9a1953855c576.mp3",
+    "text": "구체적"
+  },
+  {
+    "file": "49d2852372107187915b8d3d.mp3",
+    "text": "구체적인 예를 들어요."
+  },
+  {
+    "file": "3b1654ca703fe68cb750cac6.mp3",
+    "text": "구체적이다"
+  },
+  {
+    "file": "d051e57a30ababe44b2369df.mp3",
+    "text": "구체적이에요"
+  },
+  {
+    "file": "ea3305f8f2ac6155a9bc1e59.mp3",
+    "text": "설명이 구체적이에요."
+  },
+  {
+    "file": "81e9315fa7558013790ed1f9.mp3",
+    "text": "개선하다"
+  },
+  {
+    "file": "0623471645e1432c707e6483.mp3",
+    "text": "개선해요"
+  },
+  {
+    "file": "0ddd0e05489d6d196f0a6ba2.mp3",
+    "text": "방법을 개선해요."
+  },
+  {
+    "file": "f2f28a5f59fa0c79bcfa0974.mp3",
+    "text": "연결하다"
+  },
+  {
+    "file": "72844b0c7a145bfd72b76e2c.mp3",
+    "text": "연결해요"
+  },
+  {
+    "file": "98420ad806a041759bbb09db.mp3",
+    "text": "문장을 연결해요."
+  },
+  {
+    "file": "7fc65ccfacbb148402d75c2a.mp3",
+    "text": "일정하다"
+  },
+  {
+    "file": "157de0c7fe3f3e377c478999.mp3",
+    "text": "일정해요"
+  },
+  {
+    "file": "acb59e78ecb87932c9d3eb5b.mp3",
+    "text": "시간이 일정해요."
+  },
+  {
+    "file": "81191babbad4e229381abb16.mp3",
+    "text": "받아들이다"
+  },
+  {
+    "file": "58323b37ab527be27a680dbe.mp3",
+    "text": "받아들여요"
+  },
+  {
+    "file": "7b1b152299263c1b3492803a.mp3",
+    "text": "의견을 받아들여요."
+  },
+  {
+    "file": "ea3e9c13d19e92d4bfac8695.mp3",
+    "text": "물 네 병이에요."
+  }
+]
