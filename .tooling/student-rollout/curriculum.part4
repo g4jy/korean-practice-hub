@@ -1,0 +1,191 @@
+어떤 전통을 설명하고 싶어요?
+명절에는 보통 누구를 만나요?
+모임에서 어떤 인사를 해요?
+친구와 의견이 다르면 어떻게 말해요?
+같은 표현도 상황에 따라 느낌이 달라요?
+오해가 있으면 어떻게 설명해요?
+관계에서 무엇이 가장 중요해요?
+신뢰는 왜 중요해요?
+두 문화의 공통점은 무엇이에요?
+차이점은 무엇이에요?
+여행에서 어떤 경험을 했어요?
+혼자 여행하는 것을 좋아해요? 왜요?
+어떤 한국어 표현이 재미있어요?
+정중한 부탁을 하나 말해요.
+친구에게 문자를 보내요. 어떤 말을 써요?
+오늘 이야기의 내용을 세 문장으로 요약해요.''','''서로의 의견을 존중해요.|We respect each other's opinions.
+오해가 있어서 다시 설명해요.|I explain again because there is a misunderstanding.
+제 생각에는 신뢰가 중요해요.|In my opinion, trust is important.
+명절에 가족이 모여요.|The family gathers on a traditional holiday.
+두 문화의 공통점을 찾아요.|I look for similarities between the two cultures.
+의견이 다르지만 친구의 말을 들어요.|Our opinions differ, but I listen to my friend.
+연락처를 알려 주시겠어요?|Could you tell me your contact details?
+한국 문화를 배워요.|I learn about Korean culture.
+친구에게 경험을 이야기해요.|I tell my friend about an experience.
+이 표현은 정중해요.|This expression is polite.
+모임 전에 친구에게 연락해요.|I contact my friend before the gathering.
+내용을 요약해요.|I summarise the content.''')
+module('business','Work, polite requests and cultural context','회의 일정 확인하다 전달하다 요청하다 제공하다 협의하다 변경하다 참석하다 감사하다 말씀 명함 예절 예의 부탁 답장 제목 첨부 연락처 담당자 드리다 말씀하다 괜찮다 불편하다 정중하다 자료 정보 연락하다 보내다 연락드리다 보내드리다 문화 전통 명절','X19 X20 X21 X22 X03 X07 X13 X18','''회의 전에 무엇을 확인해요?
+일정이 바뀌면 누구에게 연락해요?
+담당자에게 자료를 요청해요. 어떻게 말해요?
+이메일 제목에 무엇을 써요?
+첨부 파일을 확인했어요?
+답장은 언제 보내요?
+명함을 받으면 어떤 인사를 해요?
+처음 만나는 사람에게 정중하게 인사해요.
+회의에 참석할 수 없으면 어떻게 말해요?
+다른 시간을 제안해요.
+도움에 감사하는 말을 해요.
+전화번호를 정중하게 물어봐요.
+의견이 다르면 어떻게 말해요?
+손님에게 정보를 제공해요. 어떤 표현을 써요?
+명절 인사와 일상 인사는 어떻게 달라요?
+친구에게 하는 부탁과 담당자에게 하는 부탁을 비교해요.
+사용법을 다시 설명해 달라고 부탁해요.
+회의 내용을 세 문장으로 요약해요.''','''다름이 아니라 일정을 확인하고 싶어요.|I am contacting you because I would like to confirm the schedule.
+자료를 보내 주시겠어요?|Could you send the materials?
+담당자에게 연락드려요.|I contact the person in charge politely.
+회의 시간을 변경해요.|I change the meeting time.
+도움에 감사해요.|I am grateful for the help.
+첨부 파일을 확인해 주세요.|Please check the attachment.
+다른 시간이 괜찮아요?|Would a different time be okay?
+자료를 보내 드릴게요.|I will send you the materials politely.
+사용법을 다시 설명해 주세요.|Please explain the instructions for use again.
+선생님께 선물을 드려요.|I give the teacher a gift respectfully.
+회의 내용을 요약해요.|I summarise the meeting contents.
+명함을 받고 인사를 해요.|I receive the business card and greet the person.''',workshop=dict(title='Write a short polite message',prompt='Write to a fictional colleague to confirm a meeting and request a file. Do not enter real contact details.',steps=['Open politely.','Explain why you are writing.','Ask for the file or confirm the time.','Close with thanks.','Read it aloud and check the level of politeness.']))
+module('body','Movement, tools and how you feel','몸 머리 눈 코 입 귀 손 팔 다리 근육 밀다 뭉치다 열다 닫다 씻다 일어나다 걷다 쉬다 운동하다 아프다 피곤하다 바쁘다 건강하다 버스 지하철 택시 자전거 공항 오른쪽 왼쪽 숟가락 젓가락 펜 카메라','P08 P09 P10 P11 P12 P13 P14 P15 X01 X07 X10 X25','''오늘 몸이 어때요?
+어디가 아파요?
+피곤하면 뭐를 해요?
+어디에서 운동해요?
+공원에 어떻게 가요?
+운동 전에 뭐를 준비해요?
+운동 후에 누구를 만나요?
+근육이 뭉치면 쉬어요?
+문을 밀어요? 문을 열어요?
+손을 어디에서 씻어요?
+사진을 뭐로 찍어요?
+이름을 뭐로 써요?
+밥을 숟가락으로 먹어요? 젓가락으로 먹어요?
+공항에 어떻게 가요?
+오른쪽으로 가요? 왼쪽으로 가요?
+한국어로도 말해요?
+주말에 어디에 갈 거예요?
+오늘 무엇이 필요해요?''','''몸이 피곤해서 쉬어요.|I rest because my body is tired.
+근육이 뭉쳐요.|My muscles feel tight.
+문을 밀어요.|I push the door.
+손을 씻어요.|I wash my hands.
+공원에서 운동해요.|I exercise at the park.
+자전거로 공원에 가요.|I go to the park by bicycle.
+펜으로 이름을 써요.|I write my name with a pen.
+카메라로 사진을 찍어요.|I take a photo with a camera.
+젓가락으로 밥을 먹어요.|I eat rice with chopsticks.
+버스로 공항에 가요.|I go to the airport by bus.
+주말에 집에서 쉴 거예요.|I am going to rest at home at the weekend.
+한국어로 말해요.|I speak in Korean.''')
+module('beauty','Beauty: 80 words for products and comparisons',' '.join(w['ko'] for w in EXTRA if w['group'].startswith('Beauty')),'X23 X24 X18 P02 P03 P04 P05 P06 P07 P16 P17 P18','''어떤 화장품을 사용해요?
+토너와 로션이 있어요?
+크림의 질감이 어때요?
+향이 진해요? 은은해요?
+어떤 색을 좋아해요?
+발림성이 좋아요?
+크림이 빨리 흡수돼요?
+마무리감이 촉촉해요? 산뜻해요?
+립스틱의 발색이 어때요?
+파운데이션의 커버력이 어때요?
+쿠션과 파운데이션을 비교해요.
+제품을 어디에서 사요?
+가격이 비싸요? 싸요?
+샘플도 받아요?
+사용법을 어디에서 확인해요?
+누구한테 선물을 줘요?
+친구에게 어떤 제품을 추천해요?
+두 제품의 장점과 단점을 말해요.''','''크림이 가벼워요.|The cream is light.
+향이 은은해요.|The scent is subtle.
+피부에 로션을 발라요.|I apply lotion to my skin.
+이 제품의 발림성이 좋아요.|This product spreads well.
+크림이 빨리 흡수돼요.|The cream absorbs quickly.
+마무리감이 산뜻해요.|The finish feels fresh and light.
+립스틱 색을 골라요.|I choose a lipstick colour.
+매장에서 샘플을 받아요.|I receive a sample at the store.
+친구에게 사용법을 알려줘요.|I tell my friend how to use it.
+두 제품의 용량을 비교해요.|I compare the volumes of two products.
+성분과 가격을 확인해요.|I check the ingredients and price.
+이 색보다 저 색이 더 연해요.|That colour is lighter than this one.''')
+module('daily','Daily activities, clothing and counters','양말 운동화 신다 끼다 메다 장갑 티셔츠 바지 치마 옷 신발 모자 안경 가방 머리 손 팔 다리 색 빨간색 파란색 노란색 일어나다 씻다 먹다 마시다 읽다 보다 입다 쓰다 듣다 개 잔 권 병 시 분 한 두 세 네 오늘 어제 내일 주말','X25 X26 X29 X30 P01 P02 P03 P04 P05 P08 P09 P10','''오늘 뭐를 입어요?
+어떤 신발을 신어요?
+가방을 메요?
+모자도 써요?
+무슨 색을 좋아해요?
+양말이 어디에 있어요?
+책이 몇 권 있어요?
+물 몇 병을 사요?
+커피 몇 잔을 마셔요?
+몇 시에 일어나요?
+아침에 뭐를 해요?
+어제 어디에 갔어요?
+어제 뭐를 먹었어요?
+오늘 뭐를 마셔요?
+집에서 뭘 자주 해요?
+주말에 누구를 만나요?
+오늘 날씨가 어때요?
+친구에게 사진을 보내요?''','''티셔츠를 입어요.|I put on a T-shirt.
+운동화를 신어요.|I put on sneakers.
+가방을 메요.|I carry a bag on my shoulder.
+모자를 써요.|I put on a hat.
+장갑을 껴요.|I put on gloves.
+물 두 병을 사요.|I buy two bottles of water.
+책 한 권을 읽어요.|I read one book.
+커피 두 잔을 사요.|I buy two cups of coffee.
+어제 빵을 먹었어요.|I ate bread yesterday.
+오늘은 물을 마셔요.|Today I drink water.
+아침에 손을 씻어요.|I wash my hands in the morning.
+가방 안에 양말이 있어요.|There are socks in the bag.''')
+module('concert','Places, messages and music','공연 음악 노래 가수 배우 사진 카메라 휴대폰 친구 공항 버스 지하철 택시 집 카페 식당 물 빵 커피 편지 메시지 연락하다 보내다 기다리다 보다 듣다 좋아하다 주다 받다 어디 누구 뭐 있다 없다 자주 같이 천천히','P01 P02 P03 P04 P05 P08 P09 P10 P13 P14 P16 P17 P18 P19 P20 P21 P22','''어떤 음악을 좋아해요?
+노래를 자주 들어요?
+공연을 어디에서 봐요?
+누구를 만나요?
+친구는 어디에 있어요?
+공연에 어떻게 가요?
+공항에 버스로 가요?
+카페에서 누구를 기다려요?
+카페에서 뭐를 마셔요?
+빵도 먹어요?
+사진을 뭐로 찍어요?
+사진을 누구한테 보내요?
+친구한테 메시지도 보내요?
+휴대폰이 어디에 있어요?
+가방 안에 뭐가 있어요?
+누구한테 선물을 줘요?
+집에서 한국어를 공부해요?
+어떤 한국어 단어를 좋아해요?''','''저는 음악을 좋아해요.|I like music.
+친구도 음악을 좋아해요.|My friend likes music too.
+지하철로 가요.|I go by subway.
+카페에서 친구를 기다려요.|I wait for a friend at a cafe.
+물을 마셔요. 빵도 먹어요.|I drink water. I eat bread too.
+휴대폰으로 사진을 찍어요.|I take a photo with my phone.
+친구한테 사진을 보내요.|I send a photo to my friend.
+메시지도 보내요.|I send a message too.
+가방 안에 휴대폰이 있어요.|The phone is inside the bag.
+공연을 봐요.|I watch a performance.
+이 노래를 자주 들어요.|I often listen to this song.
+한국어를 천천히 읽어요.|I read Korean slowly.''')
+# Individual configurations are educational topics only; no schedules, private notes or platform IDs.
+LEARNERS=[
+ dict(slug='moulik',name='Moulik',modules=['writing','connectors'],first='writing',writing=True),
+ dict(slug='asa',name='Asa',modules=['kids','intro'],first='kids',newLimit=3,sessionLimit=10),
+ dict(slug='huixin',name='HUIXIN',modules=['writing','culture'],first='writing',writing=True),
+ dict(slug='jack',name='Jack',modules=['locations','intro'],first='locations'),
+ dict(slug='erika',name='Erika',modules=['connectors','culture'],first='connectors'),
+ dict(slug='alice',name='Alice',modules=['daily','locations'],first='daily'),
+ dict(slug='chi',name='Chi',modules=['music','connectors'],first='music'),
+ dict(slug='katharine',name='Katharine',modules=[],first='original'),
+ dict(slug='debora',name='Débora',modules=['business','culture'],first='business',writing=True),
+ dict(slug='kpopallstar',name='KpopAllStar',modules=['concert','locations'],first='concert'),
+ dict(slug='victoria',name='Victoria',modules=['body','locations'],first='body'),
+ dict(slug='amelia',name='Amelia',modules=['intro','locations'],first='intro',newLimit=3,sessionLimit=15),
+ dict(slug='yeliz',name='Yeliz',modules=['culture','connectors'],first='culture'),
+ dict(slug='diamonique',name='Diamonique',modules=['daily','concert'],first='daily'),
+ dict(slug='elvira',name='Elvira',modules=['beauty'],first='beauty'),
+ dict(slug='tai',name='Tai',modules=['connectors','culture'],first='connectors'),
+]
