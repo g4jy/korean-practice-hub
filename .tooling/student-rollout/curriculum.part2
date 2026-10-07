@@ -1,0 +1,165 @@
+바쁘다|바빠요|be busy|오늘은 바빠요.|I am busy today.
+건강하다|건강해요|be healthy|몸이 건강해요.|My body is healthy.
+새|-|bird|새가 작아요.|The bird is small.
+거북이|-|turtle|거북이가 있어요.|There is a turtle.
+코끼리|-|elephant|코끼리가 커요.|The elephant is big.
+사자|-|lion|사자 사진을 봐요.|I look at a photo of a lion.
+곰|-|bear|곰이 커요.|The bear is big.
+호랑이|-|tiger|호랑이 사진을 찍어요.|I take a photo of a tiger.
+펭귄|-|penguin|펭귄이 작아요.|The penguin is small.
+원숭이|-|monkey|원숭이가 와요.|The monkey is coming.
+색|-|colour|색이 달라요.|The colours are different.
+빨간색|-|red|빨간색을 좋아해요.|I like red.
+파란색|-|blue|파란색 모자예요.|It is a blue hat.
+노란색|-|yellow|노란색 가방이에요.|It is a yellow bag.
+초록색|-|green|초록색 옷을 입어요.|I wear green clothes.
+보라색|-|purple|보라색을 좋아해요.|I like purple.
+양말|-|socks|양말을 사요.|I buy socks.
+운동화|-|trainers; sneakers|운동화를 신어요.|I wear sneakers.
+신다|신어요|wear (footwear)|신발을 신어요.|I put on shoes.
+끼다|껴요|wear (gloves, rings)|장갑을 껴요.|I put on gloves.
+메다|메요|carry on the shoulder|가방을 메요.|I carry a bag on my shoulder.
+장갑|-|gloves|장갑이 필요해요.|I need gloves.
+티셔츠|-|T-shirt|티셔츠를 입어요.|I wear a T-shirt.
+바지|-|trousers; pants|바지가 길어요.|The trousers are long.
+치마|-|skirt|치마를 골라요.|I choose a skirt.
+''' )
+# Eighty beauty/product words; specific, non-medical language practice.
+rows('Beauty • products','''화장품|-|cosmetics|화장품을 골라요.|I choose cosmetics.
+제품|-|product|제품을 비교해요.|I compare products.
+토너|-|toner|토너를 사요.|I buy toner.
+로션|-|lotion|로션을 발라요.|I apply lotion.
+크림|-|cream|크림이 부드러워요.|The cream is soft.
+세럼|-|serum|세럼을 사용해요.|I use serum.
+에센스|-|essence|에센스를 발라요.|I apply essence.
+앰플|-|ampoule; concentrated serum|앰플을 골라요.|I choose an ampoule.
+선크림|-|sunscreen|선크림을 발라요.|I apply sunscreen.
+클렌저|-|cleanser|클렌저를 사용해요.|I use cleanser.
+클렌징 오일|-|cleansing oil|클렌징 오일을 사요.|I buy cleansing oil.
+폼 클렌저|-|foaming cleanser|폼 클렌저를 골라요.|I choose a foaming cleanser.
+마스크팩|-|sheet mask|마스크팩을 사요.|I buy a sheet mask.
+미스트|-|facial mist|미스트를 뿌려요.|I spray facial mist.
+립밤|-|lip balm|립밤을 발라요.|I apply lip balm.
+파운데이션|-|foundation|파운데이션 색을 비교해요.|I compare foundation shades.
+쿠션|-|cushion foundation|쿠션을 사용해요.|I use cushion foundation.
+컨실러|-|concealer|컨실러를 발라요.|I apply concealer.
+파우더|-|powder|파우더를 사용해요.|I use powder.
+립스틱|-|lipstick|립스틱 색이 예뻐요.|The lipstick colour is pretty.
+''' )
+rows('Beauty • skin and properties','''피부|-|skin|피부가 건조해요.|My skin is dry.
+건성|-|dry skin type|건성 피부예요.|It is a dry skin type.
+지성|-|oily skin type|지성 피부예요.|It is an oily skin type.
+복합성|-|combination skin type|복합성 피부예요.|It is a combination skin type.
+민감성|-|sensitivity; sensitive skin type|민감성 피부예요.|It is a sensitive skin type.
+보습|-|moisturising; hydration|보습이 필요해요.|Moisturising is needed.
+수분|-|moisture; water content|수분이 많아요.|There is a lot of moisture.
+유분|-|oil content|유분이 많아요.|There is a lot of oil.
+향|-|scent|향이 좋아요.|The scent is pleasant.
+성분|-|ingredient|성분을 확인해요.|I check the ingredients.
+제형|-|product formulation; texture type|제형이 달라요.|The formulations are different.
+질감|-|texture; feel|질감이 부드러워요.|The texture is soft.
+발림성|-|spreadability (of a product)|발림성이 좋아요.|It spreads well.
+흡수력|-|absorption ability|흡수력을 비교해요.|I compare absorption ability.
+지속력|-|lasting power|지속력이 좋아요.|It has good lasting power.
+커버력|-|coverage (of makeup)|커버력이 좋아요.|The coverage is good.
+밀착력|-|adhesion; how closely makeup adheres|밀착력을 비교해요.|I compare how closely the makeup adheres.
+발색|-|colour payoff|발색이 좋아요.|The colour payoff is good.
+마무리감|-|finish; after-feel|마무리감이 달라요.|The finishes feel different.
+광택|-|gloss; sheen|광택이 있어요.|It has a sheen.
+''' )
+rows('Beauty • actions and descriptions','''바르다|발라요|apply; spread on|크림을 발라요.|I apply cream.
+뿌리다|뿌려요|spray; sprinkle|미스트를 뿌려요.|I spray facial mist.
+지우다|지워요|remove; erase|화장을 지워요.|I remove my makeup.
+흡수되다|흡수돼요|be absorbed|크림이 빨리 흡수돼요.|The cream absorbs quickly.
+흡수하다|흡수해요|absorb|피부가 수분을 흡수해요.|The skin absorbs moisture.
+문지르다|문질러요|rub|손을 천천히 문질러요.|I rub my hands slowly.
+두드리다|두드려요|tap; pat|피부를 가볍게 두드려요.|I pat the skin lightly.
+펴다|펴요|spread; unfold|손을 펴요.|I open my hand.
+촉촉하다|촉촉해요|be moist; hydrated|피부가 촉촉해요.|My skin feels hydrated.
+건조하다|건조해요|be dry|피부가 건조해요.|My skin is dry.
+부드럽다|부드러워요|be soft; smooth|질감이 부드러워요.|The texture is soft.
+끈적이다|끈적여요|be sticky|손이 끈적여요.|My hands feel sticky.
+가볍다|가벼워요|be light (weight or feel)|가방이 가벼워요.|The bag is light.
+무겁다|무거워요|be heavy|가방이 무거워요.|The bag is heavy.
+산뜻하다|산뜻해요|feel fresh and light|마무리감이 산뜻해요.|The finish feels fresh and light.
+매끄럽다|매끄러워요|be smooth|피부가 매끄러워요.|The skin is smooth.
+은은하다|은은해요|be subtle; gentle (scent, colour)|향이 은은해요.|The scent is subtle.
+진하다|진해요|be deep; strong; intense|색이 진해요.|The colour is intense.
+연하다|연해요|be light; pale; mild|색이 연해요.|The colour is pale.
+순하다|순해요|be mild; gentle|향이 순해요.|The scent is mild.
+''' )
+rows('Beauty • shopping and use','''가격|-|price|가격을 물어봐요.|I ask about the price.
+용량|-|volume; capacity|용량을 비교해요.|I compare capacities.
+용기|-|container|용기가 작아요.|The container is small.
+포장|-|packaging|포장이 예뻐요.|The packaging is pretty.
+샘플|-|sample|샘플을 받아요.|I receive a sample.
+후기|-|customer review|후기를 읽어요.|I read customer reviews.
+브랜드|-|brand|브랜드가 달라요.|The brands are different.
+할인|-|discount|할인이 있어요.|There is a discount.
+매장|-|shop; retail store|매장에서 골라요.|I choose it at the store.
+재고|-|stock; inventory|재고가 있어요.|It is in stock.
+사용법|-|instructions for use|사용법을 읽어요.|I read the instructions for use.
+사용감|-|how a product feels in use|사용감이 좋아요.|It feels good to use.
+유통기한|-|distribution expiry date; sell-by period|유통기한을 확인해요.|I check the distribution expiry date.
+추천|-|recommendation|추천을 받아요.|I receive a recommendation.
+화장|-|makeup|화장을 지워요.|I remove my makeup.
+구매하다|구매해요|purchase|선물을 구매해요.|I purchase a gift.
+선택하다|선택해요|choose; select|색을 선택해요.|I choose a colour.
+추천하다|추천해요|recommend|이 책을 추천해요.|I recommend this book.
+맞다|맞아요|be right; suit; fit|신발이 맞아요.|The shoes fit.
+예쁘다|예뻐요|be pretty|포장이 예뻐요.|The packaging is pretty.
+''' )
+rows('Support vocabulary','''가볍게|-|lightly|가볍게 두드려요.|I pat it lightly.
+연습실|-|practice room|연습실에서 만나요.|We meet in the practice room.
+선호하다|선호해요|prefer|저는 조용한 곳을 선호해요.|I prefer quiet places.
+조용하다|조용해요|be quiet|도서관이 조용해요.|The library is quiet.
+곳|-|place|이곳이 좋아요.|This place is nice.
+이곳|-|this place|이곳에서 공부해요.|I study here.
+몇|-|how many; which (number)|몇 명이에요?|How many people are there?
+명|-|counter for people|두 명이 와요.|Two people are coming.
+개|-|general counter for items|사과 두 개를 사요.|I buy two apples.
+잔|-|counter for cups/glasses|커피 두 잔을 사요.|I buy two cups of coffee.
+권|-|counter for books|책 두 권을 읽어요.|I read two books.
+병|-|counter for bottles; bottle|물 두 병을 사요.|I buy two bottles of water.
+시|-|o'clock; counter for hours of the clock|두 시에 만나요.|We meet at two o'clock.
+분|-|minute|몇 분이에요?|How many minutes is it?
+하나|-|one|하나만 골라요.|I choose only one.
+둘|-|two|하나, 둘.|One, two.
+셋|-|three|하나, 둘, 셋.|One, two, three.
+넷|-|four|셋, 넷.|Three, four.
+다섯|-|five|다섯 명이 와요.|Five people are coming.
+여섯|-|six|여섯 시에 만나요.|We meet at six o'clock.
+일곱|-|seven|일곱 시에 와요.|I come at seven o'clock.
+여덟|-|eight|여덟 시에 가요.|I go at eight o'clock.
+아홉|-|nine|아홉 시에 만나요.|We meet at nine o'clock.
+열|-|ten|열 시에 가요.|I go at ten o'clock.
+한|-|one (before a counter)|사과 한 개예요.|It is one apple.
+세|-|three (before a counter)|책 세 권이에요.|There are three books.
+네|-|four (before a counter)|물 네 병이에요.|There are four bottles of water.
+좀|-|a little; please (softener)|좀 쉬어요.|I rest a little.
+가르쳐주다|가르쳐줘요|teach someone; tell someone|한국어를 가르쳐줘요.|I teach someone Korean.
+연락드리다|연락드려요|contact (humble)|선생님께 연락드려요.|I contact the teacher.
+어떻다|어때요|be how; what is it like|날씨가 어때요?|How is the weather?
+자다|자요|sleep|집에서 자요.|I sleep at home.
+잊다|잊어요|forget|이름을 잊어요.|I forget the name.
+걱정|-|worry|걱정이 많아요.|I have many worries.
+익숙하다|익숙해요|be familiar; accustomed|이 표현이 익숙해요.|This expression is familiar.
+즐겁다|즐거워요|be enjoyable; happy|수업이 즐거워요.|The class is enjoyable.
+어울리다|어울려요|suit; go well together|색이 잘 어울려요.|The colours go well together.
+안녕하다|안녕해요|be well; be in peace|안녕하세요?|Hello. How are you?
+안녕하세요|-|hello (polite greeting)|안녕하세요, 선생님.|Hello, teacher.
+반갑다|반가워요|be glad to meet|만나서 반가워요.|Nice to meet you.
+죄송하다|죄송해요|be sorry (polite)|늦어서 죄송해요.|I am sorry for being late.
+늦다|늦어요|be late|친구가 늦어요.|My friend is late.
+보내드리다|보내드려요|send (humble)|자료를 보내드려요.|I send the materials (politely).
+''' )
+ADJECTIVES=set('괜찮다 불편하다 정중하다 감사하다 길다 짧다 빠르다 느리다 덥다 춥다 맛있다 맛없다 피곤하다 바쁘다 건강하다 촉촉하다 건조하다 부드럽다 가볍다 무겁다 산뜻하다 매끄럽다 은은하다 진하다 연하다 순하다 예쁘다 조용하다 익숙하다 즐겁다 어떻다 반갑다 죄송하다 안녕하다'.split())
+ADVERBS=set('요즘 보통 왜 가장 더 조금 잘 매일 항상 다시 서로 그리고 하지만 그래서 함께 가볍게 좀 예를 들면'.split())
+for w in EXTRA:
+ if w['ko'] in ADJECTIVES:w['pos']='Adjective'
+ elif w['ko'] in ADVERBS:w['pos']='Adverb'
+ elif w['ko'] in ['한','두','세','네','몇']:w['pos']='Determiner'
+ elif w['ko'] in '하나 둘 셋 넷 다섯 여섯 일곱 여덟 아홉 열'.split():w['pos']='Numeral'
+ if w['ko']=='어때요':w['pos']='Conjugated expression';w['note']='Polite question form of 어떻다; see the dictionary entry too.'
+ if w['ko']=='안녕하세요':w['pos']='Greeting'
+# Patterns and speaking prompts below are original practice, not official exam questions.
