@@ -1,0 +1,155 @@
+"""Build isolated student applications. Inputs and outputs contain educational content only."""
+from pathlib import Path
+from copy import deepcopy
+import json,hashlib,shutil,re,os,csv,collections
+from xml.sax.saxutils import escape
+from reportlab.pdfgen import canvas
+from reportlab.lib.pagesizes import A4
+from reportlab.pdfbase import pdfmetrics
+from reportlab.pdfbase.ttfonts import TTFont
+from reportlab.platypus import SimpleDocTemplate,Paragraph,Spacer,Table,TableStyle,PageBreak
+from reportlab.lib.styles import ParagraphStyle
+import curriculum as C
+ROOT=Path(os.environ.get('OUTPUT_ROOT','.')).resolve()
+BASE=Path(os.environ.get('BASE_APP','/mnt/data/student-rollout/template/katharine')).resolve()
+OUT=ROOT/'students';OUT.mkdir(parents=True,exist_ok=True)
+SH=OUT/'shared';SH.mkdir(exist_ok=True)
+def dump(p,x):
+ p.parent.mkdir(parents=True,exist_ok=True);p.write_text(json.dumps(x,ensure_ascii=False,indent=2),encoding='utf-8')
+def digest(t):return hashlib.sha256(t.encode()).hexdigest()
+def read(p):return json.loads(p.read_text())
+original=read(BASE/'data.json');old_audio=read(BASE/'audio-manifest.json')
+# A previously deployed dedicated app is never recreated.
+learners=[s for s in C.LEARNERS if s['slug']!='jack']
+# A multiword headword stays one card, and the yes/four homograph keeps separate senses.
+beauty_words=[w['ko'] for w in C.EXTRA if w['group'].startswith('Beauty')]
+C.MODULES['beauty']['focus']=beauty_words
+extra=deepcopy(C.EXTRA)
+for w in extra:
+ if w['ko']=='네':w['id']='x-number-four';w['note']='The number form before a counter, not the answer yes.'
+ if w['ko']=='요즘':w['pos']='Noun';w['note']='A time noun commonly used adverbially.'
+ if w['ko']=='예를 들면':w['pos']='Expression'
+ if w['ko']=='늦다':w['pos']='Adjective / Verb'
+ if w['ko']=='어때요':w['note']='A useful question form of 어떻다, not a separate dictionary verb.'
+# Add only explicit lexical entries, not fabricated translations from stems.
+SUPPORT='''공부|-|study; studying|공부를 시작해요.|I start studying.
+클렌징|-|cleansing|클렌징이 필요해요.|Cleansing is needed.
+오일|-|oil|오일을 발라요.|I apply oil.
+폼|-|foam|폼 클렌저를 사용해요.|I use a foam cleanser.
+아니다|아니에요|not be (identity)|저는 학생이 아니에요.|I am not a student.
+설명|-|explanation|설명이 쉬워요.|The explanation is easy.
+해결|-|solution; resolution|해결 방법을 찾아요.|I look for a solution.
+처음|-|first time; beginning|처음 만나요.|We meet for the first time.
+따르다|따라요|follow; depend on|방법을 따라요.|I follow the method.
+차이점|-|difference; differing point|차이점을 설명해요.|I explain the difference.
+것|-|thing; fact (bound noun)|좋은 것을 골라요.|I choose a good thing.
+걷다|걸어요|walk|공원에서 걸어요.|I walk in the park.
+어제|-|yesterday|어제 친구를 만났어요.|I met a friend yesterday.
+내일|-|tomorrow|내일 친구를 만나요.|I am meeting a friend tomorrow.
+생각|-|thought; opinion|제 생각에는 연습이 중요해요.|In my opinion, practice is important.
+장소|-|place|장소를 알려줘요.|I tell someone the place.
+관심|-|interest|한국어에 관심이 있어요.|I am interested in Korean.
+상황|-|situation|상황을 설명해요.|I explain the situation.
+역할|-|role|역할이 중요해요.|The role is important.
+느낌|-|feeling; impression|느낌이 달라요.|The feeling is different.
+일상|-|everyday life|일상을 이야기해요.|I talk about everyday life.
+온라인|-|online|온라인으로 공부해요.|I study online.
+무슨|-|what; what kind of|무슨 책을 읽어요?|What book are you reading?
+그|-|that (before a noun)|그 책을 읽어요.|I read that book.
+어느|-|which|어느 가게에 가요?|Which store are you going to?
+그런|-|such; like that|그런 일이 있어요.|Something like that happens.
+때문|-|because of; due to (bound noun)|날씨 때문에 집에 있어요.|I am home because of the weather.
+다름|-|difference; being different|다름이 아니라 질문이 있어요.|I am contacting you because I have a question.
+위하다|위해요|do for; for the sake of|가족을 위해요.|I do it for my family.
+어떻게|-|how; in what way|어떻게 가요?|How do you get there?
+일|-|matter; work; event|오늘 일이 많아요.|I have a lot of work today.
+지난|-|last; previous (before a time noun)|지난 주말에 쉬었어요.|I rested last weekend.
+다음|-|next; following|다음 문장을 읽어요.|I read the next sentence.
+이번|-|this time; this (current)|이번 주에 공부해요.|I study this week.
+주|-|week|이번 주에 수업이 있어요.|I have class this week.
+점|-|point; aspect|좋은 점이 많아요.|There are many good points.
+밖에|-|except; only (with a negative)|물밖에 없어요.|There is only water.
+아직|-|still; yet|아직 집에 있어요.|I am still at home.
+함께|-|together|함께 공부해요.|We study together.
+고개|-|head (movement)|고개를 숙여요.|I bow my head.
+숙이다|숙여요|lower; bow|고개를 숙여요.|I bow my head.
+미리|-|in advance|미리 준비해요.|I prepare in advance.
+답변|-|answer; reply|답변을 보내요.|I send a reply.
+아무|-|any (before a noun)|아무 문제가 없어요.|There is no problem.
+관계자|-|person concerned; relevant person|관계자에게 물어봐요.|I ask the relevant person.
+원하다|원해요|want|도움을 원해요.|I want help.
+늘다|늘어요|increase; improve (intransitive)|한국어가 늘어요.|My Korean improves.
+내용|-|content|내용을 읽어요.|I read the content.
+어휘|-|vocabulary|어휘를 공부해요.|I study vocabulary.
+실수|-|mistake|실수를 고쳐요.|I correct a mistake.
+고치다|고쳐요|fix; correct|문장을 고쳐요.|I correct the sentence.
+다시|-|again|다시 읽어요.|I read it again.
+여러|-|several; various|여러 책을 읽어요.|I read several books.
+정도|-|degree; approximately|한 시간 정도 공부해요.|I study for about an hour.
+구체적|-|specific; concrete|구체적인 예를 들어요.|I give a specific example.
+구체적이다|구체적이에요|be specific; concrete|설명이 구체적이에요.|The explanation is specific.
+개선하다|개선해요|improve something|방법을 개선해요.|I improve the method.
+연결하다|연결해요|connect|문장을 연결해요.|I connect sentences.
+일정하다|일정해요|be consistent; regular|시간이 일정해요.|The time is regular.
+받아들이다|받아들여요|accept|의견을 받아들여요.|I accept the opinion.
+''' 
+for ln in SUPPORT.strip().splitlines():
+ ko,yo,en,ex,tr=ln.split('|');extra.append(dict(id='x'+digest(ko)[:10],ko=ko,yo='' if yo=='-' else yo,en=en,example=ex,exampleEn=tr,pos='Verb' if yo!='-' else 'Noun',group='Question and example support',ch=0,source='Teacher-authored support vocabulary',aliases=[],note=''))
+merged={w['ko']:deepcopy(w) for w in original['words']};extra_homographs=[]
+for w in extra:
+ if w['id']=='x-number-four':extra_homographs.append(w)
+ elif w['ko'] not in merged:merged[w['ko']]=w
+words=list(merged.values())+extra_homographs
+for w in words:
+ if w['ko'] in ['무슨','그','어느','그런','지난','여러']:w['pos']='Determiner'
+ if w['ko'] in ['아직','미리','다시','함께','어떻게']:w['pos']='Adverb'
+ if w['ko'] in ['일정하다','구체적이다']:w['pos']='Adjective' if w['ko']=='일정하다' else 'Copular expression'
+ if w['ko']=='밖에':w['pos']='Particle'
+ if w['ko']=='오늘':w['pos']='Noun / Adverb'
+ if w['ko']=='있다':w['pos']='Adjective / Verb';w['note']='Existence/possession commonly functions as a descriptive predicate; staying can function verbally.'
+# Semantic sense of a source homograph is retained; study states are not inferred from prior attendance.
+assert len({w['id'] for w in words})==len(words)
+allpatterns={p['id']:p for p in original['patterns']};allpatterns.update(C.P)
+for m in C.MODULES.values():
+ missing=set(m['focus'])-set(merged)
+ if missing:raise ValueError('Missing focus words: '+str(missing))
+# Actual previously generated neural audio is retained by exact source text only.
+audio_by_text={}
+for key,a in old_audio['generated'].items():
+ src=BASE/a['url'];assert src.is_file(),str(src)
+ dest=SH/'audio'/src.name;dest.parent.mkdir(exist_ok=True)
+ if not dest.exists():shutil.copyfile(src,dest)
+ audio_by_text[a['text']]={'url':'../shared/audio/'+src.name,'text':a['text'],'sha256':a.get('sha256'),'bytes':src.stat().st_size}
+requests={}
+for w in words:
+ for kind,field in [('word','ko'),('polite','yo'),('example','example')]:
+  text=w[field]
+  if text and text not in audio_by_text:
+   requests[text]=dict(file=digest(text)[:24]+'.mp3',text=text)
+dump(SH/'audio-request.json',list(requests.values()));dump(SH/'audio-existing.json',audio_by_text)
+# PDF type uses embedded subsets only. No font file is copied to any output.
+font=next(p for p in [Path('/usr/share/fonts/truetype/nanum/NanumGothic.ttf'),Path('/usr/share/fonts/truetype/NanumGothic.ttf')] if p.exists())
+bold=font.with_name('NanumGothicBold.ttf');pdfmetrics.registerFont(TTFont('KR',str(font)));pdfmetrics.registerFont(TTFont('KRB',str(bold if bold.exists() else font)))
+styles={n:ParagraphStyle(n,fontName='KR',fontSize=size,leading=lead,spaceAfter=after,wordWrap='CJK') for n,size,lead,after in [('body',10,15,8),('small',9,13,4),('h1',20,27,14),('h2',13,19,10)]}
+def para(t,style='body'):return Paragraph(escape(str(t)).replace('\n','<br/>'),styles[style])
+def wrap(s,size,width):
+ out=[];line=''
+ for c in s:
+  if pdfmetrics.stringWidth(line+c,'KR',size)>width:out.append(line.rstrip());line=c
+  else:line+=c
+ if line:out.append(line.rstrip())
+ return out
+pdf_summary=[]
+def page_pdf(path,name,title,questions,mode='conversation',answer=False):
+ path.parent.mkdir(parents=True,exist_ok=True);c=canvas.Canvas(str(path),pagesize=A4);W,H=A4
+ c.setTitle(name+' - '+title);c.setAuthor('Fly Korean');c.setFont('KRB',11);c.drawString(36,H-40,'FLY KOREAN  /  '+name)
+ c.setFont('KRB',16);y=H-75
+ for line in wrap(title,16,W-72):c.drawString(36,y,line);y-=21
+ c.setFont('KR',8.5);inst='Say each answer aloud. Highlight unknown words and add meanings at the far right.' if mode=='conversation' else 'Translate each sentence aloud. Cover the notes and repeat without looking.'
+ for line in wrap(inst,8.5,W-72):c.drawString(36,y-3,line);y-=13
+ c.drawString(36,y-3,'Use imaginary details. One page is enough. No full written answers are required.');y-=30
+ c.setFont('KR',8);c.drawString(445,y,'MY WORD / MEANING');c.setDash(2,3);c.setStrokeColorRGB(.72,.72,.72);c.line(428,70,428,y+12);c.setDash();y-=18
+ rowheight=min(90,(y-85)/max(1,len(questions)))
+ for i,q in enumerate(questions,1):
+  c.setFillColorRGB(0,0,0);c.setFont('KR',9);c.drawString(36,y-6,f'{i:02d}');lines=wrap(q,14,350)
+  for j,line in enumerate(lines):c.setFont('KR',14);c.drawString(59,y-6-j*21,line)
