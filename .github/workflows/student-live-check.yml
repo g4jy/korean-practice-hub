@@ -1,9 +1,6 @@
 name: Publish and verify student app links
 on:
   workflow_dispatch:
-  push:
-    branches: [main]
-    paths: ['.github/workflows/student-live-check.yml']
   workflow_run:
     workflows: ['Build missing student practice apps']
     types: [completed]
@@ -41,31 +38,37 @@ jobs:
           Q=pathlib.Path('live-qa');Q.mkdir(exist_ok=True)
           base='https://g4jy.github.io/korean-practice-hub/students/'
           apps=sorted(p for p in pathlib.Path('students').iterdir() if (p/'data.json').exists());assert len(apps)==15
+          nonce=str(int(time.time()))
           def get(url):
-            with urllib.request.urlopen(urllib.request.Request(url,headers={'User-Agent':'Student-App-Validation','Cache-Control':'no-cache'}),timeout=40) as r:return r.status,r.headers.get('Content-Type',''),r.read(),r.url
+            request_url=url+('&' if '?' in url else '?')+'verify='+nonce
+            with urllib.request.urlopen(urllib.request.Request(request_url,headers={'User-Agent':'Student-App-Validation','Cache-Control':'no-cache'}),timeout=40) as r:return r.status,r.headers.get('Content-Type',''),r.read(),url
           for attempt in range(30):
             try:
-              result=get(base+'katharine/data.json?verify='+str(int(time.time())))
-              if hashlib.sha256(result[2]).digest()==hashlib.sha256(pathlib.Path('students/katharine/data.json').read_bytes()).digest():break
+              nonce=str(int(time.time()))
+              ready=True
+              for f in ['data.json','audio-manifest.json']:
+                result=get(base+'katharine/'+f)
+                if hashlib.sha256(result[2]).digest()!=hashlib.sha256(pathlib.Path('students/katharine',f).read_bytes()).digest():ready=False
+              if ready:break
             except Exception:pass
-            if attempt==29:raise RuntimeError('Published student data did not become available')
+            if attempt==29:raise RuntimeError('Published student data and audio manifest did not become available')
             time.sleep(15)
           def verify(app):
             d=json.loads((app/'data.json').read_text());url=base+app.name+'/'
             status,ct,html,final=get(url);_,_,data,_=get(url+'data.json');_,_,audio,_=get(url+'audio-manifest.json');m=json.loads(audio)
-            assert status==200 and d['student'] in html.decode()
-            assert json.loads(data)['appId']==d['appId'] and hashlib.sha256(data).digest()==hashlib.sha256((app/'data.json').read_bytes()).digest()
-            assert m['complete'] and len(m['generated'])==d['audioExpected']
+            assert status==200 and d['student'] in html.decode(),app.name+' HTML'
+            assert json.loads(data)['appId']==d['appId'] and hashlib.sha256(data).digest()==hashlib.sha256((app/'data.json').read_bytes()).digest(),app.name+' data'
+            assert m['complete'] and len(m['generated'])==d['audioExpected'],app.name+' manifest'
             for suffix in ['-word','-polite','-example']:
               e=next(v for k,v in m['generated'].items() if k.endswith(suffix));code,typ,b,_=get(urllib.parse.urljoin(url,e['url']))
-              assert code==200 and len(b)>1000 and hashlib.sha256(b).hexdigest()==e['sha256']
-            code,typ,b,_=get(urllib.parse.urljoin(url,d['sheets'][0]['url']));assert code==200 and b.startswith(b'%PDF')
+              assert code==200 and len(b)>1000 and hashlib.sha256(b).hexdigest()==e['sha256'],app.name+' '+suffix+' bytes SHA mismatch'
+            code,typ,b,_=get(urllib.parse.urljoin(url,d['sheets'][0]['url']));assert code==200 and b.startswith(b'%PDF'),app.name+' PDF'
             return dict(name=d['student'],slug=app.name,url=final,http_status=status,app_id_matches=True,data_hash_matches=True,audio_manifest_complete=True,audio_entries=len(m['generated']),live_audio_samples=3,live_pdf=True,focus_words=sum(w['focus'] for w in d['words']),daily_pdfs=len(d['sheets']))
           with concurrent.futures.ThreadPoolExecutor(max_workers=3) as ex:report=list(ex.map(verify,apps))
           old=[('Aisha','korean-vocab-review-r7m4q2/'),('Jack','korean-practice-hub/jack-review/'),('Loriana','korean-numbers-loriana/'),('Jaida Marie','korean-practice-jaida/'),('Kitty','korean-flashcard-kitty-001/'),('Samantha','korean-practice-samantha/'),('Sokvan','korean-vocab-review-1d44e9/'),('Chasity','korean-practice-chasity/')]
           existing=[]
           for name,path in old:
-            status,ct,b,url=get('https://g4jy.github.io/'+path);assert status==200
+            status,ct,b,url=get('https://g4jy.github.io/'+path);assert status==200,name+' existing URL'
             existing.append(dict(name=name,url=url,http_status=status,action='Existing app retained; no content changes'))
           out=dict(checked_at=datetime.datetime.now(datetime.timezone.utc).isoformat(),new_apps=report,existing_apps=existing,all_passed=True);(Q/'live-links.json').write_text(json.dumps(out,ensure_ascii=False,indent=2));print(json.dumps(out,ensure_ascii=False,indent=2))
           results=[]
