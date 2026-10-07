@@ -1,0 +1,89 @@
+name: Build missing student practice apps
+on:
+  workflow_dispatch:
+  push:
+    branches: [main]
+    paths:
+      - '.github/workflows/student-rollout.yml'
+      - '.tooling/student-rollout/**'
+permissions:
+  contents: write
+concurrency:
+  group: missing-student-app-build
+  cancel-in-progress: false
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    timeout-minutes: 30
+    env:
+      OUTPUT_ROOT: ${{ github.workspace }}
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+      - name: Assemble reviewed source and fetch verified public template
+        run: |
+          cat .tooling/student-rollout/curriculum.part1 .tooling/student-rollout/curriculum.part2 .tooling/student-rollout/curriculum.part3 .tooling/student-rollout/curriculum.part4 > .tooling/student-rollout/curriculum.py
+          cat .tooling/student-rollout/build.part1 .tooling/student-rollout/build.part2a .tooling/student-rollout/build.part2b > .tooling/student-rollout/build_rollout.py
+          python -m py_compile .tooling/student-rollout/*.py
+          python - <<'PY'
+          import urllib.request,zipfile,io,pathlib,os
+          sha='7cf2ce3d192a452e88a134cd5ed5057aef6f1826'
+          data=urllib.request.urlopen('https://codeload.github.com/impressive261/gpters/zip/'+sha,timeout=60).read()
+          root=pathlib.Path(os.environ['RUNNER_TEMP'])/'katharine-template'
+          z=zipfile.ZipFile(io.BytesIO(data));prefix='gpters-'+sha+'/katharine/'
+          for n in z.namelist():
+            if n.startswith(prefix) and not n.endswith('/'):
+              relative=pathlib.PurePosixPath(n[len(prefix):])
+              if '..' in relative.parts:raise ValueError('Unsafe archive entry')
+              p=root/relative;p.parent.mkdir(parents=True,exist_ok=True);p.write_bytes(z.read(n))
+          assert (root/'data.json').exists()
+          with open(os.environ['GITHUB_ENV'],'a') as f:f.write('BASE_APP='+str(root)+'\n')
+          PY
+      - uses: actions/cache@v4
+        with:
+          path: students/shared/audio
+          key: student-neural-audio-v1-${{ hashFiles('.tooling/student-rollout/curriculum.part*', '.tooling/student-rollout/build.part*') }}
+          restore-keys: student-neural-audio-v1-
+      - name: Install PDF, neural audio and browser validation tools
+        run: |
+          sudo apt-get update -qq
+          sudo apt-get install -y fonts-nanum ffmpeg
+          python -m pip install --disable-pip-version-check reportlab pymupdf playwright edge-tts==7.2.3
+          python -m playwright install --with-deps chromium
+      - name: Build fifteen learner-specific apps and one-page exercises
+        run: |
+          python .tooling/student-rollout/build_rollout.py
+          python .tooling/student-rollout/audit_vocab.py
+      - name: Generate all missing Korean neural recordings
+        run: python -u .tooling/student-rollout/generate_audio.py
+      - name: Validate every app, audio file and PDF
+        run: |
+          python -m http.server 8765 --bind 127.0.0.1 --directory . > /tmp/student-rollout-http.log 2>&1 &
+          SERVER_PID=$!
+          trap 'kill $SERVER_PID || true' EXIT
+          python -u .tooling/student-rollout/validate.py
+      - name: Publish new student directories only
+        run: |
+          git config user.name 'github-actions[bot]'
+          git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
+          git add students
+          if ! git diff --cached --quiet; then
+            git commit -m 'Publish 15 verified student apps with neural audio and print exercises'
+            git pull --rebase origin main
+            git push origin HEAD:main
+          fi
+      - name: Save complete apps and validation evidence
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: student-apps-complete-and-validation
+          path: |
+            students/
+            rollout-summary.json
+            vocabulary-audit.json
+            rollout-qa/
+            .tooling/student-rollout/
+          include-hidden-files: true
+          retention-days: 14
