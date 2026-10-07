@@ -1,0 +1,53 @@
+  lastx=59+pdfmetrics.stringWidth(lines[-1],'KR',14);ly=y-6-(len(lines)-1)*21
+  c.setDash(1,3);c.line(min(lastx+8,416),ly-2,440,ly-2);c.setDash();c.line(445,ly-6,W-36,ly-6);c.line(445,ly-27,W-36,ly-27)
+  y-=rowheight
+ c.setFont('KR',8);c.drawString(36,43,'Pass 1: read and speak.   Pass 2: fold the notes away and speak again.');c.drawRightString(W-36,43,'1 / 1');c.save();pdf_summary.append(str(path.relative_to(OUT)))
+def reference(path,name,title,story):
+ path.parent.mkdir(parents=True,exist_ok=True)
+ def foot(c,d):c.setFont('KR',8);c.drawString(36,24,'Fly Korean / '+name);c.drawRightString(A4[0]-36,24,str(d.page))
+ SimpleDocTemplate(str(path),pagesize=A4,rightMargin=36,leftMargin=36,topMargin=36,bottomMargin=42,title=name+' - '+title,author='Fly Korean').build([para(title,'h1')]+story,onFirstPage=foot,onLaterPages=foot)
+def table(data,widths):
+ t=Table([[para(v,'small') for v in row] for row in data],colWidths=widths,repeatRows=1,hAlign='LEFT');t.setStyle(TableStyle([('VALIGN',(0,0),(-1,-1),'TOP'),('LINEBELOW',(0,0),(-1,0),.6,(.2,.2,.2)),('LINEBELOW',(0,1),(-1,-1),.2,(.85,.85,.85)),('TOPPADDING',(0,0),(-1,-1),5),('BOTTOMPADDING',(0,0),(-1,-1),5)]));return t
+summaries=[]
+for learner in learners:
+ slug=learner['slug'];name=learner['name'];A=OUT/slug;A.mkdir(exist_ok=True)
+ focus=[term for key in learner['modules'] for term in C.MODULES[key]['focus']]
+ focus=list(dict.fromkeys(focus));full=deepcopy(original) if slug=='katharine' else dict(version=1,student=name,words=[],questions=[],patterns=[],grammar=deepcopy(original['grammar']),sheets=[])
+ if slug!='katharine':
+  full['words']=deepcopy(sorted(words,key=lambda w:(0 if w['ko'] in focus else 1,focus.index(w['ko']) if w['ko'] in focus else words.index(w))))
+  for w in full['words']:w['focus']=w['ko'] in focus
+  ids=list(dict.fromkeys(p for key in learner['modules'] for p in C.MODULES[key]['patterns']));full['patterns']=[deepcopy(allpatterns[p]) for p in ids]
+  for key in learner['modules']:
+   m=C.MODULES[key]
+   for mode,items in [('conversation',m['questions']),('translation',[t['en'] for t in m['translation']])]:
+    for i in range(0,len(items),6):
+     chunk=items[i:i+6];sid=key+'-'+mode+'-'+str(i//6+1);url='pdfs/practice/'+sid+'.pdf';title=m['title']+' / '+('Speak' if mode=='conversation' else 'English to Korean')+' '+str(i//6+1)
+     page_pdf(A/url,name,title,chunk,mode)
+     full['sheets'].append(dict(id=sid,title=title,url=url,ch=1,extension=False,kind=mode,questions=chunk))
+   reference(A/('pdfs/answers/'+key+'.pdf'),name,m['title']+' / Model sentences',[para('Several translations may be correct. Read the English prompt before opening this reference.')]+[table([['English','One natural Korean answer']]+[[t['en'],t['ko']] for t in m['translation']],[261,262])])
+   full['questions'] += [dict(id=key+'-'+str(i+1),ko=q,original=q,ch=1,extension=False,kind='conversation') for i,q in enumerate(m['questions'])]
+  full['workshops']=[dict(id=key,**C.MODULES[key]['workshop']) for key in learner['modules'] if C.MODULES[key]['workshop']]
+  ref=A/'pdfs/05_Reference'
+  groups=collections.defaultdict(list)
+  for w in full['words']:groups[w['pos']].append(w)
+  story=[para('Start with the focus pack in the app. The rest is a reference glossary, not an additional assignment.')]
+  for pos,ws in groups.items():
+   story+=[para(pos,'h2'),table([['Korean / polite form','Meaning']]+[[w['ko']+(' / '+w['yo'] if w['yo'] else ''),w['en']] for w in ws],[225,298])]
+  reference(ref/'Vocabulary_by_POS.pdf',name,'Vocabulary by word type',story)
+  reference(ref/'Verb_Adjective_Forms.pdf',name,'Dictionary and polite forms',[table([['Dictionary','Polite','Meaning']]+[[w['ko'],w['yo'],w['en']] for w in full['words'] if w['yo']],[140,150,233])])
+  story=[]
+  for p in full['patterns']:story += [para(p['id']+' / '+p['title'],'h2'),para(p['form']),para(p['en'])]+[para(e['ko']+'\n'+e['en']) for e in p['examples']]
+  reference(ref/'Sentence_Patterns_and_Grammar.pdf',name,'Sentence patterns',story)
+  reference(ref/'Teacher_Guide_and_Audit.pdf',name,'Guide',[para('Give one small worksheet a day. Default card reviews use the selected focus pack; the larger word library is optional.'),para('These are newly authored practice items guided by reviewed learning topics. They are not a complete transcript-derived curriculum or evidence of mastery.'),para('Use fictitious names, addresses and circumstances. Do not ask a learner to publish private life or contact details.'),para('Two recall directions have independent local review histories. A recognition success does not automatically mark Korean production mastered.'),para('The scheduler is SM-2-inspired, not FSRS. Back up before changing device, browser or website address. No teacher inbox or automatic grading service is connected.'),para('Pronunciation is pre-generated Korean neural MP3. A fallback voice is not silently substituted. Report questionable pronunciation to the teacher.'),para('Writing prompts are original workshops, not official TOPIK exam papers. No automated essay score is provided.')])
+ else:
+  shutil.copytree(BASE/'pdfs',A/'pdfs',dirs_exist_ok=True)
+  for w in full['words']:w['focus']=True
+  full['workshops']=[]
+ full.update(appId='fly-korean-'+slug+'-v1',student=name,focusTitle='Chapters 001–005' if not learner['modules'] else ' + '.join(C.MODULES[k]['title'] for k in learner['modules']),defaults=dict(newLimit=learner.get('newLimit',5),sessionLimit=learner.get('sessionLimit',20),focusOnly=slug!='katharine'))
+ full['audioExpected']=sum(2+bool(w['yo']) for w in full['words'])
+ dump(A/'data.json',full);(A/'data.js').write_text('window.KATHARINE_DATA='+json.dumps(full,ensure_ascii=False)+';')
+ manifest=dict(provider='Microsoft Edge online neural TTS',voice='ko-KR-SunHiNeural',rate='-10%',complete=False,generated={})
+ for w in full['words']:
+  for kind,field in [('word','ko'),('polite','yo'),('example','example')]:
+   if w[field] in audio_by_text:manifest['generated'][w['id']+'-'+kind]=audio_by_text[w[field]]
+ dump(A/'audio-manifest.json',manifest);(A/'audio-manifest.js').write_text('window.KATHARINE_AUDIO='+json.dumps(manifest,ensure_ascii=False)+';')
