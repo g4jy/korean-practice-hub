@@ -1,0 +1,53 @@
+name: Inspect existing Korean practice apps
+on:
+  workflow_dispatch:
+  push:
+    branches: [main]
+    paths: ['.github/workflows/student-app-audit.yml']
+permissions:
+  contents: read
+jobs:
+  inspect:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Inspect public app metadata and entry points
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: |
+          mkdir -p app-audit
+          python - <<'PY'
+          import os,json,urllib.request,urllib.error,pathlib,re,concurrent.futures
+          out=pathlib.Path('app-audit')
+          repos=['korean-practice-hub','fly-korean-daily','korean-practice-kath','korean-vocab-review-r7m4q2','korean-vocab-review-a4063e','korean-vocab-review-1d44e9','korean-vocab-review-198d15','korean-vocab-review-d8ecdc','korean-practice-jaida','korean-flashcard-kitty-001','korean-practice-samantha','korean-numbers-loriana','korean-practice-chasity']
+          def api(path):
+            req=urllib.request.Request('https://api.github.com/repos/g4jy/'+path,headers={'Authorization':'Bearer '+os.environ['GH_TOKEN'],'Accept':'application/vnd.github+json','User-Agent':'practice-app-audit'})
+            with urllib.request.urlopen(req,timeout=30) as r:return json.load(r)
+          report=[]
+          for repo in repos:
+            d=out/repo;d.mkdir()
+            try:
+              meta=api(repo);tree=api(repo+'/git/trees/'+meta['default_branch']+'?recursive=1')['tree']
+              row={k:meta.get(k) for k in ['full_name','homepage','has_pages','default_branch','pushed_at']}
+              row['paths']=[x['path'] for x in tree if x['type']=='blob' and not x['path'].lower().endswith(('.mp3','.wav','.png','.jpg','.woff','.ttf','.pdf'))]
+              (d/'tree.json').write_text(json.dumps(tree))
+              chosen=[x for x in tree if x['type']=='blob' and x.get('size',0)<1500000 and (x['path'].endswith(('.json','.js','.html','.md','.yml')) and not x['path'].startswith(('.claude/','node_modules/','audio/')))]
+              if repo not in repos[:8]:chosen=[x for x in chosen if x['path'] in ['index.html','README.md','config.js','data.js']]
+              for x in chosen:
+                url='https://raw.githubusercontent.com/g4jy/'+repo+'/'+meta['default_branch']+'/'+urllib.parse.quote(x['path'])
+                try:
+                  data=urllib.request.urlopen(url,timeout=30).read();f=d/x['path'];f.parent.mkdir(parents=True,exist_ok=True);f.write_bytes(data)
+                except Exception as e:pass
+              url='https://g4jy.github.io/'+repo+'/'
+              try:
+                with urllib.request.urlopen(url,timeout=30) as r:row['http_status']=r.status;row['live_url']=r.url;row['live_title']=re.findall('<title[^>]*>(.*?)</title>',r.read().decode('utf-8','replace'),re.S)[:1]
+              except urllib.error.HTTPError as e:row['http_status']=e.code
+              report.append(row)
+            except Exception as e:report.append({'repo':repo,'error':str(e)})
+          (out/'report.json').write_text(json.dumps(report,ensure_ascii=False,indent=2))
+          print(json.dumps([{k:v for k,v in r.items() if k!='paths'} for r in report],ensure_ascii=False))
+          PY
+      - uses: actions/upload-artifact@v4
+        with:
+          name: existing-app-audit
+          path: app-audit
+          retention-days: 7
