@@ -2,5 +2,6 @@
   "requested": 846,
   "completed": 846,
   "failures": [],
-  "totalUniqueTexts": 1508
+  "totalUniqueTexts": 1508,
+  "all_content_hashes_verified": true
 }
