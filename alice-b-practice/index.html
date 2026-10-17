@@ -1,0 +1,345 @@
+<!doctype html>
+<html lang="ko">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Alice · Korean Practice</title>
+<style>
+:root{--bg:#faf8f5;--card:#fff;--ink:#222;--mute:#8a8580;--line:#e8e3dc;--accent:#2f6f5e;--accent2:#e8f2ee;--bad:#c4503d;--bad2:#fbecea;--good:#2f6f5e}
+*{box-sizing:border-box}
+body{margin:0;background:var(--bg);color:var(--ink);font-family:-apple-system,BlinkMacSystemFont,"Apple SD Gothic Neo","Noto Sans KR","Segoe UI",sans-serif;-webkit-tap-highlight-color:transparent}
+main{max-width:520px;margin:0 auto;padding:20px 16px 48px;min-height:100vh;display:flex;flex-direction:column}
+.top{display:flex;align-items:center;justify-content:space-between;min-height:36px;margin-bottom:16px}
+.top .title{font-weight:600;font-size:15px;color:var(--mute)}
+.link{background:none;border:0;color:var(--mute);font-size:14px;padding:6px 4px;cursor:pointer;font-family:inherit}
+.link:hover{color:var(--ink)}
+.screen{display:none;flex:1;flex-direction:column}
+.screen.on{display:flex}
+h1{font-size:26px;margin:24px 0 6px}
+.sub{color:var(--mute);margin:0 0 28px;font-size:15px}
+.big{display:block;width:100%;text-align:left;background:var(--card);border:1px solid var(--line);border-radius:16px;padding:22px 20px;margin-bottom:12px;cursor:pointer;font-family:inherit;color:var(--ink)}
+.big b{display:block;font-size:20px;margin-bottom:4px}
+.big span{color:var(--mute);font-size:14px}
+.big:hover{border-color:var(--accent)}
+select{font:inherit;font-size:15px;padding:10px 12px;border:1px solid var(--line);border-radius:10px;background:var(--card);width:100%;margin-bottom:12px;color:var(--ink)}
+.seg{display:flex;background:var(--line);border-radius:10px;padding:3px;margin-bottom:20px}
+.seg button{flex:1;border:0;background:none;padding:9px;border-radius:8px;font:inherit;font-size:15px;cursor:pointer;color:var(--mute)}
+.seg button.on{background:var(--card);color:var(--ink);font-weight:600;box-shadow:0 1px 2px rgba(0,0,0,.06)}
+.btn{display:block;width:100%;border:0;border-radius:12px;padding:15px;font:inherit;font-size:17px;font-weight:600;cursor:pointer;background:var(--accent);color:#fff}
+.btn.ghost{background:var(--card);color:var(--ink);border:1px solid var(--line);font-weight:500}
+.btn:disabled{opacity:.4;cursor:default}
+.row{display:flex;gap:10px}
+.row .btn{flex:1}
+.progress{height:4px;background:var(--line);border-radius:4px;margin-bottom:18px;overflow:hidden}
+.progress i{display:block;height:100%;background:var(--accent);width:0;transition:width .25s}
+.flash{flex:1;min-height:260px;background:var(--card);border:1px solid var(--line);border-radius:20px;display:flex;flex-direction:column;align-items:center;justify-content:center;text-align:center;padding:24px;cursor:pointer;margin-bottom:16px;user-select:none}
+.flash .ko{font-size:38px;font-weight:600;line-height:1.3}
+.flash .en{font-size:20px;margin-top:16px;color:var(--accent);display:none}
+.flash.flipped .en{display:block}
+.flash .hint{color:var(--mute);font-size:13px;margin-top:20px}
+.flash.flipped .hint{display:none}
+.prompt{background:var(--card);border:1px solid var(--line);border-radius:20px;padding:30px 20px;text-align:center;margin-bottom:16px}
+.prompt .ko{font-size:34px;font-weight:600}
+.prompt .en{font-size:20px;line-height:1.4}
+.tag{font-size:12px;color:var(--mute);margin-bottom:10px;letter-spacing:.02em}
+.choices button{display:block;width:100%;text-align:left;background:var(--card);border:1px solid var(--line);border-radius:12px;padding:15px 16px;margin-bottom:9px;font:inherit;font-size:16px;cursor:pointer;color:var(--ink)}
+.choices button.right{background:var(--accent2);border-color:var(--good)}
+.choices button.wrong{background:var(--bad2);border-color:var(--bad)}
+.answer{min-height:64px;background:var(--card);border:1.5px dashed var(--line);border-radius:14px;padding:10px;display:flex;flex-wrap:wrap;gap:8px;align-content:flex-start;margin-bottom:14px}
+.answer.right{border-style:solid;border-color:var(--good);background:var(--accent2)}
+.answer.wrong{border-style:solid;border-color:var(--bad);background:var(--bad2)}
+.tiles{display:flex;flex-wrap:wrap;gap:8px;margin-bottom:18px;min-height:48px}
+.tile{border:1px solid var(--line);background:var(--card);border-radius:10px;padding:10px 14px;font:inherit;font-size:18px;cursor:pointer;color:var(--ink)}
+.answer .tile{background:#f3efe9}
+.fb{min-height:24px;margin-bottom:14px;font-size:16px;line-height:1.5}
+.fb .k{font-weight:600}
+.done{text-align:center;padding-top:30px}
+.done .score{font-size:44px;font-weight:700;margin:6px 0}
+.list{background:var(--card);border:1px solid var(--line);border-radius:14px;margin:14px 0 18px;max-height:46vh;overflow:auto}
+.list div{padding:11px 14px;border-bottom:1px solid var(--line);font-size:15px;display:flex;justify-content:space-between;gap:12px}
+.list div:last-child{border-bottom:0}
+.list small{color:var(--mute);text-align:right}
+.empty{color:var(--mute);text-align:center;padding:30px 0}
+.msg{text-align:center;font-size:14px;color:var(--mute);min-height:20px;margin-top:10px}
+.msg.ok{color:var(--good)}.msg.err{color:var(--bad)}
+.badge{display:inline-block;background:var(--bad);color:#fff;border-radius:10px;font-size:12px;padding:1px 7px;margin-left:4px}
+</style>
+</head>
+<body>
+<main>
+  <div class="top">
+    <button class="link" id="backBtn" style="visibility:hidden">← Home</button>
+    <span class="title" id="topTitle"></span>
+    <button class="link" id="reviewBtn">To review<span class="badge" id="badge" style="display:none"></span></button>
+  </div>
+
+  <!-- HOME -->
+  <section class="screen on" id="home">
+    <h1>안녕하세요, Alice!</h1>
+    <p class="sub">What do you want to practice?</p>
+    <button class="big" data-go="wordsSetup"><b>Words</b><span>Flashcards and a quick quiz</span></button>
+    <button class="big" data-go="sentSetup"><b>Sentences</b><span>Put the words in the right order</span></button>
+  </section>
+
+  <!-- WORDS SETUP -->
+  <section class="screen" id="wordsSetup">
+    <div class="seg" id="wordMode"><button class="on" data-m="cards">Flashcards</button><button data-m="quiz">Quiz</button></div>
+    <select id="groupSel"></select>
+    <div style="flex:1"></div>
+    <button class="btn" id="startWords">Start · 10 words</button>
+  </section>
+
+  <!-- FLASHCARDS -->
+  <section class="screen" id="cards">
+    <div class="progress"><i id="cardBar"></i></div>
+    <div class="flash" id="flash"><div class="ko" id="cardKo"></div><div class="en" id="cardEn"></div><div class="hint">Tap to see the meaning</div></div>
+    <div class="row"><button class="btn ghost" id="cardNo">Didn't know</button><button class="btn" id="cardYes">Knew it</button></div>
+  </section>
+
+  <!-- WORD QUIZ -->
+  <section class="screen" id="quiz">
+    <div class="progress"><i id="quizBar"></i></div>
+    <div class="prompt"><div class="ko" id="quizKo"></div></div>
+    <div class="choices" id="choices"></div>
+    <div style="flex:1"></div>
+    <button class="btn" id="quizNext" style="visibility:hidden">Next</button>
+  </section>
+
+  <!-- SENTENCE SETUP -->
+  <section class="screen" id="sentSetup">
+    <select id="patSel"></select>
+    <p class="sub" style="margin:4px 0 0">Read the English. Tap the Korean pieces in the right order. One piece is extra.</p>
+    <div style="flex:1"></div>
+    <button class="btn" id="startSent">Start · 10 sentences</button>
+  </section>
+
+  <!-- SENTENCE BUILDER -->
+  <section class="screen" id="sent">
+    <div class="progress"><i id="sentBar"></i></div>
+    <div class="prompt" style="padding:22px 18px"><div class="tag" id="sentPat"></div><div class="en" id="sentEn"></div></div>
+    <div class="answer" id="answer"></div>
+    <div class="tiles" id="tiles"></div>
+    <div class="fb" id="sentFb"></div>
+    <div style="flex:1"></div>
+    <button class="btn" id="sentCheck" disabled>Check</button>
+  </section>
+
+  <!-- ROUND DONE -->
+  <section class="screen" id="done">
+    <div class="done">
+      <div class="tag" id="doneLabel"></div>
+      <div class="score" id="doneScore"></div>
+      <p class="sub" id="doneSub" style="margin-bottom:0"></p>
+    </div>
+    <div class="list" id="doneList"></div>
+    <div style="flex:1"></div>
+    <button class="btn" id="doneSend">Send to teacher</button>
+    <div class="msg" id="doneMsg"></div>
+    <div class="row" style="margin-top:10px"><button class="btn ghost" id="doneAgain">Again</button><button class="btn ghost" data-go="home">Home</button></div>
+  </section>
+
+  <!-- REVIEW LIST -->
+  <section class="screen" id="review">
+    <h1 style="margin-top:0">To review</h1>
+    <p class="sub" style="margin-bottom:0">Mistakes not sent yet.</p>
+    <div class="list" id="revList"></div>
+    <div style="flex:1"></div>
+    <button class="btn" id="revSend">Send to teacher</button>
+    <div class="msg" id="revMsg"></div>
+  </section>
+</main>
+
+<script src="vocab.js"></script>
+<script src="sentences.js"></script>
+<script>
+const ENDPOINT = 'https://script.google.com/macros/s/AKfycbyhSRCmBbAo6rpTrSzl3nyFCOnRg5GmqlWhPMCiyKMv7hMDs_B23ypIC42gWIC9n5JlBw/exec';
+const STUDENT = 'Alice B';
+const ROUND = 10;
+const $ = (id) => document.getElementById(id);
+const shuffle = (a) => { a = a.slice(); for (let i = a.length - 1; i > 0; i--) { const j = Math.floor(Math.random() * (i + 1)); [a[i], a[j]] = [a[j], a[i]]; } return a; };
+const esc = (s) => String(s).replace(/[&<>"]/g, (c) => ({ '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;' }[c]));
+
+/* ---------- storage (safe) ---------- */
+const store = {
+  get(k, d) { try { const v = localStorage.getItem(k); return v ? JSON.parse(v) : d; } catch (e) { return d; } },
+  set(k, v) { try { localStorage.setItem(k, JSON.stringify(v)); } catch (e) {} }
+};
+let pending = store.get('aliceb.pending', []);
+const session = (() => { let s = store.get('aliceb.session', ''); if (!s) { s = Date.now().toString(36) + Math.random().toString(36).slice(2, 6); store.set('aliceb.session', s); } return s; })();
+function addMistake(row) {
+  if (!pending.some((p) => p.activity === row.activity && p.korean === row.korean && p.answer === row.answer)) pending.push(row);
+  store.set('aliceb.pending', pending); updateBadge();
+}
+function updateBadge() { const b = $('badge'); b.textContent = pending.length; b.style.display = pending.length ? 'inline-block' : 'none'; }
+
+/* ---------- navigation ---------- */
+const titles = { wordsSetup: 'Words', cards: 'Flashcards', quiz: 'Word quiz', sentSetup: 'Sentences', sent: 'Sentences', done: '', review: '' };
+function show(id) {
+  document.querySelectorAll('.screen').forEach((s) => s.classList.toggle('on', s.id === id));
+  $('backBtn').style.visibility = id === 'home' ? 'hidden' : 'visible';
+  $('reviewBtn').style.visibility = id === 'review' ? 'hidden' : 'visible';
+  $('topTitle').textContent = titles[id] || '';
+  if (id === 'review') renderReview();
+  window.scrollTo(0, 0);
+}
+document.addEventListener('click', (e) => { const g = e.target.closest('[data-go]'); if (g) show(g.dataset.go); });
+$('backBtn').onclick = () => show('home');
+$('reviewBtn').onclick = () => show('review');
+
+/* ---------- words ---------- */
+const VOC = window.VOCAB.filter((v) => v.ko && v.en);
+const groups = [...new Set(VOC.map((v) => v.g))];
+$('groupSel').innerHTML = '<option value="">All words (' + VOC.length + ')</option>' +
+  groups.map((g) => `<option value="${esc(g)}">${esc(g)} (${VOC.filter((v) => v.g === g).length})</option>`).join('');
+let wordMode = 'cards';
+$('wordMode').onclick = (e) => { const b = e.target.closest('button'); if (!b) return; wordMode = b.dataset.m; [...$('wordMode').children].forEach((x) => x.classList.toggle('on', x === b)); };
+
+let round = null; // {kind, items, i, wrong:[], right}
+function startWords() {
+  const g = $('groupSel').value;
+  const pool = g ? VOC.filter((v) => v.g === g) : VOC;
+  round = { kind: wordMode, items: shuffle(pool).slice(0, ROUND), i: 0, wrong: [], right: 0, group: g };
+  show(wordMode);
+  wordMode === 'cards' ? renderCard() : renderQuiz();
+}
+$('startWords').onclick = startWords;
+
+function bar(id) { $(id).style.width = (round.i / round.items.length * 100) + '%'; }
+
+function renderCard() {
+  const w = round.items[round.i]; bar('cardBar');
+  $('flash').classList.remove('flipped');
+  $('cardKo').textContent = w.ko; $('cardEn').textContent = w.en;
+}
+$('flash').onclick = () => $('flash').classList.toggle('flipped');
+function cardAnswer(knew) {
+  const w = round.items[round.i];
+  if (knew) round.right++;
+  else { round.wrong.push({ ko: w.ko, en: w.en }); addMistake({ activity: 'flashcard', korean: w.ko, english: w.en, answer: "didn't know", correct: w.en }); }
+  round.i++;
+  round.i < round.items.length ? renderCard() : finish();
+}
+$('cardYes').onclick = () => cardAnswer(true);
+$('cardNo').onclick = () => cardAnswer(false);
+
+function distractors(w) {
+  const same = VOC.filter((v) => v.g === w.g && v.en !== w.en);
+  const pool = same.length >= 3 ? same : VOC.filter((v) => v.en !== w.en);
+  const out = [];
+  for (const v of shuffle(pool)) { if (!out.includes(v.en)) out.push(v.en); if (out.length === 3) break; }
+  return out;
+}
+function renderQuiz() {
+  const w = round.items[round.i]; bar('quizBar');
+  $('quizKo').textContent = w.ko;
+  $('quizNext').style.visibility = 'hidden';
+  const opts = shuffle([w.en, ...distractors(w)]);
+  $('choices').innerHTML = opts.map((o) => `<button>${esc(o)}</button>`).join('');
+  [...$('choices').children].forEach((b, idx) => b.onclick = () => pick(b, opts[idx], w));
+}
+function pick(btn, val, w) {
+  if ($('quizNext').style.visibility === 'visible') return;
+  const btns = [...$('choices').children];
+  btns.forEach((b, i) => { if (b.textContent === w.en) b.classList.add('right'); });
+  if (val === w.en) round.right++;
+  else { btn.classList.add('wrong'); round.wrong.push({ ko: w.ko, en: w.en }); addMistake({ activity: 'word quiz', korean: w.ko, english: w.en, answer: val, correct: w.en }); }
+  $('quizNext').style.visibility = 'visible';
+}
+$('quizNext').onclick = () => { round.i++; round.i < round.items.length ? renderQuiz() : finish(); };
+
+/* ---------- sentences ---------- */
+const SENT = window.SENTENCES;
+const pats = [...new Set(SENT.map((s) => s.pattern))];
+$('patSel').innerHTML = '<option value="">All patterns (' + SENT.length + ')</option>' +
+  pats.map((p) => `<option value="${esc(p)}">${esc(p)} (${SENT.filter((s) => s.pattern === p).length})</option>`).join('');
+
+function startSent() {
+  const p = $('patSel').value;
+  const pool = p ? SENT.filter((s) => s.pattern === p) : SENT;
+  round = { kind: 'sent', items: shuffle(pool).slice(0, ROUND), i: 0, wrong: [], right: 0, pat: p };
+  show('sent'); renderSent();
+}
+$('startSent').onclick = startSent;
+
+let built = [], checked = false;
+function renderSent() {
+  const s = round.items[round.i]; bar('sentBar');
+  $('sentPat').textContent = s.pattern; $('sentEn').textContent = s.en;
+  built = []; checked = false;
+  const bank = shuffle([...s.tiles, s.distract].map((t, k) => ({ t, k })));
+  round.bank = bank;
+  $('sentFb').innerHTML = ''; $('answer').className = 'answer';
+  $('sentCheck').textContent = 'Check';
+  drawTiles();
+}
+function drawTiles() {
+  const used = new Set(built.map((b) => b.k));
+  $('answer').innerHTML = built.map((b, i) => `<button class="tile" data-a="${i}">${esc(b.t)}</button>`).join('');
+  $('tiles').innerHTML = round.bank.filter((b) => !used.has(b.k)).map((b) => `<button class="tile" data-k="${b.k}">${esc(b.t)}</button>`).join('');
+  $('sentCheck').disabled = !checked && built.length === 0;
+}
+$('tiles').onclick = (e) => { if (checked) return; const b = e.target.closest('[data-k]'); if (!b) return; built.push(round.bank.find((x) => x.k == b.dataset.k)); drawTiles(); };
+$('answer').onclick = (e) => { if (checked) return; const b = e.target.closest('[data-a]'); if (!b) return; built.splice(+b.dataset.a, 1); drawTiles(); };
+$('sentCheck').onclick = () => {
+  const s = round.items[round.i];
+  if (checked) { round.i++; round.i < round.items.length ? renderSent() : finish(); return; }
+  checked = true;
+  const said = built.map((b) => b.t).join(' ');
+  const ok = [s.tiles, ...s.accept].some((t) => t.join(' ') === said);
+  const correct = s.tiles.join(' ');
+  if (ok) { round.right++; $('answer').className = 'answer right'; $('sentFb').innerHTML = '<span class="k" style="color:var(--good)">Correct!</span>'; }
+  else {
+    $('answer').className = 'answer wrong';
+    $('sentFb').innerHTML = `<span class="k" style="color:var(--bad)">Answer:</span> ${esc(correct)}`;
+    round.wrong.push({ ko: correct, en: s.en });
+    addMistake({ activity: 'sentence', korean: correct, english: s.en, answer: said, correct: correct });
+  }
+  $('sentCheck').textContent = round.i + 1 < round.items.length ? 'Next' : 'Finish';
+  drawTiles(); $('sentCheck').disabled = false;
+};
+
+/* ---------- finish & submit ---------- */
+function finish() {
+  const n = round.items.length;
+  $('doneLabel').textContent = { cards: 'Flashcards', quiz: 'Word quiz', sent: 'Sentences' }[round.kind];
+  $('doneScore').textContent = round.right + ' / ' + n;
+  $('doneSub').textContent = round.wrong.length ? 'Practice these again:' : 'Perfect! 잘했어요!';
+  $('doneList').style.display = round.wrong.length ? 'block' : 'none';
+  $('doneList').innerHTML = round.wrong.map((w) => `<div><span>${esc(w.ko)}</span><small>${esc(w.en)}</small></div>`).join('');
+  $('doneSend').style.display = pending.length ? 'block' : 'none';
+  $('doneSend').disabled = false; $('doneMsg').textContent = ''; $('doneMsg').className = 'msg';
+  show('done');
+}
+$('doneAgain').onclick = () => round.kind === 'sent' ? startSent() : startWords();
+
+function renderReview() {
+  $('revList').innerHTML = pending.length
+    ? pending.map((p) => `<div><span>${esc(p.korean)}</span><small>${esc(p.english)}</small></div>`).join('')
+    : '<p class="empty">Nothing to review. 좋아요!</p>';
+  $('revSend').style.display = pending.length ? 'block' : 'none';
+  $('revSend').disabled = false;
+}
+
+async function send(btn, msgEl) {
+  if (!pending.length) return;
+  btn.disabled = true; msgEl.className = 'msg'; msgEl.textContent = 'Sending…';
+  const rows = pending.slice();
+  try {
+    const res = await fetch(ENDPOINT, { method: 'POST', headers: { 'Content-Type': 'text/plain;charset=utf-8' }, body: JSON.stringify({ student: STUDENT, session, rows }) });
+    const data = await res.json();
+    if (!data.ok) throw new Error(data.error || 'failed');
+    pending = pending.filter((p) => !rows.includes(p)); store.set('aliceb.pending', pending); updateBadge();
+    msgEl.className = 'msg ok'; msgEl.textContent = 'Sent! ' + data.count + ' item' + (data.count === 1 ? '' : 's') + '. Thank you.';
+    btn.style.display = 'none';
+    if ($('review').classList.contains('on')) $('revList').innerHTML = '<p class="empty">All sent. 감사합니다!</p>';
+  } catch (e) {
+    btn.disabled = false; msgEl.className = 'msg err'; msgEl.textContent = "Couldn't send. Check your internet and try again.";
+  }
+}
+$('doneSend').onclick = () => send($('doneSend'), $('doneMsg'));
+$('revSend').onclick = () => send($('revSend'), $('revMsg'));
+
+updateBadge();
+</script>
+</body>
+</html>
