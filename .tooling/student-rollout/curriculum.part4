@@ -173,7 +173,7 @@ module('concert','Places, messages and music','공연 음악 노래 가수 배�
 # Individual configurations are educational topics only; no schedules, private notes or platform IDs.
 LEARNERS=[
  dict(slug='moulik',name='Moulik',modules=['writing','connectors'],first='writing',writing=True),
- dict(slug='asa',name='Asa',modules=['kids','intro'],first='kids',newLimit=3,sessionLimit=10),
+ dict(slug='s019',name='S019',modules=['kids','intro'],first='kids',newLimit=3,sessionLimit=10),
  dict(slug='huixin',name='HUIXIN',modules=['writing','culture'],first='writing',writing=True),
  dict(slug='jack',name='Jack',modules=['locations','intro'],first='locations'),
  dict(slug='erika',name='Erika',modules=['connectors','culture'],first='connectors'),

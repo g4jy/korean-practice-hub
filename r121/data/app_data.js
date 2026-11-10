@@ -1,6 +1,6 @@
-window.CHEN_READING_APP_DATA = {
-  "student": "Chen W.",
-  "title": "Chen W. Reading Flashcards + Audio",
+window.S121_READING_APP_DATA = {
+  "student": "S121 W.",
+  "title": "S121 W. Reading Flashcards + Audio",
   "source": "50 short Korean home/school/body/food/family/object readings",
   "createdAt": "2026-06-02T15:31:15",
   "topicGroups": [

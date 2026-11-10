@@ -55,10 +55,10 @@ with sync_playwright() as playwright:
   b=Q/(a.name+'-test-backup.json');dd.value.save_as(str(b));check(a.name+' backup has real grade',len(json.loads(b.read_text())['history'])==1)
   p.goto(url);p.evaluate('navigator.serviceWorker.ready');p.wait_for_timeout(200);c.set_offline(True);p.reload();check(a.name+' offline shell',p.locator('[data-action=start]').count()>0);c.set_offline(False)
   p.goto(url);p.screenshot(path=str(Q/(a.name+'-mobile.png')),full_page=True)
-  if a.name in ['elvira','asa','huixin','katharine']:
+  if a.name in ['elvira','s019','huixin','katharine']:
    p.set_viewport_size(dict(width=1440,height=1050));p.screenshot(path=str(Q/(a.name+'-desktop.png')),full_page=True)
   c.close()
  check('No browser JavaScript errors',not pageErrors);browser.close()
-for slug in ['elvira','asa','huixin','katharine']:
+for slug in ['elvira','s019','huixin','katharine']:
  a=S/slug;d=json.loads((a/'data.json').read_text());f=a/d['sheets'][0]['url'];doc=fitz.open(f);doc[0].get_pixmap(matrix=fitz.Matrix(1.3,1.3)).save(Q/(slug+'-print.png'))
 print('Validated all apps',flush=True)

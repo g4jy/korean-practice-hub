@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "student": "Asa",
+  "student": "S019",
   "words": [
     {
       "id": "w224",
@@ -11014,7 +11014,7 @@
     }
   ],
   "workshops": [],
-  "appId": "fly-korean-asa-v1",
+  "appId": "fly-korean-S019-v1",
   "focusTitle": "Animals, actions and little sentences + Greetings and short introductions",
   "defaults": {
     "newLimit": 3,

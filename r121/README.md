@@ -1,16 +1,16 @@
-﻿# Chen Reading #1
+﻿# S121 Reading #1
 
-This previous hub copy redirects to Chen's dedicated repository.
+This previous hub copy redirects to S121's dedicated repository.
 
 ## Student URL
 
 Use the dedicated GitHub Pages URL:
 
-`https://g4jy.github.io/korean-practice-chen/`
+`https://g4jy.github.io/korean-practice-S121/`
 
 Previous hub URL:
 
-`https://g4jy.github.io/korean-practice-hub/chen-reading-1/`
+`https://g4jy.github.io/korean-practice-hub/r121/`
 
 ## Local Progress
 
@@ -21,7 +21,7 @@ The dedicated app ships with initial word statuses in `data/app_data.js`:
 - Unchecked: 416
 - All: 630
 
-When Chen marks words as Known or Unknown, the app saves those changes in the student's browser localStorage. No server-side progress database is required.
+When S121 marks words as Known or Unknown, the app saves those changes in the student's browser localStorage. No server-side progress database is required.
 
 Progress stays on the same device/browser/origin. It can reset if the student clears browser storage, uses a different device/browser, uses private browsing, or the app changes its storage key/card IDs.
 
