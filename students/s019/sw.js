@@ -1,5 +1,5 @@
-/* Scope is S019/ only. Never delete unrelated caches or learner storage. */
-const SHELL='S019-shell-v1',AUDIO='S019-audio-v1',ROOT=new URL('./',self.location),CORE=['./','index.html','styles.css','scheduler.js','app.js','data.js','audio-manifest.js','audio-manifest.json','icon.svg','manifest.webmanifest'];
+/* Scope is s019/ only. Never delete unrelated caches or learner storage. */
+const SHELL='s019-shell-v1',AUDIO='s019-audio-v1',ROOT=new URL('./',self.location),CORE=['./','index.html','styles.css','scheduler.js','app.js','data.js','audio-manifest.js','audio-manifest.json','icon.svg','manifest.webmanifest'];
 self.addEventListener('install',e=>e.waitUntil(caches.open(SHELL).then(c=>c.addAll(CORE))));
 self.addEventListener('activate',e=>e.waitUntil(self.clients.claim()));
 self.addEventListener('fetch',e=>{const u=new URL(e.request.url);const shared=new URL('../shared/',ROOT);if(e.request.method!=='GET'||u.origin!==ROOT.origin||!(u.pathname.startsWith(ROOT.pathname)||u.pathname.startsWith(shared.pathname)))return;
